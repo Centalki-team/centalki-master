@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  dev:
+    container_name: centalki_master_dev
+    image: centalki-master-dev
+    build:
+      context: .
+      target: development
+      dockerfile: Dockerfile
+    command: yarn start:debug
+    ports:
+      - 3000:3000
+      - 9229:9229
+    networks:
+      - nesjs-network
+    restart: unless-stopped
+  prod:
+    container_name: centalki_master_prod
+    image: centalki-master-prod
+    build:
+      context: .
+      target: production
+      dockerfile: ./Dockerfile
+    command: yarn start:prod
+    ports:
+      - 3000:3000
+      - 9229:9229
+    networks:
+      - nesjs-network
+    restart: unless-stopped
+
+networks:
+  nesjs-network:
