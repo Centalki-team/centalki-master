@@ -17,6 +17,7 @@ import { PhraseModule } from './phrase/phrase.module';
 const RENDER_PATH = '/etc/secrets/service-account-file.json';
 const LOCAL_PATH =
   '/Users/admin/Documents/centalki/centalki-master/service-account-file.json';
+console.log(`Env: ${process.env.NODE_ENV}`);
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const accountService = require(RENDER_PATH);
 

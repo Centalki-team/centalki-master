@@ -6,11 +6,13 @@ import {
   Patch,
   Param,
   Delete,
+  Query,
 } from '@nestjs/common';
 import { TopicService } from './topic.service';
 import { CreateTopicDto } from './dto/create-topic.dto';
 import { UpdateTopicDto } from './dto/update-topic.dto';
 import { ApiTags } from '@nestjs/swagger';
+import { GetTopicsDto } from './dto/get-topics.dto';
 
 @Controller('topic')
 @ApiTags('Topic')
@@ -23,8 +25,8 @@ export class TopicController {
   }
 
   @Get()
-  findAll() {
-    return this.topicService.findAll();
+  findAll(@Query() query: GetTopicsDto) {
+    return this.topicService.findAll(query);
   }
 
   @Get(':id')

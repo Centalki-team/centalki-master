@@ -8,6 +8,7 @@ import { QuestionService } from '../question/question.service';
 import { CreateTopicDto } from './dto/create-topic.dto';
 import { UpdateTopicDto } from './dto/update-topic.dto';
 import { Topic } from './entities/topic.entity';
+import { GetTopicsDto } from './dto/get-topics.dto';
 
 @Injectable()
 export class TopicService {
@@ -23,8 +24,15 @@ export class TopicService {
     return await this.topicRepository.create(dto);
   }
 
-  async findAll() {
-    const list = (await this.topicRepository.find()) || [];
+  async findAll(query: GetTopicsDto) {
+    const { levelId } = query;
+
+    const qb = levelId
+      ? this.topicRepository.whereEqualTo('levelId', levelId)
+      : this.topicRepository;
+    console.log({ qb });
+
+    const list = (await qb.find()) || [];
     const data = [];
     for (const item of list) {
       const category = await this.categoryService.findOne(item.categoryId);
