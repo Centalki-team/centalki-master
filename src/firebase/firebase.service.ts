@@ -9,4 +9,8 @@ export class FirebaseService {
   storage() {
     return admin.storage();
   }
+
+  firestore() {
+    return admin.firestore();
+  }
 }

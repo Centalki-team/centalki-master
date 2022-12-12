@@ -6,11 +6,15 @@ import {
   Patch,
   Param,
   Delete,
+  Query,
 } from '@nestjs/common';
 import { PhraseService } from './phrase.service';
 import { CreatePhraseDto } from './dto/create-phrase.dto';
 import { UpdatePhraseDto } from './dto/update-phrase.dto';
 import { ApiTags } from '@nestjs/swagger';
+import { GetPhrasesDto } from './dto/get-phrases.dto';
+import { PaginationResult } from 'src/global/types';
+import { Phrase } from './entities/phrase.entity';
 
 @Controller('phrase')
 @ApiTags('Phrase')
@@ -23,8 +27,8 @@ export class PhraseController {
   }
 
   @Get()
-  findAll() {
-    return this.phraseService.findAll();
+  findAll(@Query() query: GetPhrasesDto): Promise<PaginationResult<Phrase>> {
+    return this.phraseService.findAll(query);
   }
 
   @Get(':id')

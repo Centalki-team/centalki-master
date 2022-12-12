@@ -6,7 +6,6 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { StorageModule } from './storage/storage.module';
-import { CommonModule } from './common/common.module';
 import { FirebaseService } from './firebase/firebase.service';
 import { FirebaseModule } from './firebase/firebase.module';
 import { LevelModule } from './level/level.module';
@@ -33,7 +32,6 @@ const firestore = admin.firestore();
     ConfigModule.forRoot({
       envFilePath: './env',
     }),
-    CommonModule,
     FireormModule.forRoot({
       fireormSettings: { validateModels: false },
       firestore,
