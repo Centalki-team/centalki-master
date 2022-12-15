@@ -18,6 +18,7 @@ export class FirebaseModule {
     });
 
     return {
+      global: true,
       module: FirebaseModule,
       providers: [FirebaseService],
       exports: [FirebaseService],
