@@ -1,5 +1,6 @@
 import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { firstValueFrom } from 'rxjs';
 import { IExample } from '../phrase/interface/example.interface';
 // https://rapidapi.com/haizibinbin-owyntKc0a48/api/ai-translate
@@ -26,15 +27,13 @@ import { IExample } from '../phrase/interface/example.interface';
 // https://rapidapi.com/community/api/urban-dictionary/
 @Injectable()
 export class DictionaryService {
-  constructor(private readonly httpService: HttpService) {}
-  TRANSLATION_ENDPOINT = 'https://ai-translate.p.rapidapi.com/translates';
-  RAPID_API_KEY = 'a8bf900b67msh9320c0c4a3c035fp1be8b1jsnf1bfaa1f3fe5';
-  PHONETIC_ENDPOINT = 'https://api.dictionaryapi.dev/api/v2/entries/en';
-  EXAMPLE_ENDPOINT =
-    'https://mashape-community-urban-dictionary.p.rapidapi.com/define';
+  constructor(
+    private readonly httpService: HttpService,
+    private readonly configService: ConfigService,
+  ) {}
   async getMeaningByPrase(texts: string[], tls: string[] = ['vi'], sl = 'en') {
     const observable = this.httpService.post<{ texts: string[] }[]>(
-      this.TRANSLATION_ENDPOINT,
+      this.configService.getOrThrow('translationEndpoint'),
       {
         texts,
         tls,
@@ -42,12 +41,12 @@ export class DictionaryService {
       },
       {
         headers: {
-          'X-RapidAPI-Key': this.RAPID_API_KEY,
+          'X-RapidAPI-Key': this.configService.getOrThrow('rapidApiKey'),
         },
       },
     );
     const meanings = (await firstValueFrom(observable)).data
-      .flatMap(item => item.texts)
+      .flatMap((item) => item.texts)
       .flat();
     return meanings;
   }
@@ -55,9 +54,9 @@ export class DictionaryService {
   async getPhoneticByPrase(phrase = '') {
     if (phrase) {
       const tokens = phrase.split(' ');
-      const promises = tokens.map(async token => {
+      const promises = tokens.map(async (token) => {
         const observable = this.httpService.get<{ phonetic: string }[]>(
-          `${this.PHONETIC_ENDPOINT}/${token}`,
+          `${this.configService.getOrThrow('phoneticEndpoint')}/${token}`,
         );
         return (await firstValueFrom(observable)).data[0]?.phonetic;
       });
@@ -71,11 +70,11 @@ export class DictionaryService {
 
   async getExamples(term: string) {
     const observable = this.httpService.get<{ list: IExample[] }>(
-      this.EXAMPLE_ENDPOINT,
+      this.configService.getOrThrow('EXAMPLE_ENDPOINT'),
 
       {
         headers: {
-          'X-RapidAPI-Key': this.RAPID_API_KEY,
+          'X-RapidAPI-Key': process.env.RAPID_API_KEY,
         },
         params: { term },
       },

@@ -1,4 +1,5 @@
 import { ValidationPipe } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import {
   DocumentBuilder,
@@ -24,7 +25,10 @@ async function bootstrap() {
     swaggerOptions: { displayRequestDuration: true },
   };
   SwaggerModule.setup('api-docs', app, document, swaggerCustomOptions);
-  const port = process.env.PORT || 4000;
+
+  const configService = app.get<ConfigService>(ConfigService);
+
+  const port = configService.getOrThrow('port');
   await app.listen(port, '0.0.0.0');
   console.log(`Centalki Master listening on http port ${port}`);
 }
