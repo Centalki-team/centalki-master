@@ -1,7 +1,5 @@
 import { Module } from '@nestjs/common';
-import admin from 'firebase-admin';
 import { AuthModule } from './auth/auth.module';
-import { FireormModule } from 'nestjs-fireorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';

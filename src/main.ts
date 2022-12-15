@@ -30,6 +30,7 @@ async function bootstrap() {
 
   const port = configService.getOrThrow('port');
   await app.listen(port, '0.0.0.0');
-  console.log(`Centalki Master listening on http port ${port}`);
+  console.log(`Centalki Master listening on http port: ${port}`);
+  console.log(`Env: ${process.env.NODE_ENV}`);
 }
 bootstrap();
