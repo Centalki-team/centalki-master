@@ -7,7 +7,6 @@ import { CategoryModule } from '../category/category.module';
 import { QuestionModule } from '../question/question.module';
 import { LevelModule } from '../level/level.module';
 import { PhraseModule } from '../phrase/phrase.module';
-import { CommonModule } from 'src/common/common.module';
 
 @Module({
   imports: [
@@ -16,7 +15,6 @@ import { CommonModule } from 'src/common/common.module';
     QuestionModule,
     LevelModule,
     PhraseModule,
-    CommonModule,
   ],
   controllers: [TopicController],
   providers: [TopicService],
