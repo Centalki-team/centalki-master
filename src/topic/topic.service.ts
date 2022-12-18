@@ -1,5 +1,9 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { BaseFirestoreRepository } from 'fireorm';
+import {
+  BaseFirestoreRepository,
+  IFireOrmQueryLine,
+  FirestoreOperators,
+} from 'fireorm';
 import { InjectRepository } from 'nestjs-fireorm';
 import { PhraseService } from '../phrase/phrase.service';
 import { CategoryService } from '../category/category.service';
@@ -9,6 +13,7 @@ import { CreateTopicDto } from './dto/create-topic.dto';
 import { UpdateTopicDto } from './dto/update-topic.dto';
 import { Topic } from './entities/topic.entity';
 import { GetTopicsDto } from './dto/get-topics.dto';
+import { CommonService } from 'src/common/common.service';
 
 @Injectable()
 export class TopicService {
@@ -19,20 +24,39 @@ export class TopicService {
     private readonly categoryService: CategoryService,
     private readonly questionService: QuestionService,
     private readonly phraseService: PhraseService,
+    private readonly commonService: CommonService,
   ) {}
   async create(dto: CreateTopicDto) {
     return await this.topicRepository.create(dto);
   }
 
   async findAll(query: GetTopicsDto) {
-    const { levelId } = query;
+    const { levelId, page, size } = query;
+    const queries: IFireOrmQueryLine[] = [];
+    if (levelId) {
+      queries.push({
+        prop: 'levelId',
+        val: levelId,
+        operator: FirestoreOperators.equal,
+      });
+    }
 
-    const qb = levelId
-      ? this.topicRepository.whereEqualTo('levelId', levelId)
-      : this.topicRepository;
-    console.log({ qb });
+    const {
+      data: list = [],
+      hasNextPage,
+      hasPrevPage,
+    } = await this.commonService.find(
+      this.topicRepository,
+      queries,
+      page,
+      size,
+      true,
+      {
+        fieldPath: 'id',
+        directionStr: 'asc',
+      },
+    );
 
-    const list = (await qb.find()) || [];
     const data = [];
     for (const item of list) {
       const category = await this.categoryService.findOne(item.categoryId);
@@ -43,6 +67,12 @@ export class TopicService {
     }
     return {
       data,
+      meta: {
+        ...query,
+        queries,
+        hasNextPage,
+        hasPrevPage,
+      },
     };
   }
 
