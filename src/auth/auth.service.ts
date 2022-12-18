@@ -2,6 +2,7 @@ import {
   BadRequestException,
   ForbiddenException,
   Injectable,
+  NotFoundException,
 } from '@nestjs/common';
 import { InjectRepository } from 'nestjs-fireorm';
 import { BaseFirestoreRepository } from 'fireorm';
@@ -41,6 +42,9 @@ export class AuthService {
     }
     const uid = claims.uid;
     const exist = await this.authCollection.whereEqualTo('uid', uid).findOne();
+    if (!exist) {
+      throw new NotFoundException('User not exist');
+    }
 
     if (exist.role !== dto.role) {
       throw new ForbiddenException();
