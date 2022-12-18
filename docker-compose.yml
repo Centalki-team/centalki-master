@@ -26,20 +26,19 @@ services:
     container_name: centalki_master_staging
     image: centalki-master-staging
     environment:
-      - NODE_ENV=staging
-      - PORT=8000
+      - NODE_ENV=production
+      - PORT=8080
       - RAPID_API_KEY=a8bf900b67msh9320c0c4a3c035fp1be8b1jsnf1bfaa1f3fe5
       - PHONETIC_ENDPOINT=https://api.dictionaryapi.dev/api/v2/entries/en
       - EXAMPLE_ENDPOINT=https://mashape-community-urban-dictionary.p.rapidapi.com/define
       - TRANSLATION_ENDPOINT=https://ai-translate.p.rapidapi.com/translates
       - GOOGLE_APPLICATION_CREDENTIALS=../../service-account-file.json
-
     build:
       context: .
       target: production
       dockerfile: Dockerfile
     ports:
-      - 3000:8000
+      - 3000:8080
     networks:
       - master-network
     restart: unless-stopped

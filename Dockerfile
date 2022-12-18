@@ -1,4 +1,4 @@
-FROM node:18 AS development
+FROM --platform=linux/amd64 node:18 AS development
 WORKDIR /app
 
 COPY ./package.json ./
@@ -8,7 +8,7 @@ RUN yarn
 COPY . .
 RUN yarn build
 
-FROM node:18-alpine AS production
+FROM --platform=linux/amd64 node:18-alpine AS production
 WORKDIR /app
 COPY --from=development /app/node_modules ./node_modules
 COPY --from=development /app/dist ./dist
