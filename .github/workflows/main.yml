@@ -40,6 +40,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Install SSH Key
+        shell: bash
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
