@@ -38,27 +38,22 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
-  ssh-start-server:
-    
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Install SSH Key
-      with:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-      run: |
-        - apk add openssh-client
-        - eval $(ssh-agent -s)
-        - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-        - mkdir -p ~/.ssh
-        - chmod 700 ~/.ssh
-        - chmod 400 ~/.ssh
-        - printenv
-        - ls -la
-    - name: Pull image and start server
-      with:
-        USER: ${{ secrets.USER }}
-        EC2_IPADDRESS: ${{ secrets.EC2_IPADDRESS }}
-      run: |
-        - ssh -o StrictHostKeyChecking=no $USER@$EC2_IPADDRESS "echo "Hello""
+          
+      - name: Install SSH Key
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          - apk add openssh-client
+          - eval $(ssh-agent -s)
+          - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+          - mkdir -p ~/.ssh
+          - chmod 700 ~/.ssh
+          - chmod 400 ~/.ssh
+          - printenv
+          - ls -la
+      - name: Pull image and start server
+        with:
+          USER: ${{ secrets.USER }}
+          EC2_IPADDRESS: ${{ secrets.EC2_IPADDRESS }}
+        run: |
+          - ssh -o StrictHostKeyChecking=no $USER@$EC2_IPADDRESS "echo "Hello""
