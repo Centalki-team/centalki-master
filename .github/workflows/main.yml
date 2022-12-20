@@ -53,6 +53,7 @@ jobs:
             docker pull ghcr.io/centalki-team/centalki-master:development
             docker stop centalki-master-staging
             docker rm centalki-master-staging
+            docker image rm $(docker images --filter "dangling=true" -q --no-trunc)
             cd nkvi-test
             docker run -it -d --name centalki-master-staging -log-driver=awslogs --log-opt awslogs-region=ap-southeast-1 --log-opt awslogs-group=ripid-be-staging --env-file .env --restart=always -p 8080:8080 ghcr.io/centalki-team/centalki-master:development
 
