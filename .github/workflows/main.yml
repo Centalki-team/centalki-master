@@ -38,53 +38,21 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-      # - name: Install SSH key
-      #   uses: shimataro/ssh-key-action@v2
-      #   with:
-      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     known_hosts: ${{ secrets.EC2_IPADDRESS }}
-      #     if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
-      #     script: |
-      #       ssh -o StrictHostKeyChecking=no "echo "Hello""
-      
-      # - name: Install SSH Key
-      #   shell: bash
-      #   with:
-      #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-      #   run: |
-      #     - apk add openssh-client
-      #     - eval $(ssh-agent -s)
-      #     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-      #     - mkdir -p ~/.ssh
-      #     - chmod 700 ~/.ssh
-      #     - chmod 400 ~/.ssh
-      #     - printenv
-      #     - ls -la
-      # - name: Pull image and start server
-      #   with:
-      #     USER: ${{ secrets.USER }}
-      #     EC2_IPADDRESS: ${{ secrets.EC2_IPADDRESS }}
-      #   run: |
-      #     - ssh -o StrictHostKeyChecking=no $USER@$EC2_IPADDRESS "echo "Hello""
-  ssh:
-    name: Install SSH key
-    runs-on: ubuntu-latest
-    steps:
-    - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@v0.1.6
-      with:
-        host: ${{ secrets.EC2_IPADDRESS }}
-        username: ${{ secrets.USER }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        script: |
-          whoami
-          echo "Hello"
-          ls -la
-          export CR_PAT=${{ secrets.CR_PAT }}   
-          echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
-          docker pull ghcr.io/centalki-team/centalki-master:development
-          docker stop centalki-master-staging
-          docker rm centalki-master-staging
-          cd nkvi-test
-          docker run -it -d --name centalki-master-staging -log-driver=awslogs --log-opt awslogs-region=ap-southeast-1 --log-opt awslogs-group=ripid-be-staging --env-file .env --restart=always -p 8080:8080 ghcr.io/centalki-team/centalki-master:development
+      - name: Executing remote ssh commands (Pull image and start server)
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: ${{ secrets.EC2_IPADDRESS }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            whoami
+            echo "Hello"
+            ls -la
+            export CR_PAT=${{ secrets.CR_PAT }}   
+            echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
+            docker pull ghcr.io/centalki-team/centalki-master:development
+            docker stop centalki-master-staging
+            docker rm centalki-master-staging
+            cd nkvi-test
+            docker run -it -d --name centalki-master-staging -log-driver=awslogs --log-opt awslogs-region=ap-southeast-1 --log-opt awslogs-group=ripid-be-staging --env-file .env --restart=always -p 8080:8080 ghcr.io/centalki-team/centalki-master:development
 
