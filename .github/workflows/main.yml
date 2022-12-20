@@ -38,20 +38,25 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
-      - name: Install SSH Key
-        shell: bash
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: |
-          - apk add openssh-client
-          - eval $(ssh-agent -s)
-          - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-          - mkdir -p ~/.ssh
-          - chmod 700 ~/.ssh
-          - chmod 400 ~/.ssh
-          - printenv
-          - ls -la
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.EC2_IPADDRESS }}
+          if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
+      # - name: Install SSH Key
+      #   shell: bash
+      #   with:
+      #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      #   run: |
+      #     - apk add openssh-client
+      #     - eval $(ssh-agent -s)
+      #     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+      #     - mkdir -p ~/.ssh
+      #     - chmod 700 ~/.ssh
+      #     - chmod 400 ~/.ssh
+      #     - printenv
+      #     - ls -la
       # - name: Pull image and start server
       #   with:
       #     USER: ${{ secrets.USER }}
