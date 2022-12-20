@@ -38,7 +38,7 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          
+
       - name: Install SSH Key
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -51,9 +51,9 @@ jobs:
           - chmod 400 ~/.ssh
           - printenv
           - ls -la
-      - name: Pull image and start server
-        with:
-          USER: ${{ secrets.USER }}
-          EC2_IPADDRESS: ${{ secrets.EC2_IPADDRESS }}
-        run: |
-          - ssh -o StrictHostKeyChecking=no $USER@$EC2_IPADDRESS "echo "Hello""
+      # - name: Pull image and start server
+      #   with:
+      #     USER: ${{ secrets.USER }}
+      #     EC2_IPADDRESS: ${{ secrets.EC2_IPADDRESS }}
+      #   run: |
+      #     - ssh -o StrictHostKeyChecking=no $USER@$EC2_IPADDRESS "echo "Hello""
