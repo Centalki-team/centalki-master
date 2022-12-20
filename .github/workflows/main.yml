@@ -44,6 +44,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.EC2_IPADDRESS }}
           if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
+      
       # - name: Install SSH Key
       #   shell: bash
       #   with:
@@ -57,9 +58,9 @@ jobs:
       #     - chmod 400 ~/.ssh
       #     - printenv
       #     - ls -la
-      # - name: Pull image and start server
-      #   with:
-      #     USER: ${{ secrets.USER }}
-      #     EC2_IPADDRESS: ${{ secrets.EC2_IPADDRESS }}
-      #   run: |
-      #     - ssh -o StrictHostKeyChecking=no $USER@$EC2_IPADDRESS "echo "Hello""
+      - name: Pull image and start server
+        with:
+          USER: ${{ secrets.USER }}
+          EC2_IPADDRESS: ${{ secrets.EC2_IPADDRESS }}
+        run: |
+          - ssh -o StrictHostKeyChecking=no $USER@$EC2_IPADDRESS "echo "Hello""
