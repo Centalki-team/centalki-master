@@ -6,9 +6,9 @@ import { AppService } from './app.service';
 @ApiTags('App')
 export class AppController {
   constructor(private readonly appService: AppService) {}
-  // @Get('')
-  // // @UseGuards(AuthGuard('firebase'))
-  // hello() {
-  //   return this.appService.sayHello();
-  // }
+  @Get('')
+  // @UseGuards(AuthGuard('firebase'))
+  hello() {
+    return this.appService.sayHello();
+  }
 }
