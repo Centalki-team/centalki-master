@@ -38,14 +38,14 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-      - name: Install SSH key
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: ${{ secrets.EC2_IPADDRESS }}
-          if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
-          script: |
-            ssh -o StrictHostKeyChecking=no "echo "Hello""
+      # - name: Install SSH key
+      #   uses: shimataro/ssh-key-action@v2
+      #   with:
+      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
+      #     known_hosts: ${{ secrets.EC2_IPADDRESS }}
+      #     if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
+      #     script: |
+      #       ssh -o StrictHostKeyChecking=no "echo "Hello""
       
       # - name: Install SSH Key
       #   shell: bash
@@ -66,3 +66,18 @@ jobs:
       #     EC2_IPADDRESS: ${{ secrets.EC2_IPADDRESS }}
       #   run: |
       #     - ssh -o StrictHostKeyChecking=no $USER@$EC2_IPADDRESS "echo "Hello""
+  ssh:
+    name: Install SSH key
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@v0.1.6
+      with:
+        host: ${{ secrets.EC2_IPADDRESS }}
+        username: ${{ secrets.USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          whoami
+          echo "Hello"
+          ls -la
+
