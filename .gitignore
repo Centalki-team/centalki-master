@@ -36,3 +36,4 @@ lerna-debug.log*
 
 service-account-file.json
 .env
+.env.*
