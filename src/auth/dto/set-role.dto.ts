@@ -3,7 +3,7 @@ import { IsEnum, IsNotEmpty, IsString } from 'class-validator';
 import { ERole } from '../enum/role.enum';
 
 export class SetRoleDto {
-  @ApiProperty()
+  @ApiProperty({ description: 'Firebase token của người dùng' })
   @IsNotEmpty()
   @IsString()
   idToken: string;
