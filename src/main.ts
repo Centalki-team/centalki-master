@@ -18,6 +18,13 @@ async function bootstrap() {
     .setVersion('1.0')
     // .addServer('/centalki-staging/us-central1/api')
     .addTag('Centalki')
+    .addBearerAuth({
+      name: 'Authorization',
+      bearerFormat: 'Bearer',
+      scheme: 'Bearer',
+      type: 'http',
+      in: 'Header',
+    })
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
