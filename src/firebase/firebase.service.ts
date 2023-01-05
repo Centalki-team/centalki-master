@@ -13,4 +13,8 @@ export class FirebaseService {
   firestore() {
     return admin.firestore();
   }
+
+  realTimeDatabase() {
+    return admin.database();
+  }
 }

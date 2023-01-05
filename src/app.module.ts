@@ -11,6 +11,7 @@ import { CategoryModule } from './category/category.module';
 import { TopicModule } from './topic/topic.module';
 import { QuestionModule } from './question/question.module';
 import { PhraseModule } from './phrase/phrase.module';
+import { SessionScheduleModule } from './session-schedule/session-schedule.module';
 import appConfig from './config/app.config';
 import baseUrlConfig from './config/base-url.config';
 
@@ -29,6 +30,7 @@ import baseUrlConfig from './config/base-url.config';
     TopicModule,
     QuestionModule,
     PhraseModule,
+    SessionScheduleModule,
   ],
   controllers: [AppController],
   providers: [AppService, FirebaseService],

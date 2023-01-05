@@ -1,4 +1,4 @@
-name: Slack Notification
+name: Centalki Master Notification
 on:
   push:
     branches: ["development"]

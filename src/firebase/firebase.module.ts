@@ -15,6 +15,10 @@ export class FirebaseModule {
     admin.initializeApp({
       credential: admin.credential.cert(accountService),
       storageBucket: `${accountService.project_id}.appspot.com`,
+      databaseURL: process.env.DATABASE_URL,
+      // databaseAuthVariableOverride: {
+      //   uid: 'centalki-master-service',
+      // },
     });
 
     return {
