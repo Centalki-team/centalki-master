@@ -11,6 +11,8 @@ import {
 import { SessionScheduleService } from './session-schedule.service';
 import { CreateSessionScheduleDto } from './dto/create-session-schedule.dto';
 import { PickUpDto } from './dto/pick-up.dto';
+import { OnEvent } from '@nestjs/event-emitter';
+import { ESessionScheduleEvent } from './enum/session-schedule-event.enum';
 // import { UpdateSessionScheduleDto } from './dto/update-session-schedule.dto';
 
 @Controller('session-schedule')
@@ -35,6 +37,11 @@ export class SessionScheduleController {
   @Post(':sessionId/cancel')
   cancel(@Param('sessionId') sessionId: string) {
     return this.sessionScheduleService.cancel(sessionId);
+  }
+
+  @OnEvent(ESessionScheduleEvent.CREATED)
+  handleOrderCreatedEvent(sessionId: string) {
+    return this.sessionScheduleService.timeout(sessionId);
   }
 
   // @Get()

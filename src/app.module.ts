@@ -14,6 +14,7 @@ import { PhraseModule } from './phrase/phrase.module';
 import { SessionScheduleModule } from './session-schedule/session-schedule.module';
 import appConfig from './config/app.config';
 import baseUrlConfig from './config/base-url.config';
+import { EventEmitterModule } from '@nestjs/event-emitter';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import baseUrlConfig from './config/base-url.config';
       envFilePath: ['.env'],
     }),
     FirebaseModule.register(),
+    EventEmitterModule.forRoot(),
     AuthModule,
     StorageModule,
     LevelModule,
