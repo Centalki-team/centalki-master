@@ -41,11 +41,10 @@ export class SessionScheduleService {
         startAt: new Date().toISOString(),
         teacherId: null,
         status: ESessionScheduleStatus.ROUTING,
+        // topic:
       });
       this.eventEmitter.emit(ESessionScheduleEvent.CREATED, sessionSchedule.id);
-      sessionScheduleRef
-        .child(createSessionScheduleDto.studentId)
-        .set(sessionSchedule);
+      sessionScheduleRef.child(sessionSchedule.id).set(sessionSchedule);
       return sessionSchedule;
     });
   }
@@ -70,7 +69,7 @@ export class SessionScheduleService {
       });
 
       const sessionScheduleRef = this.sessionScheduleRef();
-      sessionScheduleRef.child(sessionSchedule.studentId).set(newData);
+      sessionScheduleRef.child(newData.id).set(newData);
       return newData;
     });
   }
@@ -94,7 +93,7 @@ export class SessionScheduleService {
       });
 
       const sessionScheduleRef = this.sessionScheduleRef();
-      sessionScheduleRef.child(sessionSchedule.studentId).set(newData);
+      sessionScheduleRef.child(newData.id).set(newData);
       return newData;
     });
   }
@@ -115,7 +114,7 @@ export class SessionScheduleService {
           });
 
           const sessionScheduleRef = this.sessionScheduleRef();
-          sessionScheduleRef.child(sessionSchedule.studentId).set(newData);
+          sessionScheduleRef.child(newData.id).set(newData);
         }
       });
     }, 5 * 60 * 1000);

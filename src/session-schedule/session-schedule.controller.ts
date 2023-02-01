@@ -48,7 +48,8 @@ export class SessionScheduleController {
   @Post(':sessionId/cancel')
   @ApiOperation({
     summary: 'Hủy session schedule',
-    description: 'API dùng để hủy 1 session xếp lớp học khi hết thời gian chờ mà không có giáo viên nào nhận hoặc khi học viên bấm nút hủy',
+    description:
+      'API dùng để hủy 1 session xếp lớp học khi hết thời gian chờ mà không có giáo viên nào nhận hoặc khi học viên bấm nút hủy',
   })
   cancel(@Param('sessionId') sessionId: string) {
     return this.sessionScheduleService.cancel(sessionId);
