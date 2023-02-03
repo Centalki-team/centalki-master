@@ -54,5 +54,5 @@ jobs:
             docker stop centalki-master-staging
             docker rm centalki-master-staging
             docker image rm $(docker images --filter "dangling=true" -q --no-trunc)
-            docker run -it -d --name centalki-master-staging --env-file .env --restart=always -p 8080:4000 ghcr.io/centalki-team/centalki-master:development
+            docker run -it -d --name centalki-master-staging --env-file .env --restart=always -p 80:4000 ghcr.io/centalki-team/centalki-master:development
 
