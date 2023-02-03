@@ -9,6 +9,7 @@ import { CreateTopicDto } from './dto/create-topic.dto';
 import { UpdateTopicDto } from './dto/update-topic.dto';
 import { Topic } from './entities/topic.entity';
 import { GetTopicsDto } from './dto/get-topics.dto';
+import { FirebaseService } from 'src/firebase/firebase.service';
 
 @Injectable()
 export class TopicService {
@@ -19,6 +20,7 @@ export class TopicService {
     private readonly categoryService: CategoryService,
     private readonly questionService: QuestionService,
     private readonly phraseService: PhraseService,
+    private readonly firebaseService: FirebaseService,
   ) {}
   async create(dto: CreateTopicDto) {
     return await this.topicRepository.create(dto);

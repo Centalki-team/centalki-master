@@ -4,6 +4,8 @@ import {
   Post,
   Body,
   Param,
+  Query,
+  Get,
   // Patch,
   // Param,
   // Delete,
@@ -14,6 +16,7 @@ import { PickUpDto } from './dto/pick-up.dto';
 import { OnEvent } from '@nestjs/event-emitter';
 import { ESessionScheduleEvent } from './enum/session-schedule-event.enum';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
+import { GetSessionDto } from './dto/get-session.dto';
 // import { UpdateSessionScheduleDto } from './dto/update-session-schedule.dto';
 
 @Controller('session-schedule')
@@ -31,6 +34,16 @@ export class SessionScheduleController {
   })
   create(@Body() createSessionScheduleDto: CreateSessionScheduleDto) {
     return this.sessionScheduleService.create(createSessionScheduleDto);
+  }
+
+  @Get('')
+  @ApiOperation({
+    summary: 'Tạo 1 session schedule',
+    description:
+      'API dùng để tạo 1 session xếp lớp học khi học viên bấm nút bắt đầu học',
+  })
+  getByUser(@Query() query: GetSessionDto) {
+    return this.sessionScheduleService.getByUser(query);
   }
 
   @Post(':sessionId/pick-up')

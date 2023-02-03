@@ -7,6 +7,7 @@ import { CategoryModule } from '../category/category.module';
 import { QuestionModule } from '../question/question.module';
 import { LevelModule } from '../level/level.module';
 import { PhraseModule } from '../phrase/phrase.module';
+import { FirebaseModule } from 'src/firebase/firebase.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { PhraseModule } from '../phrase/phrase.module';
     QuestionModule,
     LevelModule,
     PhraseModule,
+    FirebaseModule,
   ],
   controllers: [TopicController],
   providers: [TopicService],

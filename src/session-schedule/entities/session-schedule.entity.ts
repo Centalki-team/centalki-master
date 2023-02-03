@@ -1,16 +1,18 @@
 import { Collection } from 'fireorm';
-// import { Topic } from 'src/topic/entities/topic.entity';
+import { Topic } from 'src/topic/entities/topic.entity';
+import { UserRecord } from 'firebase-admin/auth';
 
 @Collection()
 export class SessionSchedule {
   id!: string;
 
   studentId!: string;
+  student: UserRecord;
 
-  // @SubCollection(Topic)
-  // topic: string;
+  topic: Topic;
 
   teacherId?: string;
+  teacher?: UserRecord;
 
   startAt: string;
 

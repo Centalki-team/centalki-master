@@ -16,12 +16,12 @@ export class CreateSessionScheduleDto {
   @MaxLength(128)
   studentId: string;
 
-  // @ApiProperty({ required: true })
-  // @IsString()
-  // @IsNotEmpty()
-  // @MinLength(1)
-  // @MaxLength(128)
-  // topicId: string;
+  @ApiProperty({ required: true })
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(1)
+  @MaxLength(128)
+  topicId: string;
 
   @ApiPropertyOptional({ required: true })
   @IsOptional()
