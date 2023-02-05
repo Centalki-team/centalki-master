@@ -134,6 +134,11 @@ export class SessionScheduleService {
         if (!sessionSchedule) {
           throw new NotFoundException();
         }
+
+        console.log(
+          `Session ${sessionId} timed out with status ${sessionSchedule.status}!`,
+        );
+
         if (sessionSchedule.status === ESessionScheduleStatus.ROUTING) {
           const newData = await this.sessionScheduleRepository.update({
             ...sessionSchedule,
