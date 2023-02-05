@@ -68,10 +68,10 @@ export class SessionScheduleController {
     return this.sessionScheduleService.cancel(sessionId);
   }
 
-  @OnEvent(ESessionScheduleEvent.CREATED)
-  handleOrderCreatedEvent(sessionId: string) {
-    return this.sessionScheduleService.timeout(sessionId);
-  }
+  // @OnEvent(ESessionScheduleEvent.CREATED)
+  // handleOrderCreatedEvent(sessionId: string) {
+  //   return this.sessionScheduleService.timeout(sessionId);
+  // }
 
   // @Get()
   // findAll() {
