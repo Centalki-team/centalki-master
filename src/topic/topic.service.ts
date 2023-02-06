@@ -50,6 +50,7 @@ export class TopicService {
 
   async findOne(id: string) {
     const topic = await this.topicRepository.findById(id);
+    if (!topic) return null;
     const level = await this.levelService.findOne(topic.levelId);
     const category = await this.categoryService.findOne(topic.categoryId);
     const questions =
