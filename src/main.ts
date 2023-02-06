@@ -7,6 +7,8 @@ import {
   SwaggerModule,
 } from '@nestjs/swagger';
 import { AppModule } from './app.module';
+// import { ErrorsInterceptor } from './interceptors/errors.interceptor';
+import { LoggingInterceptor } from './interceptors/logging.interceptor';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
@@ -34,6 +36,8 @@ async function bootstrap() {
   SwaggerModule.setup('api-docs', app, document, swaggerCustomOptions);
 
   const configService = app.get<ConfigService>(ConfigService);
+
+  app.useGlobalInterceptors(new LoggingInterceptor());
 
   const port = configService.getOrThrow('port');
   await app.listen(port, '0.0.0.0');
