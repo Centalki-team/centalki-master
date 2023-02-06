@@ -1,5 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { BaseFirestoreRepository } from 'fireorm';
+// import { FieldValue } from 'firebase-admin/firestore';
 import { InjectRepository } from 'nestjs-fireorm';
 import { CommonService } from 'src/common/common.service';
 import { PaginationResult } from 'src/global/types';
@@ -16,17 +17,35 @@ export class PhraseService {
     private phraseRepository: BaseFirestoreRepository<Phrase>,
     private dictionaryService: DictionaryService,
     private commonService: CommonService,
-  ) {}
+  ) {
+    // const clothesJSON: Phrase[] = require('../../data/A02 - Clothes.json');
+    // const moviesJSON: Phrase[] = require('../../data/A02 - Movies.json');
+    // const activitiesJSON: Phrase[] = require('../../data/A02 - Weekend Activities.json');
+    // const json = [clothesJSON, moviesJSON, activitiesJSON].flat();
+    // const randomItem = json[0];
+    // console.log({ randomItem });
+    // this.phraseRepository.find().then((phrases) => {
+    //   console.log({ phrases });
+    //   for (const phrase of phrases) {
+    //     const newData = json.find((item) => item.id === phrase.id);
+    //     phrase.examples = newData ? newData.examples : randomItem.examples;
+    //     phrase.translations = newData
+    //       ? newData.translations
+    //       : randomItem.translations;
+    //     phrase.meanings = FieldValue.delete();
+    //     this.phraseRepository.update(phrase);
+    //     console.log(`Update success`, phrase);
+    //   }
+    // });
+  }
   async create(dto: CreatePhraseDto) {
-    const { phrase, topicId } = dto;
+    const { phrase, topicId, translations, examples } = dto;
 
-    const meanings = await this.dictionaryService.getMeaningByPrase([phrase]);
     const phonetic = await this.dictionaryService.getPhoneticByPrase(phrase);
-    const examples = await this.dictionaryService.getExamples(phrase);
 
     return await this.phraseRepository.create({
       phrase,
-      meanings,
+      translations,
       topicId,
       phonetic,
       examples,

@@ -1,6 +1,6 @@
 import { Collection } from 'fireorm';
 import { Timestamp } from '../../global/class';
-import { IExample } from '../interface/example.interface';
+import { IExample, ITranslation } from '../interface/example.interface';
 
 @Collection()
 export class Phrase extends Timestamp {
@@ -10,7 +10,7 @@ export class Phrase extends Timestamp {
 
   phrase: string;
 
-  meanings?: string[];
+  translations?: ITranslation[];
 
   phonetic?: string;
 
