@@ -19,9 +19,10 @@ export class PhraseService {
     private commonService: CommonService,
   ) {
     // const clothesJSON: Phrase[] = require('../../data/A02 - Clothes.json');
+    // const foodsJSON: Phrase[] = require('../../data/A02 - Foods.json');
     // const moviesJSON: Phrase[] = require('../../data/A02 - Movies.json');
     // const activitiesJSON: Phrase[] = require('../../data/A02 - Weekend Activities.json');
-    // const json = [clothesJSON, moviesJSON, activitiesJSON].flat();
+    // const json = [foodsJSON, clothesJSON, moviesJSON, activitiesJSON].flat();
     // const randomItem = json[0];
     // console.log({ randomItem });
     // this.phraseRepository.find().then((phrases) => {
@@ -32,7 +33,7 @@ export class PhraseService {
     //     phrase.translations = newData
     //       ? newData.translations
     //       : randomItem.translations;
-    //     phrase.meanings = FieldValue.delete();
+    //     // phrase.meanings = FieldValue.delete();
     //     this.phraseRepository.update(phrase);
     //     console.log(`Update success`, phrase);
     //   }
