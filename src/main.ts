@@ -1,6 +1,7 @@
 import { ValidationPipe } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
+import * as Sentry from '@sentry/node';
 import {
   DocumentBuilder,
   SwaggerCustomOptions,
@@ -8,7 +9,8 @@ import {
 } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 // import { ErrorsInterceptor } from './interceptors/errors.interceptor';
-import { LoggingInterceptor } from './interceptors/logging.interceptor';
+// import { LoggingInterceptor } from './interceptors/logging.interceptor';
+import { SentryExceptionsFilter } from './filters/sentry-exception.filter';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
@@ -37,9 +39,13 @@ async function bootstrap() {
 
   const configService = app.get<ConfigService>(ConfigService);
 
-  app.useGlobalInterceptors(new LoggingInterceptor());
+  // app.useGlobalInterceptors(new LoggingInterceptor());
+  app.useGlobalFilters(new SentryExceptionsFilter());
 
   const port = configService.getOrThrow('port');
+  Sentry.init({
+    dsn: configService.getOrThrow('sentryDNS'),
+  });
   await app.listen(port, '0.0.0.0');
   console.log(`Centalki Master listening on http port: ${port}`);
   console.log(`Env: ${process.env.NODE_ENV}`);

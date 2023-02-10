@@ -45,17 +45,13 @@ export class SessionScheduleService {
         createSessionScheduleDto.topicId,
       );
       if (!topic) {
-        throw new NotFoundException(
-          `TopicID: ${createSessionScheduleDto.topicId} is invalid`,
-        );
+        throw new NotFoundException(`TopicID is invalid`);
       }
       const student = await this.firebaseService
         .auth()
         .getUser(createSessionScheduleDto.studentId)
         .catch(() => {
-          throw new NotFoundException(
-            `StudentId: ${createSessionScheduleDto.studentId} is invalid`,
-          );
+          throw new NotFoundException(`StudentId: is invalid`);
         });
 
       const sessionScheduleRef = this.sessionScheduleRef();
