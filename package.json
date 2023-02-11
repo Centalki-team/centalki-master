@@ -37,6 +37,7 @@
     "firebase-admin": "^10.0.2",
     "firebase-functions": "^4.1.0",
     "fireorm": "^0.23.3",
+    "nanoid": "3.0.0",
     "nestjs-fireorm": "^1.1.0",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.0",

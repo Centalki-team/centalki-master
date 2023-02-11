@@ -11,10 +11,15 @@ import { InjectRepository } from 'nestjs-fireorm';
 import { FirebaseService } from 'src/firebase/firebase.service';
 import { Topic } from 'src/topic/entities/topic.entity';
 import { TopicService } from 'src/topic/topic.service';
+import { genId } from 'src/utils/helper';
 import { CreateSessionScheduleDto } from './dto/create-session-schedule.dto';
+import { EventTrackingDto } from './dto/event-tracking.dto';
 import { GetSessionDto } from './dto/get-session.dto';
 import { PickUpDto } from './dto/pick-up.dto';
-import { SessionSchedule } from './entities/session-schedule.entity';
+import {
+  EventTracking,
+  SessionSchedule,
+} from './entities/session-schedule.entity';
 import { ESessionScheduleEvent } from './enum/session-schedule-event.enum';
 import { ESessionScheduleStatus } from './enum/session-schedule-status.enum';
 // import { UpdateSessionScheduleDto } from './dto/update-session-schedule.dto';
@@ -175,8 +180,48 @@ export class SessionScheduleService {
       qb = qb.whereEqualTo('status', query.status);
     }
 
-    const sessions = qb.find();
-    return sessions;
+    return qb
+      .limit(5)
+      .find()
+      .then((sessions) => {
+        for (const session of sessions) {
+          delete session.eventTrackings;
+        }
+        return sessions;
+      });
+  }
+
+  async eventTracking(sessionId: string, eventTrackingDto: EventTrackingDto) {
+    const sessionSchedule = await this.sessionScheduleRepository.findById(
+      sessionId,
+    );
+
+    if (!sessionSchedule) {
+      throw new NotFoundException('SessionId is invalid!');
+    }
+
+    // Create a batch for the subcollection
+    const eventTrackingsBatch = sessionSchedule.eventTrackings.createBatch();
+    const eventTracking = new EventTracking();
+    eventTracking.id = genId();
+    eventTracking.sessionId = sessionId;
+    eventTracking.name = eventTrackingDto.name;
+    eventTracking.timestamp = new Date().toISOString();
+    eventTrackingsBatch.create(eventTracking);
+    await eventTrackingsBatch.commit();
+    return await sessionSchedule.eventTrackings.find();
+  }
+
+  async getEventTrackings(sessionId: string) {
+    const sessionSchedule = await this.sessionScheduleRepository.findById(
+      sessionId,
+    );
+
+    if (!sessionSchedule) {
+      throw new NotFoundException('SessionId is invalid!');
+    }
+
+    return await sessionSchedule.eventTrackings.find();
   }
 
   // findOne(id: number) {

@@ -17,6 +17,7 @@ import { PickUpDto } from './dto/pick-up.dto';
 // import { ESessionScheduleEvent } from './enum/session-schedule-event.enum';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
 import { GetSessionDto } from './dto/get-session.dto';
+import { EventTrackingDto } from './dto/event-tracking.dto';
 // import { UpdateSessionScheduleDto } from './dto/update-session-schedule.dto';
 
 @Controller('session-schedule')
@@ -56,6 +57,27 @@ export class SessionScheduleController {
     @Param('sessionId') sessionId: string,
   ) {
     return this.sessionScheduleService.pickUp(sessionId, pickedUpDto);
+  }
+
+  @Post(':sessionId/event-tracking')
+  @ApiOperation({
+    summary: 'Tạo sự kiện',
+    description: 'Tạo sự kiện trong lịch sử của buổi học',
+  })
+  eventTracking(
+    @Body() dto: EventTrackingDto,
+    @Param('sessionId') sessionId: string,
+  ) {
+    return this.sessionScheduleService.eventTracking(sessionId, dto);
+  }
+
+  @Get(':sessionId/event-tracking')
+  @ApiOperation({
+    summary: 'Tạo sự kiện',
+    description: 'Tạo sự kiện trong lịch sử của buổi học',
+  })
+  getEventTrackings(@Param('sessionId') sessionId: string) {
+    return this.sessionScheduleService.getEventTrackings(sessionId);
   }
 
   @Post(':sessionId/cancel')
