@@ -73,8 +73,8 @@ export class SessionScheduleController {
 
   @Get(':sessionId/event-tracking')
   @ApiOperation({
-    summary: 'Tạo sự kiện',
-    description: 'Tạo sự kiện trong lịch sử của buổi học',
+    summary: 'Lấy sự kiện ',
+    description: 'Lấy các sự kiện diễn ra trong buổi học',
   })
   getEventTrackings(@Param('sessionId') sessionId: string) {
     return this.sessionScheduleService.getEventTrackings(sessionId);
