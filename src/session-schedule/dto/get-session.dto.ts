@@ -1,11 +1,22 @@
-import { ApiProperty } from '@nestjs/swagger';
-import { IsNotEmpty, IsString, MaxLength, MinLength } from 'class-validator';
+import { ApiPropertyOptional } from '@nestjs/swagger';
+import { IsEnum, IsOptional, IsString, MaxLength } from 'class-validator';
+import { ESessionScheduleStatus } from '../enum/session-schedule-status.enum';
 
 export class GetSessionDto {
-  @ApiProperty({ required: true })
+  @ApiPropertyOptional()
   @IsString()
-  @IsNotEmpty()
-  @MinLength(1)
+  @IsOptional()
   @MaxLength(128)
-  studentId: string;
+  studentId?: string;
+
+  @ApiPropertyOptional()
+  @IsString()
+  @IsOptional()
+  @MaxLength(128)
+  teacherId?: string;
+
+  @ApiPropertyOptional({ enum: ESessionScheduleStatus })
+  @IsEnum(ESessionScheduleStatus)
+  @IsOptional()
+  status?: ESessionScheduleStatus;
 }

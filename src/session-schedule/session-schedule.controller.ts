@@ -13,8 +13,8 @@ import {
 import { SessionScheduleService } from './session-schedule.service';
 import { CreateSessionScheduleDto } from './dto/create-session-schedule.dto';
 import { PickUpDto } from './dto/pick-up.dto';
-import { OnEvent } from '@nestjs/event-emitter';
-import { ESessionScheduleEvent } from './enum/session-schedule-event.enum';
+// import { OnEvent } from '@nestjs/event-emitter';
+// import { ESessionScheduleEvent } from './enum/session-schedule-event.enum';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
 import { GetSessionDto } from './dto/get-session.dto';
 // import { UpdateSessionScheduleDto } from './dto/update-session-schedule.dto';
@@ -38,9 +38,9 @@ export class SessionScheduleController {
 
   @Get('')
   @ApiOperation({
-    summary: 'Tạo 1 session schedule',
-    description:
-      'API dùng để tạo 1 session xếp lớp học khi học viên bấm nút bắt đầu học',
+    // summary: 'Tạo 1 session schedule',
+    // description:
+    //   'API dùng để tạo 1 session xếp lớp học khi học viên bấm nút bắt đầu học',
   })
   getByUser(@Query() query: GetSessionDto) {
     return this.sessionScheduleService.getByUser(query);

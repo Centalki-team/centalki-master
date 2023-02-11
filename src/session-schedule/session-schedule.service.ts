@@ -6,7 +6,7 @@ import {
 import { EventEmitter2 } from '@nestjs/event-emitter';
 import { instanceToPlain } from 'class-transformer';
 import { UserRecord } from 'firebase-admin/auth';
-import { BaseFirestoreRepository } from 'fireorm';
+import { BaseFirestoreRepository, IQueryBuilder } from 'fireorm';
 import { InjectRepository } from 'nestjs-fireorm';
 import { FirebaseService } from 'src/firebase/firebase.service';
 import { Topic } from 'src/topic/entities/topic.entity';
@@ -159,10 +159,23 @@ export class SessionScheduleService {
   }
 
   async getByUser(query: GetSessionDto) {
-    const sessions = await this.sessionScheduleRepository
-      .whereEqualTo('studentId', query.studentId)
-      .find();
+    console.log({ query });
 
+    let qb: IQueryBuilder<SessionSchedule> = this.sessionScheduleRepository;
+
+    if (query.studentId) {
+      qb = qb.whereEqualTo('studentId', query.studentId);
+    }
+
+    if (query.teacherId) {
+      qb = qb.whereEqualTo('teacherId', query.studentId);
+    }
+
+    if (query.status) {
+      qb = qb.whereEqualTo('status', query.status);
+    }
+
+    const sessions = qb.limit(1).find();
     return sessions;
   }
 
