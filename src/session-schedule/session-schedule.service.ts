@@ -175,7 +175,7 @@ export class SessionScheduleService {
       qb = qb.whereEqualTo('status', query.status);
     }
 
-    const sessions = qb.limit(1).find();
+    const sessions = qb.find();
     return sessions;
   }
 
