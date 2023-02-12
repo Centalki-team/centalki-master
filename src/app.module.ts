@@ -15,6 +15,7 @@ import { SessionScheduleModule } from './session-schedule/session-schedule.modul
 import appConfig from './config/app.config';
 import baseUrlConfig from './config/base-url.config';
 import { EventEmitterModule } from '@nestjs/event-emitter';
+import { FeedbackModule } from './feedback/feedback.module';
 
 @Module({
   imports: [
@@ -33,6 +34,7 @@ import { EventEmitterModule } from '@nestjs/event-emitter';
     QuestionModule,
     PhraseModule,
     SessionScheduleModule,
+    FeedbackModule,
   ],
   controllers: [AppController],
   providers: [AppService, FirebaseService],
