@@ -107,6 +107,7 @@ export class SessionScheduleService {
         }) as UserRecord,
       });
 
+      delete newData.eventTrackings;
       const sessionScheduleRef = this.sessionScheduleRef();
       sessionScheduleRef.child(newData.id).set(newData);
       return newData;
@@ -132,6 +133,7 @@ export class SessionScheduleService {
       });
 
       const sessionScheduleRef = this.sessionScheduleRef();
+      delete newData.eventTrackings;
       sessionScheduleRef.child(newData.id).set(newData);
       return newData;
     });
@@ -158,6 +160,7 @@ export class SessionScheduleService {
           });
 
           const sessionScheduleRef = this.sessionScheduleRef();
+          delete newData.eventTrackings;
           sessionScheduleRef.child(newData.id).set(newData);
         }
       });
