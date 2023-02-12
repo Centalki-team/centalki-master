@@ -75,6 +75,7 @@ export class SessionScheduleService {
       });
 
       this.eventEmitter.emit(ESessionScheduleEvent.CREATED, sessionSchedule.id);
+      delete sessionSchedule.eventTrackings;
       sessionScheduleRef.child(sessionSchedule.id).set(sessionSchedule);
       return sessionSchedule;
     });
