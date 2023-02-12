@@ -7,7 +7,6 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
   @Get('')
-  // @UseGuards(AuthGuard('firebase'))
   hello() {
     return this.appService.sayHello();
   }

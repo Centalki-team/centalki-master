@@ -4,17 +4,17 @@ import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { AuthCollection } from './collection/auth.collection';
 import { PassportModule } from '@nestjs/passport';
-import { FirebaseStrategy } from './firebase.strategy';
 import { FirebaseModule } from '../firebase/firebase.module';
+import { UserProfile } from './collection/user-profile';
 
 @Module({
   imports: [
-    FireormModule.forFeature([AuthCollection]),
+    FireormModule.forFeature([AuthCollection, UserProfile]),
     PassportModule,
     FirebaseModule,
   ],
   controllers: [AuthController],
-  providers: [AuthService, FirebaseStrategy],
-  exports: [FirebaseStrategy],
+  providers: [AuthService],
+  exports: [],
 })
 export class AuthModule {}

@@ -2,6 +2,9 @@ import { Injectable } from '@nestjs/common';
 import admin from 'firebase-admin';
 @Injectable()
 export class FirebaseService {
+  admin() {
+    return admin;
+  }
   auth() {
     return admin.auth();
   }

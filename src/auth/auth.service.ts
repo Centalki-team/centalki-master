@@ -9,12 +9,19 @@ import { BaseFirestoreRepository } from 'fireorm';
 import { SetRoleDto } from './dto/set-role.dto';
 import { AuthCollection } from './collection/auth.collection';
 import { FirebaseService } from '../firebase/firebase.service';
+import { UserProfile } from './collection/user-profile';
+import { UpdateRequest, UserRecord } from 'firebase-admin/auth';
+import { UpdateProfileDto } from './dto/update-profile.dto';
+
+import { merge } from 'src/global/fn';
 
 @Injectable()
 export class AuthService {
   constructor(
     @InjectRepository(AuthCollection)
     private authCollection: BaseFirestoreRepository<AuthCollection>,
+    @InjectRepository(UserProfile)
+    private userProfileRepository: BaseFirestoreRepository<UserProfile>,
     private readonly firebaseService: FirebaseService,
   ) {}
   async assignRole(dto: SetRoleDto) {
@@ -52,6 +59,52 @@ export class AuthService {
     } else {
       return exist;
     }
+  }
+  async getUserProfile(user: UserRecord) {
+    console.log({ user });
+
+    const uid = user.uid;
+    const fetchRole = this.authCollection.whereEqualTo('uid', uid).findOne();
+    const fetchProfile = this.userProfileRepository
+      .whereEqualTo('uid', uid)
+      .findOne();
+    const [role, profile] = await Promise.all([fetchRole, fetchProfile]);
+    return {
+      role,
+      profile,
+      ...user,
+    };
+  }
+  async updateUserProfile(user: UserRecord, dto: UpdateProfileDto) {
+    const uid = user.uid;
+    const mergedUserRecord = merge<UpdateRequest>(user, dto) as UpdateRequest;
+    await this.firebaseService.auth().updateUser(uid, mergedUserRecord);
+    let profile = await this.userProfileRepository
+      .whereEqualTo('uid', uid)
+      .findOne();
+    if (!profile) {
+      profile = await this.userProfileRepository.create({
+        uid,
+        ...new UserProfile(),
+      });
+    }
+    const mergedUserProfile = merge<UserProfile>(profile, dto);
+    profile = {
+      ...profile,
+      ...mergedUserProfile,
+    };
+    await this.userProfileRepository.update(profile);
+
+    return {
+      profile,
+    };
+
+    // const profile = await Promise.all([fetchRole, fetchProfile]);
+    // return {
+    //   role,
+    //   profile,
+    //   ...user,
+    // };
   }
   // create(createAuthDto: CreateAuthDto) {
   //   return 'This action adds a new auth';

@@ -20,6 +20,7 @@ export class FirebaseModule {
       //   uid: 'centalki-master-service',
       // },
     });
+    console.log('Init');
 
     return {
       global: true,

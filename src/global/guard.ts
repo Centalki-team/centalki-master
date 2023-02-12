@@ -4,17 +4,13 @@ import {
   ExecutionContext,
   UnauthorizedException,
 } from '@nestjs/common';
-import { Auth } from 'firebase-admin/auth';
+
 import { Request } from 'express';
 import { FirebaseService } from 'src/firebase/firebase.service';
 
 @Injectable()
 export class FirebaseAuthGuard implements CanActivate {
-  private auth: Auth;
-
-  constructor(firebaseService: FirebaseService) {
-    this.auth = firebaseService.auth();
-  }
+  constructor(private readonly firebaseService: FirebaseService) {}
   canActivate(context: ExecutionContext): boolean | Promise<boolean> {
     const request = context.switchToHttp().getRequest() as Request;
     return this.validateRequest(request);
@@ -22,12 +18,18 @@ export class FirebaseAuthGuard implements CanActivate {
 
   async validateRequest(req: Request): Promise<boolean> {
     const token = req.headers.authorization;
+
     if (token != null && token != '') {
       try {
-        const decodedToken = await this.auth.verifyIdToken(
-          token.replace('Bearer ', ''),
-        );
-        req['user'] = decodedToken;
+        const idToken = token.replace('Bearer ', '');
+
+        const decodedToken = await this.firebaseService
+          .auth()
+          .verifyIdToken(idToken);
+        const user = await this.firebaseService
+          .auth()
+          .getUser(decodedToken.uid);
+        req['user'] = user;
         return true;
       } catch (error) {
         throw new UnauthorizedException(error);
