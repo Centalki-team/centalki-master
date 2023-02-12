@@ -123,9 +123,9 @@ export class SessionScheduleService {
         throw new NotFoundException();
       }
 
-      if (sessionSchedule.status !== ESessionScheduleStatus.ROUTING) {
-        throw new ConflictException('Session is currently not routing!');
-      }
+      // if (sessionSchedule.status !== ESessionScheduleStatus.ROUTING) {
+      //   throw new ConflictException('Session is currently not routing!');
+      // }
       const newData = await this.sessionScheduleRepository.update({
         ...sessionSchedule,
         status: ESessionScheduleStatus.CANCELLED,
