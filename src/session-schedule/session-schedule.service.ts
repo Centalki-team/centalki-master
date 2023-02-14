@@ -1,20 +1,32 @@
 import {
   ConflictException,
+  forwardRef,
+  HttpException,
+  HttpStatus,
+  Inject,
   Injectable,
   NotFoundException,
 } from '@nestjs/common';
 import { EventEmitter2 } from '@nestjs/event-emitter';
 import { instanceToPlain } from 'class-transformer';
 import { UserRecord } from 'firebase-admin/auth';
-import { BaseFirestoreRepository, IQueryBuilder } from 'fireorm';
+import {
+  BaseFirestoreRepository,
+  FirestoreOperators,
+  IFireOrmQueryLine,
+  IQueryBuilder,
+} from 'fireorm';
 import { InjectRepository } from 'nestjs-fireorm';
+import { AuthService } from 'src/auth/auth.service';
+import { CommonService } from 'src/common/common.service';
 import { FirebaseService } from 'src/firebase/firebase.service';
+import { PaginationResult } from 'src/global/types';
 import { Topic } from 'src/topic/entities/topic.entity';
 import { TopicService } from 'src/topic/topic.service';
 import { genId } from 'src/utils/helper';
 import { CreateSessionScheduleDto } from './dto/create-session-schedule.dto';
 import { EventTrackingDto } from './dto/event-tracking.dto';
-import { GetSessionDto } from './dto/get-session.dto';
+import { GetSessionDto, PaginateSessionDto } from './dto/get-session.dto';
 import { PickUpDto } from './dto/pick-up.dto';
 import {
   EventTracking,
@@ -29,6 +41,9 @@ export class SessionScheduleService {
   constructor(
     private readonly firebaseService: FirebaseService,
     private readonly topicService: TopicService,
+    @Inject(forwardRef(() => AuthService))
+    private readonly authService: AuthService,
+    private readonly commonService: CommonService,
 
     private readonly eventEmitter: EventEmitter2,
     @InjectRepository(SessionSchedule)
@@ -58,6 +73,16 @@ export class SessionScheduleService {
         .catch(() => {
           throw new NotFoundException(`StudentId: is invalid`);
         });
+
+      const canRequestSession = await this.authService.canRequestSession(
+        createSessionScheduleDto.studentId,
+      );
+      if (!canRequestSession) {
+        throw new HttpException(
+          `Insufficient balance`,
+          HttpStatus.PAYMENT_REQUIRED,
+        );
+      }
 
       const sessionScheduleRef = this.sessionScheduleRef();
       const sessionSchedule = await this.sessionScheduleRepository.create({
@@ -168,8 +193,6 @@ export class SessionScheduleService {
   }
 
   async getByUser(query: GetSessionDto) {
-    console.log({ query });
-
     let qb: IQueryBuilder<SessionSchedule> = this.sessionScheduleRepository;
 
     if (query.studentId) {
@@ -193,6 +216,38 @@ export class SessionScheduleService {
         }
         return sessions;
       });
+  }
+
+  async paginate(
+    query: PaginateSessionDto,
+  ): Promise<PaginationResult<SessionSchedule>> {
+    const { page, size, status } = query;
+
+    const queries: IFireOrmQueryLine[] = [];
+    if (status) {
+      queries.push({
+        prop: 'status',
+        val: status,
+        operator: FirestoreOperators.equal,
+      });
+    }
+
+    const { data, hasNextPage, hasPrevPage } = await this.commonService.find(
+      this.sessionScheduleRepository,
+      queries,
+      page,
+      size,
+    );
+
+    return {
+      meta: {
+        hasNextPage,
+        hasPrevPage,
+        page,
+        size,
+      },
+      data,
+    };
   }
 
   async eventTracking(sessionId: string, eventTrackingDto: EventTrackingDto) {
@@ -227,6 +282,22 @@ export class SessionScheduleService {
 
     return await sessionSchedule.eventTrackings.find();
   }
+
+  // async completeLesson(userId: number, isTeacher: boolean) {
+  //   const user = await this.userRepository.findOne({ where: { id: userId } });
+  //   if (!user) {
+  //     throw new NotFoundException(`User with ID "${userId}" not found`);
+  //   }
+
+  //   const amount = user.lessonRate;
+  //   if (isTeacher) {
+  //     user.balance += amount;
+  //   } else {
+  //     user.balance -= amount;
+  //   }
+
+  //   await this.userRepository.save(user);
+  // }
 
   // findOne(id: number) {
   //   return `This action returns a #${id} sessionSchedule`;

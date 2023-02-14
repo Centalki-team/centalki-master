@@ -1,6 +1,8 @@
 import {
   BadRequestException,
   ForbiddenException,
+  forwardRef,
+  Inject,
   Injectable,
   NotFoundException,
 } from '@nestjs/common';
@@ -14,6 +16,8 @@ import { UpdateRequest, UserRecord } from 'firebase-admin/auth';
 import { UpdateProfileDto } from './dto/update-profile.dto';
 
 import { merge } from 'src/global/fn';
+import { SessionScheduleService } from 'src/session-schedule/session-schedule.service';
+import { PaginateSessionDto } from 'src/session-schedule/dto/get-session.dto';
 
 @Injectable()
 export class AuthService {
@@ -23,7 +27,14 @@ export class AuthService {
     @InjectRepository(UserProfile)
     private userProfileRepository: BaseFirestoreRepository<UserProfile>,
     private readonly firebaseService: FirebaseService,
+    @Inject(forwardRef(() => SessionScheduleService))
+    private readonly sessionService: SessionScheduleService,
   ) {}
+
+  paginateSessions(query: PaginateSessionDto) {
+    return this.sessionService.paginate(query);
+  }
+
   async assignRole(dto: SetRoleDto) {
     let claims = null;
     try {
@@ -33,6 +44,9 @@ export class AuthService {
     }
     const uid = claims.uid;
     const exist = await this.authCollection.whereEqualTo('uid', uid).findOne();
+    const userProfile = new UserProfile();
+    userProfile.uid = uid;
+    await this.userProfileRepository.create(userProfile);
     if (exist?.role) {
       throw new BadRequestException('User had authorized already!');
     } else {
@@ -74,6 +88,26 @@ export class AuthService {
       profile,
       ...user,
     };
+  }
+  async getBalance(user: UserRecord) {
+    const uid = user.uid;
+    const profile = await this.userProfileRepository
+      .whereEqualTo('uid', uid)
+      .findOne();
+    return {
+      balance: profile.balance,
+      costPerSession: profile.costPerSession,
+      currency: profile.currency,
+      displayBalance: `${profile.balance} ${profile.currency}`.toUpperCase(),
+      displayCostPerSession:
+        `${profile.costPerSession} ${profile.currency}`.toUpperCase(),
+    };
+  }
+  async canRequestSession(uid: string): Promise<boolean> {
+    const profile = await this.userProfileRepository
+      .whereEqualTo('uid', uid)
+      .findOne();
+    return profile.balance >= profile.costPerSession;
   }
   async updateUserProfile(user: UserRecord, dto: UpdateProfileDto) {
     const uid = user.uid;

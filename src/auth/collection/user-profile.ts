@@ -10,6 +10,9 @@ export class UserProfile {
     this.dob = null;
     this.gender = null;
     this.uid = null;
+    this.balance = 0;
+    this.costPerSession = 100_000;
+    this.currency = 'vnd';
   }
   id!: string;
 
@@ -20,4 +23,10 @@ export class UserProfile {
   gender?: EGender | null;
 
   uid: string;
+
+  balance: number;
+
+  currency: string;
+
+  costPerSession: number;
 }
