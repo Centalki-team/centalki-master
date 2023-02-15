@@ -36,6 +36,7 @@ export class AuthService {
   }
 
   async assignRole(dto: SetRoleDto) {
+    const displayName = dto.displayName;
     let claims = null;
     try {
       claims = await this.firebaseService.auth().verifyIdToken(dto.idToken);
@@ -46,6 +47,13 @@ export class AuthService {
     const exist = await this.authCollection.whereEqualTo('uid', uid).findOne();
     const userProfile = new UserProfile();
     userProfile.uid = uid;
+
+    if (displayName) {
+      await this.firebaseService.auth().updateUser(uid, {
+        displayName,
+      });
+    }
+
     await this.userProfileRepository.create(userProfile);
     if (exist?.role) {
       throw new BadRequestException('User had authorized already!');

@@ -1,5 +1,5 @@
-import { ApiProperty } from '@nestjs/swagger';
-import { IsEnum, IsNotEmpty, IsString } from 'class-validator';
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
+import { IsEnum, IsNotEmpty, IsOptional, IsString } from 'class-validator';
 import { ERole } from '../enum/role.enum';
 
 export class SetRoleDto {
@@ -12,4 +12,9 @@ export class SetRoleDto {
   @IsNotEmpty()
   @IsEnum(ERole)
   role: ERole;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  displayName?: string;
 }
