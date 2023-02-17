@@ -6,16 +6,17 @@ import {
   UseGuards,
   Patch,
   Query,
-  Inject,
-  forwardRef,
+  // Inject,
+  // forwardRef,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { UserRecord } from 'firebase-admin/auth';
 import { User } from 'src/global/decorator';
 import { FirebaseAuthGuard } from 'src/global/guard';
 import { PaginateSessionDto } from 'src/session-schedule/dto/get-session.dto';
-import { SessionScheduleService } from 'src/session-schedule/session-schedule.service';
+// import { SessionScheduleService } from 'src/session-schedule/session-schedule.service';
 import { AuthService } from './auth.service';
+import { SetDeviceTokenDto } from './dto/set-device-token.dto';
 import { SetRoleDto } from './dto/set-role.dto';
 import { UpdateProfileDto } from './dto/update-profile.dto';
 
@@ -79,6 +80,17 @@ export class AuthController {
   @ApiBearerAuth()
   assignRole(@Body() dto: SetRoleDto) {
     return this.authService.assignRole(dto);
+  }
+
+  @Post('device-token')
+  @UseGuards(FirebaseAuthGuard)
+  @ApiOperation({
+    summary: 'Thêm device token',
+    description: 'Thêm device token cho người dùng',
+  })
+  @ApiBearerAuth()
+  addDeviceToken(@Body() dto: SetDeviceTokenDto, @User() user: UserRecord) {
+    return this.authService.addDeviceToken(user, dto);
   }
 
   @Post('validate-role')

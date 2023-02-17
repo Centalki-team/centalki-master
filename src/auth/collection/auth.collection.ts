@@ -8,4 +8,6 @@ export class AuthCollection {
   role: ERole;
 
   uid: string;
+
+  deviceTokens: string[];
 }

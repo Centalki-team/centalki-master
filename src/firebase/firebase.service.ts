@@ -20,4 +20,8 @@ export class FirebaseService {
   realTimeDatabase() {
     return admin.database();
   }
+
+  message() {
+    return admin.messaging();
+  }
 }

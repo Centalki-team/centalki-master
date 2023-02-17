@@ -6,6 +6,7 @@ import {
   Injectable,
   NotFoundException,
 } from '@nestjs/common';
+// import * as crypto from 'crypto';
 import { InjectRepository } from 'nestjs-fireorm';
 import { BaseFirestoreRepository } from 'fireorm';
 import { SetRoleDto } from './dto/set-role.dto';
@@ -18,6 +19,7 @@ import { UpdateProfileDto } from './dto/update-profile.dto';
 import { merge } from 'src/global/fn';
 import { SessionScheduleService } from 'src/session-schedule/session-schedule.service';
 import { PaginateSessionDto } from 'src/session-schedule/dto/get-session.dto';
+import { SetDeviceTokenDto } from './dto/set-device-token.dto';
 
 @Injectable()
 export class AuthService {
@@ -29,7 +31,9 @@ export class AuthService {
     private readonly firebaseService: FirebaseService,
     @Inject(forwardRef(() => SessionScheduleService))
     private readonly sessionService: SessionScheduleService,
-  ) {}
+  ) {
+    // this.loginBiometric();
+  }
 
   paginateSessions(query: PaginateSessionDto) {
     return this.sessionService.paginate(query);
@@ -58,7 +62,11 @@ export class AuthService {
     if (exist?.role) {
       throw new BadRequestException('User had authorized already!');
     } else {
-      return this.authCollection.create({ uid, role: dto.role });
+      return this.authCollection.create({
+        uid,
+        role: dto.role,
+        deviceTokens: [],
+      });
     }
   }
 
@@ -148,6 +156,30 @@ export class AuthService {
     //   ...user,
     // };
   }
+
+  // loginBiometric() {
+  //   // The message that was signed
+  //   const message = 'Hello, world!';
+
+  //   // The digital signature
+  //   const signature =
+  //     'oPhWQo/yLcfqHti9E3ZH57d7UEZDjOhs5grDrFuEDULgIUUd/LSS2NLvLsrFQ96VzoYxLue0ziToVBjyWubrNO+kcbu020thaiDcWQ+quRYtcEDbjfSv1JNzB/9F52dbTXvr8hSDnGNVa1vYK/WMC9zhx6uwItemh/nZygBrPi9hFW2WIZuQrrqvIyOA27h9IrnEIZJ6OQbq8dCw9WgnyN3BNwmyaj63ZAcVrwQyxfXc1Jjovfah3SXMle94cHSNxqkm2y4u3Dj2cHpFhXPRxMfxHu6ZObsbwqjfzTEu6GPINQFGXabmCKJzO+urvA0WEhpHKqkNgLmpnqHVCzp/SA==';
+
+  //   // The public key in PEM format
+  //   const publicKey =
+  //     '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA26vt7dbR1QU5h1esJkHf+qLAnEGu8FqEbL9pL9FXjCM97YhUGQrz7rBLj9E0+osK6NlaZu6EF3Xk9CxgFfptgb05IkjzdG6RCLe560o50g7bWk167K9GFh1pg5tVluHFSxAsVsqCn+72lREZW0afBVRXJnt3Gc0AjIvDLLOEJ81NHOFFr0nGBpSJUFPCq4TTTHB+Bf4lDW7LEEdcPI/O8zKGwYKy9AvCTQMGWMcwpB+rJYwxx7Knp3qbIrP1hnGB0RtXpbRflCA5MGGLYhHfyn8Bz0pM0NYwRoBhXBw2Seu3rxYpUWgY+b/OHBeqnWILaQPtcoc4jfXw5TIdrUTWtQIDAQAB\n-----END PUBLIC KEY-----';
+
+  //   // Verify the digital signature using the public key
+  //   const verifier = crypto.createVerify('SHA256');
+  //   verifier.update(message);
+  //   const verified = verifier.verify(publicKey, signature, 'base64');
+
+  //   if (verified) {
+  //     console.log('Signature is valid');
+  //   } else {
+  //     console.log('Signature is not valid');
+  //   }
+  // }
   // create(createAuthDto: CreateAuthDto) {
   //   return 'This action adds a new auth';
   // }
@@ -167,4 +199,11 @@ export class AuthService {
   // remove(id: number) {
   //   return `This action removes a #${id} auth`;
   // }
+
+  async addDeviceToken(user: UserRecord, dto: SetDeviceTokenDto) {
+    const uid = user.uid;
+    const exist = await this.authCollection.whereEqualTo('uid', uid).findOne();
+    exist.deviceTokens = [...exist.deviceTokens, dto.token];
+    return await this.authCollection.update(exist);
+  }
 }

@@ -16,6 +16,7 @@ import appConfig from './config/app.config';
 import baseUrlConfig from './config/base-url.config';
 import { EventEmitterModule } from '@nestjs/event-emitter';
 import { FeedbackModule } from './feedback/feedback.module';
+import { FcmModule } from './fcm/fcm.module';
 
 @Module({
   imports: [
@@ -35,6 +36,7 @@ import { FeedbackModule } from './feedback/feedback.module';
     PhraseModule,
     SessionScheduleModule,
     FeedbackModule,
+    FcmModule,
   ],
   controllers: [AppController],
   providers: [AppService, FirebaseService],
