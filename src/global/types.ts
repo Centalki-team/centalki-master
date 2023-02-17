@@ -4,6 +4,8 @@ export type PaginationResult<T> = {
     hasPrevPage: boolean;
     page: number;
     size: number;
+    completedSession?: number;
   };
+
   data: T[];
 };

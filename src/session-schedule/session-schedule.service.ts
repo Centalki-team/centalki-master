@@ -220,10 +220,17 @@ export class SessionScheduleService {
 
   async paginate(
     query: PaginateSessionDto,
+    user: UserRecord,
   ): Promise<PaginationResult<SessionSchedule>> {
     const { page, size, status } = query;
 
-    const queries: IFireOrmQueryLine[] = [];
+    const queries: IFireOrmQueryLine[] = [
+      {
+        prop: 'studentId',
+        val: user.uid,
+        operator: FirestoreOperators.equal,
+      },
+    ];
     if (status) {
       queries.push({
         prop: 'status',
@@ -238,6 +245,10 @@ export class SessionScheduleService {
       page,
       size,
     );
+    const completedSession = await this.countSession(
+      user.uid,
+      ESessionScheduleStatus.COMPLETED,
+    );
 
     return {
       meta: {
@@ -245,6 +256,7 @@ export class SessionScheduleService {
         hasPrevPage,
         page,
         size,
+        completedSession,
       },
       data,
     };
@@ -302,4 +314,12 @@ export class SessionScheduleService {
   // findOne(id: number) {
   //   return `This action returns a #${id} sessionSchedule`;
   // }
+
+  async countSession(studentId: string, status: ESessionScheduleStatus) {
+    const studentRunningSession = await this.sessionScheduleRepository
+      .whereEqualTo('studentId', studentId)
+      .whereEqualTo('status', status)
+      .find();
+    return studentRunningSession.length;
+  }
 }

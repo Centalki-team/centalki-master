@@ -20,6 +20,7 @@ import { merge } from 'src/global/fn';
 import { SessionScheduleService } from 'src/session-schedule/session-schedule.service';
 import { PaginateSessionDto } from 'src/session-schedule/dto/get-session.dto';
 import { SetDeviceTokenDto } from './dto/set-device-token.dto';
+import { ESessionScheduleStatus } from 'src/session-schedule/enum/session-schedule-status.enum';
 
 @Injectable()
 export class AuthService {
@@ -35,8 +36,8 @@ export class AuthService {
     // this.loginBiometric();
   }
 
-  paginateSessions(query: PaginateSessionDto) {
-    return this.sessionService.paginate(query);
+  paginateSessions(query: PaginateSessionDto, user: UserRecord) {
+    return this.sessionService.paginate(query, user);
   }
 
   async assignRole(dto: SetRoleDto) {
@@ -91,16 +92,19 @@ export class AuthService {
     }
   }
   async getUserProfile(user: UserRecord) {
-    console.log({ user });
-
     const uid = user.uid;
     const fetchRole = this.authCollection.whereEqualTo('uid', uid).findOne();
     const fetchProfile = this.userProfileRepository
       .whereEqualTo('uid', uid)
       .findOne();
+    const completedSession = await this.sessionService.countSession(
+      uid,
+      ESessionScheduleStatus.COMPLETED,
+    );
     const [role, profile] = await Promise.all([fetchRole, fetchProfile]);
     return {
       role,
+      completedSession,
       profile,
       ...user,
     };

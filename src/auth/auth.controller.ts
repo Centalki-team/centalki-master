@@ -57,8 +57,8 @@ export class AuthController {
   })
   @UseGuards(FirebaseAuthGuard)
   @ApiBearerAuth()
-  getSessions(@Query() query: PaginateSessionDto) {
-    return this.authService.paginateSessions(query);
+  getSessions(@Query() query: PaginateSessionDto, @User() user: UserRecord) {
+    return this.authService.paginateSessions(query, user);
   }
 
   @Patch('profile')
