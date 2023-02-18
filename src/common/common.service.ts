@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { OrderByDirection } from 'firebase-admin/firestore';
 import {
   BaseFirestoreRepository,
   IEntity,
@@ -15,16 +16,27 @@ export class CommonService {
     queries: IFireOrmQueryLine[] = [],
     page = 1,
     size = 10,
+    sort = '',
     single = false,
-    sort: IOrderByParams = {
+  ): Promise<{ data: T[]; hasNextPage: boolean; hasPrevPage: boolean }> {
+    let sortParams: IOrderByParams = {
       fieldPath: 'createdAt',
       directionStr: 'desc',
-    },
-  ): Promise<{ data: T[]; hasNextPage: boolean; hasPrevPage: boolean }> {
+    };
+    if (sort) {
+      const [fieldPath, directionStr] = sort.split(':');
+      sortParams = {
+        ...sortParams,
+        fieldPath,
+        directionStr: directionStr as OrderByDirection,
+      };
+    }
+    console.log({ sortParams });
+
     const data = await repository.execute(
       queries,
       size,
-      sort,
+      sortParams,
       single,
       async (q) => {
         return q.offset(page * size - size).limit(size);
@@ -34,7 +46,7 @@ export class CommonService {
     const nextData = await repository.execute(
       queries,
       1,
-      sort,
+      sortParams,
       single,
       async (q) => {
         return q.offset(page * size + size).limit(1);

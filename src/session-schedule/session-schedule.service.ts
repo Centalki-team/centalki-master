@@ -222,7 +222,7 @@ export class SessionScheduleService {
     query: PaginateSessionDto,
     user: UserRecord,
   ): Promise<PaginationResult<SessionSchedule>> {
-    const { page, size, status } = query;
+    const { page, size, status, sort } = query;
 
     const queries: IFireOrmQueryLine[] = [
       {
@@ -244,6 +244,7 @@ export class SessionScheduleService {
       queries,
       page,
       size,
+      sort,
     );
     const completedSession = await this.countSession(
       user.uid,
