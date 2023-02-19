@@ -7,6 +7,7 @@ import { PassportModule } from '@nestjs/passport';
 import { FirebaseModule } from '../firebase/firebase.module';
 import { UserProfile } from './collection/user-profile';
 import { SessionScheduleModule } from 'src/session-schedule/session-schedule.module';
+import { CertificateModule } from 'src/certificate/certificate.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { SessionScheduleModule } from 'src/session-schedule/session-schedule.mod
     PassportModule,
     FirebaseModule,
     forwardRef(() => SessionScheduleModule),
+    forwardRef(() => CertificateModule),
   ],
   controllers: [AuthController],
   providers: [AuthService],

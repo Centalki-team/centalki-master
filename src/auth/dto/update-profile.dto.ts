@@ -53,6 +53,27 @@ export class UpdateProfileDto {
   bio?: string;
 
   @ApiPropertyOptional({
+    description: 'Quốc tịch',
+  })
+  @IsOptional()
+  @IsString()
+  nationality?: string;
+
+  @ApiPropertyOptional({
+    description: 'Thông tin về giáo dục',
+  })
+  @IsOptional()
+  @IsString()
+  education?: string;
+
+  @ApiPropertyOptional({
+    description: 'Kinh nghiệm',
+  })
+  @IsOptional()
+  @IsString()
+  experience?: string;
+
+  @ApiPropertyOptional({
     description: 'Giới tính của người dùng',
     enum: EGender,
   })

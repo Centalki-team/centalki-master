@@ -6,6 +6,7 @@ import {
   UseGuards,
   Patch,
   Query,
+  Put,
   // Inject,
   // forwardRef,
 } from '@nestjs/common';
@@ -16,6 +17,8 @@ import { FirebaseAuthGuard } from 'src/global/guard';
 import { PaginateSessionDto } from 'src/session-schedule/dto/get-session.dto';
 // import { SessionScheduleService } from 'src/session-schedule/session-schedule.service';
 import { AuthService } from './auth.service';
+import { PutInterestedTopics } from './dto/put-interested-topics.dto';
+import { PutSpeakingLevels } from './dto/put-speaking-levels.dto';
 import { SetDeviceTokenDto } from './dto/set-device-token.dto';
 import { SetRoleDto } from './dto/set-role.dto';
 import { UpdateProfileDto } from './dto/update-profile.dto';
@@ -103,6 +106,28 @@ export class AuthController {
     return this.authService.validateRole(dto);
   }
 
+  @Put('speaking-levels')
+  @UseGuards(FirebaseAuthGuard)
+  @ApiOperation({
+    summary: 'Update speaking levels',
+  })
+  @ApiBearerAuth()
+  putSpeakingLevels(@Body() dto: PutSpeakingLevels, @User() user: UserRecord) {
+    return this.authService.putSpeakingLevels(user, dto);
+  }
+
+  @Put('interested-topics')
+  @UseGuards(FirebaseAuthGuard)
+  @ApiOperation({
+    summary: 'Update chủ đề yêu thích',
+  })
+  @ApiBearerAuth()
+  putInterestedTopics(
+    @Body() dto: PutInterestedTopics,
+    @User() user: UserRecord,
+  ) {
+    return this.authService.putInterestedTopics(user, dto);
+  }
   // @Get()
   // findAll() {
   //   return this.authService.findAll();

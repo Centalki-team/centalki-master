@@ -14,6 +14,11 @@ export class UserProfile {
     this.costPerSession = 100_000;
     this.currency = 'vnd';
     this.bio = null;
+    this.nationality = null;
+    this.education = null;
+    this.experience = null;
+    this.speakingLevelIds = [];
+    this.interestedTopicIds = [];
   }
   id!: string;
 
@@ -22,6 +27,16 @@ export class UserProfile {
   dob?: string;
 
   bio?: null | string;
+
+  nationality: null | string;
+
+  education: null | string;
+
+  experience: null | string;
+
+  speakingLevelIds: string[];
+
+  interestedTopicIds: string[];
 
   gender?: EGender | null;
 

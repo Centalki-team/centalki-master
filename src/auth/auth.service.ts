@@ -21,6 +21,9 @@ import { SessionScheduleService } from 'src/session-schedule/session-schedule.se
 import { PaginateSessionDto } from 'src/session-schedule/dto/get-session.dto';
 import { SetDeviceTokenDto } from './dto/set-device-token.dto';
 import { ESessionScheduleStatus } from 'src/session-schedule/enum/session-schedule-status.enum';
+import { PutSpeakingLevels } from './dto/put-speaking-levels.dto';
+import { PutInterestedTopics } from './dto/put-interested-topics.dto';
+import { CertificateService } from 'src/certificate/certificate.service';
 
 @Injectable()
 export class AuthService {
@@ -32,6 +35,8 @@ export class AuthService {
     private readonly firebaseService: FirebaseService,
     @Inject(forwardRef(() => SessionScheduleService))
     private readonly sessionService: SessionScheduleService,
+    @Inject(forwardRef(() => CertificateService))
+    private readonly certificateService: CertificateService,
   ) {
     // this.loginBiometric();
   }
@@ -101,11 +106,16 @@ export class AuthService {
       uid,
       ESessionScheduleStatus.COMPLETED,
     );
-    const [role, profile] = await Promise.all([fetchRole, fetchProfile]);
+    const [role, profile, certificates] = await Promise.all([
+      fetchRole,
+      fetchProfile,
+      this.certificateService.findByUserId(uid),
+    ]);
     return {
       role,
       completedSession,
       profile,
+      certificates,
       ...user,
     };
   }
@@ -159,6 +169,37 @@ export class AuthService {
     //   profile,
     //   ...user,
     // };
+  }
+
+  async putSpeakingLevels(user: UserRecord, dto: PutSpeakingLevels) {
+    const uid = user.uid;
+    const profile = await this.userProfileRepository
+      .whereEqualTo('uid', uid)
+      .findOne();
+    const newSpeakingLevels = dto.speakingLevelIds || [];
+    profile.speakingLevelIds = newSpeakingLevels;
+    return await this.userProfileRepository.update(profile);
+  }
+
+  async putInterestedTopics(user: UserRecord, dto: PutInterestedTopics) {
+    const uid = user.uid;
+    const profile = await this.userProfileRepository
+      .whereEqualTo('uid', uid)
+      .findOne();
+    const interestedTopicIds = dto.interestedTopicIds || [];
+    profile.speakingLevelIds = interestedTopicIds;
+    return await this.userProfileRepository.update(profile);
+  }
+
+  async findOrThrow(uid: string) {
+    const user = await this.firebaseService
+      .auth()
+      .getUser(uid)
+      .catch(() => null);
+    if (!user) {
+      throw new NotFoundException('User not found!');
+    }
+    return user;
   }
 
   // loginBiometric() {
