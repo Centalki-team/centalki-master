@@ -13,12 +13,15 @@ export class UserProfile {
     this.balance = 0;
     this.costPerSession = 100_000;
     this.currency = 'vnd';
+    this.bio = null;
   }
   id!: string;
 
   englishName?: string;
 
   dob?: string;
+
+  bio?: null | string;
 
   gender?: EGender | null;
 
