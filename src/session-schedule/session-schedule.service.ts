@@ -8,6 +8,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { EventEmitter2 } from '@nestjs/event-emitter';
+import { SchedulerRegistry } from '@nestjs/schedule';
 import { instanceToPlain } from 'class-transformer';
 import { UserRecord } from 'firebase-admin/auth';
 import {
@@ -18,8 +19,13 @@ import {
 } from 'fireorm';
 import { InjectRepository } from 'nestjs-fireorm';
 import { AuthService } from 'src/auth/auth.service';
+import { CacheManagerService } from 'src/cache-manager/cache-manager.service';
 import { CommonService } from 'src/common/common.service';
 import { FirebaseService } from 'src/firebase/firebase.service';
+import {
+  _30_MINS_MILLISECONDS_,
+  _5_MINS_MILLISECONDS_,
+} from 'src/global/constant';
 import { PaginationResult } from 'src/global/types';
 import { Topic } from 'src/topic/entities/topic.entity';
 import { TopicService } from 'src/topic/topic.service';
@@ -48,9 +54,14 @@ export class SessionScheduleService {
     private readonly eventEmitter: EventEmitter2,
     @InjectRepository(SessionSchedule)
     private readonly sessionScheduleRepository: BaseFirestoreRepository<SessionSchedule>,
+    private schedulerRegistry: SchedulerRegistry,
+    private readonly cacheManager: CacheManagerService,
   ) {}
   sessionScheduleRef() {
     return this.firebaseService.realTimeDatabase().ref('session-schedule/');
+  }
+  sessionCacheKey(id: string) {
+    return `session-schedule-finding-${id}`;
   }
   async create(createSessionScheduleDto: CreateSessionScheduleDto) {
     return this.sessionScheduleRepository.runTransaction(async () => {
@@ -98,6 +109,14 @@ export class SessionScheduleService {
           exposeUnsetFields: false,
         }) as UserRecord,
       });
+      const cacheKey = this.sessionCacheKey(sessionSchedule.id);
+      await this.cacheManager.set(cacheKey, 'true', _5_MINS_MILLISECONDS_); // 5mins
+      this.schedulerRegistry.addTimeout(
+        `${ESessionScheduleStatus.ROUTING}:${cacheKey}`,
+        setTimeout(() => {
+          this.handleTimeout(sessionSchedule.id);
+        }, _5_MINS_MILLISECONDS_),
+      );
 
       this.eventEmitter.emit(ESessionScheduleEvent.CREATED, sessionSchedule.id);
       delete sessionSchedule.eventTrackings;
@@ -111,12 +130,19 @@ export class SessionScheduleService {
       const sessionSchedule = await this.sessionScheduleRepository.findById(
         sessionId,
       );
+
       if (!sessionSchedule) {
         throw new NotFoundException();
       }
 
       if (sessionSchedule.status !== ESessionScheduleStatus.ROUTING) {
         throw new ConflictException('Session is currently not routing!');
+      }
+
+      const cacheKey = this.sessionCacheKey(sessionSchedule.id);
+      const cacheExist = await this.cacheManager.get(cacheKey);
+      if (!cacheExist) {
+        throw new ConflictException('Session is timeout!');
       }
 
       const teacher = await this.firebaseService
@@ -135,6 +161,12 @@ export class SessionScheduleService {
       delete newData.eventTrackings;
       const sessionScheduleRef = this.sessionScheduleRef();
       sessionScheduleRef.child(newData.id).set(newData);
+      this.schedulerRegistry.addTimeout(
+        `${ESessionScheduleStatus.PICKED_UP}:${cacheKey}`,
+        setTimeout(() => {
+          this.handleCompleted(sessionSchedule.id);
+        }, _30_MINS_MILLISECONDS_),
+      );
       return newData;
     });
   }
@@ -164,32 +196,56 @@ export class SessionScheduleService {
     });
   }
 
-  async timeout(sessionId: string) {
-    setTimeout(async () => {
-      this.sessionScheduleRepository.runTransaction(async () => {
-        const sessionSchedule = await this.sessionScheduleRepository.findById(
-          sessionId,
-        );
-        if (!sessionSchedule) {
-          throw new NotFoundException();
-        }
+  async handleCompleted(sessionId: string) {
+    this.sessionScheduleRepository.runTransaction(async () => {
+      const sessionSchedule = await this.sessionScheduleRepository.findById(
+        sessionId,
+      );
+      if (!sessionSchedule) {
+        throw new NotFoundException();
+      }
 
-        console.log(
-          `Session ${sessionId} timed out with status ${sessionSchedule.status}!`,
-        );
+      console.log(
+        `Session ${sessionId} completed with status ${sessionSchedule.status}!`,
+      );
 
-        if (sessionSchedule.status === ESessionScheduleStatus.ROUTING) {
-          const newData = await this.sessionScheduleRepository.update({
-            ...sessionSchedule,
-            status: ESessionScheduleStatus.TIME_OUT,
-          });
+      if (sessionSchedule.status === ESessionScheduleStatus.PICKED_UP) {
+        const newData = await this.sessionScheduleRepository.update({
+          ...sessionSchedule,
+          status: ESessionScheduleStatus.COMPLETED,
+        });
 
-          const sessionScheduleRef = this.sessionScheduleRef();
-          delete newData.eventTrackings;
-          sessionScheduleRef.child(newData.id).set(newData);
-        }
-      });
-    }, 5 * 60 * 1000);
+        const sessionScheduleRef = this.sessionScheduleRef();
+        delete newData.eventTrackings;
+        sessionScheduleRef.child(newData.id).set(newData);
+      }
+    });
+  }
+
+  async handleTimeout(sessionId: string) {
+    this.sessionScheduleRepository.runTransaction(async () => {
+      const sessionSchedule = await this.sessionScheduleRepository.findById(
+        sessionId,
+      );
+      if (!sessionSchedule) {
+        throw new NotFoundException();
+      }
+
+      console.log(
+        `Session ${sessionId} timed out with status ${sessionSchedule.status}!`,
+      );
+
+      if (sessionSchedule.status === ESessionScheduleStatus.ROUTING) {
+        const newData = await this.sessionScheduleRepository.update({
+          ...sessionSchedule,
+          status: ESessionScheduleStatus.TIME_OUT,
+        });
+
+        const sessionScheduleRef = this.sessionScheduleRef();
+        delete newData.eventTrackings;
+        sessionScheduleRef.child(newData.id).set(newData);
+      }
+    });
   }
 
   async getByUser(query: GetSessionDto) {

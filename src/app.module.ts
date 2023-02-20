@@ -18,6 +18,7 @@ import { EventEmitterModule } from '@nestjs/event-emitter';
 import { FeedbackModule } from './feedback/feedback.module';
 import { FcmModule } from './fcm/fcm.module';
 import { CertificateModule } from './certificate/certificate.module';
+import { CacheManagerModule } from './cache-manager/cache-manager.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { CertificateModule } from './certificate/certificate.module';
       load: [appConfig, baseUrlConfig],
       envFilePath: ['.env'],
     }),
+    CacheManagerModule,
     FirebaseModule.register(),
     EventEmitterModule.forRoot(),
     AuthModule,
@@ -39,6 +41,7 @@ import { CertificateModule } from './certificate/certificate.module';
     FeedbackModule,
     FcmModule,
     CertificateModule,
+    CacheManagerModule,
   ],
   controllers: [AppController],
   providers: [AppService, FirebaseService],

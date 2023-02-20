@@ -7,6 +7,8 @@ import { SessionSchedule } from './entities/session-schedule.entity';
 import { TopicModule } from 'src/topic/topic.module';
 import { AuthModule } from 'src/auth/auth.module';
 import { CommonModule } from 'src/common/common.module';
+import { CacheManagerModule } from 'src/cache-manager/cache-manager.module';
+import { ScheduleModule } from '@nestjs/schedule';
 
 @Module({
   imports: [
@@ -14,7 +16,9 @@ import { CommonModule } from 'src/common/common.module';
     FirebaseModule,
     TopicModule,
     forwardRef(() => AuthModule),
+    CacheManagerModule,
     CommonModule,
+    ScheduleModule.forRoot(),
   ],
   controllers: [SessionScheduleController],
   providers: [SessionScheduleService],
