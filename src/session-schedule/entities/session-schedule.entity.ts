@@ -34,5 +34,7 @@ export class SessionSchedule {
   @SubCollection(EventTracking)
   eventTrackings?: ISubCollection<EventTracking>;
 
+  cost: number;
+
   createdAt!: string;
 }

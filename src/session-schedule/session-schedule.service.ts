@@ -25,10 +25,12 @@ import { FirebaseService } from 'src/firebase/firebase.service';
 import {
   _30_MINS_MILLISECONDS_,
   _5_MINS_MILLISECONDS_,
+  _APP_FEE_,
 } from 'src/global/constant';
 import { PaginationResult } from 'src/global/types';
 import { Topic } from 'src/topic/entities/topic.entity';
 import { TopicService } from 'src/topic/topic.service';
+import { TransactionService } from 'src/transaction/transaction.service';
 import { genId } from 'src/utils/helper';
 import { CreateSessionScheduleDto } from './dto/create-session-schedule.dto';
 import { EventTrackingDto } from './dto/event-tracking.dto';
@@ -50,13 +52,27 @@ export class SessionScheduleService {
     @Inject(forwardRef(() => AuthService))
     private readonly authService: AuthService,
     private readonly commonService: CommonService,
-
+    private readonly transactionService: TransactionService,
     private readonly eventEmitter: EventEmitter2,
     @InjectRepository(SessionSchedule)
     private readonly sessionScheduleRepository: BaseFirestoreRepository<SessionSchedule>,
     private schedulerRegistry: SchedulerRegistry,
     private readonly cacheManager: CacheManagerService,
-  ) {}
+  ) {
+    // this.sessionScheduleRepository.find().then((list) => {
+    //   for (const item of list) {
+    //     this.sessionScheduleRepository
+    //       .update({
+    //         ...item,
+    //         cost: 100_000,
+    //       })
+    //       .then(() => {
+    //         console.log(`Update ${item.id} success`);
+    //       });
+    //     console.log(item.cost);
+    //   }
+    // });
+  }
   sessionScheduleRef() {
     return this.firebaseService.realTimeDatabase().ref('session-schedule/');
   }
@@ -94,7 +110,9 @@ export class SessionScheduleService {
           HttpStatus.PAYMENT_REQUIRED,
         );
       }
-
+      const { costPerSession } = await this.authService.getCostPerSession(
+        student.uid,
+      );
       const sessionScheduleRef = this.sessionScheduleRef();
       const sessionSchedule = await this.sessionScheduleRepository.create({
         ...createSessionScheduleDto,
@@ -108,6 +126,7 @@ export class SessionScheduleService {
         student: instanceToPlain(student, {
           exposeUnsetFields: false,
         }) as UserRecord,
+        cost: costPerSession,
       });
       const cacheKey = this.sessionCacheKey(sessionSchedule.id);
       await this.cacheManager.set(cacheKey, 'true', _5_MINS_MILLISECONDS_); // 5mins
@@ -218,6 +237,27 @@ export class SessionScheduleService {
         const sessionScheduleRef = this.sessionScheduleRef();
         delete newData.eventTrackings;
         sessionScheduleRef.child(newData.id).set(newData);
+
+        const cost = sessionSchedule.cost || _APP_FEE_;
+
+        // Withdraw student balance
+        await this.authService.updateBalance(sessionSchedule.studentId, -cost);
+        await this.transactionService.createTransaction(
+          sessionSchedule.studentId,
+          -cost,
+          sessionId,
+        );
+
+        // Deposit teacher
+        await this.authService.updateBalance(
+          sessionSchedule.teacherId,
+          +cost - _APP_FEE_,
+        );
+        await this.transactionService.createTransaction(
+          sessionSchedule.teacherId,
+          +cost - _APP_FEE_,
+          sessionId,
+        );
       }
     });
   }

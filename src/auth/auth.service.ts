@@ -133,6 +133,14 @@ export class AuthService {
         `${profile.costPerSession} ${profile.currency}`.toUpperCase(),
     };
   }
+  async getCostPerSession(uid) {
+    const profile = await this.userProfileRepository
+      .whereEqualTo('uid', uid)
+      .findOne();
+    return {
+      costPerSession: profile.costPerSession,
+    };
+  }
   async canRequestSession(uid: string): Promise<boolean> {
     const profile = await this.userProfileRepository
       .whereEqualTo('uid', uid)
@@ -250,5 +258,16 @@ export class AuthService {
     const exist = await this.authCollection.whereEqualTo('uid', uid).findOne();
     exist.deviceTokens = [...exist.deviceTokens, dto.token];
     return await this.authCollection.update(exist);
+  }
+
+  async updateBalance(uid: string, amount: number) {
+    if (!uid && !amount) {
+      return false;
+    }
+    const profile = await this.userProfileRepository
+      .whereEqualTo('uid', uid)
+      .findOne();
+    profile.balance = (profile.balance || 0) + amount;
+    return this.userProfileRepository.update(profile);
   }
 }
