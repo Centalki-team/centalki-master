@@ -187,7 +187,7 @@ export class AuthService {
       .whereEqualTo('uid', uid)
       .findOne();
     const interestedTopicIds = dto.interestedTopicIds || [];
-    profile.speakingLevelIds = interestedTopicIds;
+    profile.interestedTopicIds = interestedTopicIds;
     return await this.userProfileRepository.update(profile);
   }
 
