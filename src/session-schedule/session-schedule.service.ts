@@ -241,7 +241,6 @@ export class SessionScheduleService {
         const cost = sessionSchedule.cost || _APP_FEE_;
 
         // Withdraw student balance
-        await this.authService.updateBalance(sessionSchedule.studentId, -cost);
         await this.transactionService.createTransaction(
           sessionSchedule.studentId,
           -cost,
@@ -249,10 +248,6 @@ export class SessionScheduleService {
         );
 
         // Deposit teacher
-        await this.authService.updateBalance(
-          sessionSchedule.teacherId,
-          +cost - _APP_FEE_,
-        );
         await this.transactionService.createTransaction(
           sessionSchedule.teacherId,
           +cost - _APP_FEE_,
