@@ -39,7 +39,24 @@ export class AuthService {
     private readonly certificateService: CertificateService,
   ) {
     // this.loginBiometric();
+    // this.migrateProfile();
   }
+
+  // async migrateProfile() {
+  //   const list = (await this.firebaseService.auth().listUsers()).users;
+  //   for (const item of list) {
+  //     const profile = await this.userProfileRepository
+  //       .whereEqualTo('uid', item.uid)
+  //       .findOne();
+  //     if (!profile) {
+  //       console.log(`Start insert ${item.uid}`);
+  //       const newProfile = new UserProfile();
+  //       newProfile.uid = item.uid;
+  //       await this.userProfileRepository.create(newProfile);
+  //       console.log(`Success insert ${item.uid}`);
+  //     }
+  //   }
+  // }
 
   paginateSessions(query: PaginateSessionDto, user: UserRecord) {
     return this.sessionService.paginate(query, user);

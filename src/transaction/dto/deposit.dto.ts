@@ -1,13 +1,13 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Type } from 'class-transformer';
-import { IsNotEmpty, IsNumberString, IsString, Min } from 'class-validator';
+import { IsNotEmpty, IsNumber, IsString, Min } from 'class-validator';
 
 export class DepositDto {
   @ApiProperty({
     description: 'Số tiền chuyển vào',
   })
   @IsNotEmpty()
-  @IsNumberString()
+  @IsNumber()
   @Type(() => Number)
   @Min(1)
   amount: number;
