@@ -273,7 +273,9 @@ export class AuthService {
   async addDeviceToken(user: UserRecord, dto: SetDeviceTokenDto) {
     const uid = user.uid;
     const exist = await this.authCollection.whereEqualTo('uid', uid).findOne();
-    exist.deviceTokens = [...exist.deviceTokens, dto.token];
+    exist.deviceTokens = exist.deviceTokens
+      ? [...exist.deviceTokens, dto.token]
+      : [dto.token];
     return await this.authCollection.update(exist);
   }
 
