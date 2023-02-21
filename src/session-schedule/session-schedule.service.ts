@@ -433,9 +433,16 @@ export class SessionScheduleService {
 
     const unavailableTeachers = await this.getRunningSessions();
     const unavailableIds = unavailableTeachers.map((item) => item.teacherId);
+    console.log(
+      `Session #${sessionId}, unavailableIds = ${unavailableIds.join(
+        ' + ',
+      )} created`,
+    );
     const availableIds = teacherIds.filter(
       (id) => !unavailableIds.includes(id),
     );
+    console.log(`Start push notification to ${availableIds.join(' + ')}`);
+
     const deviceTokens = await this.authService.getDeviceTokens(availableIds);
 
     const message = {
@@ -450,5 +457,6 @@ export class SessionScheduleService {
     };
 
     await this.fcmService.sendMulticast(message);
+    console.log(`Push notification to ${availableIds.join(' + ')} success`);
   }
 }
