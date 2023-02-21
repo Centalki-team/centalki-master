@@ -10,6 +10,7 @@ import { CommonModule } from 'src/common/common.module';
 import { CacheManagerModule } from 'src/cache-manager/cache-manager.module';
 import { ScheduleModule } from '@nestjs/schedule';
 import { TransactionModule } from 'src/transaction/transaction.module';
+import { FcmModule } from 'src/fcm/fcm.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { TransactionModule } from 'src/transaction/transaction.module';
     CommonModule,
     ScheduleModule.forRoot(),
     TransactionModule,
+    FcmModule,
   ],
   controllers: [SessionScheduleController],
   providers: [SessionScheduleService],

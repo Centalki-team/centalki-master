@@ -5,5 +5,6 @@ import { FcmService } from './fcm.service';
 @Module({
   imports: [FirebaseModule],
   providers: [FcmService],
+  exports: [FcmService],
 })
 export class FcmModule {}

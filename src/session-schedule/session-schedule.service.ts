@@ -19,8 +19,10 @@ import {
 } from 'fireorm';
 import { InjectRepository } from 'nestjs-fireorm';
 import { AuthService } from 'src/auth/auth.service';
+import { ERole } from 'src/auth/enum/role.enum';
 import { CacheManagerService } from 'src/cache-manager/cache-manager.service';
 import { CommonService } from 'src/common/common.service';
+import { FcmService } from 'src/fcm/fcm.service';
 import { FirebaseService } from 'src/firebase/firebase.service';
 import {
   _30_MINS_MILLISECONDS_,
@@ -52,6 +54,8 @@ export class SessionScheduleService {
     @Inject(forwardRef(() => AuthService))
     private readonly authService: AuthService,
     private readonly commonService: CommonService,
+    private readonly fcmService: FcmService,
+
     private readonly transactionService: TransactionService,
     private readonly eventEmitter: EventEmitter2,
     @InjectRepository(SessionSchedule)
@@ -130,6 +134,8 @@ export class SessionScheduleService {
       });
       const cacheKey = this.sessionCacheKey(sessionSchedule.id);
       await this.cacheManager.set(cacheKey, 'true', _5_MINS_MILLISECONDS_); // 5mins
+
+      this.sendNotificationToTeachers(sessionSchedule.id);
       this.schedulerRegistry.addTimeout(
         `${ESessionScheduleStatus.ROUTING}:${cacheKey}`,
         setTimeout(() => {
@@ -413,5 +419,36 @@ export class SessionScheduleService {
       .whereEqualTo('status', status)
       .find();
     return studentRunningSession.length;
+  }
+
+  async getRunningSessions() {
+    const sessions = await this.sessionScheduleRepository
+      .whereEqualTo('status', ESessionScheduleStatus.PICKED_UP)
+      .find();
+    return sessions;
+  }
+
+  async sendNotificationToTeachers(sessionId: string) {
+    const teacherIds = await this.authService.getUserIdsByRole(ERole.TEACHER);
+
+    const unavailableTeachers = await this.getRunningSessions();
+    const unavailableIds = unavailableTeachers.map((item) => item.teacherId);
+    const availableIds = teacherIds.filter(
+      (id) => !unavailableIds.includes(id),
+    );
+    const deviceTokens = await this.authService.getDeviceTokens(availableIds);
+
+    const message = {
+      notification: {
+        title: 'New session request',
+        body: `A student has requested a new session`,
+      },
+      data: {
+        sessionId,
+      },
+      tokens: deviceTokens,
+    };
+
+    await this.fcmService.sendMulticast(message);
   }
 }

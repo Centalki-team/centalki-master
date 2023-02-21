@@ -24,6 +24,7 @@ import { ESessionScheduleStatus } from 'src/session-schedule/enum/session-schedu
 import { PutSpeakingLevels } from './dto/put-speaking-levels.dto';
 import { PutInterestedTopics } from './dto/put-interested-topics.dto';
 import { CertificateService } from 'src/certificate/certificate.service';
+import { ERole } from 'src/auth/enum/role.enum';
 
 @Injectable()
 export class AuthService {
@@ -226,6 +227,21 @@ export class AuthService {
       throw new NotFoundException('User not found!');
     }
     return user;
+  }
+
+  async getUserIdsByRole(role: ERole) {
+    const authList = await this.authCollection
+      .whereEqualTo('role', role)
+      .find();
+    return authList.map((item) => item.uid);
+  }
+
+  async getDeviceTokens(userIds: string[]) {
+    const authList = await this.authCollection.whereIn('uid', userIds).find();
+    return authList
+      .map((item) => item.deviceTokens)
+      .flat()
+      .filter((item) => !!item);
   }
 
   // loginBiometric() {
