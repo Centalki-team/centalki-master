@@ -128,6 +128,7 @@ export class AuthService {
       fetchProfile,
       this.certificateService.findByUserId(uid),
     ]);
+    role.deviceTokens = null;
     return {
       role,
       completedSession,
