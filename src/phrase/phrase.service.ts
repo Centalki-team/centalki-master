@@ -1,5 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { BaseFirestoreRepository } from 'fireorm';
+import { writeFileSync } from 'fs';
 // import { FieldValue } from 'firebase-admin/firestore';
 import { InjectRepository } from 'nestjs-fireorm';
 import { CommonService } from 'src/common/common.service';
@@ -38,7 +39,24 @@ export class PhraseService {
     //     console.log(`Update success`, phrase);
     //   }
     // });
+    // this.export();
+    // this.import();
   }
+  // async import() {
+  //   const readContent: Phrase[] = require('../../phrases.json');
+  //   console.log({ readContent });
+  //   const resp = await Promise.all(
+  //     readContent.map(async (item) => await this.phraseRepository.create(item)),
+  //   );
+  //   console.log({ resp });
+  // }
+  // async export() {
+  //   const phrases = await this.phraseRepository.find();
+  //   const contentFile = JSON.stringify(phrases);
+  //   writeFileSync('./phrases.json', contentFile);
+  //   const readContent = require('../../phrases.json');
+  //   console.log({ readContent });
+  // }
   async create(dto: CreatePhraseDto) {
     const { phrase, topicId, translations, examples } = dto;
 

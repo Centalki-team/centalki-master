@@ -10,6 +10,7 @@ import { UpdateTopicDto } from './dto/update-topic.dto';
 import { Topic } from './entities/topic.entity';
 import { GetTopicsDto } from './dto/get-topics.dto';
 import { FirebaseService } from 'src/firebase/firebase.service';
+import { writeFileSync } from 'fs';
 
 @Injectable()
 export class TopicService {
@@ -21,7 +22,25 @@ export class TopicService {
     private readonly questionService: QuestionService,
     private readonly phraseService: PhraseService,
     private readonly firebaseService: FirebaseService,
-  ) {}
+  ) {
+    // this.export();
+    // this.import();
+  }
+  // async import() {
+  //   const readContent: Topic[] = require('../../topics.json');
+  //   console.log({ readContent });
+  //   const resp = await Promise.all(
+  //     readContent.map(async (item) => await this.topicRepository.create(item)),
+  //   );
+  //   console.log({ resp });
+  // }
+  // async export() {
+  //   const topics = await this.topicRepository.find();
+  //   const contentFile = JSON.stringify(topics);
+  //   writeFileSync('./topics.json', contentFile);
+  //   const readContent = require('../../topics.json');
+  //   console.log({ readContent });
+  // }
   async create(dto: CreateTopicDto) {
     return await this.topicRepository.create(dto);
   }
