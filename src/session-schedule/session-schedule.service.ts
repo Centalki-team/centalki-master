@@ -297,7 +297,7 @@ export class SessionScheduleService {
     }
 
     if (query.teacherId) {
-      qb = qb.whereEqualTo('teacherId', query.studentId);
+      qb = qb.whereEqualTo('teacherId', query.teacherId);
     }
 
     if (query.status) {
