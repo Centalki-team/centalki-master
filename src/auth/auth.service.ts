@@ -59,6 +59,26 @@ export class AuthService {
   //   }
   // }
 
+  async approveTeacher(email: string) {
+    const user = await this.firebaseService.auth().getUserByEmail(email);
+    if (!user) {
+      throw new NotFoundException('User not found!');
+    }
+    const exist = await this.authCollection
+      .whereEqualTo('uid', user.uid)
+      .findOne();
+    if (exist) {
+      exist.role = ERole.TEACHER;
+      return await this.authCollection.update(exist);
+    } else {
+      return this.authCollection.create({
+        uid: user.uid,
+        role: ERole.TEACHER,
+        deviceTokens: [],
+      });
+    }
+  }
+
   paginateSessions(query: PaginateSessionDto, user: UserRecord) {
     return this.sessionService.paginate(query, user);
   }
