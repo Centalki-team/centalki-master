@@ -20,6 +20,7 @@ import { FcmModule } from './fcm/fcm.module';
 import { CertificateModule } from './certificate/certificate.module';
 import { CacheManagerModule } from './cache-manager/cache-manager.module';
 import { TransactionModule } from './transaction/transaction.module';
+import { NotificationModule } from './notification/notification.module';
 
 @Module({
   imports: [
@@ -44,6 +45,7 @@ import { TransactionModule } from './transaction/transaction.module';
     CertificateModule,
     CacheManagerModule,
     TransactionModule,
+    NotificationModule,
   ],
   controllers: [AppController],
   providers: [AppService, FirebaseService],

@@ -7,7 +7,7 @@ import {
   Query,
   UseGuards,
 } from '@nestjs/common';
-import { ApiBearerAuth, ApiOperation } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { UserRecord } from 'firebase-admin/auth';
 import { User } from 'src/global/decorator';
 import { FirebaseAuthGuard } from 'src/global/guard';
@@ -16,6 +16,7 @@ import { PaginateTransactionDto } from './dto/get-transaction';
 import { TransactionService } from './transaction.service';
 
 @Controller('transaction')
+@ApiTags('Giao dịch')
 export class TransactionController {
   constructor(private readonly transactionService: TransactionService) {}
 

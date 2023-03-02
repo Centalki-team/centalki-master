@@ -30,6 +30,8 @@ import {
   _APP_FEE_,
 } from 'src/global/constant';
 import { PaginationResult } from 'src/global/types';
+import { CreateNotificationDto } from 'src/notification/dto/create-notification.dto';
+import { NotificationService } from 'src/notification/notification.service';
 import { Topic } from 'src/topic/entities/topic.entity';
 import { TopicService } from 'src/topic/topic.service';
 import { TransactionService } from 'src/transaction/transaction.service';
@@ -55,7 +57,7 @@ export class SessionScheduleService {
     private readonly authService: AuthService,
     private readonly commonService: CommonService,
     private readonly fcmService: FcmService,
-
+    private readonly notificationService: NotificationService,
     private readonly transactionService: TransactionService,
     private readonly eventEmitter: EventEmitter2,
     @InjectRepository(SessionSchedule)
@@ -444,19 +446,42 @@ export class SessionScheduleService {
     console.log(`Start push notification to ${availableIds.join(' + ')}`);
 
     const deviceTokens = await this.authService.getDeviceTokens(availableIds);
+    if (deviceTokens.length) {
+      const message = {
+        notification: {
+          title: 'New session request',
+          body: `A student has requested a new session`,
+        },
+        data: {
+          sessionId,
+          type: 'new_session',
+        },
+        tokens: deviceTokens,
+      };
 
-    const message = {
-      notification: {
-        title: 'New session request',
-        body: `A student has requested a new session`,
-      },
-      data: {
-        sessionId,
-      },
-      tokens: deviceTokens,
-    };
+      await this.fcmService.sendMulticast(message);
+      console.log(`Push notification to ${availableIds.join(' + ')} success`);
 
-    await this.fcmService.sendMulticast(message);
-    console.log(`Push notification to ${availableIds.join(' + ')} success`);
+      const createNotificationDtos: CreateNotificationDto[] = availableIds.map(
+        (uid) => ({
+          uid,
+          title: {
+            en: 'New session request',
+          },
+          body: {
+            en: `A student has requested a new session`,
+          },
+          data: {
+            sessionId,
+            type: 'new_session',
+          },
+        }),
+      );
+      await Promise.all(
+        createNotificationDtos.map((item) =>
+          this.notificationService.create(item),
+        ),
+      );
+    }
   }
 }

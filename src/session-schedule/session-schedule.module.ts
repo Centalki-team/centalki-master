@@ -11,6 +11,7 @@ import { CacheManagerModule } from 'src/cache-manager/cache-manager.module';
 import { ScheduleModule } from '@nestjs/schedule';
 import { TransactionModule } from 'src/transaction/transaction.module';
 import { FcmModule } from 'src/fcm/fcm.module';
+import { NotificationModule } from 'src/notification/notification.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { FcmModule } from 'src/fcm/fcm.module';
     ScheduleModule.forRoot(),
     TransactionModule,
     FcmModule,
+    NotificationModule,
   ],
   controllers: [SessionScheduleController],
   providers: [SessionScheduleService],
