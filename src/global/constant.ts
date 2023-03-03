@@ -7,6 +7,7 @@ export const MESSAGE_TYPE = {
   COMPLETED_SESSION: 'COMPLETED_SESSION',
   DEPOSIT_SUCCESS: 'DEPOSIT_SUCCESS',
   NEW_SESSION: 'NEW_SESSION',
+  ROUTING_TIME_OUT: 'ROUTING_TIME_OUT',
 };
 
 export const NOTIFICATION = {
@@ -20,7 +21,7 @@ export const NOTIFICATION = {
     }),
   },
   DEPOSIT_SUCCESS: {
-    TITLE: () => 'Deposit Successful',
+    TITLE: () => 'Deposit Successful!',
     BODY: (amount: number) =>
       `Your deposit of ${amount} has been successfully processed and credited to your wallet. Your account balance now reflects the updated amount. Thank you for using our app for your transaction. If you have any questions, please contact our customer support team for assistance.`,
     PAYLOAD: (amount: number) => ({
@@ -29,10 +30,19 @@ export const NOTIFICATION = {
     }),
   },
   NEW_SESSION: {
-    TITLE: () => 'New session request',
+    TITLE: () => 'New session request!',
     BODY: () => `A student has requested a new session`,
     PAYLOAD: (sessionId: string) => ({
       type: MESSAGE_TYPE.NEW_SESSION,
+      sessionId,
+    }),
+  },
+  ROUTING_TIME_OUT: {
+    TITLE: () => 'Routing Timed Out!',
+    BODY: () =>
+      'Oops! It looks like your 1-1 English speaking session has timed out. Please schedule a new session and try again. We apologize for any inconvenience this may have caused.',
+    PAYLOAD: (sessionId: string) => ({
+      type: MESSAGE_TYPE.ROUTING_TIME_OUT,
       sessionId,
     }),
   },

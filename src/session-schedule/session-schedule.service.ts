@@ -323,6 +323,29 @@ export class SessionScheduleService {
         const sessionScheduleRef = this.sessionScheduleRef();
         delete newData.eventTrackings;
         sessionScheduleRef.child(newData.id).set(newData);
+        const deviceTokens = await this.authService.getDeviceTokens([
+          sessionSchedule.studentId,
+        ]);
+        if (deviceTokens.length) {
+          this.fcmService.sendMulticast({
+            tokens: deviceTokens,
+            notification: {
+              title: NOTIFICATION.ROUTING_TIME_OUT.TITLE(),
+              body: NOTIFICATION.ROUTING_TIME_OUT.BODY(),
+            },
+            data: NOTIFICATION.ROUTING_TIME_OUT.PAYLOAD(sessionId),
+          });
+        }
+        this.notificationService.create({
+          uid: sessionSchedule.studentId,
+          title: {
+            en: NOTIFICATION.ROUTING_TIME_OUT.TITLE(),
+          },
+          body: {
+            en: NOTIFICATION.ROUTING_TIME_OUT.BODY(),
+          },
+          data: NOTIFICATION.ROUTING_TIME_OUT.PAYLOAD(sessionId),
+        });
       }
     });
   }
