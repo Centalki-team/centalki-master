@@ -25,6 +25,7 @@ import { CommonService } from 'src/common/common.service';
 import { FcmService } from 'src/fcm/fcm.service';
 import { FirebaseService } from 'src/firebase/firebase.service';
 import {
+  NOTIFICATION,
   _30_MINS_MILLISECONDS_,
   _5_MINS_MILLISECONDS_,
   _APP_FEE_,
@@ -261,6 +262,41 @@ export class SessionScheduleService {
           +cost - _APP_FEE_,
           sessionId,
         );
+
+        const deviceTokens = await this.authService.getDeviceTokens([
+          sessionSchedule.teacherId,
+          sessionSchedule.studentId,
+        ]);
+        if (deviceTokens.length) {
+          this.fcmService.sendMulticast({
+            tokens: deviceTokens,
+            notification: {
+              title: NOTIFICATION.COMPLETED_SESSION.TITLE(),
+              body: NOTIFICATION.COMPLETED_SESSION.BODY(),
+            },
+            data: NOTIFICATION.COMPLETED_SESSION.PAYLOAD(sessionId),
+          });
+        }
+        this.notificationService.create({
+          uid: sessionSchedule.studentId,
+          title: {
+            en: NOTIFICATION.COMPLETED_SESSION.TITLE(),
+          },
+          body: {
+            en: NOTIFICATION.COMPLETED_SESSION.BODY(),
+          },
+          data: NOTIFICATION.COMPLETED_SESSION.PAYLOAD(sessionId),
+        });
+        this.notificationService.create({
+          uid: sessionSchedule.teacherId,
+          title: {
+            en: NOTIFICATION.COMPLETED_SESSION.TITLE(),
+          },
+          body: {
+            en: NOTIFICATION.COMPLETED_SESSION.BODY(),
+          },
+          data: NOTIFICATION.COMPLETED_SESSION.PAYLOAD(sessionId),
+        });
       }
     });
   }
@@ -449,13 +485,10 @@ export class SessionScheduleService {
     if (deviceTokens.length) {
       const message = {
         notification: {
-          title: 'New session request',
-          body: `A student has requested a new session`,
+          title: NOTIFICATION.NEW_SESSION.TITLE(),
+          body: NOTIFICATION.NEW_SESSION.BODY(),
         },
-        data: {
-          sessionId,
-          type: 'new_session',
-        },
+        data: NOTIFICATION.NEW_SESSION.PAYLOAD(sessionId),
         tokens: deviceTokens,
       };
 
@@ -466,15 +499,12 @@ export class SessionScheduleService {
         (uid) => ({
           uid,
           title: {
-            en: 'New session request',
+            en: NOTIFICATION.NEW_SESSION.TITLE(),
           },
           body: {
-            en: `A student has requested a new session`,
+            en: NOTIFICATION.NEW_SESSION.BODY(),
           },
-          data: {
-            sessionId,
-            type: 'new_session',
-          },
+          data: NOTIFICATION.NEW_SESSION.PAYLOAD(sessionId),
         }),
       );
       await Promise.all(

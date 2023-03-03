@@ -10,6 +10,7 @@ import { InjectRepository } from 'nestjs-fireorm';
 import { AuthService } from 'src/auth/auth.service';
 import { CommonService } from 'src/common/common.service';
 import { FcmService } from 'src/fcm/fcm.service';
+import { NOTIFICATION } from 'src/global/constant';
 import { PaginationResult } from 'src/global/types';
 import { NotificationService } from 'src/notification/notification.service';
 import { genId } from 'src/utils/helper';
@@ -56,32 +57,27 @@ export class TransactionService {
         await this.authService.updateBalance(uid, amount);
       })
       .then(async () => {
+        if (sessionId) return null;
         const deviceTokens = await this.authService.getDeviceTokens([uid]);
         if (deviceTokens.length) {
           this.fcmService.sendMulticast({
             tokens: deviceTokens,
             notification: {
-              title: 'Deposit Successful',
-              body: `Your deposit of ${amount} has been successfully processed and credited to your wallet. Your account balance now reflects the updated amount. Thank you for using our app for your transaction. If you have any questions, please contact our customer support team for assistance.`,
+              title: NOTIFICATION.DEPOSIT_SUCCESS.TITLE(),
+              body: NOTIFICATION.DEPOSIT_SUCCESS.BODY(amount),
             },
-            data: {
-              type: 'deposit_notification',
-              amount: amount.toString(),
-            },
+            data: NOTIFICATION.DEPOSIT_SUCCESS.PAYLOAD(amount),
           });
         }
         this.notificationService.create({
           uid,
           title: {
-            en: 'Deposit Successful',
+            en: NOTIFICATION.DEPOSIT_SUCCESS.TITLE(),
           },
           body: {
-            en: `Your deposit of ${amount} has been successfully processed and credited to your wallet. Your account balance now reflects the updated amount. Thank you for using our app for your transaction. If you have any questions, please contact our customer support team for assistance.`,
+            en: NOTIFICATION.DEPOSIT_SUCCESS.BODY(amount),
           },
-          data: {
-            message_type: 'deposit_notification',
-            amount: amount.toString(),
-          },
+          data: NOTIFICATION.DEPOSIT_SUCCESS.PAYLOAD(amount),
         });
       });
   }
