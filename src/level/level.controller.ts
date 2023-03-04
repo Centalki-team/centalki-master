@@ -6,11 +6,15 @@ import {
   Patch,
   Param,
   Delete,
+  CacheInterceptor,
+  UseInterceptors,
+  CacheTTL,
 } from '@nestjs/common';
 import { LevelService } from './level.service';
 import { CreateLevelDto } from './dto/create-level.dto';
 import { UpdateLevelDto } from './dto/update-level.dto';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
+import { _1_MONTH_SECONDS_ } from 'src/global/constant';
 
 @Controller('level')
 @ApiTags('Level')
@@ -24,6 +28,8 @@ export class LevelController {
   }
 
   @Get()
+  @UseInterceptors(CacheInterceptor)
+  @CacheTTL(_1_MONTH_SECONDS_)
   @ApiOperation({ summary: 'Lấy danh sách tất cả cấp độ' })
   findAll() {
     return this.levelService.findAll();

@@ -7,12 +7,16 @@ import {
   Param,
   Delete,
   Query,
+  UseInterceptors,
+  CacheInterceptor,
+  CacheTTL,
 } from '@nestjs/common';
 import { TopicService } from './topic.service';
 import { CreateTopicDto } from './dto/create-topic.dto';
 import { UpdateTopicDto } from './dto/update-topic.dto';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
 import { GetTopicsDto } from './dto/get-topics.dto';
+import { _1_DAY_SECONDS_ } from 'src/global/constant';
 
 @Controller('topic')
 @ApiTags('Topic')
@@ -26,12 +30,16 @@ export class TopicController {
   }
 
   @Get()
+  @UseInterceptors(CacheInterceptor)
+  @CacheTTL(_1_DAY_SECONDS_)
   @ApiOperation({ summary: 'Lấy danh sách chủ đề theo cấp độ' })
   findAll(@Query() query: GetTopicsDto) {
     return this.topicService.findAll(query);
   }
 
   @Get(':id')
+  @UseInterceptors(CacheInterceptor)
+  @CacheTTL(_1_DAY_SECONDS_)
   @ApiOperation({ summary: 'Lấy 1 chủ đề theo id' })
   findOne(@Param('id') id: string) {
     return this.topicService.findOne(id);

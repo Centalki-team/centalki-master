@@ -10,7 +10,6 @@ import { UpdateTopicDto } from './dto/update-topic.dto';
 import { Topic } from './entities/topic.entity';
 import { GetTopicsDto } from './dto/get-topics.dto';
 import { FirebaseService } from 'src/firebase/firebase.service';
-import { writeFileSync } from 'fs';
 
 @Injectable()
 export class TopicService {
@@ -51,9 +50,9 @@ export class TopicService {
     const qb = levelId
       ? this.topicRepository.whereEqualTo('levelId', levelId)
       : this.topicRepository;
-    console.log({ qb });
 
     const list = (await qb.find()) || [];
+
     const data = [];
     for (const item of list) {
       const category = await this.categoryService.findOne(item.categoryId);
