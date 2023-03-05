@@ -7,10 +7,11 @@ import { Transaction } from './entities/transaction.entity';
 import { CommonModule } from 'src/common/common.module';
 import { NotificationModule } from 'src/notification/notification.module';
 import { FcmModule } from 'src/fcm/fcm.module';
+import { PaymentReceipt } from 'src/transaction/entities/payment-receipt.entity';
 
 @Module({
   imports: [
-    FireormModule.forFeature([Transaction]),
+    FireormModule.forFeature([Transaction, PaymentReceipt]),
     forwardRef(() => AuthModule),
     CommonModule,
     NotificationModule,
