@@ -7,8 +7,8 @@ import { StorageService } from './storage.service';
 @ApiTags('Storage')
 export class StorageController {
   constructor(private readonly storageService: StorageService) {}
-  @Post('presigned-url')
-  createPresignedUrl(@Body() dto: CreatePresignedUrlDto) {
-    return this.storageService.generateV4UploadSignedUrl(dto);
-  }
+  // @Post('presigned-url')
+  // createPresignedUrl(@Body() dto: CreatePresignedUrlDto) {
+  //   return this.storageService.generateV4UploadSignedUrl(dto);
+  // }
 }

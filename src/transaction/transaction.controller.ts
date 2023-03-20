@@ -7,7 +7,12 @@ import {
   Query,
   UseGuards,
 } from '@nestjs/common';
-import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
+import {
+  ApiBearerAuth,
+  ApiOperation,
+  ApiResponseProperty,
+  ApiTags,
+} from '@nestjs/swagger';
 import { UserRecord } from 'firebase-admin/auth';
 import { User } from 'src/global/decorator';
 import { FirebaseAuthGuard } from 'src/global/guard';
@@ -54,6 +59,17 @@ export class TransactionController {
   })
   @UseGuards(FirebaseAuthGuard)
   @ApiBearerAuth()
+  @ApiResponseProperty({
+    example: {
+      userId: 'g0aEPfCDhHZO1k6K5rg4WrGw4nm1',
+      imageURLs: [
+        'https://img.vn/uploads/version/img24-png-20190726133727cbvncjKzsQ.png',
+      ],
+      doneAt: null,
+      createdAt: '2023-03-12T05:49:23.485Z',
+      id: 'Z5DVusTEEyxSLMRKkLMw',
+    },
+  })
   createPaymentReceipt(
     @Body() dto: CreatePaymentReceiptDto,
     @User() user: UserRecord,
@@ -81,5 +97,13 @@ export class TransactionController {
   })
   get(@Query() query: PaginateTransactionDto, @User() user: UserRecord) {
     return this.transactionService.paginateByUserId(query, user);
+  }
+
+  @Get('payment-info')
+  @ApiOperation({
+    summary: 'Thông tin nhận tiền',
+  })
+  getPaymentInfo() {
+    return this.transactionService.getPaymentInfo();
   }
 }

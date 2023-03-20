@@ -17,7 +17,7 @@ export class StorageService {
         expires, // 15 minutes
         contentType: dto.contentType,
       })
-      .then(data => {
+      .then((data) => {
         if (!data.length) {
           throw new InternalServerErrorException();
         }

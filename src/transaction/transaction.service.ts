@@ -156,4 +156,12 @@ export class TransactionService {
       : this.paymentReceiptRepository.whereEqualTo('doneAt', null);
     return qb.find();
   }
+
+  getPaymentInfo() {
+    return {
+      transferCode: '2|99|0374246292|NGUYEN KHA VI||0|0|0||transfer_myqr',
+      accountHolder: 'Nguyễn Kha Vĩ',
+      phoneNumber: '0374246292',
+    };
+  }
 }
