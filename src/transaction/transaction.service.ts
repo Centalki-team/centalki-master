@@ -158,10 +158,16 @@ export class TransactionService {
   }
 
   getPaymentInfo() {
-    return {
+    const momo = {
       transferCode: '2|99|0374246292|NGUYEN KHA VI||0|0|0||transfer_myqr',
       accountHolder: 'Nguyễn Kha Vĩ',
       phoneNumber: '0374246292',
     };
+    const banking = {
+      accountHolder: 'Nguyễn Kha Vĩ',
+      accountNumber: '0374246292',
+      bank: 'MB Bank',
+    };
+    return { momo, banking };
   }
 }
