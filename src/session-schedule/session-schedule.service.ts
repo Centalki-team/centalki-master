@@ -408,6 +408,7 @@ export class SessionScheduleService {
       user.uid,
       ESessionScheduleStatus.COMPLETED,
     );
+    console.log('query');
 
     return {
       meta: {

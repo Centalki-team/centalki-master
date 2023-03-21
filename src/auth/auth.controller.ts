@@ -7,11 +7,15 @@ import {
   Patch,
   Query,
   Put,
+  UseInterceptors,
+  CacheInterceptor,
+  CacheTTL,
   // Inject,
   // forwardRef,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { UserRecord } from 'firebase-admin/auth';
+import { _1_DAY_SECONDS_ } from 'src/global/constant';
 import { User } from 'src/global/decorator';
 import { FirebaseAuthGuard } from 'src/global/guard';
 import { PaginateSessionDto } from 'src/session-schedule/dto/get-session.dto';
@@ -58,8 +62,10 @@ export class AuthController {
     description:
       'Lấy danh sách buổi học của người dùng dựa vào Authentication HTTP Header',
   })
-  @UseGuards(FirebaseAuthGuard)
+  @UseInterceptors(CacheInterceptor)
   @ApiBearerAuth()
+  @CacheTTL(_1_DAY_SECONDS_)
+  @UseGuards(FirebaseAuthGuard)
   getSessions(@Query() query: PaginateSessionDto, @User() user: UserRecord) {
     return this.authService.paginateSessions(query, user);
   }

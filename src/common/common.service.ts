@@ -31,7 +31,6 @@ export class CommonService {
         directionStr: directionStr as OrderByDirection,
       };
     }
-    console.log({ sortParams });
 
     const data = await repository.execute(
       queries,
