@@ -2,6 +2,7 @@ import { ValidationPipe } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import * as Sentry from '@sentry/node';
+import admin from 'firebase-admin';
 import {
   DocumentBuilder,
   SwaggerCustomOptions,
@@ -11,6 +12,22 @@ import { AppModule } from './app.module';
 // import { ErrorsInterceptor } from './interceptors/errors.interceptor';
 // import { LoggingInterceptor } from './interceptors/logging.interceptor';
 import { SentryExceptionsFilter } from './filters/sentry-exception.filter';
+
+const configureBucketCors = async (app) => {
+  const configService: ConfigService = app.get(ConfigService);
+
+  return admin
+    .storage()
+    .bucket(configService.get<string>('BUCKET_NAME'))
+    .setCorsConfiguration([
+      {
+        origin: ['*'],
+        responseHeader: ['Content-Type'],
+        method: ['GET', 'HEAD', 'DELETE'],
+        maxAgeSeconds: 3600,
+      },
+    ]);
+};
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
@@ -46,6 +63,7 @@ async function bootstrap() {
   Sentry.init({
     dsn: configService.getOrThrow('sentryDNS'),
   });
+  await configureBucketCors(app);
   await app.listen(port, '0.0.0.0');
   console.log(`Centalki Master listening on http port: ${port}`);
   console.log(`Env: ${process.env.NODE_ENV}`);
