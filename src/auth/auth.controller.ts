@@ -15,7 +15,7 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { UserRecord } from 'firebase-admin/auth';
-import { _1_DAY_SECONDS_ } from 'src/global/constant';
+import { _1_DAY_SECONDS_, _30_MINS_MILLISECONDS_ } from 'src/global/constant';
 import { User } from 'src/global/decorator';
 import { FirebaseAuthGuard } from 'src/global/guard';
 import { PaginateSessionDto } from 'src/session-schedule/dto/get-session.dto';
@@ -64,7 +64,7 @@ export class AuthController {
   })
   @UseInterceptors(CacheInterceptor)
   @ApiBearerAuth()
-  @CacheTTL(_1_DAY_SECONDS_)
+  @CacheTTL(_30_MINS_MILLISECONDS_)
   @UseGuards(FirebaseAuthGuard)
   getSessions(@Query() query: PaginateSessionDto, @User() user: UserRecord) {
     return this.authService.paginateSessions(query, user);
