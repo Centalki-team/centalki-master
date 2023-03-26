@@ -11,7 +11,7 @@ import {
 } from '@nestjs/common';
 import { FeedbackService } from './feedback.service';
 import { CreateFeedbackDto } from './dto/create-feedback.dto';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { FirebaseAuthGuard } from 'src/global/guard';
 import { User } from 'src/global/decorator';
 import { DecodedIdToken } from 'firebase-admin/auth';
@@ -22,11 +22,12 @@ import { Feedback } from './entities/feedback.entity';
 
 @Controller('feedback')
 @ApiTags('Feedback')
-@UseGuards(FirebaseAuthGuard)
 export class FeedbackController {
   constructor(private readonly feedbackService: FeedbackService) {}
 
   @Post()
+  @UseGuards(FirebaseAuthGuard)
+  @ApiBearerAuth()
   create(
     @Body() createFeedbackDto: CreateFeedbackDto,
     @User() user: DecodedIdToken,

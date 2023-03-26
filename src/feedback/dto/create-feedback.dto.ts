@@ -1,10 +1,10 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Type } from 'class-transformer';
-import { IsNotEmpty, IsNumberString, IsString } from 'class-validator';
+import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 export class CreateFeedbackDto {
   @ApiProperty({ required: true })
-  @IsNumberString()
+  @IsNumber()
   @Type(() => Number)
   @IsNotEmpty()
   rating: number;
