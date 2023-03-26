@@ -62,9 +62,9 @@ export class AuthController {
     description:
       'Lấy danh sách buổi học của người dùng dựa vào Authentication HTTP Header',
   })
-  @UseInterceptors(CacheInterceptor)
+  // @UseInterceptors(CacheInterceptor)
   @ApiBearerAuth()
-  @CacheTTL(_30_MINS_MILLISECONDS_)
+  // @CacheTTL(_30_MINS_MILLISECONDS_)
   @UseGuards(FirebaseAuthGuard)
   getSessions(@Query() query: PaginateSessionDto, @User() user: UserRecord) {
     return this.authService.paginateSessions(query, user);
