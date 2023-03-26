@@ -11,12 +11,7 @@ import { EventEmitter2 } from '@nestjs/event-emitter';
 import { SchedulerRegistry } from '@nestjs/schedule';
 import { instanceToPlain } from 'class-transformer';
 import { UserRecord } from 'firebase-admin/auth';
-import {
-  BaseFirestoreRepository,
-  FirestoreOperators,
-  IFireOrmQueryLine,
-  IQueryBuilder,
-} from 'fireorm';
+import { BaseFirestoreRepository, IQueryBuilder } from 'fireorm';
 import { InjectRepository } from 'nestjs-fireorm';
 import { AuthService } from 'src/auth/auth.service';
 import { ERole } from 'src/auth/enum/role.enum';
@@ -380,40 +375,50 @@ export class SessionScheduleService {
     query: PaginateSessionDto,
     user: UserRecord,
   ): Promise<PaginationResult<SessionSchedule>> {
-    const { page, size, status, sort } = query;
+    const { page, size, status } = query;
 
-    const queries: IFireOrmQueryLine[] = [
-      {
-        prop: 'studentId',
-        val: user.uid,
-        operator: FirestoreOperators.equal,
-      },
-    ];
-    if (status) {
-      queries.push({
-        prop: 'status',
-        val: status,
-        operator: FirestoreOperators.equal,
-      });
-    }
-
-    const { data, hasNextPage, hasPrevPage } = await this.commonService.find(
-      this.sessionScheduleRepository,
-      queries,
-      page,
-      size,
-      sort,
-    );
+    const data = await this.sessionScheduleRepository
+      .whereEqualTo('status', status)
+      .whereEqualTo('studentId', user.uid)
+      .orderByDescending('createdAt')
+      .find();
     const completedSession = await this.countSession(
       user.uid,
       ESessionScheduleStatus.COMPLETED,
     );
-    console.log('query');
 
     return {
       meta: {
-        hasNextPage,
-        hasPrevPage,
+        hasNextPage: false,
+        hasPrevPage: false,
+        page,
+        size,
+        completedSession,
+      },
+      data,
+    };
+  }
+
+  async paginateTaught(
+    query: PaginateSessionDto,
+    user: UserRecord,
+  ): Promise<PaginationResult<SessionSchedule>> {
+    const { page, size, status } = query;
+
+    const data = await this.sessionScheduleRepository
+      .whereEqualTo('status', status)
+      .whereEqualTo('teacherId', user.uid)
+      .orderByDescending('createdAt')
+      .find();
+    const completedSession = await this.countSession(
+      user.uid,
+      ESessionScheduleStatus.COMPLETED,
+    );
+
+    return {
+      meta: {
+        hasNextPage: false,
+        hasPrevPage: false,
         page,
         size,
         completedSession,

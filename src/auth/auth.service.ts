@@ -83,6 +83,10 @@ export class AuthService {
     return this.sessionService.paginate(query, user);
   }
 
+  paginateTaughtSessions(query: PaginateSessionDto, user: UserRecord) {
+    return this.sessionService.paginateTaught(query, user);
+  }
+
   async assignRole(dto: SetRoleDto) {
     const displayName = dto.displayName;
     let claims = null;
