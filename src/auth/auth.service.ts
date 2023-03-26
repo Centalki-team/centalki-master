@@ -38,11 +38,13 @@ export class AuthService {
     private readonly sessionService: SessionScheduleService,
     @Inject(forwardRef(() => CertificateService))
     private readonly certificateService: CertificateService,
-  ) {
-    // this.loginBiometric();
-    // this.migrateProfile();
+  ) {}
+  isSSO(user: UserRecord) {
+    const providerData = user.providerData || [];
+    return providerData.some((item) =>
+      ['facebook.com', 'google.com'].includes(item.providerId),
+    );
   }
-
   // async migrateProfile() {
   //   const list = (await this.firebaseService.auth().listUsers()).users;
   //   for (const item of list) {
@@ -100,6 +102,14 @@ export class AuthService {
     const userProfile = new UserProfile();
     userProfile.uid = uid;
 
+    const user = await this.firebaseService.auth().getUser(uid);
+
+    const isSSOUser = this.isSSO(user);
+    if (isSSOUser) {
+      await this.firebaseService.auth().updateUser(uid, {
+        emailVerified: true,
+      });
+    }
     if (displayName) {
       await this.firebaseService.auth().updateUser(uid, {
         displayName,
