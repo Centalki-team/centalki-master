@@ -42,7 +42,7 @@ export class AuthService {
   isSSO(user: UserRecord) {
     const providerData = user.providerData || [];
     return providerData.some((item) =>
-      ['facebook.com', 'google.com'].includes(item.providerId),
+      ['facebook.com', 'google.com', 'apple.com'].includes(item.providerId),
     );
   }
   // async migrateProfile() {
