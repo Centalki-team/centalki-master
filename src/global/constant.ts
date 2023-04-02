@@ -1,5 +1,5 @@
 export const _5_MINS_MILLISECONDS_ = 5 * 60 * 1000;
-export const _30_MINS_MILLISECONDS_ = 5 * 60 * 1000;
+export const _30_MINS_MILLISECONDS_ = 30 * 60 * 1000;
 
 export const _1_DAY_SECONDS_ = 24 * 60 * 60;
 export const _1_MONTH_SECONDS_ = 30 * 24 * 60 * 60;
