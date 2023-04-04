@@ -22,9 +22,7 @@ export class BlockingService {
     }
     return await this.blockingRepository.create({
       userId: user.uid,
-      user,
       blockedId,
-      blocked,
       createdAt: new Date().toISOString(),
     });
   }

@@ -22,9 +22,7 @@ export class ReportingService {
     }
     return await this.reportingRepository.create({
       userId: user.uid,
-      user,
       reportedId,
-      reported,
       summary,
       detail,
       createdAt: new Date().toISOString(),
