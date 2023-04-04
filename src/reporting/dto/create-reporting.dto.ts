@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsNotEmpty, IsOptional, IsString } from 'class-validator';
+import { IsArray, IsNotEmpty, IsOptional, IsString } from 'class-validator';
 
 export class CreateReportingDto {
   @ApiProperty({
@@ -11,10 +11,12 @@ export class CreateReportingDto {
 
   @ApiProperty({
     description: 'Tóm tắt vấn đề',
+    isArray: true,
   })
   @IsOptional()
-  @IsString()
-  summary?: string;
+  @IsArray()
+  @IsString({ each: true })
+  summary: string[];
 
   @ApiProperty({
     description: 'Chi tiết vấn đề',

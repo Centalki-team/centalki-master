@@ -11,7 +11,7 @@ export class Reporting {
   reportedId: string;
   reported?: UserRecord;
 
-  summary?: string;
+  summary: string[];
   detail?: string;
 
   createdAt: string;
