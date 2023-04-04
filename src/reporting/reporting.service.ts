@@ -1,7 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreateReportingDto } from './dto/create-reporting.dto';
 import { InjectRepository } from 'nestjs-fireorm';
-import { Blocking } from 'src/blocking/entities/blocking.entity';
 import { BaseFirestoreRepository } from 'fireorm';
 import { FirebaseService } from 'src/firebase/firebase.service';
 import { UserRecord } from 'firebase-admin/auth';
@@ -11,7 +10,7 @@ import { Reporting } from 'src/reporting/entities/reporting.entity';
 @Injectable()
 export class ReportingService {
   constructor(
-    @InjectRepository(Blocking)
+    @InjectRepository(Reporting)
     private reportingRepository: BaseFirestoreRepository<Reporting>,
     private firebaseService: FirebaseService,
   ) {}
