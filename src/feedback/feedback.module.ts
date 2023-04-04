@@ -6,7 +6,7 @@ import { Feedback } from './entities/feedback.entity';
 import { CommonModule } from 'src/common/common.module';
 
 @Module({
-  imports: [FireormModule.forFeature([Feedback]), CommonModule, FireormModule],
+  imports: [FireormModule.forFeature([Feedback]), CommonModule],
   controllers: [FeedbackController],
   providers: [FeedbackService],
 })

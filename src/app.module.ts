@@ -22,6 +22,8 @@ import { CacheManagerModule } from './cache-manager/cache-manager.module';
 import { TransactionModule } from './transaction/transaction.module';
 import { NotificationModule } from './notification/notification.module';
 import { AdminModule } from './admin/admin.module';
+import { BlockingModule } from './blocking/blocking.module';
+import { ReportingModule } from 'src/reporting/reporting.module';
 
 @Module({
   imports: [
@@ -48,6 +50,8 @@ import { AdminModule } from './admin/admin.module';
     TransactionModule,
     NotificationModule,
     AdminModule,
+    BlockingModule,
+    ReportingModule,
   ],
   controllers: [AppController],
   providers: [AppService, FirebaseService],
