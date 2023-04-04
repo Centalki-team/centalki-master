@@ -45,11 +45,15 @@ export class TopicService {
   }
 
   async findAll(query: GetTopicsDto) {
-    const { levelId } = query;
+    const { levelId, categoryId } = query;
 
-    const qb = levelId
+    let qb = levelId
       ? this.topicRepository.whereEqualTo('levelId', levelId)
       : this.topicRepository;
+
+    if (categoryId) {
+      qb = qb.whereEqualTo('categoryId', categoryId);
+    }
 
     const list = (await qb.find()) || [];
 
