@@ -25,6 +25,7 @@ import { PutSpeakingLevels } from './dto/put-speaking-levels.dto';
 import { PutInterestedTopics } from './dto/put-interested-topics.dto';
 import { CertificateService } from 'src/certificate/certificate.service';
 import { ERole } from 'src/auth/enum/role.enum';
+import { PutInitialLevelDto } from 'src/auth/dto/put-initial-level.dto';
 
 @Injectable()
 export class AuthService {
@@ -341,5 +342,16 @@ export class AuthService {
       .findOne();
     profile.balance = (profile.balance || 0) + amount;
     return this.userProfileRepository.update(profile);
+  }
+
+  async putInitialLevel(user: UserRecord, dto: PutInitialLevelDto) {
+    const userProfile = await this.userProfileRepository
+      .whereEqualTo('uid', user.uid)
+      .findOne();
+    if (!userProfile) {
+      throw new NotFoundException();
+    }
+    userProfile.initialLevelId = dto.initialLevelId;
+    return await this.userProfileRepository.update(userProfile);
   }
 }

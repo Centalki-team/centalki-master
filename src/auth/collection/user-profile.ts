@@ -47,4 +47,6 @@ export class UserProfile {
   currency: string;
 
   costPerSession: number;
+
+  initialLevelId?: null | string;
 }

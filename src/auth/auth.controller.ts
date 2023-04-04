@@ -20,6 +20,7 @@ import { PutSpeakingLevels } from './dto/put-speaking-levels.dto';
 import { SetDeviceTokenDto } from './dto/set-device-token.dto';
 import { SetRoleDto } from './dto/set-role.dto';
 import { UpdateProfileDto } from './dto/update-profile.dto';
+import { PutInitialLevelDto } from 'src/auth/dto/put-initial-level.dto';
 
 @Controller('auth')
 @ApiTags('Auth')
@@ -88,6 +89,17 @@ export class AuthController {
   })
   updateUserProfile(@User() user: UserRecord, @Body() dto: UpdateProfileDto) {
     return this.authService.updateUserProfile(user, dto);
+  }
+
+  @Put('initial-level')
+  @UseGuards(FirebaseAuthGuard)
+  @ApiBearerAuth()
+  @ApiOperation({
+    summary: 'Cập nhật trình độ ban đầu của học viên',
+    description: 'Cập nhật trình độ ban đầu của học viên',
+  })
+  putInitialLevel(@User() user: UserRecord, @Body() dto: PutInitialLevelDto) {
+    return this.authService.putInitialLevel(user, dto);
   }
 
   @Post('assign-role')
