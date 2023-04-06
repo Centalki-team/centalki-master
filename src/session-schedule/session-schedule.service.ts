@@ -150,6 +150,15 @@ export class SessionScheduleService {
 
   async pickUp(sessionId: string, pickUpDto: PickUpDto) {
     return this.sessionScheduleRepository.runTransaction(async () => {
+      const isTeacherPickedUp = await this.sessionScheduleRepository
+        .whereEqualTo('teacherId', pickUpDto.teacherId)
+        .whereEqualTo('status', ESessionScheduleStatus.PICKED_UP)
+        .findOne();
+
+      if (isTeacherPickedUp) {
+        throw new ConflictException('Teacher is in session!');
+      }  
+
       const sessionSchedule = await this.sessionScheduleRepository.findById(
         sessionId,
       );
