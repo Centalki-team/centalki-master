@@ -6,6 +6,15 @@ import { CreateQuestionDto } from './dto/create-question.dto';
 import { UpdateQuestionDto } from './dto/update-question.dto';
 import { Question } from './entities/question.entity';
 
+// class Question1 {
+//   id!: string;
+
+//   topicId: string;
+
+//   question: string;
+
+//   answers: string[];
+// }
 @Injectable()
 export class QuestionService {
   constructor(
@@ -14,6 +23,7 @@ export class QuestionService {
   ) {
     // this.export();
     // this.import();
+    // this.updateFromJson();
   }
   // async import() {
   //   const readContent: Question[] = require('../../questions.json');
@@ -32,6 +42,18 @@ export class QuestionService {
   //   const readContent = require('../../questions.json');
   //   console.log({ readContent });
   // }
+
+  // async updateFromJson() {
+  //   const readContent: Question1[] = require('../../questions_new/A2 - Weekend Activities.json');
+  //   console.log({ readContent });
+  //   const resp = await Promise.all(
+  //     readContent.map(
+  //       async (item) => await this.questionRepository.update(item),
+  //     ),
+  //   );
+  //   console.log({ resp });
+  // }
+
   async create(dto: CreateQuestionDto) {
     return await this.questionRepository.create(dto);
   }
