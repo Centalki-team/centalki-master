@@ -1,6 +1,7 @@
 import { Collection } from 'fireorm';
 import { genId } from 'src/utils/helper';
 import { EGender } from '../enum/gender.enum';
+import { EInitialLevelType } from 'src/auth/enum/initial-level.enum';
 
 @Collection()
 export class UserProfile {
@@ -49,4 +50,6 @@ export class UserProfile {
   costPerSession: number;
 
   initialLevelId?: null | string;
+
+  initialLevelType: EInitialLevelType;
 }

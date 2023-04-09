@@ -1,4 +1,5 @@
 import {
+  BadGatewayException,
   BadRequestException,
   ForbiddenException,
   forwardRef,
@@ -26,6 +27,7 @@ import { PutInterestedTopics } from './dto/put-interested-topics.dto';
 import { CertificateService } from 'src/certificate/certificate.service';
 import { ERole } from 'src/auth/enum/role.enum';
 import { PutInitialLevelDto } from 'src/auth/dto/put-initial-level.dto';
+import { EInitialLevelType } from 'src/auth/enum/initial-level.enum';
 
 @Injectable()
 export class AuthService {
@@ -351,7 +353,16 @@ export class AuthService {
     if (!userProfile) {
       throw new NotFoundException();
     }
-    userProfile.initialLevelId = dto.initialLevelId;
+
+    if (
+      dto.initialLevelType === EInitialLevelType.SPECIFIC &&
+      !dto.initialLevelId
+    ) {
+      throw new BadGatewayException('Please provide the specific level!');
+    }
+    userProfile.initialLevelId = dto.initialLevelId || null;
+    userProfile.initialLevelType = dto.initialLevelType || null;
+
     return await this.userProfileRepository.update(userProfile);
   }
 }
