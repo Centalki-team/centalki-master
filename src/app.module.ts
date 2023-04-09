@@ -14,6 +14,8 @@ import { PhraseModule } from './phrase/phrase.module';
 import { SessionScheduleModule } from './session-schedule/session-schedule.module';
 import appConfig from './config/app.config';
 import baseUrlConfig from './config/base-url.config';
+import algoliaConfig from './config/algolia.config';
+
 import { EventEmitterModule } from '@nestjs/event-emitter';
 import { FeedbackModule } from './feedback/feedback.module';
 import { FcmModule } from './fcm/fcm.module';
@@ -24,12 +26,13 @@ import { NotificationModule } from './notification/notification.module';
 import { AdminModule } from './admin/admin.module';
 import { BlockingModule } from './blocking/blocking.module';
 import { ReportingModule } from 'src/reporting/reporting.module';
+import { AlgoliaModule } from './algolia/algolia.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      load: [appConfig, baseUrlConfig],
+      load: [appConfig, baseUrlConfig, algoliaConfig],
       envFilePath: ['.env'],
     }),
     CacheManagerModule,
@@ -52,6 +55,7 @@ import { ReportingModule } from 'src/reporting/reporting.module';
     AdminModule,
     BlockingModule,
     ReportingModule,
+    AlgoliaModule,
   ],
   controllers: [AppController],
   providers: [AppService, FirebaseService],

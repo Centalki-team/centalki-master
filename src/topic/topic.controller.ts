@@ -30,11 +30,11 @@ export class TopicController {
   }
 
   @Get()
-  // @UseInterceptors(CacheInterceptor)
-  // @CacheTTL(_1_DAY_SECONDS_)
+  @UseInterceptors(CacheInterceptor)
+  @CacheTTL(_1_DAY_SECONDS_)
   @ApiOperation({ summary: 'Lấy danh sách chủ đề theo cấp độ' })
   findAll(@Query() query: GetTopicsDto) {
-    return this.topicService.findAll(query);
+    return this.topicService.searchTopic(query);
   }
 
   @Get(':id')

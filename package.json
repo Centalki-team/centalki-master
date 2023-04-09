@@ -33,6 +33,7 @@
     "@sentry/node": "^7.37.0",
     "@sentry/tracing": "^7.37.0",
     "@tfarras/nestjs-firebase-auth": "^2.0.0",
+    "algoliasearch": "^4.17.0",
     "cache-manager": "^5.1.6",
     "cache-manager-redis-store": "^2.0.0",
     "class-transformer": "^0.5.1",

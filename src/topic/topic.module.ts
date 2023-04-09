@@ -1,4 +1,4 @@
-import { CacheModule, Module } from '@nestjs/common';
+import { CacheModule, Module, forwardRef } from '@nestjs/common';
 import { TopicService } from './topic.service';
 import { TopicController } from './topic.controller';
 import { FireormModule } from 'nestjs-fireorm';
@@ -10,6 +10,7 @@ import { PhraseModule } from '../phrase/phrase.module';
 import { FirebaseModule } from 'src/firebase/firebase.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import * as redisStore from 'cache-manager-redis-store';
+import { AlgoliaModule } from 'src/algolia/algolia.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import * as redisStore from 'cache-manager-redis-store';
     QuestionModule,
     LevelModule,
     PhraseModule,
+    forwardRef(() => AlgoliaModule),
     FirebaseModule,
     CacheModule.registerAsync({
       imports: [ConfigModule],
