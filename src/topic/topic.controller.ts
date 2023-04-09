@@ -34,7 +34,10 @@ export class TopicController {
   @CacheTTL(_1_DAY_SECONDS_)
   @ApiOperation({ summary: 'Lấy danh sách chủ đề theo cấp độ' })
   findAll(@Query() query: GetTopicsDto) {
-    return this.topicService.searchTopic(query);
+    if (query.keyword) {
+      return this.topicService.searchTopic(query);
+    }
+    return this.topicService.findAll(query);
   }
 
   @Get(':id')
