@@ -111,6 +111,29 @@ export class TopicService {
     };
   }
 
+  async findByIds(ids: string[]) {
+    const topics = await this.topicRepository.whereIn('id', ids).find();
+    if (!topics.length) return [];
+    const promises = topics.map(async (topic) => {
+      const level = await this.levelService.findOne(topic.levelId);
+      const category = await this.categoryService.findOne(topic.categoryId);
+      const questions =
+        (await this.questionService.getQuestionsByTopic(topic.id)) || [];
+
+      const phrases =
+        (await this.phraseService.getPhrasesByTopic(topic.id)) || [];
+
+      return {
+        ...topic,
+        level,
+        category,
+        questions,
+        phrases,
+      };
+    });
+    return await Promise.all(promises);
+  }
+
   async update(id: string, dto: UpdateTopicDto) {
     const exist = await this.topicRepository.findById(id);
     if (!exist) {

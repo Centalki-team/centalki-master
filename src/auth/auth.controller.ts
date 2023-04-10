@@ -155,6 +155,16 @@ export class AuthController {
   ) {
     return this.authService.putInterestedTopics(user, dto);
   }
+
+  @Get('interested-topics')
+  @UseGuards(FirebaseAuthGuard)
+  @ApiOperation({
+    summary: 'Lấy chủ đề yêu thích',
+  })
+  @ApiBearerAuth()
+  getInterestedTopics(@User() user: UserRecord) {
+    return this.authService.getInterestedTopics(user);
+  }
   // @Get()
   // findAll() {
   //   return this.authService.findAll();

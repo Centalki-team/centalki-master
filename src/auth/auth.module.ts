@@ -10,12 +10,14 @@ import { SessionScheduleModule } from 'src/session-schedule/session-schedule.mod
 import { CertificateModule } from 'src/certificate/certificate.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import * as redisStore from 'cache-manager-redis-store';
+import { TopicModule } from 'src/topic/topic.module';
 
 @Module({
   imports: [
     FireormModule.forFeature([AuthCollection, UserProfile]),
     PassportModule,
     FirebaseModule,
+    TopicModule,
     forwardRef(() => SessionScheduleModule),
     forwardRef(() => CertificateModule),
     CacheModule.registerAsync({

@@ -28,6 +28,7 @@ import { CertificateService } from 'src/certificate/certificate.service';
 import { ERole } from 'src/auth/enum/role.enum';
 import { PutInitialLevelDto } from 'src/auth/dto/put-initial-level.dto';
 import { EInitialLevelType } from 'src/auth/enum/initial-level.enum';
+import { TopicService } from 'src/topic/topic.service';
 
 @Injectable()
 export class AuthService {
@@ -41,6 +42,7 @@ export class AuthService {
     private readonly sessionService: SessionScheduleService,
     @Inject(forwardRef(() => CertificateService))
     private readonly certificateService: CertificateService,
+    private readonly topicService: TopicService,
   ) {}
   isSSO(user: UserRecord) {
     const providerData = user.providerData || [];
@@ -364,5 +366,20 @@ export class AuthService {
     userProfile.initialLevelType = dto.initialLevelType || null;
 
     return await this.userProfileRepository.update(userProfile);
+  }
+
+  async getInterestedTopics(user: UserRecord) {
+    const userProfile = await this.userProfileRepository
+      .whereEqualTo('uid', user.uid)
+      .findOne();
+    if (!userProfile) {
+      throw new NotFoundException();
+    }
+    const topicIds = userProfile.interestedTopicIds || [];
+    if (!topicIds.length) {
+      return [];
+    } else {
+      return this.topicService.findByIds(topicIds);
+    }
   }
 }

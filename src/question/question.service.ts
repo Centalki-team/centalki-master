@@ -1,6 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { BaseFirestoreRepository } from 'fireorm';
-import { writeFileSync } from 'fs';
 import { InjectRepository } from 'nestjs-fireorm';
 import { CreateQuestionDto } from './dto/create-question.dto';
 import { UpdateQuestionDto } from './dto/update-question.dto';
