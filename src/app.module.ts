@@ -27,6 +27,7 @@ import { AdminModule } from './admin/admin.module';
 import { BlockingModule } from './blocking/blocking.module';
 import { ReportingModule } from 'src/reporting/reporting.module';
 import { AlgoliaModule } from './algolia/algolia.module';
+import { BookmarkModule } from './bookmark/bookmark.module';
 
 @Module({
   imports: [
@@ -56,6 +57,7 @@ import { AlgoliaModule } from './algolia/algolia.module';
     BlockingModule,
     ReportingModule,
     AlgoliaModule,
+    BookmarkModule,
   ],
   controllers: [AppController],
   providers: [AppService, FirebaseService],
