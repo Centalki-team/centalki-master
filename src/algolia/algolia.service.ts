@@ -49,7 +49,7 @@ export class AlgoliaService {
     console.log(`importTopicsToAlgolia success`, { topics, result });
   }
 
-  async searchTopic(query: GetTopicsDto): Promise<Topic[]> {
+  async searchTopic(query: GetTopicsDto): Promise<{ data: Topic[] }> {
     const topicIndex = this.algoliaClient.initIndex(
       this.configService.getOrThrow('topicIndexName'),
     );
@@ -69,6 +69,8 @@ export class AlgoliaService {
       attributesToHighlight: [],
     });
     const hits = result.hits || [];
-    return hits;
+    return {
+      data: hits,
+    };
   }
 }
