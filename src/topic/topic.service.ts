@@ -16,6 +16,8 @@ import { Topic } from './entities/topic.entity';
 import { GetTopicsDto } from './dto/get-topics.dto';
 import { FirebaseService } from 'src/firebase/firebase.service';
 import { AlgoliaService } from 'src/algolia/algolia.service';
+import { BookmarkService } from 'src/bookmark/bookmark.service';
+import { UserRecord } from 'firebase-admin/auth';
 
 @Injectable()
 export class TopicService {
@@ -29,6 +31,8 @@ export class TopicService {
     private readonly firebaseService: FirebaseService,
     @Inject(forwardRef(() => AlgoliaService))
     private readonly algoliaService: AlgoliaService,
+    @Inject(forwardRef(() => BookmarkService))
+    private bookmarkService: BookmarkService,
   ) {
     // this.export();
     // this.import();
@@ -86,7 +90,7 @@ export class TopicService {
     };
   }
 
-  async findOne(id: string) {
+  async findOne(id: string, user?: UserRecord) {
     const topic = await this.topicRepository.findById(id);
     if (!topic) return null;
     const level = await this.levelService.findOne(topic.levelId);
@@ -94,9 +98,27 @@ export class TopicService {
     const questions =
       (await this.questionService.getQuestionsByTopic(topic.id)) || [];
 
-    const phrases =
+    const rawPhrases =
       (await this.phraseService.getPhrasesByTopic(topic.id)) || [];
+    console.log({ user });
 
+    const promises = rawPhrases.map(async (item) => {
+      if (user) {
+        const bookmark = await this.bookmarkService.isPhraseExist(
+          item.id,
+          user.uid,
+        );
+        console.log({ bookmark });
+
+        return {
+          ...item,
+          bookmark,
+        };
+      } else {
+        return item;
+      }
+    });
+    const phrases = await Promise.all(promises);
     return {
       data: {
         ...topic,
@@ -164,5 +186,9 @@ export class TopicService {
       });
     }
     return data;
+  }
+
+  findById(id: string) {
+    return this.topicRepository.findById(id);
   }
 }

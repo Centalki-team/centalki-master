@@ -11,6 +11,7 @@ import { FirebaseModule } from 'src/firebase/firebase.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import * as redisStore from 'cache-manager-redis-store';
 import { AlgoliaModule } from 'src/algolia/algolia.module';
+import { BookmarkModule } from 'src/bookmark/bookmark.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { AlgoliaModule } from 'src/algolia/algolia.module';
     LevelModule,
     PhraseModule,
     forwardRef(() => AlgoliaModule),
+    forwardRef(() => BookmarkModule),
     FirebaseModule,
     CacheModule.registerAsync({
       imports: [ConfigModule],

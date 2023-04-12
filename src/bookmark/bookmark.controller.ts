@@ -13,6 +13,7 @@ import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { FirebaseAuthGuard } from 'src/global/guard';
 import { User } from 'src/global/decorator';
 import { UserRecord } from 'firebase-admin/auth';
+import { CreateTopicBookmarkDto } from 'src/bookmark/dto/create-topic-bookmark.dto';
 
 @Controller('bookmark')
 @ApiTags('Bookmark')
@@ -50,14 +51,6 @@ export class BookmarkController {
     return this.bookmarkService.findOne(id);
   }
 
-  // @Patch(':id')
-  // update(
-  //   @Param('id') id: string,
-  //   @Body() updateBookmarkDto: UpdateBookmarkDto,
-  // ) {
-  //   return this.bookmarkService.update(+id, updateBookmarkDto);
-  // }
-
   @Delete('vocab/:id')
   @UseGuards(FirebaseAuthGuard)
   @ApiBearerAuth()
@@ -66,5 +59,47 @@ export class BookmarkController {
   })
   remove(@Param('id') id: string, @User() user: UserRecord) {
     return this.bookmarkService.remove(id, user);
+  }
+
+  // ? Section for topic
+  @Post('topic')
+  @UseGuards(FirebaseAuthGuard)
+  @ApiBearerAuth()
+  @ApiOperation({
+    summary: 'Tạo bookmark cho chủ đề',
+  })
+  createTopicBookmark(
+    @Body() createBookmarkDto: CreateTopicBookmarkDto,
+    @User() user: UserRecord,
+  ) {
+    return this.bookmarkService.createTopicBookmark(createBookmarkDto, user);
+  }
+
+  @Get('topic')
+  @UseGuards(FirebaseAuthGuard)
+  @ApiBearerAuth()
+  @ApiOperation({
+    summary: 'Lấy bookmark cho chủ đề của user',
+  })
+  findAllTopicBookmark(@User() user: UserRecord) {
+    return this.bookmarkService.findAllTopicBookmark(user);
+  }
+
+  @Get('topic/:id')
+  @ApiOperation({
+    summary: 'Lấy chi tiết bookmark',
+  })
+  findOneTopicBookmark(@Param('id') id: string) {
+    return this.bookmarkService.findOneTopicBookmark(id);
+  }
+
+  @Delete('topic/:id')
+  @UseGuards(FirebaseAuthGuard)
+  @ApiBearerAuth()
+  @ApiOperation({
+    summary: 'Xoá bookmark',
+  })
+  removeTopicBookmark(@Param('id') id: string, @User() user: UserRecord) {
+    return this.bookmarkService.removeTopicBookmark(id, user);
   }
 }

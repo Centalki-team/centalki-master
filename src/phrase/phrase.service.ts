@@ -1,6 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { BaseFirestoreRepository } from 'fireorm';
-import { writeFileSync } from 'fs';
 // import { FieldValue } from 'firebase-admin/firestore';
 import { InjectRepository } from 'nestjs-fireorm';
 import { CommonService } from 'src/common/common.service';

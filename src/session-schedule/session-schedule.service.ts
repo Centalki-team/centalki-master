@@ -157,7 +157,7 @@ export class SessionScheduleService {
 
       if (isTeacherPickedUp) {
         throw new ConflictException('Teacher is in session!');
-      }  
+      }
 
       const sessionSchedule = await this.sessionScheduleRepository.findById(
         sessionId,

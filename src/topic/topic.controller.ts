@@ -7,16 +7,16 @@ import {
   Param,
   Delete,
   Query,
-  UseInterceptors,
-  CacheInterceptor,
-  CacheTTL,
+  UseGuards,
 } from '@nestjs/common';
 import { TopicService } from './topic.service';
 import { CreateTopicDto } from './dto/create-topic.dto';
 import { UpdateTopicDto } from './dto/update-topic.dto';
-import { ApiOperation, ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { GetTopicsDto } from './dto/get-topics.dto';
-import { _1_DAY_SECONDS_ } from 'src/global/constant';
+import { FirebaseAuthGuard } from 'src/global/guard';
+import { User } from 'src/global/decorator';
+import { UserRecord } from 'firebase-admin/auth';
 
 @Controller('topic')
 @ApiTags('Topic')
@@ -41,11 +41,11 @@ export class TopicController {
   }
 
   @Get(':id')
-  @UseInterceptors(CacheInterceptor)
-  @CacheTTL(_1_DAY_SECONDS_)
   @ApiOperation({ summary: 'Lấy 1 chủ đề theo id' })
-  findOne(@Param('id') id: string) {
-    return this.topicService.findOne(id);
+  @UseGuards(FirebaseAuthGuard)
+  @ApiBearerAuth()
+  findOne(@Param('id') id: string, @User() user: UserRecord) {
+    return this.topicService.findOne(id, user);
   }
 
   @Patch(':id')
