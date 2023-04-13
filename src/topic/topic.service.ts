@@ -125,7 +125,7 @@ export class TopicService {
         this.categoryService.findOne(topic.categoryId),
         this.questionService.getQuestionsByTopic(topic.id),
         this.phraseService.getPhrasesByTopic(topic.id),
-        this.bookmarkService.isTopicExist(id, user.uid),
+        user ? this.bookmarkService.isTopicExist(id, user?.uid) : () => null,
       ]);
 
     const promises = rawPhrases.map(async (item) => {
