@@ -59,6 +59,32 @@ export class TopicService {
   async searchTopic(query: GetTopicsDto) {
     return this.algoliaService.searchTopic(query);
   }
+
+  async getListTopic(query: GetTopicsDto, user: UserRecord) {
+    console.log({ user });
+
+    const { data: rawTopics = [] } = await (query.keyword
+      ? this.searchTopic(query)
+      : this.findAll(query));
+    const promises = rawTopics.map(async (item) => {
+      if (user) {
+        const bookmark = await this.bookmarkService.isTopicExist(
+          item.id,
+          user.uid,
+        );
+
+        return {
+          ...item,
+          bookmark,
+        };
+      } else {
+        return item;
+      }
+    });
+    const data = await Promise.all(promises);
+    return { data };
+  }
+
   async findAll(query: GetTopicsDto) {
     const { levelId, categoryId, keyword } = query;
 
@@ -93,14 +119,14 @@ export class TopicService {
   async findOne(id: string, user?: UserRecord) {
     const topic = await this.topicRepository.findById(id);
     if (!topic) return null;
-    const level = await this.levelService.findOne(topic.levelId);
-    const category = await this.categoryService.findOne(topic.categoryId);
-    const questions =
-      (await this.questionService.getQuestionsByTopic(topic.id)) || [];
-
-    const rawPhrases =
-      (await this.phraseService.getPhrasesByTopic(topic.id)) || [];
-    console.log({ user });
+    const [level, category, questions = [], rawPhrases = [], topicBookmark] =
+      await Promise.all([
+        this.levelService.findOne(topic.levelId),
+        this.categoryService.findOne(topic.categoryId),
+        this.questionService.getQuestionsByTopic(topic.id),
+        this.phraseService.getPhrasesByTopic(topic.id),
+        this.bookmarkService.isTopicExist(id, user.uid),
+      ]);
 
     const promises = rawPhrases.map(async (item) => {
       if (user) {
@@ -108,7 +134,6 @@ export class TopicService {
           item.id,
           user.uid,
         );
-        console.log({ bookmark });
 
         return {
           ...item,
@@ -122,6 +147,7 @@ export class TopicService {
     return {
       data: {
         ...topic,
+        topicBookmark,
         level,
         category,
         questions,

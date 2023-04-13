@@ -162,4 +162,12 @@ export class BookmarkService {
       .findOne();
     return bookmark;
   }
+
+  async isTopicExist(topicId: string, uid: string) {
+    const bookmark = await this.topicBookmarkRepository
+      .whereEqualTo('userId', uid)
+      .whereEqualTo('topicId', topicId)
+      .findOne();
+    return bookmark;
+  }
 }

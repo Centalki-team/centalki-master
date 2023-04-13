@@ -14,7 +14,7 @@ import { CreateTopicDto } from './dto/create-topic.dto';
 import { UpdateTopicDto } from './dto/update-topic.dto';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { GetTopicsDto } from './dto/get-topics.dto';
-import { FirebaseAuthGuard } from 'src/global/guard';
+import { OptionalFirebaseAuthGuard } from 'src/global/guard';
 import { User } from 'src/global/decorator';
 import { UserRecord } from 'firebase-admin/auth';
 
@@ -30,19 +30,16 @@ export class TopicController {
   }
 
   @Get()
-  // @UseInterceptors(CacheInterceptor)
-  // @CacheTTL(_1_DAY_SECONDS_)
+  @UseGuards(OptionalFirebaseAuthGuard)
+  @ApiBearerAuth()
   @ApiOperation({ summary: 'Lấy danh sách chủ đề theo cấp độ' })
-  findAll(@Query() query: GetTopicsDto) {
-    if (query.keyword) {
-      return this.topicService.searchTopic(query);
-    }
-    return this.topicService.findAll(query);
+  findAll(@Query() query: GetTopicsDto, @User() user: UserRecord) {
+    return this.topicService.getListTopic(query, user);
   }
 
   @Get(':id')
   @ApiOperation({ summary: 'Lấy 1 chủ đề theo id' })
-  @UseGuards(FirebaseAuthGuard)
+  @UseGuards(OptionalFirebaseAuthGuard)
   @ApiBearerAuth()
   findOne(@Param('id') id: string, @User() user: UserRecord) {
     return this.topicService.findOne(id, user);
