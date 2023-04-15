@@ -86,11 +86,15 @@ export class BookmarkService {
 
   async remove(id: string, user: UserRecord) {
     const vocabBookmark = await this.vocabBookmarkRepository.findById(id);
+    if (!vocabBookmark) {
+      return true;
+    }
     if (vocabBookmark.userId !== user.uid) {
       throw new ForbiddenException('Owner can delete only!');
     }
 
-    return await this.vocabBookmarkRepository.delete(id);
+    await this.vocabBookmarkRepository.delete(id);
+    return true;
   }
 
   async createTopicBookmark(dto: CreateTopicBookmarkDto, user: UserRecord) {
@@ -116,11 +120,15 @@ export class BookmarkService {
 
   async removeTopicBookmark(id: string, user: UserRecord) {
     const topicBookmark = await this.topicBookmarkRepository.findById(id);
+    if (!topicBookmark) {
+      return true;
+    }
     if (topicBookmark.userId !== user.uid) {
       throw new ForbiddenException('Owner can delete only!');
     }
 
-    return await this.topicBookmarkRepository.delete(id);
+    await this.topicBookmarkRepository.delete(id);
+    return true;
   }
 
   async findOneTopicBookmark(id: string) {
@@ -145,7 +153,9 @@ export class BookmarkService {
       .then((list) => {
         return Promise.all(
           list.map(async (bookmark) => {
-            const topic = await this.topicService.findOne(bookmark.topicId);
+            const { data: topic } = await this.topicService.findOne(
+              bookmark.topicId,
+            );
             return {
               ...bookmark,
               topic,
