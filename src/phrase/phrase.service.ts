@@ -40,6 +40,7 @@ export class PhraseService {
     // });
     // this.export();
     // this.import();
+    // this.updatePhraseFromJson();
   }
   // async import() {
   //   const readContent: Phrase[] = require('../../phrases.json');
@@ -55,6 +56,16 @@ export class PhraseService {
   //   writeFileSync('./phrases.json', contentFile);
   //   const readContent = require('../../phrases.json');
   //   console.log({ readContent });
+  // }
+  // async updatePhraseFromJson() {
+  //   const readContent: Phrase[] = require('../../phrases.json');
+  //   console.log({ readContent });
+  //   const resp = await Promise.all(
+  //     readContent.map(
+  //       async (item) => await this.phraseRepository.create(item),
+  //     ),
+  //   );
+  //   console.log({ resp });
   // }
   async create(dto: CreatePhraseDto) {
     const { phrase, topicId, translations, examples } = dto;

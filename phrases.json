@@ -1,1 +1,1262 @@
-[{"id":"19AiLPnXHWJA92cXXQve","examples":[{"sentence":"The movie opens with a scene in a New York apartment."}],"phonetic":"/siːn/","updatedAt":"2022-12-11T15:18:04.718Z","translations":[{"meaning":"cảnh quay"}],"phrase":"scene","createdAt":"2022-12-11T15:18:04.718Z","topicId":"GTQD3b84dBIq3eoUICIF"},{"id":"2N2LcQLKQwHbIOB7ziwQ","createdAt":"2022-12-11T15:13:55.760Z","phonetic":"/swiːt/","translations":[{"meaning":"đồ ngọt"}],"examples":[{"sentence":"Americans eat too many sweets."}],"phrase":"sweet","topicId":"jHQt2luGgCaPWezywraV","updatedAt":"2022-12-11T15:13:55.760Z"},{"id":"2fOraWbm8tW84vn3AEMM","topicId":"b6OzPzzZAMPLPXzkRLQV","translations":[{"meaning":"làm bài tập về nhà"}],"updatedAt":"2022-12-11T02:52:26.201Z","examples":[{"sentence":"I have to do my homework at 7PM every Saturday."}],"phrase":"to do homework","phonetic":"/tʉː/ /dʉː/ /ˈhəʊmˌwɜːk/","createdAt":"2022-12-11T02:52:26.201Z"},{"id":"3tl9V3CeciWQep5mjjXl","translations":[{"meaning":"bánh mì nướng"}],"topicId":"jHQt2luGgCaPWezywraV","phrase":"toast","updatedAt":"2022-12-11T15:12:07.708Z","phonetic":"/təʊst/","examples":[{"sentence":"She buttered a slice of toast."}],"createdAt":"2022-12-11T15:12:07.708Z"},{"id":"5gEkuggexwYX3Qtv9eyF","phrase":"cartoon","translations":[{"meaning":"hoạt hình"}],"createdAt":"2022-12-11T15:16:41.103Z","examples":[{"sentence":"I usually spend my Saturdays watching cartoons."}],"updatedAt":"2022-12-11T15:16:41.103Z","topicId":"GTQD3b84dBIq3eoUICIF","phonetic":"/kɑːˈtuːn/"},{"id":"7p5tu8NX3YheMTFxQwm0","translations":[{"meaning":"chơi trò chơi điện tử"}],"phonetic":"/tʉː/ /pleɪ/ /ˈvɪ.di.əʊ/ /ɡeɪmz/","examples":[{"sentence":"I like playing video games with my friends."}],"updatedAt":"2022-12-11T02:41:58.501Z","topicId":"b6OzPzzZAMPLPXzkRLQV","createdAt":"2022-12-11T02:41:58.501Z","phrase":"to play video games"},{"id":"7sZUvVLr5SgZlF9mPNTe","updatedAt":"2022-12-11T15:11:33.514Z","translations":[{"meaning":"trái xoài"}],"topicId":"jHQt2luGgCaPWezywraV","phrase":"mango","phonetic":"","createdAt":"2022-12-11T15:11:33.514Z","examples":[{"sentence":"Grafting of mango and lemon trees was also known."}]},{"id":"8CXMJtHhKx6Byoyv3JrB","examples":[{"sentence":"My family is having a barbeque this Sunday."}],"createdAt":"2022-12-11T03:26:51.975Z","topicId":"b6OzPzzZAMPLPXzkRLQV","phrase":"to have a barbecue","updatedAt":"2022-12-11T03:26:51.975Z","phonetic":"/tʉː/  /æɪ/ /ˈbɑːbɪˌkjuː/","translations":[{"meaning":"có một bữa tiệc ngoài trời"}]},{"id":"8Gn9IJcONvdc5wzr7z4u","createdAt":"2022-12-11T15:14:27.328Z","topicId":"jHQt2luGgCaPWezywraV","examples":[{"sentence":"In the evening there was a barbecue."}],"phonetic":"/ˈbɑːbɪˌkjuː/","updatedAt":"2022-12-11T15:14:27.328Z","phrase":"barbecue","translations":[{"meaning":"Thịt nướng"}]},{"id":"8nEurK2tG0Nuld2CFZYt","translations":[{"meaning":"Mứt"}],"examples":[{"sentence":"Gooseberries are used for making pies and jam."}],"phrase":"jam","updatedAt":"2022-12-11T15:11:24.847Z","topicId":"jHQt2luGgCaPWezywraV","phonetic":"/ˈdʒæːm/","createdAt":"2022-12-11T15:11:24.847Z"},{"id":"AlicM5uAKOUeAcuAuTLc","phonetic":"/tʉː/ /pleɪ/ /spɔːts/","topicId":"b6OzPzzZAMPLPXzkRLQV","translations":[{"meaning":"chơi thể thao"}],"createdAt":"2022-12-11T03:32:51.435Z","phrase":"to play sports","updatedAt":"2022-12-11T03:32:51.435Z","examples":[{"sentence":"My friends and I usually play sports in our schoolyard every weekend."}]},{"id":"BjTqA5m8qCiPbuXGnTuN","translations":[{"meaning":"Thịt heo"}],"updatedAt":"2022-12-11T15:11:59.569Z","createdAt":"2022-12-11T15:11:59.569Z","topicId":"jHQt2luGgCaPWezywraV","examples":[{"sentence":"Thus, politicians now have less incentive to bring pork-barrel to their district."}],"phonetic":"/pɔːk/","phrase":"pork"},{"id":"CnDvwmtLCp3m5lUHY78y","createdAt":"2022-12-11T15:17:09.468Z","phrase":"detective story","phonetic":"/dɪˈtɛktɪv/ /ˈstɔː.ɹi/","examples":[{"sentence":"The Adventures Of Sherlock Holmes is one of the best detective story movies."}],"translations":[{"meaning":"truyện trinh thám"}],"updatedAt":"2022-12-11T15:17:09.468Z","topicId":"GTQD3b84dBIq3eoUICIF"},{"id":"DBKBEUy1wY4sCNYW9bkr","createdAt":"2022-12-11T15:16:58.823Z","topicId":"GTQD3b84dBIq3eoUICIF","translations":[{"meaning":"hài kịch"}],"phonetic":"/ˈkɒmədi/","examples":[{"sentence":"They spent hours watching comedy on television."}],"updatedAt":"2022-12-11T15:16:58.823Z","phrase":"comedy"},{"id":"E0IlOp3C60XKCqPxxw6l","updatedAt":"2022-12-11T03:52:15.905Z","createdAt":"2022-12-11T03:52:15.905Z","topicId":"YZ5P40c74WjxRcREqDcf","examples":[{"sentence":"Jewelry is an excellent gift for big celebrations, such as weddings and anniversaries."}],"phonetic":"","translations":[{"meaning":"đồ trang sức"}],"phrase":"jewelry"},{"id":"Ezsi5Sce2of0yyWu2aOw","translations":[{"meaning":"Hạt"}],"examples":[{"sentence":"He cracked (open) the nuts with his hands."}],"createdAt":"2022-12-11T15:11:51.471Z","phonetic":"[nɐt]","topicId":"jHQt2luGgCaPWezywraV","phrase":"nut","updatedAt":"2022-12-11T15:11:51.471Z"},{"id":"GZEB6r03P77Vl4uQgfyi","updatedAt":"2022-12-11T02:52:42.591Z","phrase":"to ride a bike","createdAt":"2022-12-11T02:52:42.591Z","topicId":"b6OzPzzZAMPLPXzkRLQV","translations":[{"meaning":"đi xe đạp"}],"phonetic":"/tʉː/ /ɹaɪd/ /æɪ/ [bɐɪk]","examples":[{"sentence":"I love riding my bike around the lake near my house in the morning every weekend."}]},{"id":"Hmen17kcuLR5ndawzYNH","topicId":"YZ5P40c74WjxRcREqDcf","phonetic":"/tʉː/ /dɪsˈkaʊnt/","translations":[{"meaning":"giảm giá"}],"phrase":"to discount","examples":[{"sentence":"One way to attact new customers is to discount the prices on big holidays."}],"createdAt":"2022-12-11T03:57:19.641Z","updatedAt":"2022-12-11T03:57:19.641Z"},{"id":"JYufGTbdibk23l6DxbSo","createdAt":"2022-12-11T03:54:15.481Z","translations":[{"meaning":"mặc vào"}],"examples":[{"sentence":"I decided to put on the new dress I bought last week at my best friend's party."}],"phonetic":"/tʉː/ /pʊt/ /ɒn/","updatedAt":"2022-12-11T03:54:15.481Z","topicId":"YZ5P40c74WjxRcREqDcf","phrase":"to put on"},{"id":"JfQhNkeoOyRHBp522rg5","topicId":"jHQt2luGgCaPWezywraV","updatedAt":"2022-12-11T15:11:10.611Z","createdAt":"2022-12-11T15:11:10.611Z","phonetic":"/dɪˈzɜːt/","examples":[{"sentence":"She made a fabulous dessert with alternate layers of chocolate and cream."}],"phrase":"dessert","translations":[{"meaning":"Món tráng miệng"}]},{"id":"KZ3CEylAGJ2nPiw198jc","updatedAt":"2022-12-11T03:30:12.205Z","examples":[{"sentence":"My mother and I go to visit our cousins every Saturday."}],"phonetic":"/tʉː/ /ˈvɪzɪt/ ","createdAt":"2022-12-11T03:30:12.205Z","topicId":"b6OzPzzZAMPLPXzkRLQV","phrase":"to visit cousins","translations":[{"meaning":"đến thăm anh em họ"}]},{"id":"LF4tMUoWt2VvWNBteQlB","examples":[{"sentence":"We left before the final credits began to roll."}],"phonetic":"/ˈkɹɛdɪt/","updatedAt":"2022-12-11T15:20:14.976Z","createdAt":"2022-12-11T15:20:14.976Z","phrase":"credit","translations":[{"meaning":"Đoạn cuối phim giới thiệu về các diễn viên hoặc đạo diễn, nhà biên kịch,…"}],"topicId":"GTQD3b84dBIq3eoUICIF"},{"id":"LRslfpfQjcDiW5wrveEn","createdAt":"2022-12-18T03:33:20.388Z","phrase":"string","translations":[{"meaning":"đồ ngọt"}],"examples":[{"sentence":"Americans eat too many sweets."}],"updatedAt":"2022-12-18T03:33:20.388Z","topicId":"string","phonetic":"/stɹɪŋ/"},{"id":"MWjhfnq6IpN1wmnUpMla","topicId":"GTQD3b84dBIq3eoUICIF","phonetic":"/tʉː/ /stɑːt/ ","createdAt":"2022-12-11T15:18:52.116Z","translations":[{"meaning":"bắt đầu với"}],"phrase":"to start with","examples":[{"sentence":"The movice starts with a dramatic fight scene between the two brothers."}],"updatedAt":"2022-12-11T15:18:52.116Z"},{"id":"MaADTXTN2IXp671Fv7IY","topicId":"jHQt2luGgCaPWezywraV","phonetic":"/æɪ/ /ɡlɑːs/ /ɔv/ /d͡ʒuːs/","translations":[{"meaning":"Một ly nước hoa quả"}],"phrase":"a glass of juice","examples":[{"sentence":"May I have a glass of juice?"}],"createdAt":"2022-12-11T15:15:29.788Z","updatedAt":"2022-12-11T15:15:29.788Z"},{"id":"NL08fYy10WFIhiLJ10tZ","examples":[{"sentence":"My grandfather watchs a documentary film about World War every weekends"}],"topicId":"GTQD3b84dBIq3eoUICIF","phrase":"documentary film","translations":[{"meaning":"phim tài liệu"}],"phonetic":"/ˌdɒk.jəˈmɛn.tɹi/ [ˈfɪlm̩]","updatedAt":"2022-12-11T15:17:24.864Z","createdAt":"2022-12-11T15:17:24.864Z"},{"id":"OKliV5d49aGClkVp1Hlh","createdAt":"2022-12-11T15:18:14.397Z","phonetic":"/ˈhɛɹ.oʊ/","translations":[{"meaning":"anh hùng"}],"phrase":"hero","topicId":"GTQD3b84dBIq3eoUICIF","examples":[{"sentence":"Iron man is my favorite hero."}],"updatedAt":"2022-12-11T15:18:14.397Z"},{"id":"OXh4SNLYkwPuwQ1IPJjF","examples":[{"sentence":"My closet has no space anymore, but I still couldn't find something to wear tonight."}],"phrase":"closet","translations":[{"meaning":"phòng để đồ, tủ quần áo"}],"phonetic":"/ˈklɒzɪt/","createdAt":"2022-12-11T03:57:35.480Z","updatedAt":"2022-12-11T03:57:35.480Z","topicId":"YZ5P40c74WjxRcREqDcf"},{"id":"OfQRlxpbc4DXIexmGJdV","phrase":"mushroom","translations":[{"meaning":"đồ ngọt"}],"examples":[{"sentence":"Americans eat too many sweets."}],"topicId":"jHQt2luGgCaPWezywraV","updatedAt":"2022-12-11T15:11:42.958Z","createdAt":"2022-12-11T15:11:42.958Z","phonetic":"/ˈmʌʃˌɹuːm/"},{"id":"OjgpOZBfUquGCXyzd3eF","phrase":"tasty","examples":[{"sentence":"This soup is very tasty."}],"topicId":"jHQt2luGgCaPWezywraV","translations":[{"meaning":"Ngon miệng"}],"updatedAt":"2022-12-11T15:13:11.447Z","createdAt":"2022-12-11T15:13:11.447Z","phonetic":"/ˈteɪsti/"},{"id":"OotTH0ulPftVZPPLCiIs","examples":[{"sentence":"Iron man is my favorite superhero."}],"translations":[{"meaning":"siêu anh hùng"}],"phrase":"superhero","updatedAt":"2022-12-11T15:18:41.051Z","topicId":"GTQD3b84dBIq3eoUICIF","phonetic":"/s(j)upə(ɹ)hɪɹoʊ/","createdAt":"2022-12-11T15:18:41.051Z"},{"id":"P9wtg10oMfD2StOJZCwe","examples":[{"sentence":"Americans eat too many sweets."}],"topicId":"4QECmto89K4BLBRNgD7n","phrase":"To go shopping","phonetic":"/tʉː/ /ɡəʉ/ /ˈʃɒpɪŋ/","translations":[{"meaning":"đồ ngọt"}]},{"id":"Rn4aEXYbYpU4Qk8ZeXbl","examples":[{"sentence":"I'm eating a bar of chocolate."}],"createdAt":"2022-12-11T15:15:11.579Z","updatedAt":"2022-12-11T15:15:11.579Z","topicId":"jHQt2luGgCaPWezywraV","phonetic":"/æɪ/ /bɑː/ /ɔv/ /ˈt͡ʃɔk(ə)lət/","phrase":"a bar of chocolate","translations":[{"meaning":"Một thanh sô-cô-la"}]},{"id":"RnAAxTassdFX7VZXkJTE","phonetic":"/æɪ/ /bəʊɫ/ /ɔv/ [ʌɪs] /kɹiːm/","createdAt":"2022-12-11T15:14:55.782Z","translations":[{"meaning":"Một bát kem"}],"updatedAt":"2022-12-11T15:14:55.782Z","phrase":"a bowl of ice cream","topicId":"jHQt2luGgCaPWezywraV","examples":[{"sentence":"I'm eating a bowl of ice cream."}]},{"id":"SATOsqqffDfInUGM4kb4","updatedAt":"2022-12-11T02:52:59.632Z","createdAt":"2022-12-11T02:52:59.632Z","phonetic":"/tʉː/ /sliːp/ /leɪt/","topicId":"b6OzPzzZAMPLPXzkRLQV","examples":[{"sentence":"I always go to sleep late every Saturday, since I don't have to go to school the next day."}],"phrase":"to sleep late","translations":[{"meaning":"đi ngủ muộn"}]},{"id":"SBeXUxytjhic2ZnFnvXG","examples":[{"sentence":"Every Sunday, my sister and I go shopping at the nearby mall to buy food for the next week."}],"createdAt":"2022-12-11T02:39:55.180Z","updatedAt":"2022-12-11T02:39:55.180Z","phonetic":"/tʉː/ /ɡəʉ/ /ˈʃɒpɪŋ/","phrase":"to go shopping","translations":[{"meaning":"đi mua sắm"}],"topicId":"b6OzPzzZAMPLPXzkRLQV"},{"id":"Sb1z1PD1KseFH18Sk0dr","phonetic":"/tʉː/ /ɹiːd/ /æɪ/ /buːk/","topicId":"b6OzPzzZAMPLPXzkRLQV","translations":[{"meaning":"đọc một cuốn sách"}],"phrase":"to read a book","examples":[{"sentence":"I enjoy reading books in my freetime, especially on weekend."}],"updatedAt":"2022-12-11T03:32:04.148Z","createdAt":"2022-12-11T03:32:04.148Z"},{"id":"TJogZ4odU6iM5drd4Y9U","examples":[{"sentence":"Despite its attempts, the modernizing state never managed to impose a national seafood cuisine."}],"updatedAt":"2022-12-11T15:09:48.867Z","phrase":"cuisine","phonetic":"/kwɪˈziːn/","topicId":"jHQt2luGgCaPWezywraV","translations":[{"meaning":"Làm bếp, cách nấu ăn"}],"createdAt":"2022-12-11T15:09:48.867Z"},{"id":"TQoSBnCp5HPeJ14bsOsS","createdAt":"2022-12-11T15:10:54.872Z","translations":[{"meaning":"Bánh quy"}],"phonetic":"/ˈkuːki/","phrase":"cookie","examples":[{"sentence":"How clever of you to buy chocolate chip cookies - they're my favourites."}],"updatedAt":"2022-12-11T15:10:54.872Z","topicId":"jHQt2luGgCaPWezywraV"},{"id":"VxN2lriBbUXmk4nmDWFT","examples":[{"sentence":"I love practicing and playing guitar with my music club."}],"topicId":"b6OzPzzZAMPLPXzkRLQV","phonetic":"/tʉː/ /pleɪ/ /ði/ /ɡɪˈtɑː(ɹ)/","updatedAt":"2022-12-09T18:53:27.299Z","translations":[{"meaning":"chơi đàn ghi-ta"}],"phrase":"to play the guitar","createdAt":"2022-12-09T18:53:27.299Z"},{"id":"W1D9GkO4H0VbfwA1RpoU","examples":[{"sentence":"Each merited a drink, a few snacks, and maybe a slice of cake."}],"phonetic":"/æɪ/ /slaɪs/ /ɔv/ /keɪk/","topicId":"jHQt2luGgCaPWezywraV","createdAt":"2022-12-11T15:14:41.827Z","phrase":"a slice of cake","translations":[{"meaning":"Một lát bánh"}],"updatedAt":"2022-12-11T15:14:41.827Z"},{"id":"XSMWLD21fq8xOHKId5bw","phrase":"to have a party","updatedAt":"2022-12-11T03:29:31.113Z","topicId":"b6OzPzzZAMPLPXzkRLQV","translations":[{"meaning":"tổ chức một bữa tiệc"}],"examples":[{"sentence":"My neighborhood is going to have a party on this Sunday."}],"phonetic":"/tʉː/  /æɪ/ /ˈpɑ(ː)ɾi/","createdAt":"2022-12-11T03:29:31.113Z"},{"id":"YzL4NY5BPF1JY8QC8o1H","updatedAt":"2022-12-11T15:13:45.039Z","examples":[{"sentence":"A museum dedicated to challenging perceptions of food and what society deems 'disgusting' has opened in Sweden."}],"phonetic":"/dɪsˈɡʊstɪŋ/","topicId":"jHQt2luGgCaPWezywraV","phrase":"disgusting","translations":[{"meaning":"Kinh tởm, dở tệ"}],"createdAt":"2022-12-11T15:13:45.039Z"},{"id":"YzU7iyQDK0PwErIMCOeG","examples":[{"sentence":"Americans eat too many sweets."}],"phonetic":"/stɹɪŋ/","updatedAt":"2022-12-24T14:40:56.968Z","phrase":"string","translations":[{"meaning":"đồ ngọt"}],"topicId":"string","createdAt":"2022-12-24T14:40:56.968Z"},{"id":"ZAKUTbOocpbkas54y5aE","createdAt":"2022-12-11T15:19:26.076Z","phonetic":" /ði/ /ɛnd/","topicId":"GTQD3b84dBIq3eoUICIF","updatedAt":"2022-12-11T15:19:26.076Z","examples":[{"sentence":"They finally make peace at the end of the movie."}],"phrase":"at the end","translations":[{"meaning":"cuối cùng"}]},{"id":"ZNzMWgRZkVxSTocthFZh","topicId":"b6OzPzzZAMPLPXzkRLQV","updatedAt":"2022-12-09T18:52:44.996Z","translations":[{"meaning":"đi cắm trại"}],"phrase":"to go camping","examples":[{"sentence":"My class will go camping at the nearby river this weekend."}],"phonetic":"/tʉː/ /ɡəʉ/ /ˈkæmpɪŋ/","createdAt":"2022-12-09T18:52:44.996Z"},{"id":"ZfNyrObButvj3DTfsWS8","updatedAt":"2022-12-11T03:29:17.629Z","phonetic":"/tʉː/ /ɡəʉ/ /ˈhaɪkɪŋ/","phrase":"to go hiking","translations":[{"meaning":"đi leo núi"}],"createdAt":"2022-12-11T03:29:17.629Z","examples":[{"sentence":"Many people like to go hiking at the mountain near where I live."}],"topicId":"b6OzPzzZAMPLPXzkRLQV"},{"id":"ZmhMu2dE5OUT6iI8xF7q","phrase":"heroine","phonetic":"/ˈhɛɹoʊɪn/","updatedAt":"2022-12-11T15:18:23.557Z","topicId":"GTQD3b84dBIq3eoUICIF","translations":[{"meaning":"nữ anh hùng"}],"examples":[{"sentence":"Wonder woman is my favorite heroine."}],"createdAt":"2022-12-11T15:18:23.557Z"},{"id":"aQaNB1Wto8TnBVUISHRY","examples":[{"sentence":"My sister and I go shopping for new clothes every month."}],"phonetic":"/tʉː/ /ɡəʉ/ /ˈʃɒpɪŋ/","topicId":"YZ5P40c74WjxRcREqDcf","updatedAt":"2022-12-11T03:57:02.190Z","createdAt":"2022-12-11T03:57:02.190Z","phrase":"to go shopping","translations":[{"meaning":"đi mua sắm"}]},{"id":"bRfftXSa834WmQ8BPKdv","updatedAt":"2022-12-11T15:19:38.814Z","phrase":"behind the scenes","examples":[{"sentence":"The students were able to go behind the scenes to see how programmes are made."}],"translations":[{"meaning":"hậu trường"}],"createdAt":"2022-12-11T15:19:38.814Z","topicId":"GTQD3b84dBIq3eoUICIF","phonetic":"/bəˈhaɪnd/ /ði/ /siːnz/"},{"id":"brQjg1pUBlzQ3EpXaatG","phrase":"necklace","updatedAt":"2022-12-11T03:52:58.726Z","phonetic":"/ˈnɛkləs/","createdAt":"2022-12-11T03:52:58.726Z","topicId":"YZ5P40c74WjxRcREqDcf","translations":[{"meaning":"vòng cổ, dây chuyền"}],"examples":[{"sentence":"Look at my new necklace! My parents gave it to me on my eighteenth birthday."}]},{"id":"bzl0frLTuyFJQbuVMvSr","examples":[{"sentence":"I like films with plenty of action."}],"phrase":"action","updatedAt":"2022-12-11T15:16:06.669Z","phonetic":"/ˈæk.ʃən/","topicId":"GTQD3b84dBIq3eoUICIF","createdAt":"2022-12-11T15:16:06.669Z","translations":[{"meaning":"hành động"}]},{"id":"chm7TZgOVP8LbZ5p3cp3","examples":[{"sentence":"I have watched a few science fiction moives this semester."}],"phonetic":"/ˈsaɪəns/ /ˈfɪk.ʃən/","createdAt":"2022-12-11T15:17:54.460Z","updatedAt":"2022-12-11T15:17:54.460Z","topicId":"GTQD3b84dBIq3eoUICIF","phrase":"science fiction","translations":[{"meaning":"khoa học viễn tưởng"}]},{"id":"dYlwm2osYEquefnHDeeq","translations":[{"meaning":"Lành mạnh"}],"createdAt":"2022-12-11T15:14:18.403Z","examples":[{"sentence":"I should like students to learn from their experiences that a healthy diet can be fun."}],"topicId":"jHQt2luGgCaPWezywraV","phonetic":"/ˈhɛl.θi/","updatedAt":"2022-12-11T15:14:18.403Z","phrase":"healthy"},{"id":"dbgP2n6fdpkSyJPTZ1qQ","createdAt":"2022-12-11T02:48:43.437Z","topicId":"b6OzPzzZAMPLPXzkRLQV","phrase":"to go to the zoo","translations":[{"meaning":"đi sở thú"}],"updatedAt":"2022-12-11T02:48:43.437Z","examples":[{"sentence":"My brother and I love going to the zoo every weekend when we were kids."}],"phonetic":"/tʉː/ /ɡəʉ/ /tʉː/ /ði/ /zuː/"},{"id":"do68LkKgqM6E8MVfx3Ap","updatedAt":"2022-12-11T02:41:40.947Z","createdAt":"2022-12-11T02:41:40.947Z","phrase":"to stay in","phonetic":"/tʉː/ /steɪ/ /ɪn/","examples":[{"sentence":"I just want to spend my precious weekend to stay in my house."}],"topicId":"b6OzPzzZAMPLPXzkRLQV","translations":[{"meaning":"ở trong nhà, không ra ngoài"}]},{"id":"eOLvzqawt1OxzFPsyNXN","translations":[{"meaning":"rùng rợn"}],"topicId":"GTQD3b84dBIq3eoUICIF","createdAt":"2022-12-11T15:17:44.045Z","examples":[{"sentence":"I am a fan of horror films."}],"phonetic":"/ˈhɔɹɚ/","phrase":"horror","updatedAt":"2022-12-11T15:17:44.045Z"},{"id":"fOLZ6Z3kg3KxR5heKpAH","topicId":"GTQD3b84dBIq3eoUICIF","phrase":"after that","updatedAt":"2022-12-11T15:19:08.735Z","phonetic":"/ˈæf.tə(ɹ)/ /ˈðæt/","createdAt":"2022-12-11T15:19:08.735Z","translations":[{"meaning":"sau đó"}],"examples":[{"sentence":"The woman was very happy, but after that the smile left her face."}]},{"id":"fT7OLzDcM6OCOCMwNRoj","translations":[{"meaning":"dọn dẹp nhà cửa"}],"updatedAt":"2022-12-11T02:41:03.285Z","examples":[{"sentence":"I always help my mom to clean the house on the weekend."}],"createdAt":"2022-12-11T02:41:03.285Z","topicId":"b6OzPzzZAMPLPXzkRLQV","phonetic":"/tʉː/ /kleːn/ /ði/ /hʌʊs/","phrase":"to clean the house"},{"id":"fbwC6cvRR0McdhkTVhT7","translations":[{"meaning":"giữ ấm"}],"phrase":"to stay warm","topicId":"YZ5P40c74WjxRcREqDcf","examples":[{"sentence":"It's cold recently, make sure to wear enought clothes to stay warm all day, or you might get sick."}],"phonetic":"/tʉː/ /steɪ/ /wɔːm/","createdAt":"2022-12-11T03:55:50.437Z","updatedAt":"2022-12-11T03:55:50.437Z"},{"id":"fcS1iJxIOOAVBW5BXduX","createdAt":"2022-12-11T03:33:05.110Z","examples":[{"sentence":"I always feel tired on the weekend, so I prefer to do nothing."}],"topicId":"b6OzPzzZAMPLPXzkRLQV","translations":[{"meaning":"không làm gì cả"}],"updatedAt":"2022-12-11T03:33:05.110Z","phrase":"to do nothing","phonetic":"/tʉː/ /dʉː/ /ˈnʌθɪŋ/"},{"id":"hNa1hBQLfNZBh8fYTUOw","examples":[{"sentence":"Avatar is the best of adventure movies ever."}],"updatedAt":"2022-12-11T15:16:19.268Z","phonetic":"/ædˈvɛnt͡ʃɚ/","phrase":"adventure","createdAt":"2022-12-11T15:16:19.268Z","translations":[{"meaning":"phiêu lưu"}],"topicId":"GTQD3b84dBIq3eoUICIF"},{"id":"jMASN4Mn1FzuWPrM4bxx","createdAt":"2022-12-11T03:56:09.306Z","topicId":"YZ5P40c74WjxRcREqDcf","phrase":"bracelet","phonetic":"/ˈbɹeɪslət/","translations":[{"meaning":"vòng đeo tay"}],"examples":[{"sentence":"Check out my new bracelet! I bought it along with my necklace on a discount."}],"updatedAt":"2022-12-11T03:56:09.306Z"},{"id":"jmp5m0jC9JGClfTMYAGr","translations":[{"meaning":"cởi ra"}],"phonetic":"/tʉː/ /teɪk/ /ɔːf/","topicId":"YZ5P40c74WjxRcREqDcf","updatedAt":"2022-12-11T03:55:07.285Z","examples":[{"sentence":"If you get wet, remember to take off your clothes as soon as you get home."}],"phrase":"to take off","createdAt":"2022-12-11T03:55:07.285Z"},{"id":"jxPHOOTxETPdktEEaaAK","updatedAt":"2022-12-11T15:14:06.323Z","examples":[{"sentence":"I would like a cup of tea."}],"translations":[{"meaning":"Mong muốn, ước muốn"}],"topicId":"jHQt2luGgCaPWezywraV","phrase":"would like","createdAt":"2022-12-11T15:14:06.323Z","phonetic":"/wʊd/ /laɪk/"},{"id":"lcG7OKomPmSl6oj6E7F6","createdAt":"2022-12-11T03:51:41.938Z","phrase":"uniform","examples":[{"sentence":"In my school, all students have to wear uniform."}],"topicId":"YZ5P40c74WjxRcREqDcf","phonetic":"/ˈjuːnɪfɔːm/","updatedAt":"2022-12-11T03:51:41.938Z","translations":[{"meaning":"đồng phục"}]},{"id":"luwt7Z1QNIqOpKFHGUYh","topicId":"GTQD3b84dBIq3eoUICIF","createdAt":"2022-12-11T15:17:35.680Z","phrase":"drama","phonetic":"/ˈdɹæmə/","examples":[{"sentence":"Gone with the Wind is a popular romance drama."}],"updatedAt":"2022-12-11T15:17:35.680Z","translations":[{"meaning":"kịch"}]},{"id":"oSoE3dxXm8GOZ51OAUOz","examples":[{"sentence":"I am waiting my friend to get dressed for tonight's hangout. It has been 30 minutes but he keeps telling me 5 more."}],"phonetic":"/tʉː/ /ɡɛt/ /ˈdɹɛst/","translations":[{"meaning":"mặc đồ, mặc quần áo"}],"updatedAt":"2022-12-11T03:54:38.047Z","phrase":"to get dressed","createdAt":"2022-12-11T03:54:38.047Z","topicId":"YZ5P40c74WjxRcREqDcf"},{"id":"od5A9koGOAEPVpMXXWLW","createdAt":"2022-12-11T03:55:30.560Z","examples":[{"sentence":"Don't mind what people might think, wear what makes you comfortable."},{"sentence":"You don't have to wear expensive clothes for the party. Just wear what makes you comfortable."}],"phrase":"to make someone comfortable","phonetic":"/tʉː/ /meɪk/ /ˈsʌmwʌn/ /ˈkʌm.fə.tə.bəl/","translations":[{"meaning":"khiến ai đó cảm thấy thoải mái"}],"topicId":"YZ5P40c74WjxRcREqDcf","updatedAt":"2022-12-11T03:55:30.560Z"},{"id":"p15FmqdymoFh7mu7JPRd","phrase":"seafood","phonetic":"/ˈsiːfuːd/","translations":[{"meaning":"Hải sản, đồ biển"}],"updatedAt":"2022-12-11T15:12:20.236Z","topicId":"jHQt2luGgCaPWezywraV","createdAt":"2022-12-11T15:12:20.236Z","examples":[{"sentence":"Seafood is any form of sea life regarded as food by humans."}]},{"id":"q6EZp3BiJc0ZyQNyDTJD","phrase":"audience","topicId":"GTQD3b84dBIq3eoUICIF","phonetic":"/ˈɔːdi.əns/","createdAt":"2022-12-11T15:16:29.582Z","translations":[{"meaning":"khán giả"}],"examples":[{"sentence":"The audience were very excited when the main actor appears."}],"updatedAt":"2022-12-11T15:16:29.582Z"},{"id":"r95nuFJiFcLEV2kURBlI","createdAt":"2022-12-11T15:13:24.339Z","phrase":"fresh","translations":[{"meaning":"Tươi ngon, mới"}],"phonetic":"/fɹɛʃ/","updatedAt":"2022-12-11T15:13:24.339Z","examples":[{"sentence":"Your coffee is cold - let me make you a fresh cup."}],"topicId":"jHQt2luGgCaPWezywraV"},{"id":"rgdsxzlkX2kmPHMc7tuM","updatedAt":"2022-12-11T03:52:38.955Z","topicId":"YZ5P40c74WjxRcREqDcf","phrase":"earring","translations":[{"meaning":"bông tai"}],"examples":[{"sentence":"My grandmother left me her pair of earrings after she passed away. Unfortunately, I lost one of them."}],"createdAt":"2022-12-11T03:52:38.955Z","phonetic":"/ˈɪəɹɪŋ/"},{"id":"sjdwVgL76ese4ozEHgXI","examples":[{"sentence":"Although she didn't know what was the last night party for, she was very smart dressed for it."}],"phrase":"smart dressed","phonetic":"/smɑːt/ /ˈdɹɛst/","updatedAt":"2022-12-11T03:53:58.835Z","createdAt":"2022-12-11T03:53:58.835Z","topicId":"YZ5P40c74WjxRcREqDcf","translations":[{"meaning":"ăn mặc lịch sự, phù hợp"}]},{"id":"snfzBQ70aRKHBiyarUyH","updatedAt":"2022-12-11T02:51:38.425Z","topicId":"b6OzPzzZAMPLPXzkRLQV","phrase":"to catch up on school work","translations":[{"meaning":"bắt kịp công việc ở trường"}],"examples":[{"sentence":"I want to use my freetime on the weekend to catch up on school work."}],"phonetic":"/tʉː/ /kæt͡ʃ/ /ap/ /ɒn/ /skuːl/ /wɜːk/","createdAt":"2022-12-11T02:51:38.425Z"},{"id":"v8BTOuqd9nQ1K0AWxaZ0","updatedAt":"2022-12-11T15:19:50.875Z","translations":[{"meaning":"giới thiệu tóm tắt"}],"phrase":"trailer","topicId":"GTQD3b84dBIq3eoUICIF","createdAt":"2022-12-11T15:19:50.875Z","phonetic":"/ˈtɹeɪlə(ɹ)/","examples":[{"sentence":"Marvel's trailer is the thing you should not believe."}]},{"id":"vDpIDOjjitzXrj7baBmq","phrase":"suit","examples":[{"sentence":"My boss always wears a suit when he goes to meet the clients."},{"sentence":"This dress doesn't suit you anymore. It makes you look fat and short."}],"updatedAt":"2022-12-11T03:53:12.298Z","topicId":"YZ5P40c74WjxRcREqDcf","createdAt":"2022-12-11T03:53:12.298Z","phonetic":"/s(j)uːt/","translations":[{"meaning":"đồ vét, âu phục"},{"meaning":"thích hợp, phù hợp"}]},{"id":"xFj6CzrQlOzCR9AYR7NR","phonetic":"/kɹɪsp/","phrase":"crisp","createdAt":"2022-12-11T15:10:04.407Z","topicId":"jHQt2luGgCaPWezywraV","updatedAt":"2022-12-11T15:10:04.407Z","translations":[{"meaning":"Giòn, khoai tây lát mỏng"}],"examples":[{"sentence":"hot, crispy noodles."}]},{"id":"xXIZZvR2YgcbfjZ1f8Pn","topicId":"GTQD3b84dBIq3eoUICIF","phonetic":"/ˈkæɹəktə/","createdAt":"2022-12-11T15:16:50.702Z","phrase":"character","updatedAt":"2022-12-11T15:16:50.702Z","examples":[{"sentence":"The main character of this movie is Superman."}],"translations":[{"meaning":"nhân vật"}]},{"id":"xZiDKn97pjg2ysY18NFL","translations":[{"meaning":"đi bơi"}],"examples":[{"sentence":"I like to go swimming on the weekend, because it's really hot in where I live."}],"updatedAt":"2022-12-11T03:28:44.534Z","topicId":"b6OzPzzZAMPLPXzkRLQV","phrase":"to go swimming","createdAt":"2022-12-11T03:28:44.534Z","phonetic":"/tʉː/ /ɡəʉ/ /ˈswɪmɪŋ/"},{"id":"z80lb40OjhJaYj3zXr4i","createdAt":"2022-12-15T03:54:46.540Z","phrase":"string","topicId":"string","examples":[{"sentence":"Americans eat too many sweets."}],"updatedAt":"2022-12-15T03:54:46.540Z","translations":[{"meaning":"đồ ngọt"}],"phonetic":"/stɹɪŋ/"}]
+[
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "beat",
+    "examples": [
+      {
+        "sentence": "The band's latest song has a unique beat that has been stuck in my head all day."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "nhạc đệm"
+      },
+      {
+        "meaning": "nhịp điệu"
+      }
+    ],
+    "phonetic": "/biːt/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "concert",
+    "examples": [
+      {
+        "sentence": "I'm going to a concert next weekend to see my favorite singer on the stage."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "buổi hòa nhạc"
+      }
+    ],
+    "phonetic": "/ˈkɒnsət/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "lyric",
+    "examples": [
+      {
+        "sentence": "The musician's performance was full of energy and passion, leaving the audience cheering for more."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "lời bài hát"
+      }
+    ],
+    "phonetic": "/ˈlɪrɪk/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "opera",
+    "examples": [
+      {
+        "sentence": "The opera singer's powerful voice filled the entire theater."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "nhạc opera"
+      }
+    ],
+    "phonetic": "/ˈɒprə/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "jazz",
+    "examples": [
+      {
+        "sentence": "Jazz music has a rich history and has influenced many other genres of music as well."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "nhạc jazz"
+      }
+    ],
+    "phonetic": "/dʒæz/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "blues",
+    "examples": [
+      {
+        "sentence": "Blues music originated in the Deep South of the United States and is known for its soulful and emotional lyrics."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "nhạc Blues"
+      }
+    ],
+    "phonetic": "/bluːz/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "rock music",
+    "examples": [
+      {
+        "sentence": "I discovered and fell in love with rock music when I attended a concert at my high school's music festival."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "nhạc rock"
+      }
+    ],
+    "phonetic": "/ˈrɒk mjuːzɪk/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "pop music",
+    "examples": [
+      {
+        "sentence": "Many pop musicians have achieved worldwide fame and success, selling millions of records and performing in sold-out concerts around the globe."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "nhạc pop"
+      },
+      {
+        "meaning": "nhạc trẻ"
+      }
+    ],
+    "phonetic": "/ˈpɒp mjuːzɪk/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "folk music",
+    "examples": [
+      {
+        "sentence": "Folk music often tells stories and reflects the history, traditions, and values of a particular culture or community."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "dân ca"
+      }
+    ],
+    "phonetic": "/ˈfəʊk mjuːzɪk/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "classical music",
+    "examples": [
+      {
+        "sentence": "Classical music is often performed in concert halls and opera houses and is enjoyed by people of all ages and backgrounds."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "nhạc cổ điển"
+      }
+    ],
+    "phonetic": "/ˌklæsɪkl ˈmjuːzɪk/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "catchy",
+    "examples": [
+      {
+        "sentence": "The catchy melody and upbeat rhythm of the song make it perfect for dancing."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "bắt tai"
+      }
+    ],
+    "phonetic": "/ˈkætʃi/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "smooth",
+    "examples": [
+      {
+        "sentence": "The smooth jazz music playing in the background set the perfect mood for a romantic evening."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "mượt mà"
+      }
+    ],
+    "phonetic": "/smuːð/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "sweet",
+    "examples": [
+      {
+        "sentence": "The sweet and gentle melody of the song tugged at the heartstrings of the listeners."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "ngọt ngào"
+      }
+    ],
+    "phonetic": "/swiːt/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "taste in music",
+    "examples": [
+      {
+        "sentence": "We have very different tastes in music; she loves classical while I prefer rock."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "gu âm nhạc"
+      }
+    ],
+    "phonetic": "/teɪst ɪn ˈmjuːzɪk/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "a catchy tune/song",
+    "examples": [
+      {
+        "sentence": "The band's new album has a catchy tune that's sure to be a hit with their fans."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "giai điệu hoặc bài hát hay, dễ nhớ"
+      }
+    ],
+    "phonetic": "/ə ˈkætʃi tuːn/ or /sɔŋ/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "to have a good ear for music",
+    "examples": [
+      {
+        "sentence": "Even though I don't play any instruments, I have a good ear for music and can appreciate different genres."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "có tai nghe tốt về âm nhạc"
+      }
+    ],
+    "phonetic": "/tu hæv ə ɡʊd ɪr fɔr ˈmjuzɪk/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "to sing along to",
+    "examples": [
+      {
+        "sentence": "I love to sing along to my favorite songs when I'm driving in my car."
+      },
+      {
+        "sentence": "I love going to concerts and singing along to the songs with the crowd. It's such a great feeling."
+      },
+      {
+        "sentence": "I love listening to music and singing along to the lyrics. It's a great way to relax and unwind."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "hát theo"
+      }
+    ],
+    "phonetic": "/tu sɪŋ əˈlɔŋ tuː/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "to boost my energy",
+    "examples": [
+      {
+        "sentence": "When I'm feeling tired, I like to listen to some jazz music to help boost my energy and motivation."
+      },
+      {
+        "sentence": "I find that singing along to my favorite songs can help to boost my energy and lift my spirits."
+      },
+      {
+        "sentence": "Playing an instrument can be a great way to boost my energy and creativity."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "vực dậy tinh thần"
+      }
+    ],
+    "phonetic": "/tuː bust maɪ ˈɛnərdʒi/"
+  },
+  {
+    "topicId": "KyvbKuKxJOEHqJvW76bV",
+    "phrase": "to capture (a wider) audience",
+    "examples": [
+      {
+        "sentence": "By experimenting with different genres and styles, musicians can capture a wider audience and appeal to a more diverse group of listeners."
+      },
+      {
+        "sentence": "By incorporating different genres into their music, artists can capture a wider audience."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "thu hút đông đảo khán giả"
+      }
+    ],
+    "phonetic": "/tuː ˈkæptʃər ə ˈwaɪdər ˈɔdiəns/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "travel",
+    "examples": [
+      {
+        "sentence": "I love to travel to new places and learn about different cultures."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "du lịch"
+      }
+    ],
+    "phonetic": "/trævəl/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "tourist",
+    "examples": [
+      {
+        "sentence": "The tourists took a lot of pictures at the beach."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "du khách"
+      }
+    ],
+    "phonetic": "/ˈtʊrɪst/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "destination",
+    "examples": [
+      {
+        "sentence": "Our destination is the Grand Canyon in Arizona."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "điểm đến"
+      }
+    ],
+    "phonetic": "/ˌdɛstəˈneɪʃən/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "itinerary",
+    "examples": [
+      {
+        "sentence": "My itinerary includes three cities in Italy."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "lịch trình"
+      }
+    ],
+    "phonetic": "/aɪˈtɪnəˌrɛri/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "accommodation",
+    "examples": [
+      {
+        "sentence": "We need to find accommodation for our trip to Paris."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "chỗ ở"
+      }
+    ],
+    "phonetic": "/əˌkɑməˈdeɪʃən/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "passport",
+    "examples": [
+      {
+        "sentence": "You need a passport to travel to another country."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "hộ chiếu"
+      }
+    ],
+    "phonetic": "/ˈpæspɔrt/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "visa",
+    "examples": [
+      {
+        "sentence": "You need a visa to enter some countries."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "thị thực"
+      }
+    ],
+    "phonetic": "/ˈviːzə/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "currency",
+    "examples": [
+      {
+        "sentence": "I need to exchange my currency for euros."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "tiền tệ"
+      }
+    ],
+    "phonetic": "/ˈkɜrənsi/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "souvenir",
+    "examples": [
+      {
+        "sentence": "I bought a souvenir from the gift shop."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "quà lưu niệm"
+      }
+    ],
+    "phonetic": "/suˈvɛnɪr/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "backpacker",
+    "examples": [
+      {
+        "sentence": "The backpacker traveled to several countries in Asia."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "người đi phượt"
+      }
+    ],
+    "phonetic": "/ˈbækˌpækər/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "jet lag",
+    "examples": [
+      {
+        "sentence": "I experienced jet lag after traveling from New York to London."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "sự thay đổi múi giờ gây ra sự mệt mỏi"
+      }
+    ],
+    "phonetic": "/dʒɛt læg/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "beach resort",
+    "examples": [
+      {
+        "sentence": "The beach resort has a pool and a restaurant."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "khu nghỉ dưỡng bãi biển"
+      }
+    ],
+    "phonetic": "/bitʃ rɪˈzɔrt/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "boarding pass",
+    "examples": [
+      {
+        "sentence": "Don't forget to print your boarding pass before your flight."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "thẻ lên máy bay"
+      }
+    ],
+    "phonetic": "/ˈbɔrdɪŋ pæs/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "check in",
+    "examples": [
+      {
+        "sentence": "You need to check in at least two hours before your flight."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "làm thủ tục"
+      }
+    ],
+    "phonetic": "/ˈtʃɛkɪn/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "duty-free",
+    "examples": [
+      {
+        "sentence": "I bought some duty-free perfume at the airport."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "miễn thuế"
+      }
+    ],
+    "phonetic": "/ˌdjuːti ˈfri/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "guidebook",
+    "examples": [
+      {
+        "sentence": "The guidebook has a map of the city."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "sách hướng dẫn du lịch"
+      }
+    ],
+    "phonetic": "/ˈɡaɪd.bʊk/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "hostel",
+    "examples": [
+      {
+        "sentence": "The hostel is cheap and clean."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "nhà trọ"
+      }
+    ],
+    "phonetic": "/ˈhɑː.stəl/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "luggage",
+    "examples": [
+      {
+        "sentence": "Don't forget to pack your luggage before your trip."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "hành lý"
+      }
+    ],
+    "phonetic": "/ˈlʌɡɪdʒ/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "overbooked",
+    "examples": [
+      {
+        "sentence": "The flight was overbooked, so I had to take a later flight."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "đặt chỗ quá nhiều"
+      }
+    ],
+    "phonetic": "/ˌoʊ.vərˈbʊkt/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "package tour",
+    "examples": [
+      {
+        "sentence": "The package tour includes airfare and hotel accommodations."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "tour du lịch giá rẻ"
+      }
+    ],
+    "phonetic": "/ˈpækɪdʒ tʊr/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "passport control",
+    "examples": [
+      {
+        "sentence": "We had to go through passport control before we could leave the airport."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "kiểm soát hộ chiếu"
+      }
+    ],
+    "phonetic": "/ˈpæspɔrt kənˈtroʊl/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "reservation",
+    "examples": [
+      {
+        "sentence": "I made a reservation at the hotel for next week."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "đặt chỗ"
+      }
+    ],
+    "phonetic": "/ˌrɛzərˈveɪʃən/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "scenic",
+    "examples": [
+      {
+        "sentence": "The scenic view from the top of the mountain was breathtaking."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "thuộc về phong cảnh"
+      }
+    ],
+    "phonetic": "/ˈsiːnɪk/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "adventure",
+    "examples": [
+      {
+        "sentence": "We went on an adventure tour through the jungle."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "cuộc phiêu lưu"
+      }
+    ],
+    "phonetic": "/ədˈvɛn.tʃər/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "travel insurance",
+    "examples": [
+      {
+        "sentence": "It's a good idea to buy travel insurance before your trip."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "bảo hiểm du lịch"
+      }
+    ],
+    "phonetic": "/ˈtrævəl ɪnˈʃʊrəns/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "sunscreen",
+    "examples": [
+      {
+        "sentence": "Don't forget to bring sunscreen to protect your skin from the sun."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "kem chống nắng"
+      }
+    ],
+    "phonetic": "/ˈsʌnˌskrin/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "sunscreen",
+    "examples": [
+      {
+        "sentence": "Don't forget to bring sunscreen to protect your skin from the sun."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "kem chống nắng"
+      }
+    ],
+    "phonetic": "/ˈtrævəl ɪnˈʃʊrəns/"
+  },
+  {
+    "topicId": "dEUlhQVGRf6jWx8vS5aX",
+    "phrase": "captivating",
+    "examples": [
+      {
+        "sentence": "The sunset over the ocean was absolutely captivating, with its vibrant colors painting the sky in a breathtaking display of natural beauty."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "mê hoặc"
+      },
+      {
+        "meaning": "quyến rũ"
+      }
+    ],
+    "phonetic": "/ˈkæptɪveɪtɪŋ/"
+  },
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "technology",
+    "examples": [
+      {
+        "sentence": "Technology has made our lives easier in many ways."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "công nghệ"
+      }
+    ],
+    "phonetic": "/tekˈnɑlədʒi/"
+  },
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "internet",
+    "examples": [
+      {
+        "sentence": "I use the internet every day to check my email."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "mạng internet"
+      }
+    ],
+    "phonetic": "/ˈɪntərnɛt/"
+  },
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "smartphone",
+    "examples": [
+      {
+        "sentence": "I can't imagine going anywhere without my smartphone."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "điện thoại thông minh"
+      }
+    ],
+    "phonetic": "/ˈsmɑrtˌfoʊn/"
+  },
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "social media",
+    "examples": [
+      {
+        "sentence": "Many people spend hours a day on social media."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "mạng xã hội"
+      }
+    ],
+    "phonetic": "/ˈsoʊʃəl ˈmidiə/"
+  },
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "website",
+    "examples": [
+      {
+        "sentence": "I created a website to promote my business."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "trang web"
+      }
+    ],
+    "phonetic": "/ˈwɛbsaɪt/"
+  },
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "app",
+    "examples": [
+      {
+        "sentence": "There are apps for almost everything these days."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "ứng dụng"
+      }
+    ],
+    "phonetic": "/æp/"
+  },
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "cybersecurity",
+    "examples": [
+      {
+        "sentence": "Cybersecurity is important to protect sensitive information."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "an ninh mạng"
+      }
+    ],
+    "phonetic": "/ˈsaɪbərˌsɛkjʊrəti/"
+  },
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "cloud computing",
+    "examples": [
+      {
+        "sentence": "Cloud computing allows us to store and access data online."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "điện toán đám mây"
+      }
+    ],
+    "phonetic": "/klaʊd kəmˈpjuːtɪŋ/"
+  },
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "virtual reality",
+    "examples": [
+      {
+        "sentence": "Virtual reality technology is becoming more advanced every year."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "thực tế ảo"
+      }
+    ],
+    "phonetic": "/ˈvɜrtʃuəl riˈæləti/"
+  },
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "advantages",
+    "examples": [
+      {
+        "sentence": "Social media has many advantages, such as connecting with friends and family."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "lợi ích"
+      }
+    ],
+    "phonetic": "/ədˈvæntɪdʒɪz/"
+  },
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "disadvantages",
+    "examples": [
+      {
+        "sentence": "One of the disadvantages of social media is that it can be addictive."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "bất lợi"
+      }
+    ],
+    "phonetic": "/dɪsədˈvæntɪdʒɪz/"
+  },
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "developments",
+    "examples": [
+      {
+        "sentence": "I am excited about new technological developments such as self-driving cars."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "sự phát triển"
+      }
+    ],
+    "phonetic": "/dɪˈvɛləpmənts/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "communicate",
+    "examples": [
+      {
+        "sentence": "Technology has changed the way we communicate with each other, making it faster and more efficient."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "liên lạc"
+      }
+    ],
+    "phonetic": "/kəˈmjunəˌkeɪt/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "concerns",
+    "examples": [
+      {
+        "sentence": "Some people have concerns about the impact of technology on job security."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "quan ngại"
+      }
+    ],
+    "phonetic": "/kənˈsɜrnz/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "favorite",
+    "examples": [
+      {
+        "sentence": "My favorite piece of technology is my smartphone because it is so versatile."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "yêu thích"
+      }
+    ],
+    "phonetic": "/ˈfeɪvərɪt/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "latest",
+    "examples": [
+      {
+        "sentence": "I usually keep up with the latest technology news by reading tech blogs."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "mới nhất"
+      }
+    ],
+    "phonetic": "/ˈleɪtɪst/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "social",
+    "examples": [
+      {
+        "sentence": "Some people believe that technology is making people less social."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "xã hội"
+      }
+    ],
+    "phonetic": "/ˈsoʊʃəl/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "video conferencing",
+    "examples": [
+      {
+        "sentence": "Video conferencing allows people to hold meetings from remote locations."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "hội nghị truyền hình"
+      }
+    ],
+    "phonetic": "/ˈvɪdi.oʊ ˈkɑn.fər.ənsɪŋ/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "artificial intelligence",
+    "examples": [
+      {
+        "sentence": "Artificial intelligence is a field of computer science that aims to create machines that can perform tasks that normally require human intelligence."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "trí tuệ nhân tạo"
+      }
+    ],
+    "phonetic": "/ɑːr.t̬əˈfɪʃ.əl ɪnˈtel.ə.dʒəns/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "revolutionary",
+    "examples": [
+      {
+        "sentence": "The Apple M1 chip is a revolutionary product in personal computers, offering extreme performance and excellent efficiency at the same time."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "mang tính cách mạng"
+      }
+    ],
+    "phonetic": "/revəˈluːʃənəri/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "security breach",
+    "examples": [
+      {
+        "sentence": "The company experienced a severe security breach last night, resulting in unauthorized access to customer data."
+      },
+      {
+        "sentence": "An online retailer suffered a security breach last week, leading to a leak of more than 50,000 customer information."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "rò rỉ bảo mật thông tin"
+      }
+    ],
+    "phonetic": "/sɪˈkjʊərəti briːtʃ/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "state-of-the-art",
+    "examples": [
+      {
+        "sentence": "The company invests in state-of-the-art technology to stay ahead of the competition and meet customer demands."
+      },
+      {
+        "sentence": "The hospital recently upgraded its facilities with state-of-the-art medical equipment to provide the best possible care to patients."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "tiên tiến"
+      },
+      {
+        "meaning": "tối tân nhất"
+      }
+    ],
+    "phonetic": "/steɪt əv ði ˈɑːt/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "cryptography",
+    "examples": [
+      {
+        "sentence": "The organization uses advanced cryptography techniques to encrypt sensitive data and ensure secure real time end-to-end communication."
+      },
+      {
+        "sentence": "The government agency employs state-of-the-art cryptography algorithms to protect classified information from unauthorized access."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "mã hóa"
+      }
+    ],
+    "phonetic": "/krɪpˈtɒɡrəfi/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "gadget",
+    "examples": [
+      {
+        "sentence": "My favorite gadget is my smartwatch, which helps me track my fitness, receive notifications, and manage my schedule."
+      },
+      {
+        "sentence": "Her backpack is filled with all sorts of gadgets, from a portable charger to a Bluetooth speaker, for her outdoor adventures."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "dụng cụ"
+      },
+      {
+        "meaning": "tiện ích"
+      }
+    ],
+    "phonetic": "/ˈɡædʒɪt/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "innovation",
+    "examples": [
+      {
+        "sentence": "The company's latest product release showcases their commitment to innovation, with cutting-edge features and technology."
+      },
+      {
+        "sentence": "The field of healthcare has seen remarkable innovations in recent years, such as telemedicine, which have revolutionized patient care and treatment."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "sự đổi mới"
+      },
+      {
+        "meaning": "sự cải tiến"
+      }
+    ],
+    "phonetic": "/ɪnəˈveɪʃn/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "breakthrough",
+    "examples": [
+      {
+        "sentence": "The breakthrough in renewable energy technology has paved the way for more sustainable and eco-friendly energy solutions."
+      },
+      {
+        "sentence": "The company unveiled its breakthrough product, which promises to revolutionize the way we communicate and interact."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "đột phá"
+      }
+    ],
+    "phonetic": "/ˈbreɪkθruː/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "automation",
+    "examples": [
+      {
+        "sentence": "The company implemented automation in its production process, resulting in increased efficiency and reduced labor costs."
+      },
+      {
+        "sentence": "The rise of automation in the manufacturing sector has raised concerns about job displacement and workforce changes."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "tự động hóa"
+      }
+    ],
+    "phonetic": "/ɔːtəˈmeɪʃn/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "over-reliance",
+    "examples": [
+      {
+        "sentence": "The over-reliance on social media for news consumption can result in misinformation and misleading facts."
+      },
+      {
+        "sentence": "The company's over-reliance on outdated technology hindered its ability to adapt to changing market demands."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "sự lệ thuộc"
+      },
+      {
+        "meaning": "sự phụ thuộc quá mức"
+      }
+    ],
+    "phonetic": "/əʊvərɪˈlaɪəns/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "efficient",
+    "examples": [
+      {
+        "sentence": "The new software implementation has made our workflow more efficient, saving us time and resources."
+      },
+      {
+        "sentence": "Using energy-efficient appliances and practices can help reduce our carbon footprint and conserve natural resources."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "mang tính hiệu quả"
+      },
+      {
+        "meaning": "hiệu suất cao"
+      }
+    ],
+    "phonetic": "/ɪˈfɪʃnt/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "productive",
+    "examples": [
+      {
+        "sentence": "Using task management tools and automation can streamline workflows and make businesses more productive."
+      },
+      {
+        "sentence": "Implementing sustainable practices in manufacturing and production processes can result in more environmentally friendly outcomes, while still being productive."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "năng suất cao"
+      }
+    ],
+    "phonetic": "/prəˈdʌktɪv/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "service",
+    "examples": [
+      {
+        "sentence": "Cloud-based services have revolutionized the way businesses store, manage, and access data, making it more efficient and cost-effective."
+      },
+      {
+        "sentence": "Many software companies provide software-as-a-service (SaaS) solutions, allowing users to access and use software applications over the internet."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "dịch vụ"
+      }
+    ],
+    "phonetic": "/ˈsɜːvɪs/"
+  },  
+  {
+    "topicId": "AaqYpYzc1cIqucUeWmfJ",
+    "phrase": "appliance",
+    "examples": [
+      {
+        "sentence": "The kitchen is equipped with modern appliances, including a fully automated and remotely controllable oven, dishwasher, and microwave."
+      },
+      {
+        "sentence": "The company offers a wide range of home appliances, from washing machines to air conditioners, with advanced features and energy-efficient technologies."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "thiết bị"
+      }
+    ],
+    "phonetic": "/əˈplaɪəns/"
+  }  
+]
