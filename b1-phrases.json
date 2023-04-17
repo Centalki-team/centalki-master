@@ -1258,5 +1258,449 @@
       }
     ],
     "phonetic": "/əˈplaɪəns/"
-  }  
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "playground",
+    "examples": [
+      {
+        "sentence": "The students were playing football on the playground during break time."
+      },
+      {
+        "sentence": "The school organized a field trip to the newly opened nearby playground for the kindergarten classes, where the children had played really fun."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "sân thể thao"
+      }
+    ],
+    "phonetic": "/ˈpleɪɡraʊnd/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "assignment",
+    "examples": [
+      {
+        "sentence": "The students were excited to receive their historical research assignment, which involved the Civil War."
+      },
+      {
+        "sentence": "The teacher handed out the math assignment to the students, which they were required to complete and turn in by the end of the week."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "bài tập"
+      }
+    ],
+    "phonetic": "/əˈsaɪnmənt/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "sports day",
+    "examples": [
+      {
+        "sentence": "The school's annual sports day was filled with fun activities and games."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "ngày hội thể thao"
+      }
+    ],
+    "phonetic": "/ˈspɔːts deɪ/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "remote learning",
+    "examples": [
+      {
+        "sentence": "Due to the pandemic, the school switched to remote learning for the rest of the year."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "học từ xa"
+      }
+    ],
+    "phonetic": "/rɪˌməʊt ˈlɜːnɪŋ/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "extracurricular activity",
+    "examples": [
+      {
+        "sentence": "He participated in several extracurricular activities, including soccer and chess club."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "hoạt động ngoại khoá"
+      }
+    ],
+    "phonetic": "/ˌekstrəkəˈrɪkjələ(r) ækˈtɪvəti/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "break time",
+    "examples": [
+      {
+        "sentence": "She used her break time to finish her homework and study for her test."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "giờ giải lao"
+      }
+    ],
+    "phonetic": "/ˈbreɪk taɪm/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "studious",
+    "examples": [
+      {
+        "sentence": "She was a studious student who always did her homework on time."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "chăm chỉ"
+      }
+    ],
+    "phonetic": "/ˈstjuːdiəs/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "yearbook",
+    "examples": [
+      {
+        "sentence": "The students worked together to design and create the school yearbook."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "kỷ yếu"
+      }
+    ],
+    "phonetic": "/ˈjɪəbʊk/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "slow progress",
+    "examples": [
+      {
+        "sentence": "I was making slow progress in math and needed extra help."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "tiến bộ chậm"
+      }
+    ],
+    "phonetic": "/sləʊ ˈprəʊɡres/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "summer vacation",
+    "examples": [
+      {
+        "sentence": "He spent his summer vacation visiting family and exploring new places."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "kỳ nghỉ hè"
+      }
+    ],
+    "phonetic": "/ˈsʌmə vəˈkeɪʃn/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "summer school",
+    "examples": [
+      {
+        "sentence": "She attended summer school to take additional courses and earn credits."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "khóa học hè"
+      }
+    ],
+    "phonetic": "/ˈsʌmə skuːl/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "career fair",
+    "examples": [
+      {
+        "sentence": "The high school organized a career fair where students could learn about different professions and job opportunities."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "ngày hội việc làm"
+      }
+    ],
+    "phonetic": "/kəˈrɪə(r) feə/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "end-of-year party",
+    "examples": [
+      {
+        "sentence": "She helped plan the decorations and activities for the end-of-year party."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "tiệc cuối năm"
+      }
+    ],
+    "phonetic": "/end əv jɪə(r) ˈpɑːti/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "prom night",
+    "examples": [
+      {
+        "sentence": "She had her hair and makeup done professionally for prom night."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "đêm dạ hội khiêu vũ"
+      }
+    ],
+    "phonetic": "/prɒm naɪt/"
+  },   
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "to join a school club",
+    "examples": [
+      {
+        "sentence": "She decided to join the school's debate club to improve her public speaking skills."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "tham gia câu lạc của trường"
+      }
+    ],
+    "phonetic": "/dʒɔɪn ə skuːl klʌb/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "to play on a sports team",
+    "examples": [
+      {
+        "sentence": "He learned valuable lessons about teamwork, sportsmanship, and perseverance while playing on the school's football team."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "chơi trong đội thể thao"
+      }
+    ],
+    "phonetic": "/pleɪ ɒn ə ˈspɔːts tiːm/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "to eat lunch in the cafeteria",
+    "examples": [
+      {
+        "sentence": "He brought his lunch from home but still enjoyed eating in the cafeteria with his classmates."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "ăn trưa tại nhà ăn"
+      }
+    ],
+    "phonetic": "/iːt lʌntʃ ɪn ðə ˌkæfəˈtɪəriə/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "to ride the school bus",
+    "examples": [
+      {
+        "sentence": "She made friends with the other students who also rode the school bus."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "đi xe buýt đến trường"
+      }
+    ],
+    "phonetic": "/raɪd ðə skuːl bʌs/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "to meet a deadline",
+    "examples": [
+      {
+        "sentence": "She managed her time effectively to ensure she could meet all her deadlines."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "hoàn thành đúng hạn"
+      }
+    ],
+    "phonetic": "/miːt ə ˈdedlaɪn/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "to celebrate a holiday",
+    "examples": [
+      {
+        "sentence": "The students learned about different cultures and traditions as they celebrated various holidays throughout the year."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "tổ chức kì nghỉ"
+      }
+    ],
+    "phonetic": "/ˈselɪbreɪt ə ˈhɒlədeɪ/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "to go on a trip",
+    "examples": [
+      {
+        "sentence": "He went on a trip to the beach with his friends and had fun swimming and playing in the sand."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "đi du lịch"
+      }
+    ],
+    "phonetic": "/ɡəʊ ɒn ə trɪp/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "to participate",
+    "examples": [
+      {
+        "sentence": "He actively participates in various community service projects to contribute to the society."
+      },
+      {
+        "sentence": "Many students from different schools will participate in the upcoming sport tournament."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "tham gia"
+      }
+    ],
+    "phonetic": "/pɑːˈtɪs.ɪ.peɪt/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "schedule",
+    "examples": [
+      {
+        "sentence": "The school has a strict schedule for lunchtime to ensure that all students have enough time to eat."
+      },
+      {
+        "sentence": "The principal announced a change in the school's schedule due to a temporary staff shortage."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "lịch học, thời khóa biểu"
+      }
+    ],
+    "phonetic": "/ˈskedʒ.uːl/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "recreational",
+    "examples": [
+      {
+        "sentence": "The park has a playground and picnic areas for recreational purposes."
+      },
+      {
+        "sentence": "The school center offers a variety of recreational programs for all students to help them reduce stress."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "mang tính giải trí"
+      }
+    ],
+    "phonetic": "/rekriˈeɪʃənl/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "elementary school",
+    "examples": [
+      {
+        "sentence": "The local elementary school is hosting a bake sale to raise funds for new playground equipment."
+      },
+      {
+        "sentence": "My favorite memories from childhood are from my years in elementary school, where I made lifelong friends and learned so much."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "trường tiểu học"
+      }
+    ],
+    "phonetic": "/elɪˈmentri skuːl/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "secondary school",
+    "examples": [
+      {
+        "sentence": "Secondary school provides a more advanced level of education compared to elementary school, with a focus on preparing students for higher education."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "trường trung học cơ sở"
+      }
+    ],
+    "phonetic": "/ˈsekəndri skuːl/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "high school",
+    "examples": [
+      {
+        "sentence": "My high school years were filled with academic challenges, extracurricular activities, and lifelong friendships."
+      },
+      {
+        "sentence": "High school is a critical period for building a foundation of knowledge and skills that will shape a student's future academic and career path."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "trường trung học phổ thông"
+      }
+    ],
+    "phonetic": "/ˈhaɪ skuːl/"
+  },  
+  {
+    "topicId": "XY9JcJLnZU6usBppFrFH",
+    "phrase": "kindergarten",
+    "examples": [
+      {
+        "sentence": "Kindergarten serves as a bridge between home and formal schooling, helping children transition to a more structured educational environment."
+      },
+      {
+        "sentence": "The Kindergarten teachers play a vital role in supporting children's early development, fostering a love for learning, and building a solid educational foundation."
+      }
+    ],
+    "translations": [
+      {
+        "meaning": "trường mẫu giáo"
+      }
+    ],
+    "phonetic": "/ˈkɪndəɡɑːtn/"
+  } 
 ]

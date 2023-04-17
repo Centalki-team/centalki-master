@@ -60,12 +60,20 @@ export class PhraseService {
   // async updatePhraseFromJson() {
   //   const readContent: Phrase[] = require('../../phrases.json');
   //   console.log({ readContent });
-  //   const resp = await Promise.all(
-  //     readContent.map(
-  //       async (item) => await this.phraseRepository.create(item),
-  //     ),
-  //   );
-  //   console.log({ resp });
+  //   await Promise.all(
+  //     readContent.map(async (item) => {
+  //       const { phrase, topicId, translations, examples, phonetic } = item;
+  //       await this.phraseRepository.create({
+  //         phrase,
+  //         translations,
+  //         topicId,
+  //         phonetic,
+  //         examples,
+  //         createdAt: new Date().toISOString(),
+  //         updatedAt: new Date().toISOString(),
+  //       });
+  //     }),
+  //   );   
   // }
   async create(dto: CreatePhraseDto) {
     const { phrase, topicId, translations, examples } = dto;
