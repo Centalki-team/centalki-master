@@ -42,6 +42,7 @@ import {
 } from './entities/session-schedule.entity';
 import { ESessionScheduleEvent } from './enum/session-schedule-event.enum';
 import { ESessionScheduleStatus } from './enum/session-schedule-status.enum';
+import { FeedbackService } from 'src/feedback/feedback.service';
 // import { UpdateSessionScheduleDto } from './dto/update-session-schedule.dto';
 
 @Injectable()
@@ -55,6 +56,7 @@ export class SessionScheduleService {
     private readonly fcmService: FcmService,
     private readonly notificationService: NotificationService,
     private readonly transactionService: TransactionService,
+    private readonly feedbackService: FeedbackService,
     private readonly eventEmitter: EventEmitter2,
     @InjectRepository(SessionSchedule)
     private readonly sessionScheduleRepository: BaseFirestoreRepository<SessionSchedule>,
@@ -386,7 +388,7 @@ export class SessionScheduleService {
   ): Promise<PaginationResult<SessionSchedule>> {
     const { page, size, status } = query;
 
-    const data = await this.sessionScheduleRepository
+    const sessions = await this.sessionScheduleRepository
       .whereEqualTo('status', status)
       .whereEqualTo('studentId', user.uid)
       .orderByDescending('createdAt')
@@ -395,6 +397,16 @@ export class SessionScheduleService {
       user.uid,
       ESessionScheduleStatus.COMPLETED,
     );
+    const promises = sessions.map(async (session) => {
+      const feedback = await this.feedbackService.getFeedbackBySessionId(
+        session.id,
+      );
+      return {
+        ...session,
+        feedback,
+      };
+    });
+    const data = await Promise.all(promises);
 
     return {
       meta: {

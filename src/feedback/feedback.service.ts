@@ -9,12 +9,20 @@ import { CreateFeedbackDto } from './dto/create-feedback.dto';
 import { GetFeedbacksDto } from './dto/get-feedbacks.dto';
 // import { UpdateFeedbackDto } from './dto/update-feedback.dto';
 import { Feedback } from './entities/feedback.entity';
+import { CreateStudentSessionFeedbackDto } from 'src/feedback/dto/create-student-session-feedback.dto';
+import { SessionStudentFeedback } from 'src/feedback/entities/session-student-feedback.entity';
+import { SessionTeacherFeedback } from 'src/feedback/entities/session-teacher-feedback.entity';
+import { CreateTeacherSessionFeedbackDto } from 'src/feedback/dto/create-teacher-session-feedback.dto';
 
 @Injectable()
 export class FeedbackService {
   constructor(
     @InjectRepository(Feedback)
     private feedbackRepository: BaseFirestoreRepository<Feedback>,
+    @InjectRepository(SessionStudentFeedback)
+    private sessionStudentFeedbackRepository: BaseFirestoreRepository<SessionStudentFeedback>,
+    @InjectRepository(SessionTeacherFeedback)
+    private sessionTeacherFeedbackRepository: BaseFirestoreRepository<SessionTeacherFeedback>,
     private commonService: CommonService,
     private firebaseService: FirebaseService,
   ) {}
@@ -68,5 +76,32 @@ export class FeedbackService {
       this.feedbackRepository.delete(id);
     } catch {}
     return 1;
+  }
+
+  createStudentSessionFeedback(
+    user: DecodedIdToken,
+    dto: CreateStudentSessionFeedbackDto,
+  ) {
+    return this.sessionStudentFeedbackRepository.create({
+      ...dto,
+    });
+  }
+  createTeacherSessionFeedback(
+    user: DecodedIdToken,
+    dto: CreateTeacherSessionFeedbackDto,
+  ) {
+    return this.sessionTeacherFeedbackRepository.create({
+      ...dto,
+    });
+  }
+
+  async getFeedbackBySessionId(sessionId: string) {
+    const teacher = await this.sessionStudentFeedbackRepository
+      .whereEqualTo('sessionId', sessionId)
+      .findOne();
+    const student = await this.sessionTeacherFeedbackRepository
+      .whereEqualTo('sessionId', sessionId)
+      .findOne();
+    return { teacher, student };
   }
 }

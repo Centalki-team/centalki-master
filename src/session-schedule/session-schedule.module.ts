@@ -12,6 +12,7 @@ import { ScheduleModule } from '@nestjs/schedule';
 import { TransactionModule } from 'src/transaction/transaction.module';
 import { FcmModule } from 'src/fcm/fcm.module';
 import { NotificationModule } from 'src/notification/notification.module';
+import { FeedbackModule } from 'src/feedback/feedback.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { NotificationModule } from 'src/notification/notification.module';
     TransactionModule,
     FcmModule,
     NotificationModule,
+    FeedbackModule,
   ],
   controllers: [SessionScheduleController],
   providers: [SessionScheduleService],
