@@ -31,6 +31,11 @@ export class CreateStudentSessionFeedbackDto {
   @ApiProperty()
   @IsOptional()
   @IsString()
+  notSatisfiedDetail?: string;
+
+  @ApiProperty()
+  @IsOptional()
+  @IsString()
   suggestForTeacher?: string;
 
   @ApiProperty({

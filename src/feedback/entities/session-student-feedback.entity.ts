@@ -7,6 +7,7 @@ export class SessionStudentFeedback {
   sessionId!: string;
   rating: number;
   description?: string;
+  notSatisfiedDetail?: string;
   suggestForTeacher?: string;
   notSatisfiedWith?: string[];
   satisfiedWith?: string[];
