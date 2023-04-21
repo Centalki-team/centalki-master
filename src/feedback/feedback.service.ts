@@ -13,6 +13,8 @@ import { CreateStudentSessionFeedbackDto } from 'src/feedback/dto/create-student
 import { SessionStudentFeedback } from 'src/feedback/entities/session-student-feedback.entity';
 import { SessionTeacherFeedback } from 'src/feedback/entities/session-teacher-feedback.entity';
 import { CreateTeacherSessionFeedbackDto } from 'src/feedback/dto/create-teacher-session-feedback.dto';
+import { TopicFeedback } from 'src/feedback/entities/topic-feedback.entity';
+import { CreateTopicFeedbackDto } from 'src/feedback/dto/create-topic-feedback.dto';
 
 @Injectable()
 export class FeedbackService {
@@ -23,6 +25,8 @@ export class FeedbackService {
     private sessionStudentFeedbackRepository: BaseFirestoreRepository<SessionStudentFeedback>,
     @InjectRepository(SessionTeacherFeedback)
     private sessionTeacherFeedbackRepository: BaseFirestoreRepository<SessionTeacherFeedback>,
+    @InjectRepository(TopicFeedback)
+    private topicFeedbackRepository: BaseFirestoreRepository<TopicFeedback>,
     private commonService: CommonService,
     private firebaseService: FirebaseService,
   ) {}
@@ -103,5 +107,12 @@ export class FeedbackService {
       .whereEqualTo('sessionId', sessionId)
       .findOne();
     return { teacher, student };
+  }
+
+  createTopicFeedback(user: DecodedIdToken, dto: CreateTopicFeedbackDto) {
+    return this.topicFeedbackRepository.create({
+      userId: user.uid,
+      ...dto,
+    });
   }
 }

@@ -23,9 +23,18 @@ import { DecodedIdToken } from 'firebase-admin/auth';
 import { GetFeedbacksDto } from './dto/get-feedbacks.dto';
 import { PaginationResult } from 'src/global/types';
 import { Feedback } from './entities/feedback.entity';
-import { positive, negative } from './constant';
+import {
+  positive,
+  negative,
+  topicName,
+  topicPhoto,
+  topicDescription,
+  topicQuestions,
+  topicVocab,
+} from './constant';
 import { CreateStudentSessionFeedbackDto } from 'src/feedback/dto/create-student-session-feedback.dto';
 import { CreateTeacherSessionFeedbackDto } from 'src/feedback/dto/create-teacher-session-feedback.dto';
+import { CreateTopicFeedbackDto } from 'src/feedback/dto/create-topic-feedback.dto';
 // import { UpdateFeedbackDto } from './dto/update-feedback.dto';
 
 @Controller('feedback')
@@ -134,5 +143,72 @@ export class FeedbackController {
     @Body() dto: CreateTeacherSessionFeedbackDto,
   ) {
     return this.feedbackService.createTeacherSessionFeedback(user, dto);
+  }
+
+  @Get('topic/content')
+  @ApiOperation({
+    summary: ' Lấy danh sách các option khi gửi feedback cho topic',
+  })
+  @ApiResponseProperty({
+    example: {
+      data: {
+        topicName,
+        topicPhoto,
+        topicDescription,
+        topicQuestions,
+        topicVocab,
+      },
+    },
+  })
+  getTopicFeedbackContent() {
+    return {
+      data: {
+        topicName,
+        topicPhoto,
+        topicDescription,
+        topicQuestions,
+        topicVocab,
+      },
+    };
+  }
+
+  @Post('topic')
+  @UseGuards(FirebaseAuthGuard)
+  @ApiBearerAuth()
+  @ApiResponseProperty({
+    example: {
+      sessionId: 'string',
+      pronunciation: 0,
+      vocabularies: 0,
+      grammar: 0,
+      idea: 0,
+      fluency: 0,
+      description: 'string',
+      suggest: 'string',
+      id: '9mVU0gd5rBSzLJ68Sdb4',
+    },
+  })
+  @ApiResponseProperty({
+    example: {
+      userId: '2nMxHaVZJuSXuoKzw4MoELswKxH3',
+      topicId: 'string',
+      topicNameSummary: ['some text'],
+      topicNameDetail: 'string',
+      topicPhotoSummary: ['some text'],
+      topicPhotoDetail: 'string',
+      topicDescriptionSummary: ['some text'],
+      topicDescriptionDetail: 'string',
+      topicVocabSummary: ['some text'],
+      topicVocabDetail: 'string',
+      topicQuestionSummary: ['some text'],
+      topicQuestionDetail: 'string',
+      id: 'YjGiUPfTN9hdLEpbLZhv',
+    },
+  })
+  createTopicFeedback(
+    @User() user: DecodedIdToken,
+    @Body() dto: CreateTopicFeedbackDto,
+  ) {
+    return this.feedbackService.createTopicFeedback(user, dto);
   }
 }

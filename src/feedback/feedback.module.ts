@@ -6,6 +6,7 @@ import { Feedback } from './entities/feedback.entity';
 import { CommonModule } from 'src/common/common.module';
 import { SessionStudentFeedback } from 'src/feedback/entities/session-student-feedback.entity';
 import { SessionTeacherFeedback } from 'src/feedback/entities/session-teacher-feedback.entity';
+import { TopicFeedback } from 'src/feedback/entities/topic-feedback.entity';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { SessionTeacherFeedback } from 'src/feedback/entities/session-teacher-fe
       Feedback,
       SessionStudentFeedback,
       SessionTeacherFeedback,
+      TopicFeedback,
     ]),
     CommonModule,
   ],
