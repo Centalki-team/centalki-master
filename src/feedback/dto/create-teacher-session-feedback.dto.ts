@@ -4,7 +4,6 @@ import { IsNotEmpty, IsNumber, IsOptional, IsString } from 'class-validator';
 
 export class CreateTeacherSessionFeedbackDto {
   @ApiProperty({
-    description: 'ID của người bị chặn',
     required: true,
   })
   @IsNotEmpty()
