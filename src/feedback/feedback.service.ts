@@ -15,6 +15,7 @@ import { SessionTeacherFeedback } from 'src/feedback/entities/session-teacher-fe
 import { CreateTeacherSessionFeedbackDto } from 'src/feedback/dto/create-teacher-session-feedback.dto';
 import { TopicFeedback } from 'src/feedback/entities/topic-feedback.entity';
 import { CreateTopicFeedbackDto } from 'src/feedback/dto/create-topic-feedback.dto';
+import { negative, positive } from 'src/feedback/constant';
 
 @Injectable()
 export class FeedbackService {
@@ -103,10 +104,19 @@ export class FeedbackService {
     const teacher = await this.sessionStudentFeedbackRepository
       .whereEqualTo('sessionId', sessionId)
       .findOne();
+    const notSatisfiedKeys = teacher?.notSatisfiedWith || [];
+    const studentNotSatisfiedWith = negative.filter((item) =>
+      notSatisfiedKeys.includes(item.key),
+    );
+    const satisfiedKeys = teacher?.notSatisfiedWith || [];
+
+    const studentSatisfiedWith = positive.filter((item) =>
+      satisfiedKeys.includes(item.key),
+    );
     const student = await this.sessionTeacherFeedbackRepository
       .whereEqualTo('sessionId', sessionId)
       .findOne();
-    return { teacher, student };
+    return { teacher, studentNotSatisfiedWith, studentSatisfiedWith, student };
   }
 
   createTopicFeedback(user: DecodedIdToken, dto: CreateTopicFeedbackDto) {

@@ -426,15 +426,22 @@ export class SessionScheduleService {
   ): Promise<PaginationResult<SessionSchedule>> {
     const { page, size, status } = query;
 
-    const data = await this.sessionScheduleRepository
+    const sessions = await this.sessionScheduleRepository
       .whereEqualTo('status', status)
       .whereEqualTo('teacherId', user.uid)
       .orderByDescending('createdAt')
       .find();
-    const completedSession = await this.countSession(
-      user.uid,
-      ESessionScheduleStatus.COMPLETED,
-    );
+
+    const promises = sessions.map(async (session) => {
+      const feedback = await this.feedbackService.getFeedbackBySessionId(
+        session.id,
+      );
+      return {
+        ...session,
+        feedback,
+      };
+    });
+    const data = await Promise.all(promises);
 
     return {
       meta: {
@@ -442,7 +449,7 @@ export class SessionScheduleService {
         hasPrevPage: false,
         page,
         size,
-        completedSession,
+        completedSession: data.length,
       },
       data,
     };
