@@ -1,0 +1,569 @@
+[
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "the mass media",
+        "phonetic": "/ðə mæs ˈmiːdiə/",
+        "translations": [
+            {
+                "meaning": "phương tiện truyền thông đại chúng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The mass media includes all forms of media that reach a large audience, such as television, radio, newspapers, and the Internet."
+            },
+            {
+                "sentence": "The mass media plays a crucial role in keeping people informed about current events around the world."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "advertisement",
+        "phonetic": "/ədˈvɜːtɪsmənt/",
+        "translations": [
+            {
+                "meaning": "quảng cáo"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The newspaper is filled with advertisements for new products and services."
+            },
+            {
+                "sentence": "The magazine featured a full-page advertisement for a luxury car."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "news program",
+        "phonetic": "/njuːz ˈprəʊɡræm/",
+        "translations": [
+            {
+                "meaning": "chương trình thời sự"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The news program's coverage of the crisis was praised for its accuracy and depth."
+            },
+            {
+                "sentence": "The news program's investigative journalism uncovered a major corruption scandal in the government."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "news agency",
+        "phonetic": "/ˈnjuːz eɪdʒənsi/",
+        "translations": [
+            {
+                "meaning": "thông tấn xã"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The news agency was the first to report on the breaking story."
+            },
+            {
+                "sentence": "The news agency has a team of experienced journalists who cover stories from around the world."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "news outlet",
+        "phonetic": "/njuːz ˈaʊtlet/",
+        "translations": [
+            {
+                "meaning": "hãng tin tức"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I prefer to get my news from a reliable news outlet, such as The New York Times."
+            },
+            {
+                "sentence": "The news outlet has faced criticism in recent months for biased reporting."
+            },
+            {
+                "sentence": "The news outlet has won numerous awards for its investigative reporting and in-depth coverage."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "weather forecast",
+        "phonetic": "/ˈweðə fɔːkɑːst/",
+        "translations": [
+            {
+                "meaning": "dự báo thời tiết"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The weather forecast on the national news channel predicts rain for the upcoming weekend."
+            },
+            {
+                "sentence": "I always check the regional weather forecast before planning a trip to the beach."
+            },
+            {
+                "sentence": "The accuracy of the weather forecast from that news agency is impressive."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "documentary",
+        "phonetic": "/dɒkjuˈmentri/",
+        "translations": [
+            {
+                "meaning": "phim tài liệu"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Documentaries can be a great way to learn about different cultures and traditions."
+            },
+            {
+                "sentence": "Last night I watched a fantastic documentary on climate change on the Discovery Channel."
+            },
+            {
+                "sentence": "The documentary on the impact of social media on our lives was eye-opening."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "game show",
+        "phonetic": "/ˈɡeɪm ʃəʊ/",
+        "translations": [
+            {
+                "meaning": "trò chơi truyền hình"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Some game shows have become so popular that they have been adapted for international audiences, such as \"Who Wants to Be a Millionaire?\"."
+            },
+            {
+                "sentence": "While many game shows offer cash prizes for contestants, others offer the opportunity to showcase their talents on national television."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "talk show",
+        "phonetic": "/ˈtɔːk ʃəʊ/",
+        "translations": [
+            {
+                "meaning": "chương trình trò chuyện"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Last night's talk show focused on mental health and featured personal stories from guests who have overcome challenges."
+            },
+            {
+                "sentence": "The talk show guest was a survivor of a natural disaster who shared their harrowing experience."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "podcast",
+        "phonetic": "/ˈpɒdkɑːst/",
+        "translations": [
+            {
+                "meaning": "chương trình phát thanh"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Many celebrities have started their own podcasts to connect with fans and share their personal experiences."
+            },
+            {
+                "sentence": "I enjoy listening to a comedy podcast during my lunch break to help me relax and destress."
+            },
+            {
+                "sentence": "The great thing about podcasts is that you can listen to them anywhere, anytime, making them a convenient way to stay informed and entertained."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "readership",
+        "phonetic": "/ˈriːdəʃɪp/",
+        "translations": [
+            {
+                "meaning": "độc giả"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The success of the website's readership is due in part to its engaging and informative articles."
+            },
+            {
+                "sentence": "The newspaper's readership declined after it changed its format and layout."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "press release",
+        "phonetic": "/ˈpres rɪliːs/",
+        "translations": [
+            {
+                "meaning": "thông cáo báo chí"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The company issued a press release about their new product launch."
+            },
+            {
+                "sentence": "The politician's office sent out a press release to address recent rumors."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "breaking news",
+        "phonetic": "/breɪkɪŋ ˈnjuːz/",
+        "translations": [
+            {
+                "meaning": "tin nóng hổi"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The radio broadcast was interrupted with breaking news about the natural disaster that had just occurred."
+            },
+            {
+                "sentence": "The journalist rushed to the scene to cover the breaking news of the protest turning violent."
+            },
+            {
+                "sentence": "The TV station interrupted its regularly scheduled programming with a breaking news announcement."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "issue",
+        "phonetic": "/ˈɪʃuː/",
+        "translations": [
+            {
+                "meaning": "số báo"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I can't seem to find yesterday's issue of the Wall Street Journal."
+            },
+            {
+                "sentence": "The Sunday issue of the Los Angeles Times is always thicker than the weekday issues."
+            },
+            {
+                "sentence": "I subscribe to the print version of Time magazine and receive each issue in the mail every morning."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "clickbait",
+        "phonetic": "/ˈklɪkbeɪt/",
+        "translations": [
+            {
+                "meaning": "tin sốc được phóng đại nhằm thu hút lượt xem"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I hate it when websites use clickbait headlines just to get people to click on their articles."
+            },
+            {
+                "sentence": "I try to avoid websites that use clickbait because I find the headlines to be misleading and often irrelevant to the actual content."
+            },
+            {
+                "sentence": "It's important to be able to distinguish between real news and clickbait so that you don't fall for fake stories."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "misinformation",
+        "phonetic": "/mɪsɪnfəˈmeɪʃn/",
+        "translations": [
+            {
+                "meaning": "thông tin sai lệch"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "It is important to fact-check information before sharing it to avoid contributing to the spread of misinformation."
+            },
+            {
+                "sentence": "The media has a responsibility to combat misinformation by presenting accurate and balanced reporting."
+            },
+            {
+                "sentence": "The internet has made it easier for misinformation to spread rapidly."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "disinformation",
+        "phonetic": "/dɪsɪnfəˈmeɪʃn/",
+        "translations": [
+            {
+                "meaning": "thông tin sai lệch do cố ý"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Journalists have a responsibility to combat disinformation by rigorously fact-checking and verifying sources before reporting on them."
+            },
+            {
+                "sentence": "The journalist was fired for knowingly publishing disinformation about the celebrity's personal life."
+            },
+            {
+                "sentence": "The investigative journalist uncovered a network that was spreading disinformation about vaccines."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "credibility",
+        "phonetic": "/kredəˈbɪləti/",
+        "translations": [
+            {
+                "meaning": "độ tin cậy"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The newspaper's credibility has been called into question after too many inaccurate reports recently."
+            },
+            {
+                "sentence": "It's important to consider the credibility of the author before accepting their claims as fact."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "censorship",
+        "phonetic": "/ˈsensəʃɪp/",
+        "translations": [
+            {
+                "meaning": "sự kiểm duyệt"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The government's censorship of the media has been a topic of controversy for years."
+            },
+            {
+                "sentence": "Censorship can be a double-edged sword, protecting society from harmful content while also restricting freedom of expression."
+            },
+            {
+                "sentence": "The issue of censorship raises questions about who gets to decide what is acceptable and what is not."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "sensational",
+        "phonetic": "/senˈseɪʃənl/",
+        "translations": [
+            {
+                "meaning": "giật gân"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Some newspapers are known for their sensational coverage of events, which can be misleading and unfair."
+            },
+            {
+                "sentence": "The news channels are criticized for their sensational coverage of natural disasters, often ignoring the human aspect of the tragedy."
+            },
+            {
+                "sentence": "The sensational reporting of crime stories can lead to widespread panic in the society."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "controversial",
+        "phonetic": "/kɒntrəˈvɜːʃl/",
+        "translations": [
+            {
+                "meaning": "gây tranh cãi"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The controversial article on the benefits of veganism has sparked a heated debate among the readership of the newspaper."
+            },
+            {
+                "sentence": "The article on gun control was highly controversial, with both sides of the debate fiercely disagreeing."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "fake news",
+        "phonetic": "/feɪk ˈnjuːz/",
+        "translations": [
+            {
+                "meaning": "tin giả"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Fake news can have serious consequences, such as damaging reputations or causing panic and violence."
+            },
+            {
+                "sentence": "The spread of fake news on social media platforms has become a major concern."
+            },
+            {
+                "sentence": "It's important to fact-check information before sharing it to avoid spreading fake news."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "yellow journalism",
+        "phonetic": "/jeləʊ ˈdʒɜːnəlɪzəm/",
+        "translations": [
+            {
+                "meaning": "báo lá cải"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The prevalence of yellow journalism on social media has made it harder for people to distinguish real news from fake news."
+            },
+            {
+                "sentence": "The use of clickbait headlines and misleading information is often associated with yellow journalism tactics."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "content validity",
+        "phonetic": "/ˈkɒntent vəˈlɪdəti/",
+        "translations": [
+            {
+                "meaning": "tính xác thực của nội dung"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Social media platforms have a responsibility to ensure the content they display has content validity and is not spreading false information."
+            },
+            {
+                "sentence": "The content validity of the social media posts is usually not high, as they were often based on rumors and speculation."
+            },
+            {
+                "sentence": "In today's era of fake news and misinformation, it's more important than ever to prioritize content validity in the media."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "on demand",
+        "phonetic": "/ɒn dɪˈmɑːnd/",
+        "translations": [
+            {
+                "meaning": "theo yêu cầu"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Nowadays, people prefer to watch TV shows and movies on demand rather than following a fixed schedule."
+            },
+            {
+                "sentence": "Streaming platforms like Netflix and Amazon Prime offer a wide range of content that can be watched on demand at any time."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "to come out",
+        "phonetic": "/kʌm aʊt/",
+        "translations": [
+            {
+                "meaning": "phát hành"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I can't wait for the latest issue of my favorite magazine to come out."
+            },
+            {
+                "sentence": "The newspaper article about the political scandal is expected to come out tomorrow."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "to trust in",
+        "phonetic": "/trʌst ɪn/",
+        "translations": [
+            {
+                "meaning": "tin tưởng ở, tin vào"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "As a responsible media consumer, it is important to trust in sources that have a proven track record of accuracy and reliability."
+            },
+            {
+                "sentence": "It can be difficult to trust in media reports when they are biased or have an agenda to push."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "to fact-check",
+        "phonetic": "/ˈfækt tʃek/",
+        "translations": [
+            {
+                "meaning": "kiểm tra, xác thực tin tức"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The news agency made sure to fact-check every claim before publishing the story."
+            },
+            {
+                "sentence": "The newspaper hired additional staff to fact-check all of their articles after a controversy over misinformation."
+            },
+            {
+                "sentence": "We cannot simply trust everything we read online and should take the time to fact-check information."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "phrase": "to pay a subscription",
+        "phonetic": "/peɪ ə səbˈskrɪpʃn/",
+        "translations": [
+            {
+                "meaning": "đăng ký đặt mua dài hạn"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I pay a monthly subscription to have access to my favorite news website's content."
+            },
+            {
+                "sentence": "Many people are willing to pay a subscription for news websites for an ad-free experience."
+            },
+            {
+                "sentence": "Without paying a subscription, you can only read the first few paragraphs of the article."
+            }
+        ]
+    }
+]

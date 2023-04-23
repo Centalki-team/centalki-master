@@ -1,0 +1,548 @@
+[
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "climate change",
+        "phonetic": "/ˈklaɪmət tʃeɪndʒ/",
+        "translations": [
+            {
+                "meaning": "biến đổi khí hậu"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Climate change is caused by human activities like burning fossil fuels and deforestation."
+            },
+            {
+                "sentence": "Many scientists agree that human activities are the main cause of climate change."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "carbon footprint",
+        "phonetic": "/ˌkɑːbən ˈfʊtprɪnt/",
+        "translations": [
+            {
+                "meaning": "dấu chân carbon"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Traveling by airplane has a significant carbon footprint, therefore I always try to limit my air travel as much as possible."
+            },
+            {
+                "sentence": "Your carbon footprint can be further reduced by using public transportation or biking instead of driving."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "global warming",
+        "phonetic": "/ˌɡləʊbl ˈwɔːmɪŋ/",
+        "translations": [
+            {
+                "meaning": "hiện tượng nóng lên toàn cầu"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The effects of global warming are becoming more evident with rising temperatures and sea levels."
+            },
+            {
+                "sentence": "Global warming can be mitigated by transitioning to renewable energy sources and reducing our dependence on fossil fuels."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "greenhouse effect",
+        "phonetic": "/ˈɡriːnhaʊs ɪfekt/",
+        "translations": [
+            {
+                "meaning": "hiệu ứng nhà kính"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Scientists are studying the greenhouse effect to better understand how it affects the climate and what actions can be taken to reduce its impact."
+            },
+            {
+                "sentence": "Educating the public about the greenhouse effect and its relationship to climate change is an important step in mitigating its harmful effects."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "plastic waste",
+        "phonetic": "/ˈplæstɪk weɪst/",
+        "translations": [
+            {
+                "meaning": "rác thải nhựa"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The accumulation of plastic waste in the oceans is a serious threat to marine life."
+            },
+            {
+                "sentence": "Recycling is a key solution to reducing plastic waste and preventing it from ending up in landfills or polluting the environment."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "hazardous",
+        "phonetic": "/ˈhæzədəs/",
+        "translations": [
+            {
+                "meaning": "độc hại"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "It's important to properly dispose of hazardous materials to avoid polluting the environment."
+            },
+            {
+                "sentence": "The factory was shut down due to hazardous waste disposal practices that were found to be severely polluting the river."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "landfill",
+        "phonetic": "/ˈlændfɪl/",
+        "translations": [
+            {
+                "meaning": "bãi rác"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The city is running out of space to put its garbage and is considering opening a new landfill site."
+            },
+            {
+                "sentence": "The landfill is causing environmental problems as hazardous chemicals and poisonous gases are polluting the local environment."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "emission",
+        "phonetic": "/ɪˈmɪʃn/",
+        "translations": [
+            {
+                "meaning": "khí thải"
+            },
+            {
+                "meaning": "sự phát thải"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The new regulations will limit the amount of emissions that factories can release into the atmosphere."
+            },
+            {
+                "sentence": "Emission-free transportation options like electric vehicles are becoming increasingly popular."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "air pollution",
+        "phonetic": "/eə(r) pəˈluːʃn/",
+        "translations": [
+            {
+                "meaning": "ô nhiễm không khí"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The government has implemented new policies to reduce air pollution from factories and vehicles."
+            },
+            {
+                "sentence": "The air pollution in our city has reached dangerous levels, and we need to take action to reduce it."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "water pollution",
+        "phonetic": "/ˈwɔːtə(r) pəˈluːʃn/",
+        "translations": [
+            {
+                "meaning": "ô nhiễm nước"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The water pollution in this river is causing harm to wildlife and making it unsafe for human use."
+            },
+            {
+                "sentence": "Individual actions, such as reducing plastic waste and properly disposing of hazardous materials, can also help to prevent water pollution."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "ozone depletion",
+        "phonetic": "/ˈəʊzəʊn dɪˈpliːʃn/",
+        "translations": [
+            {
+                "meaning": "thủng tầng ozon"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Ozone depletion can lead to increased levels of harmful ultraviolet radiation reaching the earth's surface."
+            },
+            {
+                "sentence": "The ozone layer is recovering slowly but steadily in recent years, thanks in part to efforts to reduce the use of harmful substances."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "ecosystem",
+        "phonetic": "/ˈiːkəʊsɪstəm/",
+        "translations": [
+            {
+                "meaning": "hệ sinh thái"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The coral reef ecosystem is facing major threats from water pollution and climate change."
+            },
+            {
+                "sentence": "Human activities such as deforestation and industrialization can severely disrupt the natural ecosystem."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "natural resource",
+        "phonetic": "/ˈnætʃrəl rɪˈsɔːsɪz/",
+        "translations": [
+            {
+                "meaning": "tài nguyên thiên nhiên"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Renewable natural resources, such as wind or solar energy, are becoming increasingly important as alternatives to fossil fuels."
+            },
+            {
+                "sentence": "Preserving and restoring forests is critical for protecting natural resources and mitigating the effects of climate change."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "natural disaster",
+        "phonetic": "/nætʃrəl dɪˈzɑːstə(r)/",
+        "translations": [
+            {
+                "meaning": "thiên tai"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Natural disasters can have a long-lasting impact on the environment, economy, and social well-being."
+            },
+            {
+                "sentence": "Climate change is contributing to the frequency and severity of natural disasters such as hurricanes, floods, and wildfires."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "drought",
+        "phonetic": "/draʊt/",
+        "translations": [
+            {
+                "meaning": "hạn hán"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "In regions where droughts are becoming more frequent and severe, water conservation practices are extremely essential."
+            },
+            {
+                "sentence": "The prolonged drought has resulted in a significant reduction in crop yields."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "flash flood",
+        "phonetic": "/ˌflæʃ ˈflʌd/",
+        "translations": [
+            {
+                "meaning": "lũ quét"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "With the increasing frequency and intensity of heavy rainfall due to climate change, flash floods are now more common in many areas, causing devastating damages to people and infrastructure."
+            },
+            {
+                "sentence": "After the heavy rain, the river overflowed and caused a dangerous flash flood in the nearby town."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "energy-saving",
+        "phonetic": "/ˈenədʒi seɪvɪŋ/",
+        "translations": [
+            {
+                "meaning": "tiết kiệm năng lượng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The government is encouraging homeowners to invest in energy-saving technologies to reduce their electricity bills and carbon footprint."
+            },
+            {
+                "sentence": "Although energy-saving LED light bulbs are more expensive, they last longer and use less electricity in the long run."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "eco-friendly",
+        "phonetic": "/iːkəʊ ˈfrendli/",
+        "translations": [
+            {
+                "meaning": "thân thiện với môi trường"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Eco-friendly products are designed to have a minimal impact on the environment."
+            },
+            {
+                "sentence": "We installed solar panels to make our home more eco-friendly."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "emergency services",
+        "phonetic": "/ɪˈmɜːdʒənsi sɜːvɪsɪz/",
+        "translations": [
+            {
+                "meaning": "dịch vụ khẩn cấp"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "It's crucial to know the location of the nearest hospital and emergency services in case of a crisis."
+            },
+            {
+                "sentence": "During a natural disaster, emergency services play a crucial role in providing aid and support to people."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "non-renewable",
+        "phonetic": "/nɒn rɪˈnjuːəbl/",
+        "translations": [
+            {
+                "meaning": "không tái tạo được"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Fossil fuels such as coal, oil, and natural gas are examples of non-renewable sources of energy that will eventually run out."
+            },
+            {
+                "sentence": "It's important to reduce our consumption and dependence on non-renewable resources and find ways to live more sustainably."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "renewable",
+        "phonetic": "/rɪˈnjuːəbl/",
+        "translations": [
+            {
+                "meaning": "tái tạo được"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Solar, wind, and hydropower are examples of renewable sources of energy that are practically infinite, and can be replenished naturally."
+            },
+            {
+                "sentence": "Many countries aim to increase the proportion of energy they generate from renewable sources in order to reduce greenhouse gas emissions."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "alternative energy",
+        "phonetic": "/ɔːlˌtɜːnətɪv ˈenədʒi/",
+        "translations": [
+            {
+                "meaning": "năng lượng thay thế"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Investing in research and development of alternative energy technologies is crucial for combating climate change."
+            },
+            {
+                "sentence": "Using alternative energy sources can also create job opportunities and promote economic growth."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "bio-energy",
+        "phonetic": "/baɪəʊˈenədʒi/",
+        "translations": [
+            {
+                "meaning": "năng lượng sinh học"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Bio-energy production from agricultural and forest residues can provide a sustainable source of energy."
+            },
+            {
+                "sentence": "Bio-energy technologies such as biofuels and biogas can help reduce greenhouse gas emissions in transport sectors and rural areas."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "solar energy",
+        "phonetic": "/səʊlər ˈenədʒi/",
+        "translations": [
+            {
+                "meaning": "năng lượng mặt trời"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The installation of solar panels has allowed my house to rely completely on solar energy for electricity during the day."
+            },
+            {
+                "sentence": "Advances in solar energy production technologies are making it more efficient and cost-effective to adopt."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "to degrade",
+        "phonetic": "/dɪˈɡreɪd/",
+        "translations": [
+            {
+                "meaning": "xuống cấp, suy thoái"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The quality of the air we breathe is constantly degrading due to pollution from transportation and industry."
+            },
+            {
+                "sentence": "The excessive use of chemical fertilizers, herbicides, and pesticides in agriculture can degrade the quality of soil over time."
+            },
+            {
+                "sentence": "Improper waste disposal can lead to the degradation of soil quality and the release of harmful chemicals into the environment."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "to diminish",
+        "phonetic": "/dɪˈmɪnɪʃ/",
+        "translations": [
+            {
+                "meaning": "giảm thiểu"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The use of plastic bags must be reduced to diminish the impact on the environment."
+            },
+            {
+                "sentence": "The availability of clean water sources is rapidly diminishing due to climate change."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "to recycle",
+        "phonetic": "/riːˈsaɪkl/",
+        "translations": [
+            {
+                "meaning": "tái chế"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "It's important to recycle plastic bottles and cans to reduce waste."
+            },
+            {
+                "sentence": "Recycling centers can turn old electronics into valuable materials."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "to switch off",
+        "phonetic": "/swɪtʃ ɒf/",
+        "translations": [
+            {
+                "meaning": "tắt"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Switching off lights when you leave a room is an easy and simple way to save energy."
+            },
+            {
+                "sentence": "It's important to encourage everyone in your household to switch off lights and appliances when they're not in use."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "to save energy",
+        "phonetic": "/seɪv ˈenədʒi/",
+        "translations": [
+            {
+                "meaning": "tiết kiệm năng lượng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Simple actions like unplugging electronics when they're not in use can help you save energy."
+            },
+            {
+                "sentence": "Insulating your home properly can help you save energy for heating and reduce your carbon footprint."
+            }
+        ]
+    },
+    {
+        "topicId": "hqKPXWuxxrlKivJnL7a7",
+        "phrase": "to mitigate",
+        "phonetic": "/ˈmɪtɪɡeɪt/",
+        "translations": [
+            {
+                "meaning": "giảm thiểu"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Planting more trees can help mitigate the effects of climate change by absorbing carbon dioxide."
+            },
+            {
+                "sentence": "Using energy-efficient appliances and driving less can help mitigate the negative effects of fossil fuels on the environment."
+            }
+        ]
+    }
+]

@@ -1,0 +1,152 @@
+[
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "question": "Do you often go somewhere on holiday?",
+        "answers": [
+            {
+                "answer": "Yes, I love traveling and exploring new destinations whenever I can. It's always a great opportunity to take a break from routine and immerse myself in new cultures and experiences."
+            },
+            {
+                "answer": "No, I prefer to stay at home or engage in other activities during my time off. I find relaxation and leisure in different ways without necessarily traveling to a new destination."
+            },
+            {
+                "answer": "It depends on various factors such as my work schedule, budget, and personal circumstances. Sometimes I am able to go on holiday, while other times I need to prioritize other responsibilities."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "question": "How long has it been since the last time you went on holiday? Was it a memorable holiday? If not, which holiday do you find memorable?",
+        "answers": [
+            {
+                "answer": "It has been a while since my last holiday, but I still cherish memories of my trip to Da Lat in Vietnam. The cool climate, beautiful landscapes, and indulging in local strawberries and coffee made it a memorable experience."
+            },
+            {
+                "answer": "It has been some time since my last holiday, and I have fond memories of my trip to Phu Quoc Island in Vietnam. The pristine beaches, and trying local seafood and fish sauce made it an unforgettable holiday."
+            },
+            {
+                "answer": "It has been a few years since my last holiday, but I still recall my trip to Hanoi, the capital city of Vietnam. Exploring and visiting historic landmarks like the Temple of Literature and Hoan Kiem Lake, and trying local street food made it a memorable experience."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "question": "How long did your holiday last?",
+        "answers": [
+            {
+                "answer": "I had a short holiday that lasted for three days over a long weekend. It was a quick getaway to a nearby location to relax and recharge myself."
+            },
+            {
+                "answer": "My holiday was a brief one, lasting only for a day. It was a day trip to a nearby attraction or destination, allowing me to take a short break from my routine and enjoy a change of scenery."
+            },
+            {
+                "answer": "My holiday lasted for a month. It was a long trip to a foreign country where I had the opportunity to immerse myself in the local culture and explore the destination thoroughly."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "question": "Who was with you on that holiday?",
+        "answers": [
+            {
+                "answer": "I traveled with my family on that holiday, including my parents, siblings, and nieces/nephews. It was a fun-filled trip with quality family time and unforgettable memories."
+            },
+            {
+                "answer": "I traveled with my friends on that holiday, a group of close buddies who share the same travel interests. We had a blast exploring new places, trying local cuisine, and enjoying each other's company."
+            },
+            {
+                "answer": "I traveled solo on that holiday, seeking adventure and independence. It was a liberating experience, exploring new destinations at my own pace, meeting new people, and gaining valuable insights about myself."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "question": "Where did you choose to stay during your holiday? Can you describe your choice and explain the reasons?",
+        "answers": [
+            {
+                "answer": "I chose to stay at a luxury resort during my holiday. The resort had a beautiful beachfront location, well-appointed rooms, and top-notch amenities such as a spa, swimming pools, and fine dining options. I rarely travel anywhere, so I prefer staying here."
+            },
+            {
+                "answer": "I chose to stay at a budget hostel during my holiday. I preferred a hostel as it offered affordable accommodation options and a chance to meet other travelers from around the world. I wanted to save on accommodation costs and have a more social and interactive experience."
+            },
+            {
+                "answer": "I chose to stay at a camping site during my holiday. I was an outdoor enthusiast and wanted to immerse myself in nature, so I chose a camping site that offered eco-friendly accommodation in a natural environment, such as lakeside or forest. It had basic facilities but also connections with the environment."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "question": "To make the holiday perfect, did you choose to plan it yourself or use a third party? Why?",
+        "answers": [
+            {
+                "answer": "I chose to plan the holiday myself because I enjoy researching and arranging all the details to fit my preferences. It gives me more flexibility and allows me to personalize the trip according to my interests and budget."
+            },
+            {
+                "answer": "I planned the holiday myself as I enjoy the thrill of researching and booking accommodations, flights, and activities. It allows me to tailor the trip to my preferences and budget, and I find the process of organizing everything part of the fun of traveling."
+            },
+            {
+                "answer": "I decided to use a third party to plan the holiday because I wanted a hassle-free experience. They took care of all the bookings, transportation, and itinerary, saving me time and effort. Plus, their expertise and local knowledge added value to my trip."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "question": "Were there any mishaps during that holiday? How did you overcome them?",
+        "answers": [
+            {
+                "answer": "During my holiday, our luggage got misplaced by the airline. We had to file a report, stay in touch with the airline's customer service, and make necessary purchases for essentials until our luggage was eventually delivered to our hotel."
+            },
+            {
+                "answer": "There was a time our hotel reservation was not honored upon arrival during our holiday. We tried to contact the booking agency but even they could not help us, so we had to find alternative accommodation nearby. Luckily, at least they gave us a refund and some discounts for future reservations."
+            },
+            {
+                "answer": "Last Christmas, my family and I went on a 4-day trip to the beach. Unfortunately, I fell sick with a cold. So, I had to stay in bed to rest and take some pills to alleviate the symptoms. Sadly, when I finally felt better, the trip was already over, and we were preparing to go back to our city."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "question": "How did you feel when the holiday was over?",
+        "answers": [
+            {
+                "answer": "I felt a mixture of sadness and nostalgia when the holiday was over. It was such a wonderful experience, and I didn't want it to end."
+            },
+            {
+                "answer": "I felt a sense of accomplishment and satisfaction when the holiday was over, knowing that I made the most of my time and created lasting memories."
+            },
+            {
+                "answer": "I felt a bit of post-holiday blues, as returning to the regular routine after a fantastic holiday can be challenging. However, I also felt motivated to plan my next holiday and create more adventures."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "question": "If you have the chance to experience that holiday again, would you take it? If yes, what would you do differently to make it better?",
+        "answers": [
+            {
+                "answer": "Absolutely! If I had the chance to experience that holiday again, I would make sure to spend more time exploring the local markets and trying out different local foods to immerse myself in the culture even more."
+            },
+            {
+                "answer": "Yes, without a doubt! If I could experience that holiday again, I would make an effort to learn some basic local phrases to communicate with the locals and appreciate the destination's culture and customs on a deeper level."
+            },
+            {
+                "answer": "Definitely! I would love to have the opportunity to relive that holiday. One thing I would do differently is to plan for more leisurely downtime to relax and fully enjoy the surroundings and natural beauty of the destination."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "question": "Did you learn anything new or have any new experiences during that holiday?",
+        "answers": [
+            {
+                "answer": "Yes, during that holiday, I had the opportunity to learn how to scuba dive and explore the fascinating underwater world, which was an entirely new experience for me."
+            },
+            {
+                "answer": "Definitely! I had the opportunity to interact with the local community and learn about their way of life, customs, and traditions. It was a humbling and eye-opening experience that broadened my cultural awareness."
+            },
+            {
+                "answer": "Unfortunately, no. I did not have any new experiences during that holiday as I mostly relaxed and enjoyed some downtime. My holiday was more about spending time with my loved ones."
+            }
+        ]
+    }
+]

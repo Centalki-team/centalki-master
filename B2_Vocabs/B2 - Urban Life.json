@@ -1,0 +1,644 @@
+[
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "urban life",
+        "phonetic": "/ˈɜːbən laɪf/",
+        "translations": [
+            {
+                "meaning": "cuộc sống đô thị"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Urban life provides access to diverse job opportunities, social networks, and entertainment options."
+            },
+            {
+                "sentence": "In many urban areas, the cost of living is high, making it challenging for some to afford the amenities that make urban life so attractive."
+            },
+            {
+                "sentence": "Despite the challenges, urban life has a unique charm that draws people from all over the world."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "city dweller",
+        "phonetic": "/ˈsɪti ˈdwelə(r)/",
+        "translations": [
+            {
+                "meaning": "cư dân thành thị"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "City dwellers may also face challenges such as traffic congestion and high cost of living."
+            },
+            {
+                "sentence": "As a city dweller, I've learned to appreciate the convenience of having everything I need within walking distance."
+            },
+            {
+                "sentence": "For a nature lover like me, becoming a city dweller was a bit of a shock at first."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "metropolitan",
+        "phonetic": "/metrəˈpɒlɪtən/",
+        "translations": [
+            {
+                "meaning": "thuộc về thủ đô hoặc vùng trung tâm"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Many large corporations have their headquarters located in the metropolitan regions of major cities."
+            },
+            {
+                "sentence": "Urban sprawl has resulted in many metropolitan areas becoming increasingly spread out and difficult to navigate."
+            },
+            {
+                "sentence": "As a writer living in a small town, I sometimes find myself yearning for the cultural diversity and opportunities available in a metropolitan area."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "nightlife",
+        "phonetic": "/ˈnaɪtlaɪf/",
+        "translations": [
+            {
+                "meaning": "cuộc sống về đêm"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Nightlife can be an exciting part of urban life for those who enjoy socializing and experiencing new things."
+            },
+            {
+                "sentence": "The city is known for its vibrant nightlife, with numerous bars and clubs open until the early hours of the morning."
+            },
+            {
+                "sentence": "If you're new to the city and want to experience the local nightlife, it's a good idea to go out with a group of friends for safety."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "traffic jam",
+        "phonetic": "/ˈtræfɪk dʒæm/",
+        "translations": [
+            {
+                "meaning": "tắc nghẽn giao thông"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Traffic jams are common in urban areas during rush hour when many people are commuting to and from work."
+            },
+            {
+                "sentence": "The city really needs to invest in public transportation to help alleviate traffic jams during rush hour."
+            },
+            {
+                "sentence": "I always leave extra early for appointments because you never know when you're going to get caught in a traffic jam."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "depressing",
+        "phonetic": "/dɪˈpresɪŋ/",
+        "translations": [
+            {
+                "meaning": "chán nản, phiền muộn"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Living in an urban area can sometimes be depressing due to factors such as pollution, crime, or social isolation."
+            },
+            {
+                "sentence": "The never-ending concrete jungle of the city can be quite depressing, especially when you crave a connection with nature."
+            },
+            {
+                "sentence": "The high cost of living in cities can be depressing for many people, who have to work long hours just to make ends meet."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "exhausted",
+        "phonetic": "/ɪɡˈzɔːstɪd/",
+        "translations": [
+            {
+                "meaning": "mệt mỏi, kiệt sức"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "People who live in urban areas may feel exhausted due to long commutes and busy schedules."
+            },
+            {
+                "sentence": "After a long day at work, I feel exhausted from navigating the crowded streets and rushing to catch the subway."
+            },
+            {
+                "sentence": "Trying to balance work, social life, and navigating the city can leave you feeling exhausted."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "crowded",
+        "phonetic": "/ˈkraʊdɪd/",
+        "translations": [
+            {
+                "meaning": "chật chội, đông đúc"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Urban areas can be crowded due to high population density."
+            },
+            {
+                "sentence": "The metro is always crowded during peak hours, so I am rarely able to find a seat."
+            },
+            {
+                "sentence": "One downside of living in a crowded city is the lack of personal space."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "crime rate",
+        "phonetic": "/kraɪm reɪt/",
+        "translations": [
+            {
+                "meaning": "tỷ lệ tội phạm"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Urban areas often have higher crime rates than rural areas due to factors like poverty and population density."
+            },
+            {
+                "sentence": "Many people choose to move to the suburbs because they perceive the crime rate to be lower than central areas."
+            },
+            {
+                "sentence": "The high crime rate in the city has made many residents concerned for their safety."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "convenient",
+        "phonetic": "/kənˈviːniənt/",
+        "translations": [
+            {
+                "meaning": "thuận lợi"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The convenience of online shopping has made it easier for urban dwellers to get what they need without leaving their homes."
+            },
+            {
+                "sentence": "Many people choose to live in small apartments in the city because it is more convenient for their work commute and social life."
+            },
+            {
+                "sentence": "Living near a major transportation hub can be very convenient for those who need to travel frequently for work or pleasure."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "burnout",
+        "phonetic": "/bɜːn aʊt/",
+        "translations": [
+            {
+                "meaning": "mệt mỏi do căng thẳng kéo dài"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Urban lifestyle can lead to burnout if you don't prioritize self-care."
+            },
+            {
+                "sentence": "Urban life can be exciting, but it can also be overwhelming and lead to burnout if you don't learn to manage stress."
+            },
+            {
+                "sentence": "It's important to recognize the signs of burnout and take a break from the city from time to time to recharge."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "congested",
+        "phonetic": "/kənˈdʒestɪd/",
+        "translations": [
+            {
+                "meaning": "đông đúc (giao thông, đường xá)"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The traffic in the city can be so congested that it creates dangerous driving conditions, leading to more accidents."
+            },
+            {
+                "sentence": "The sidewalks in the downtown area are so congested that it's hard to walk without bumping into people."
+            },
+            {
+                "sentence": "The parking lot is so congested that it took me half an hour just to find a spot."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "suburb",
+        "phonetic": "/ˈsʌbɜːb/",
+        "translations": [
+            {
+                "meaning": "khu vực ngoại ô"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Living in the suburb allows for a quieter and more peaceful lifestyle compared to the busy city center."
+            },
+            {
+                "sentence": "While the city may offer more job opportunities, the suburb provides a better quality of life for those who prioritize work-life balance."
+            },
+            {
+                "sentence": "Living in the suburb can mean longer commutes to work, but many find the trade-off of a peaceful home life worth it."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "resident",
+        "phonetic": "/ˈrezɪdənt/",
+        "translations": [
+            {
+                "meaning": "cư dân"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The new resident of the apartment building complained about the noise level from the street below."
+            },
+            {
+                "sentence": "As a long-time resident of the city, I have seen many changes in the urban landscape over the years."
+            },
+            {
+                "sentence": "The local government is working to improve public transportation options for city residents."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "residential area",
+        "phonetic": "/rezɪˈdenʃl ˈeəriə/",
+        "translations": [
+            {
+                "meaning": "khu dân cư"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The streets in residential areas are often lined with trees, giving the neighborhoods a more natural feel."
+            },
+            {
+                "sentence": "It is not uncommon for residential areas to have community centers or parks that promote social interaction and outdoor activities."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "commercial area",
+        "phonetic": "/kəˈmɜːʃl ˈeəriə/",
+        "translations": [
+            {
+                "meaning": "khu thương mại"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The commercial area of the city is undergoing a major transformation, with many old buildings being torn down to make way for modern office towers."
+            },
+            {
+                "sentence": "The commercial area of the city is always bustling with activity during the day, with shops, offices, and restaurants to the needs of the residents."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "industrial area",
+        "phonetic": "/ɪnˈdʌstriəl ˈeəriə/",
+        "translations": [
+            {
+                "meaning": "khu công nghiệp"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The city has a dedicated industrial area where most of the factories and manufacturing plants are located."
+            },
+            {
+                "sentence": "The residents of the nearby residential area have been complaining about the pollution coming from the industrial area."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "amenity",
+        "phonetic": "/əˈmiːnəti/",
+        "translations": [
+            {
+                "meaning": "tiện nghi, tiện ích"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The city council has approved funding for the construction of several new amenities, including a community center and dog park."
+            },
+            {
+                "sentence": "Many people are attracted to urban living because of the amenities available in the area, such as shopping centers and entertainment services."
+            },
+            {
+                "sentence": "As more people move to the city, there is a growing demand for amenities such as restaurants, cafes, and shops to meet their needs."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "fast-paced",
+        "phonetic": "/fɑːst ˈpeɪst/",
+        "translations": [
+            {
+                "meaning": "nhanh chóng, hối hả"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Living in a big city requires one to keep up with the fast-paced lifestyle, which can be overwhelming for some people."
+            },
+            {
+                "sentence": "In a fast-paced city, it's important to find ways to slow down and relax, such as practicing yoga or meditation."
+            },
+            {
+                "sentence": "The fast-paced lifestyle of the city often means that people are always on the go, with little time to stop and appreciate the small things in life."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "laid-back",
+        "phonetic": "/leɪd ˈbæk/",
+        "translations": [
+            {
+                "meaning": "ung dung, thư thái"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "After living in a fast-paced city for years, she decided to move to a small town with a more laid-back lifestyle."
+            },
+            {
+                "sentence": "Despite being in the heart of the city, the neighborhood has a laid-back vibe with plenty of parks and green spaces."
+            },
+            {
+                "sentence": "This small town may not have all the amenities of a big city, but it's a great place to live a laid-back life."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "pedestrian",
+        "phonetic": "/pəˈdestriən/",
+        "translations": [
+            {
+                "meaning": "người đi bộ"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "As a pedestrian, you should always be aware of your surroundings and follow traffic rules."
+            },
+            {
+                "sentence": "The pedestrian bridge over the river is one of the city's most popular attractions, offering stunning views."
+            },
+            {
+                "sentence": "Pedestrian safety has become a major concern for the city after a recent spike in accidents involving walkers and cyclists."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "pavement",
+        "phonetic": "/ˈpeɪvmənt/",
+        "translations": [
+            {
+                "meaning": "vỉa hè"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The pavement was cracked and uneven, making it difficult to walk."
+            },
+            {
+                "sentence": "The pavement was slick with rain, and I almost slipped while walking to work."
+            },
+            {
+                "sentence": "The pavement outside my apartment building is often littered with trash and needs to be cleaned more regularly."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "make ends meet",
+        "phonetic": "/meɪk end miːt/",
+        "translations": [
+            {
+                "meaning": "đủ sống"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Even with a good job, it can be tough to make ends meet in the city when the cost of groceries, transportation, and other expenses keep increasing."
+            },
+            {
+                "sentence": "The high rent prices in the city often make it difficult for young professionals to make ends meet, despite their decent salaries."
+            },
+            {
+                "sentence": "For many low-income families in the city, making ends meet means sacrificing basic necessities such as healthcare and healthy food."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "worth living",
+        "phonetic": "/wɜːθ ˈlɪvɪŋ/",
+        "translations": [
+            {
+                "meaning": "đáng sống"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The city's green spaces and accessible transportation options make it a place that is definitely worth living in."
+            },
+            {
+                "sentence": "The city's excellent healthcare facilities and education options make it a place that is worth living in."
+            },
+            {
+                "sentence": "The city's bustling economy and job market make it a place that is worth living in for those seeking career growth and opportunities."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "public transport",
+        "phonetic": "/pʌblɪk ˈtrænspɔːt/",
+        "translations": [
+            {
+                "meaning": "phương tiện giao thông công cộng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Many city residents rely on public transport to commute to work, as driving in the congested streets can be time-consuming, expensive, and stressful."
+            },
+            {
+                "sentence": "The government is investing in expanding the city's public transport system to reduce traffic congestion and encourage more sustainable transportation."
+            },
+            {
+                "sentence": "Using public transport instead of driving can save people money on fuel and parking, as well as reduce their carbon footprint."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "a hectic pace of life",
+        "phonetic": "/ə ˈhektɪk peɪs əv laɪf/",
+        "translations": [
+            {
+                "meaning": "nhịp sống hối hả"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "A hectic pace of life can have negative impacts on physical and mental health."
+            },
+            {
+                "sentence": "Some people thrive on a hectic pace of life, while others find it draining and exhausting."
+            },
+            {
+                "sentence": "Despite the hectic pace of life, many urban dwellers find ways to slow down and relax amidst the chaos."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "a good value for money",
+        "phonetic": "/ɡʊd ˈvæljuː fɔː(r) ˈmʌni/",
+        "translations": [
+            {
+                "meaning": "đáng đồng tiền bát gạo"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "This apartment may be small, but it's a good value for money in this expensive city."
+            },
+            {
+                "sentence": "I decided to shop at this store because they have high-quality products at a good value for money."
+            },
+            {
+                "sentence": "The public transportation system in this city is reliable and a good value for money."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "at a higher risk of",
+        "phonetic": "/æt ə ˈhaɪə(r) rɪsk əv/",
+        "translations": [
+            {
+                "meaning": "có nguy cơ cao"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Living in a high-rise building puts you at a higher risk of fire accidents."
+            },
+            {
+                "sentence": "Walking alone at night puts you at a higher risk of being a victim of crime."
+            },
+            {
+                "sentence": "People who consume a lot of fast food are at a higher risk of various diseases and health problems."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "to pay higher prices for",
+        "phonetic": "/peɪ ˈhaɪə(r) praɪs fɔː(r)/",
+        "translations": [
+            {
+                "meaning": "trả giá cao hơn cho"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Living in a big city means having to pay higher prices for basic necessities like groceries and rent."
+            },
+            {
+                "sentence": "Famous restaurants often charge higher prices for their food and drinks."
+            },
+            {
+                "sentence": "Being located near public transportation can be convenient, but also means that you will have to pay higher prices for properties."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "to face financial difficulty",
+        "phonetic": "/feɪs faɪˈnænʃl ˈdɪfɪkəlti/",
+        "translations": [
+            {
+                "meaning": "đối mặt khó khăn về tài chính"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "People who live in urban areas may face financial difficulty due to high living costs or job loss."
+            },
+            {
+                "sentence": "The rising rent prices in urban centers are causing many residents to face financial difficulty."
+            },
+            {
+                "sentence": "Despite working multiple jobs, some people in urban areas still face financial difficulty."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "phrase": "to have access to",
+        "phonetic": "/hæv ˈækses tuː/",
+        "translations": [
+            {
+                "meaning": "được tiếp cận với"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "City living can provide access to a variety of job opportunities in different industries."
+            },
+            {
+                "sentence": "One of the benefits of living in an urban area is having access to high-quality medical facilities."
+            },
+            {
+                "sentence": "Many urban areas have parks and outdoor spaces that are accessible to residents, providing opportunities for exercise and recreation."
+            }
+        ]
+    }
+]

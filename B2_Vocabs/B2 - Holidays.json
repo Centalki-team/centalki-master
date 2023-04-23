@@ -1,0 +1,431 @@
+[
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "accommodation",
+        "phonetic": "/əˌkɒməˈdeɪʃn/",
+        "translations": [
+            {
+                "meaning": "nơi ở"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We had to find alternative accommodation because the hotel was overbooked."
+            },
+            {
+                "sentence": "The accommodation was basic but had everything we needed."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "campsite",
+        "phonetic": "/ˈkæmpsaɪt/",
+        "translations": [
+            {
+                "meaning": "địa điểm cắm trại"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We spent the night at a campsite near the lake."
+            },
+            {
+                "sentence": "The campsite had a great view of the mountains."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "cruise",
+        "phonetic": "/kruːz/",
+        "translations": [
+            {
+                "meaning": "du ngoạn biển"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "A cruise is a vacation or holiday trip taken on a large ship or boat, typically for leisure or recreational purposes."
+            },
+            {
+                "sentence": "The cruise was very relaxing and we saw some amazing sights."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "caravan",
+        "phonetic": "/ˈkærəvæn/",
+        "translations": [
+            {
+                "meaning": "nhà ở lưu động"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We rented a caravan for our trip to the coast."
+            },
+            {
+                "sentence": "We parked our caravan in a beautiful spot by the river."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "voyage",
+        "phonetic": "/ˈvɔɪɪdʒ/",
+        "translations": [
+            {
+                "meaning": "chuyến du ngoạn xa, thường bằng đường biển hoặc đường hàng không"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The voyage across the Atlantic took two weeks."
+            },
+            {
+                "sentence": "Voyages can be undertaken for various purposes, such as trade, exploration, research, or personal exploration of new places and cultures."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "fascinating",
+        "phonetic": "/ˈfæsɪneɪtɪŋ/",
+        "translations": [
+            {
+                "meaning": "quyến rũ"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Exploring ancient ruins and historical landmarks during a holiday can be truly fascinating, providing unique insights into different cultures."
+            },
+            {
+                "sentence": "The museum had some fascinating exhibits about ancient Egypt."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "breathtaking",
+        "phonetic": "/ˈbreθteɪkɪŋ/",
+        "translations": [
+            {
+                "meaning": "ngoạn mục"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The sunset over the ocean was breathtaking."
+            },
+            {
+                "sentence": "The breathtaking view from the mountaintop took my breath away, leaving me in awe of the natural beauty that surrounded me."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "picturesque",
+        "phonetic": "/pɪktʃəˈresk/",
+        "translations": [
+            {
+                "meaning": "đẹp như tranh"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The countryside is full of picturesque landscapes and charming villages."
+            },
+            {
+                "sentence": "The countryside during springtime was a picturesque sight, with fields of blooming flowers, green meadows, and clear blue skies stretching as far as the eye could see."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "terrific",
+        "phonetic": "/təˈrɪfɪk/",
+        "translations": [
+            {
+                "meaning": "tuyệt vời"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We had a terrific time at the beach with our friends."
+            },
+            {
+                "sentence": "Taking a road trip holiday, with the freedom to explore natural wonders at one's own pace, can be a terrific way to create lasting memories."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "terrified",
+        "phonetic": "/ˈterɪfaɪd/",
+        "translations": [
+            {
+                "meaning": "rất kinh hãi"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "He looked terrified when he saw the snake in his garden."
+            },
+            {
+                "sentence": "I was terrified when I realized I had lost my passport while traveling abroad during my holiday."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "holiday brochure",
+        "phonetic": "/ˈhɒlədeɪ ˈbrəʊʃə(r)/",
+        "translations": [
+            {
+                "meaning": "sách quảng cáo du lịch"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We used the holiday brochure to plan our trip to Ca Mau."
+            },
+            {
+                "sentence": "I picked up a holiday brochure from the nearby store to browse through different destinations and plan my upcoming vacation."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "youth hostel",
+        "phonetic": "/ˈjuːθ hɒstl/",
+        "translations": [
+            {
+                "meaning": "nhà trọ thanh niên"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "This youth hostel has free Wi-Fi and breakfast included in the price."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "package holiday",
+        "phonetic": "/ˈpækɪdʒ hɒlədeɪ/",
+        "translations": [
+            {
+                "meaning": "chuyến đi trọn gói"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We booked a package holiday for our family vacation, which included flights, accommodation, meals, and activities all bundled together for a hassle-free travel experience."
+            },
+            {
+                "sentence": "The travel agency offered a great deal on a package holiday to a tropical island, which included flights, hotel stay, airport transfers, and guided tours, making it a convenient option for our holiday."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "self-catering",
+        "phonetic": "/ˌself ˈkeɪtərɪŋ/",
+        "translations": [
+            {
+                "meaning": "tự phục vụ"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We stayed in a self-catering apartment so we could cook our own meals."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "seaside resort",
+        "phonetic": "/ˈsiːsaɪd rɪˈzɔːt/",
+        "translations": [
+            {
+                "meaning": "khu nghỉ mát ven bờ biển"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We spent our summer vacation at a seaside resort on the coast of Spain."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "amusement park",
+        "phonetic": "/əˈmjuːzmənt pɑːk/",
+        "translations": [
+            {
+                "meaning": "công viên giải trí"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "This amusement park has attractions for all ages, from toddlers to adults."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "bed and breakfast",
+        "phonetic": "/ˌbed ən ˈbrekfəst/",
+        "translations": [
+            {
+                "meaning": "dịch vụ ngủ đêm và ăn sáng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We stayed at a cozy bed and breakfast in the heart of town."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "travel agency",
+        "phonetic": "/ˈtrævl eɪdʒənsi/",
+        "translations": [
+            {
+                "meaning": "công ty du lịch"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We booked our trip through a travel agency that specializes in adventure travel."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "the holiday of a lifetime",
+        "phonetic": "/ðə ˈhɒlədeɪ əv ə ˈlaɪftaɪm/",
+        "translations": [
+            {
+                "meaning": "kỳ nghỉ hiếm có"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The trip to Japan was amazing - definitely the holiday of a lifetime!"
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "local specialities",
+        "phonetic": "/ˈləʊkl ˌspeʃiˈæləti/",
+        "translations": [
+            {
+                "meaning": "đặc sản địa phương"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "When visiting Da Lat, you can try the local specialty called Bánh Tráng Nướng, a Vietnamese-style pizza made with rice paper, egg, meat, and vegetables."
+            },
+            {
+                "sentence": "When exploring the Mekong Delta, you can indulge in fresh fruit and coconut-based desserts, such as Ben Tre coconut candy and Can Tho's famous fruit salad, which are delightful local specialties that showcase the region's abundant tropical fruits."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "exhilarating",
+        "phonetic": "/ɪɡˈzɪləreɪtɪŋ/",
+        "translations": [
+            {
+                "meaning": "phấn chấn"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The bungee jump was one of the most exhilarating experiences of my life!"
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "to recount",
+        "phonetic": "/rɪˈkaʊnt/",
+        "translations": [
+            {
+                "meaning": "kể lại"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "She recounted her adventures in Africa with great enthusiasm."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "to pitch a tent",
+        "phonetic": "/pɪtʃ ə tent/",
+        "translations": [
+            {
+                "meaning": "dựng lều"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We had to pitch our tent quickly before the rain started."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "to go sightseeing",
+        "phonetic": "/ɡəʊ ˈsaɪtsiːɪŋ/",
+        "translations": [
+            {
+                "meaning": "đi tham quan"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We spent the day sightseeing in Paris and saw all the major attractions."
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "to go on safari",
+        "phonetic": "/ɡəʊ ɒn səˈfɑːri/",
+        "translations": [
+            {
+                "meaning": "đi săn"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We went on safari in Tanzania and saw lions, elephants, and giraffes up close!"
+            }
+        ]
+    },
+    {
+        "topicId": "td6pC8eQwazpSOUc1Twd",
+        "phrase": "to get away from it all",
+        "phonetic": "/ɡet əˈweɪ frəm ɪt ɔːl/",
+        "translations": [
+            {
+                "meaning": "đi nghỉ cho khuây khoả"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We went to a remote island to get away from it all and recharge our batteries."
+            }
+        ]
+    }
+]

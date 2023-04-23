@@ -1,0 +1,197 @@
+[
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "What types of mass media do you know or be familiar with?",
+        "answers": [
+            {
+                "answer": "I am familiar with both traditional forms of mass media such as television, radio, newspapers, and modern forms such as social media and online news platforms."
+            },
+            {
+                "answer": "I have been exposed to various types of mass media, such as television, radio, newspapers, online news websites, and social media platforms."
+            },
+            {
+                "answer": "In my opinion, the most popular forms of mass media are television, newspapers, and social media platforms."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "What types of mass media are available where you live?",
+        "answers": [
+            {
+                "answer": "In my city, we have several daily newspapers, several TV channels, and radio stations that cover news, music, and other entertainment programs."
+            },
+            {
+                "answer": "Where I live, we have access to both traditional and digital media, such as newspapers, magazines, TV, radio, and online news sources."
+            },
+            {
+                "answer": "There are many different types of mass media available in my area, including print media like newspapers and magazines, as well as broadcast media like TV and radio."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "Do the types of media you mentioned require payment or subscription?",
+        "answers": [
+            {
+                "answer": "It depends on the platform. Streaming services like Netflix require a monthly subscription fee, while social media platforms like Facebook and Twitter are free to use."
+            },
+            {
+                "answer": "Yes, some of the media require payment for accessing their content. For example, the digital version of several newspapers and magazines requires a subscription fee."
+            },
+            {
+                "answer": "Yes, cable TV and satellite TV require payment for monthly subscription fees. However, some of the basic channels are free."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "Do you often follow news through the media? If so, which one do you follow the most?",
+        "answers": [
+            {
+                "answer": "Yes, I do follow news through the media. I mostly follow the news through the television news channels and online news websites."
+            },
+            {
+                "answer": "I'm not an avid follower of the news, but I do keep myself updated on current events through social media platforms like Twitter and Facebook."
+            },
+            {
+                "answer": "I follow the news through various media outlets such as radio, television, and online news websites. I like to compare different perspectives and viewpoints to get a better understanding of the news."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "Are the sources of information you follow accurate? Please explain why you think so.",
+        "answers": [
+            {
+                "answer": "Yes, I believe the sources of information I follow are accurate because they are reputable news outlets with a history of reliable reporting."
+            },
+            {
+                "answer": "I always make sure to verify the information I receive by checking the sources and looking for corroborating evidence, so I believe the sources I follow are generally accurate."
+            },
+            {
+                "answer": "No, I have come across unreliable sources that have shared false information, so I always try to verify the information before sharing or accepting it."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "Does your country have any form of national mass media? If so, what is it and what are they for?",
+        "answers": [
+            {
+                "answer": "Yes, in my country, we have a national television network that is owned and operated by the government. It is primarily used for news as well as educational content."
+            },
+            {
+                "answer": "Yes, there is a public broadcasting corporation in my country that is funded by the government. It operates several television and radio channels that offer a range of programming, from news to entertainment and cultural content."
+            },
+            {
+                "answer": "No, there is no national mass media in my country. Instead, we have a variety of privately owned and operated media outlets that cater to different audiences and interests."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "Do you have regional mass media where you live? If so, what kind of information do they provide?",
+        "answers": [
+            {
+                "answer": "Yes, we have several regional newspapers and TV channels that cover local news and events. They provide information on community events, local government issues, and feature stories on people and places in the area."
+            },
+            {
+                "answer": "Yes, we have a regional radio station that covers news and events from our city and surrounding towns. They provide traffic and weather updates, local business news, and interviews with community leaders."
+            },
+            {
+                "answer": "No, we don't have any dedicated regional mass media in our area. We mostly rely on national news outlets to stay informed about current events and trends."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "Do you follow any news programs? Are they useful?",
+        "answers": [
+            {
+                "answer": "Yes, I listen to a news program on the radio every morning. It's useful as it keeps me updated with the latest news while I'm getting ready for work."
+            },
+            {
+                "answer": "Yes, I watch a news program on TV every night. It gives me an overview of the day's events and helps me stay informed."
+            },
+            {
+                "answer": "No, I don't follow any news programs regularly. I find that they often focus on celebrity gossip and sensational stories rather than important news and events."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "What do you think about yellow journalism, especially their content validity?",
+        "answers": [
+            {
+                "answer": "Yellow journalism has been a controversial topic for years because it often sacrifices content validity and prioritizes sensationalism over accuracy and can mislead the public."
+            },
+            {
+                "answer": "The lack of content validity in yellow journalism is concerning because it can influence people's beliefs and attitudes without presenting accurate information, causing widespread panic or even violence."
+            },
+            {
+                "answer": "Yellow journalism can be entertaining to read or watch, but its lack of content validity can be dangerous and harmful,  eroding public trust in journalism and undermining the important role of the media in our society."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "If you only had 15 minutes a day to get all the information, which types of media do you think is better and why did you choose it?",
+        "answers": [
+            {
+                "answer": "Personally, I believe that radio would be the best source of information if I only had 15 minutes a day to get all the information. News programs on radio channels provide concise and to-the-point information, with no clickbait headlines or misinformation."
+            },
+            {
+                "answer": "Television news programs are my preferred source of information as they offer a visual representation of the news events. If I only had 15 minutes a day to get all the information, I would watch television news programs to get a quick overview of the day's events."
+            },
+            {
+                "answer": "Social media is a popular source of information, but it can be overwhelming and unreliable at times. If I only had 15 minutes a day to get all the information, I would avoid social media and rely on more traditional sources such as television or newspapers."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "Do you think there is a place for opinion-based journalism in mass media? Why or why not?",
+        "answers": [
+            {
+                "answer": "I think opinion-based journalism can be useful to some extent, as long as it is clearly labeled as such and doesn't overshadow objective reporting of the facts."
+            },
+            {
+                "answer": "Opinion-based journalism can be valuable in providing commentary and analysis on important issues, but it's important for journalists to separate their personal opinions from factual reporting."
+            },
+            {
+                "answer": "I don't think opinion-based journalism has a place in the mass media because it can prioritize sensationalism and clickbait over objective reporting, which can be harmful to the public."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "How has the COVID-19 pandemic affected the way people consume mass media?",
+        "answers": [
+            {
+                "answer": "The pandemic has led to an increase in the consumption of mass media. With social distancing measures in place, people have been spending more time at home and relying more on online media platforms for news, entertainment and information."
+            },
+            {
+                "answer": "The pandemic has accelerated the trend towards digital media consumption, with many people using streaming services and social media platforms to stay connected and entertained. People are consuming more media content related to cooking, home workouts, and other activities that can be done at home."
+            },
+            {
+                "answer": "The pandemic has also led to a rise in social media misinformation, with people sharing false or misleading information about the virus and its impact. It has also highlighted the importance of reliable and accurate information, leading to an increased demand for trusted news sources and fact-checking operations."
+            }
+        ]
+    },
+    {
+        "topicId": "Grz4Nz6r7bUYDonfJM8b",
+        "question": "Do you use mass media to relax? If so, what types of media do you often use and why?",
+        "answers": [
+            {
+                "answer": "Yes, I use social media to relax. Scrolling through my feeds and seeing what my friends and family are up to is a nice distraction from work and other responsibilities."
+            },
+            {
+                "answer": "Yes, I often use movies and TV shows to relax. I find that getting lost in a good story is a great way to unwind and forget about the stresses of the day."
+            },
+            {
+                "answer": "No, I prefer to use other methods to relax, like reading a book or practicing yoga. I find that these activities are more calming and help me to unwind more effectively than consuming mass media."
+            }
+        ]
+    }
+]

@@ -1,0 +1,188 @@
+[
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "question": "Where do you live? How long have you been living there?",
+        "answers": [
+            {
+                "answer": "I live in Ho Chi Minh City, the largest metropolitan area in Vietnam. I've been living here for 5 years now and I love the fast-paced lifestyle and the diverse food scene."
+            },
+            {
+                "answer": "I currently reside in Da Nang, a coastal city in central Vietnam. I've been living here for about a year and I enjoy the laid-back vibe, the beautiful beaches, and the friendly locals."
+            },
+            {
+                "answer": "I call Hanoi my home, the bustling capital of Vietnam. I've been living in this vibrant city for 3 years and I love the mix of modern and traditional culture, as well as the endless food options."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "question": "Are you satisfied with your current life in your city?",
+        "answers": [
+            {
+                "answer": "Overall, I'm quite satisfied with my life here. The city offers plenty of opportunities for work and entertainment, and I've been able to make some great friends since moving here."
+            },
+            {
+                "answer": "I'm still adjusting to life in the city, but overall I'm fairly satisfied. There are certainly some challenges that come with living in such a densely populated area, but I appreciate the opportunities to meet new people and try new things."
+            },
+            {
+                "answer": "Honestly, I'm not entirely satisfied with my life in the city. While I love the job opportunities and the excitement of city living, I find that it can be difficult to maintain a work-life balance and prioritize self-care."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "question": "Does urban life make you feel stressed or exhausted?",
+        "answers": [
+            {
+                "answer": "I do feel stressed sometimes, but I find that staying organized and having a routine helps me manage the demands of city living."
+            },
+            {
+                "answer": "Not necessarily stressed, but I do find myself feeling tired more often due to the noise and constant activity of the city."
+            },
+            {
+                "answer": "It depends on the day, but I've found that taking breaks to enjoy green spaces or quiet areas can help alleviate some of the stress."
+            },
+            {
+                "answer": "I think it's important to acknowledge that urban life can be stressful, but it's also full of opportunities and experiences that make it worth it."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "question": "Do you often have to rush to keep up with everything happening in your city?",
+        "answers": [
+            {
+                "answer": "Yes, I do feel like I'm always rushing to keep up with the fast pace of the city. There's always so much going on, and I don't want to miss out on anything."
+            },
+            {
+                "answer": "Sometimes I feel like I have to rush, but I try to take a step back and prioritize what's important. It's all about finding a balance."
+            },
+            {
+                "answer": "I try not to rush too much and take time for myself. It's important to have a work-life balance and not let the city consume you."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "question": "With that pace of life, what lifestyle do you choose for yourself? How does that lifestyle help you?",
+        "answers": [
+            {
+                "answer": "To balance out the hectic pace of urban life, I have chosen a minimalist lifestyle that prioritizes simplicity and sustainability. This lifestyle helps me to be more mindful of my consumption habits and live a more intentional and purposeful life."
+            },
+            {
+                "answer": "With the fast pace of life in the city, I choose to prioritize my physical and mental well-being by practicing yoga and meditation regularly. This lifestyle helps me maintain a sense of calm and balance amidst the chaos of the urban environment."
+            },
+            {
+                "answer": "As someone who values social connections and community, I make an effort to be involved in local events and activities in my city. This lifestyle helps me to feel connected to the people and culture around me, and provides a sense of belonging."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "question": "What lifestyle do surrounding people usually choose? Is it similar to yours? From your perspective, do you think it is suitable for this urban life?",
+        "answers": [
+            {
+                "answer": "From what I have observed, many people in this urban area tend to focus on career and material success. While I respect their choices, my personal preference is a more balanced life that includes hobbies, travel, and time spent with loved ones. I believe that this lifestyle helps me maintain my mental and physical health and overall well-being."
+            },
+            {
+                "answer": "It appears that the majority of people in this urban area prioritize work and productivity over all else, often neglecting their personal lives and relationships. While I understand the importance of career success, I personally choose to lead a more balanced lifestyle that allows me to nurture my friendships, spend time with my family, and pursue my passions outside of work. I believe that this lifestyle helps me maintain my happiness and well-being."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "question": "How is the living standard in your city? Is it a good value for money?",
+        "answers": [
+            {
+                "answer": "From my experience, the living standard in my city is not as high as some other cities in the country, but it is still a good value for money. It's affordable for most people, but you may need to adjust your expectations slightly."
+            },
+            {
+                "answer": "The living standard in my city is relatively high, but so is the cost of living. However, I think it's a good value for money because of the wide range of opportunities available and the overall quality of life."
+            },
+            {
+                "answer": "I believe that the living standard in my city is adequate for the price. While there are certainly expensive areas and things to do, there are also many affordable options available. It all depends on your preferences and priorities."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "question": "Do you have access to better educational facilities and medical services, compared to suburbs or rural areas?",
+        "answers": [
+            {
+                "answer": "Absolutely, it is one of the major advantages of living in the city. There are many top-rated schools, colleges, and universities located in the city, which offer world-class education. Similarly, there are many well-equipped hospitals and clinics in the city that provide the best medical care."
+            },
+            {
+                "answer": "Living in the city has given me access to better educational facilities and medical services. There are many well-known universities and schools in the city, as well as many modern hospitals and medical centers in the city that provide excellent medical care."
+            },
+            {
+                "answer": "Not entirely. While the city offers a wider variety of educational and medical institutions, they often come with a higher price tag, making them inaccessible to many. Additionally, rural areas may have smaller but more personalized institutions that provide better care and education to their communities."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "question": "How would you describe the safety of your city? What factors contribute to your assessment, such as crime rate, traffic accident frequency, etc.?",
+        "answers": [
+            {
+                "answer": "Overall, I would say my city is relatively safe. While there are certainly areas with higher crime rates, the police force does a good job of keeping the streets patrolled and responding quickly to incidents. There are also a number of community programs aimed at reducing crime and increasing safety, such as neighborhood watch groups."
+            },
+            {
+                "answer": "Safety is definitely a concern in my city, as there are higher crime rates in some neighborhoods. However, I personally haven't experienced any issues or felt unsafe while going out, thanks to many initiatives like community policing and increasing street lighting. I think it's also important to be aware of your surroundings and take precautions like not walking alone at night."
+            },
+            {
+                "answer": "Unfortunately, I don't feel that my city is particularly safe. There have been a number of high-profile crimes and incidents of violence recently that have really shaken up the community. I think part of the issue is that the police force is understaffed and under-resourced, which makes it difficult to respond to incidents quickly. I hope that the city government will invest more in public safety and address some of these concerns soon."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "question": "How is the traffic situation where you live? Is it convenient for daily travel?",
+        "answers": [
+            {
+                "answer": "The traffic situation in my city is generally good. There are not many traffic jams, and the roads are well-maintained. I find it convenient for daily travel as I can easily drive to work or take public transportation if needed."
+            },
+            {
+                "answer": "The traffic situation in my city is quite congested, particularly during rush hour. It can be frustrating to navigate the traffic, but I find it convenient for daily travel as there are many public transportation options available, such as buses and subways."
+            },
+            {
+                "answer": "Unfortunately, the traffic in my city is quite bad, especially during rush hours. It can be frustrating to sit in traffic for a long time and it can make commuting quite stressful. There are often delays and traffic jams that can really impact your schedule."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "question": "Are there any obstacles to your jobs when you live there?",
+        "answers": [
+            {
+                "answer": "Yes, there are some obstacles to my job due to the traffic situation. The traffic can be very congested during rush hour, which sometimes makes me late for work. Additionally, finding parking can also be a challenge."
+            },
+            {
+                "answer": "Unfortunately, the cost of living in the city is very high, which can be a challenge to finding a job that pays enough to make ends meet. Many employers offer lower salaries due to the high cost of living, which can make it difficult to make a comfortable living."
+            },
+            {
+                "answer": "The city is home to many large corporations, but it can be challenging to find a job that aligns with my values and interests. Many of these corporations prioritize profit over social responsibility, which can be a turn-off for someone like me who is passionate about making a positive impact."
+            },
+            {
+                "answer": "As a small business owner, I find that the cost of rent and other expenses can be a major obstacle to success in the city. It can be challenging to compete with larger businesses with more resources, and the high cost of living can make it difficult to grow and expand."
+            }
+        ]
+    },
+    {
+        "topicId": "ivUtPDVIHYNPEpbTmj1r",
+        "question": "If you have the chance to introduce someone who wants to live in your city, what would you say to persuade them?",
+        "answers": [
+            {
+                "answer": "If someone were considering moving to my city, I'd tell them that it's a place where people from all walks of life can come together and feel at home, with a sense of community and belonging that's hard to find anywhere else."
+            },
+            {
+                "answer": "I'd share that my city is a hub for innovation and technology, with world-class universities, research institutions, and businesses that attract some of the brightest minds from around the world."
+            },
+            {
+                "answer": "I'd tell them that my city is a vibrant and dynamic metropolis with a rich culture and history, and there is always something new and exciting to discover."
+            },
+            {
+                "answer": "If someone were interested in moving to my city, I'd tell them that it has a fantastic public transportation system that makes it easy to get around, even without a car."
+            }
+        ]
+    }
+]

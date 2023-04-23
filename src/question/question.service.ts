@@ -43,7 +43,7 @@ export class QuestionService {
   // }
 
   // async updateQuestionFromJson() {
-  //   const readContent: Question1[] = require('../../questions.json');
+  //   const readContent: Question1[] = require('../../B2_Questions/B2 - Urban Life.json');
   //   console.log({ readContent });
   //   const resp = await Promise.all(
   //     readContent.map(

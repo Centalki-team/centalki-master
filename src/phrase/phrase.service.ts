@@ -58,7 +58,7 @@ export class PhraseService {
   //   console.log({ readContent });
   // }
   // async updatePhraseFromJson() {
-  //   const readContent: Phrase[] = require('../../phrases.json');
+  //   const readContent: Phrase[] = require('../../B2_Vocabs/B2 - Urban Life.json');
   //   console.log({ readContent });
   //   await Promise.all(
   //     readContent.map(async (item) => {
