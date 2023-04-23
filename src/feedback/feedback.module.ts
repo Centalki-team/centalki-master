@@ -4,10 +4,22 @@ import { FeedbackController } from './feedback.controller';
 import { FireormModule } from 'nestjs-fireorm';
 import { Feedback } from './entities/feedback.entity';
 import { CommonModule } from 'src/common/common.module';
+import { SessionStudentFeedback } from 'src/feedback/entities/session-student-feedback.entity';
+import { SessionTeacherFeedback } from 'src/feedback/entities/session-teacher-feedback.entity';
+import { TopicFeedback } from 'src/feedback/entities/topic-feedback.entity';
 
 @Module({
-  imports: [FireormModule.forFeature([Feedback]), CommonModule],
+  imports: [
+    FireormModule.forFeature([
+      Feedback,
+      SessionStudentFeedback,
+      SessionTeacherFeedback,
+      TopicFeedback,
+    ]),
+    CommonModule,
+  ],
   controllers: [FeedbackController],
   providers: [FeedbackService],
+  exports: [FeedbackService],
 })
 export class FeedbackModule {}
