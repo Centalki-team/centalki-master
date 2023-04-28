@@ -31,6 +31,17 @@ export class NotificationController {
     return this.notificationService.markAllSeen(user);
   }
 
+  @Put('mark-all-unseen')
+  @UseGuards(FirebaseAuthGuard)
+  @ApiOperation({
+    summary: 'Đánh dấu tất cả tin nhắn chưa đọc',
+    description: 'Đánh dấu tất cả tin nhắn chưa đọc dựa vào Bearer Token',
+  })
+  @ApiBearerAuth()
+  markAllUnseen(@User() user: UserRecord) {
+    return this.notificationService.markAllUnseen(user);
+  }
+
   @Get()
   @ApiOperation({
     summary: 'Lấy danh sách thông báo',

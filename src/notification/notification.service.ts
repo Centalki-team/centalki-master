@@ -85,6 +85,18 @@ export class NotificationService {
       seenNotifications.map((item) => this.notificationRepository.update(item)),
     );
   }
+  async markAllUnseen(user: UserRecord) {
+    const listNotification = await this.notificationRepository
+      .whereEqualTo('uid', user.uid)
+      .find();
+    const seenNotifications = listNotification.map((item) => ({
+      ...item,
+      seenAt: null,
+    }));
+    return await Promise.all(
+      seenNotifications.map((item) => this.notificationRepository.update(item)),
+    );
+  }
 
   // update(id: number, updateNotificationDto: UpdateNotificationDto) {
   //   return `This action updates a #${id} notification`;
