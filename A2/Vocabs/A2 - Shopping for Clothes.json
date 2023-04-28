@@ -1,0 +1,449 @@
+[
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "shopaholic",
+        "phonetic": "/ʃɒpəˈhɒlɪk/",
+        "translations": [
+            {
+                "meaning": "tín đồ mua sắm"
+            },
+            {
+                "meaning": "nghiện mua sắm"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "She is a shopaholic who spends almost all of her money on clothes and shoes."
+            },
+            {
+                "sentence": "My sister is a shopaholic who always buys more clothes than she needs, and she only wears them once."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "shopping habit",
+        "phonetic": "/ˈʃɒpɪŋ ˈhæbɪt/",
+        "translations": [
+            {
+                "meaning": "thói quen mua sắm"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Her shopping habit is to buy only what she needs and avoid impulse purchases."
+            },
+            {
+                "sentence": "My shopping habit changed during the pandemic and I started ordering more things online."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "supermarket",
+        "phonetic": "/ˈsuːpəmɑːkɪt/",
+        "translations": [
+            {
+                "meaning": "siêu thị"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The supermarket offers a variety of products at competitive prices."
+            },
+            {
+                "sentence": "The supermarket is having a major sale this weekend."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "department store",
+        "phonetic": "/dɪˈpɑːtmənt stɔː(r)/",
+        "translations": [
+            {
+                "meaning": "cửa hàng bách hóa"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I found a beautiful dress for the wedding at the department store in the mall."
+            },
+            {
+                "sentence": "The department store's return policy allows you to return clothes within 30 days with a receipt."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "shopping mall",
+        "phonetic": "/ˈʃɒpɪŋ mɔːl/",
+        "translations": [
+            {
+                "meaning": "trung tâm mua sắm"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I love going to the shopping mall to shop for clothes because there's such a wide variety of stores to choose from."
+            },
+            {
+                "sentence": "The shopping mall's clothing stores cater to a wide range of styles and preferences, from casual to formal wear."
+            },
+            {
+                "sentence": "You can easily spend an entire day at the shopping mall browsing through tens of clothing stores."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "boutique",
+        "phonetic": "/buːˈtiːk/",
+        "translations": [
+            {
+                "meaning": "cửa hàng quần áo nhỏ"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The boutique owner was so helpful in finding me the perfect outfit for my friend's wedding."
+            },
+            {
+                "sentence": "Boutiques always have the latest fashion trends and styles, which is why I love shopping at them."
+            },
+            {
+                "sentence": "This boutique has a great mix of classic and modern styles that really suit my taste."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "in-store",
+        "phonetic": "/ˌɪn ˈstɔː(r)/",
+        "translations": [
+            {
+                "meaning": "có sẵn tại cửa hàng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "In-store shopping for clothes allows me to get a better sense of the fabric and texture of items."
+            },
+            {
+                "sentence": "I prefer to try on clothes in-store to ensure the fit and quality meet my expectations."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "online shopping platform",
+        "phonetic": "/ɒnˈlaɪn ˈʃɒpɪŋ ˈplætfɔːm/",
+        "translations": [
+            {
+                "meaning": "nền tảng mua sắm trực tuyến"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I love the convenience of shopping for clothes on an online shopping platform and having them delivered directly to my house."
+            },
+            {
+                "sentence": "I prefer to use an online shopping platform for clothes shopping because I can easily browse and compare different brands and prices."
+            },
+            {
+                "sentence": "The online shopping platform I use can suggest clothes based on my browsing history."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "chain store",
+        "phonetic": "/ˈtʃeɪn stɔː(r)/",
+        "translations": [
+            {
+                "meaning": "chuỗi cửa hàng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The chain store's clothes are known for their quality and durability, which is why I keep going back."
+            },
+            {
+                "sentence": "The chain store usually offers a loyalty program that rewards you with discounts and other benefits."
+            },
+            {
+                "sentence": "I often shop at the chain store for clothes because they offer affordable prices and a wide selection."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "duty-free",
+        "phonetic": "/djuːti ˈfriː/",
+        "translations": [
+            {
+                "meaning": "được miễn thuế"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The duty-free store often has exclusive clothing items that you won't find at regular retail stores."
+            },
+            {
+                "sentence": "Shopping for clothes at the duty-free store is a great way if you're traveling to another country."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "on sale",
+        "phonetic": "/ɒn seɪl/",
+        "translations": [
+            {
+                "meaning": "đang giảm giá"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I bought a dress that was on sale for 50% off its original price."
+            },
+            {
+                "sentence": "He missed the opportunity to buy the shoes he liked because they were on sale only for one day."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "special offer",
+        "phonetic": "/speʃl ˈɒfə(r)/",
+        "translations": [
+            {
+                "meaning": "ưu đãi đặc biệt"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The clothing store is currently offering a special offer on summer dresses, with prices up to 50% off."
+            },
+            {
+                "sentence": "It's worth asking the clothing store's staff if there are any special offers available, as they may not always be advertised."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "window shopping",
+        "phonetic": "/ˈwɪndəʊ ʃɒpɪŋ/",
+        "translations": [
+            {
+                "meaning": "đi ngắm hàng hoá"
+            },
+            {
+                "meaning": "đồ trưng bày"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I love to go window shopping for clothes on my lunch break, just to see what's new in the stores."
+            },
+            {
+                "sentence": "Window shopping for clothes is a great way to get a feel for the latest fashion trends without having to spend the money."
+            },
+            {
+                "sentence": "I like to take photos while window shopping for clothes, so I can remember items that caught my eye and search for them later."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "click and collect",
+        "phonetic": "/klɪk ən kəˈlekt/",
+        "translations": [
+            {
+                "meaning": "đặt hàng và đến lấy tại cửa hàng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I like to use click and collect when shopping for clothes, as it saves time and shipping costs."
+            },
+            {
+                "sentence": "I appreciate that the clothing store's click and collect service notifies me by email or text message when my order is ready for pickup."
+            },
+            {
+                "sentence": "If an item I want is not available in my size or preferred color in-store, I'll often use click and collect to order it online and pick it up when it's ready."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "fitting room",
+        "phonetic": "/ˈfɪtɪŋ ruːm/",
+        "translations": [
+            {
+                "meaning": "phòng thử đồ"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "He used a virtual fitting room app to see how the shirt would look on him."
+            },
+            {
+                "sentence": "I always try on clothes in the fitting room before purchasing them to ensure the fit is right."
+            },
+            {
+                "sentence": "In the fitting room, I often take photos of myself in different outfits to get a second opinion from friends or family before making a purchase."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "second hand",
+        "phonetic": "/sekənd ˈhænd/",
+        "translations": [
+            {
+                "meaning": "hàng cũ"
+            },
+            {
+                "meaning": "hàng qua tay"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I love shopping for second-hand clothes because it's a more sustainable and eco-friendly option than buying new."
+            },
+            {
+                "sentence": "I like that shopping for second-hand clothes is a more budget-friendly option, as I can get high-quality items at a fraction of the cost of new clothes."
+            },
+            {
+                "sentence": "He donated his second hand clothes to a charity organization instead of throwing them away."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "impulse buy",
+        "phonetic": "/ˈɪmpʌls baɪ/",
+        "translations": [
+            {
+                "meaning": "mua sắm tùy hứng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Impulse buys can be fun, but I always try to make sure the item fits well and matches my style before deciding."
+            },
+            {
+                "sentence": "When shopping for clothes, it's easy to get caught up in the excitement and make an impulse buy."
+            },
+            {
+                "sentence": "I've regretted impulse buys in the past, so now I try to stick to a shopping list and only buy items I've planned."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "out of stock",
+        "phonetic": "/aʊt əv stɒk/",
+        "translations": [
+            {
+                "meaning": "hết hàng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The store told me that the shoes I was looking for were out of stock and wouldn't be available in at least a month."
+            },
+            {
+                "sentence": "I was hoping to buy the jeans I saw online, but when I went to the store they were already out of stock."
+            },
+            {
+                "sentence": "The store had a sale, but most of the items had already been out of stock by the time I got there."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "to pre-order",
+        "phonetic": "/ˈpriː ɔːdə(r)/",
+        "translations": [
+            {
+                "meaning": "đặt hàng trước (khi hàng sắp ra mắt)"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I like to pre-order clothes online so that I can be one of the first people to receive the latest styles."
+            },
+            {
+                "sentence": "I pre-ordered a dress for an upcoming event to make sure that it arrives in time and to avoid any last-minute incidents."
+            },
+            {
+                "sentence": "Pre-ordering clothes can sometimes come with exclusive discounts or offers, which is a nice bonus."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "to back-order",
+        "phonetic": "/ˈbæk ɔːdə(r)/",
+        "translations": [
+            {
+                "meaning": "đặt hàng (khi món hàng tạm hết)"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I had to back-order a pair of shoes that were sold out in my size, but I'm excited to receive them when they become available again."
+            },
+            {
+                "sentence": "I usually back-order clothes that are out of stock, just to make sure that I don't miss out on them if they become available again."
+            },
+            {
+                "sentence": "Back-ordering clothes requires patience, but it's worth it to receive a unique item that may not be available otherwise."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "to be sold out",
+        "phonetic": "/bi ˌsəʊld ˈaʊt/",
+        "translations": [
+            {
+                "meaning": "được bán hết"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I had been saving up for weeks to buy the jacket I wanted, but by the time I went to purchase it, it was already sold out."
+            },
+            {
+                "sentence": "I was really disappointed to find out that the dress I wanted was sold out in all sizes and colors."
+            },
+            {
+                "sentence": "The limited edition T-shirt was so popular that it sold out within minutes."
+            }
+        ]
+    },
+    {
+        "topicId": "I8PvKutpE6HOD8Tdr347",
+        "phrase": "to comparison-shop",
+        "phonetic": "/kəmˈpærɪsn ʃɒp/",
+        "translations": [
+            {
+                "meaning": "mua dò giá"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Before making a purchase, I always comparison-shop for clothes to make sure I'm getting the best deal."
+            },
+            {
+                "sentence": "When comparison-shopping for clothes, I also pay attention to the quality of the fabric, not just the price."
+            },
+            {
+                "sentence": "With so many online shopping platforms nowadays, comparison-shopping for clothes has become easier and more convenient than ever."
+            }
+        ]
+    }
+]

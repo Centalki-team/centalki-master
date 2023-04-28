@@ -1,0 +1,647 @@
+[
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "sustainable fashion",
+        "phonetic": "/səˈsteɪnəbl ˈfæʃn/",
+        "translations": [
+            {
+                "meaning": "thời trang bền vững"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Sustainable fashion is a growing movement aimed at reducing the negative impact of the fashion industry on the environment."
+            },
+            {
+                "sentence": "Many designers are now incorporating sustainable fashion practices into their designs, such as using recycled materials and eco-friendly production methods."
+            },
+            {
+                "sentence": "Sustainable fashion is not just about being environmentally conscious, it also includes fair labor practices and ethical treatment of workers."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "ethical fashion",
+        "phonetic": "/ˈeθɪkl ˈfæʃn/",
+        "translations": [
+            {
+                "meaning": "thời trang đạo đức"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Ethical fashion focuses more on the social aspects of production, while sustainable fashion emphasizes the environmental impact."
+            },
+            {
+                "sentence": "Many fashion brands are now embracing ethical fashion practices to reduce their impact on the environment and promote fair labor practices."
+            },
+            {
+                "sentence": "By supporting ethical fashion, consumers can make a positive impact on the fashion industry and contribute to a more sustainable future."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "fast fashion",
+        "phonetic": "/fɑːst ˈfæʃn/",
+        "translations": [
+            {
+                "meaning": "thời trang nhanh"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Fast fashion is a business model that prioritizes cheap, trendy clothing produced quickly and at a large scale."
+            },
+            {
+                "sentence": "The cycle of fast fashion encourages consumers to constantly buy new clothes and discard old ones, leading to a culture of waste."
+            },
+            {
+                "sentence": "Many fast fashion brands rely on unethical labor practices and contribute to environmental degradation."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "slow fashion",
+        "phonetic": "/sləʊ ˈfæʃn/",
+        "translations": [
+            {
+                "meaning": "thời trang chậm"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Slow fashion focuses on reducing waste and creating long-lasting products, while sustainable fashion focuses on reducing the environmental impact of the fashion industry as a whole."
+            },
+            {
+                "sentence": "I prefer to invest in slow fashion pieces that I know will last for years, rather than constantly buying cheap, fast fashion items."
+            },
+            {
+                "sentence": "By choosing to support slow fashion brands, you can help to create a more sustainable and ethical fashion industry."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "circular fashion",
+        "phonetic": "/ˈsɜːkjələ(r) ˈfæʃn/",
+        "translations": [
+            {
+                "meaning": "thời trang tuần hoàn"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Circular fashion focuses on extending the lifespan of clothes and materials by creating a system where waste is minimized and resources are continuously reused or recycled."
+            },
+            {
+                "sentence": "By embracing circular fashion, we can reduce the environmental impact of the fashion industry."
+            },
+            {
+                "sentence": "Brands that adopt circular fashion principles aim to close the loop on the production and consumption of clothing."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "renewable",
+        "phonetic": "/rɪˈnjuːəbl/",
+        "translations": [
+            {
+                "meaning": "có thể tái tạo được"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The fashion industry has the potential to greatly reduce its environmental impact by transitioning to renewable energy sources."
+            },
+            {
+                "sentence": "Some fashion brands are incorporating renewable materials like organic cotton and bamboo in their products to reduce their carbon footprint."
+            },
+            {
+                "sentence": "The production of renewable materials such as tencel and hemp requires less water and resources, making them a great choice for sustainable fashion."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "cruelty-free",
+        "phonetic": "/ˈkruːəlti friː/",
+        "translations": [
+            {
+                "meaning": "không thử nghiệm trên động vật"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Cruelty-free fashion can protect animal rights and welfare, and reduce the environmental impact of animal agriculture."
+            },
+            {
+                "sentence": "This brand of shoes is known for its cruelty-free production process, using only vegan materials."
+            },
+            {
+                "sentence": "The company's commitment to using only cruelty-free ingredients has earned it a loyal following among animal rights activists."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "animal-derived",
+        "phonetic": "/ˈænɪml dɪˈraɪv/",
+        "translations": [
+            {
+                "meaning": "có nguồn gốc từ động vật"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The production of animal-derived materials like fur and exotic skins has a negative impact on animal welfare and the environment."
+            },
+            {
+                "sentence": "The use of animal-derived materials in the fashion industry has been linked to environmental concerns, such as deforestation, water pollution, and greenhouse gas emissions."
+            },
+            {
+                "sentence": "As consumers become more conscious about the impact of their fashion choices, many are seeking out cruelty-free and animal-derived free options."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "transparent",
+        "phonetic": "/trænsˈpærənt/",
+        "translations": [
+            {
+                "meaning": "minh bạch"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The sustainable fashion brand prides itself on being transparent about their production process, from sourcing materials to manufacturing and delivery."
+            },
+            {
+                "sentence": "A key element of sustainable fashion is transparency, as it allows customers to make informed choices about the products they buy."
+            },
+            {
+                "sentence": "Through transparency, fashion brands can build trust with consumers and establish themselves as ethical and responsible businesses."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "greenwashing",
+        "phonetic": "/ˈɡriːnwɒʃɪŋ/",
+        "translations": [
+            {
+                "meaning": "quảng cáo xanh"
+            },
+            {
+                "meaning": "tẩy xanh"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "It's important to research a company's claims to avoid falling for greenwashing campaigns and to make informed purchasing decisions."
+            },
+            {
+                "sentence": "Brands that engage in greenwashing may use sustainable materials for their products but overlook other aspects, such as labor and transportation."
+            },
+            {
+                "sentence": "The rise of greenwashing in the fashion industry has led to increased demand for transparency from consumers."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "durability",
+        "phonetic": "/djʊərəˈbɪləti/",
+        "translations": [
+            {
+                "meaning": "độ bền"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The concept of durability is closely linked to slow fashion, as it promotes creating long-lasting clothing pieces rather than fast and disposable ones."
+            },
+            {
+                "sentence": "Brands that prioritize durability in their products tend to produce timeless products that can last for years."
+            },
+            {
+                "sentence": "Durability is not only important for reducing waste but also for reducing the environmental impact of the fashion industry."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "biodegradable",
+        "phonetic": "/baɪəʊdɪˈɡreɪdəbl/",
+        "translations": [
+            {
+                "meaning": "có khả năng phân huỷ sinh học"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "This dress is made from biodegradable materials, so you can feel good about wearing it without harming the environment."
+            },
+            {
+                "sentence": "We ensure that all of our products are made from biodegradable materials and follow strict ethical standards to promote sustainability."
+            },
+            {
+                "sentence": "The biodegradable fabric of this shirt will decompose naturally and quickly, minimizing its environmental impact."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "carbon footprint",
+        "phonetic": "/kɑːbən ˈfʊtprɪnt/",
+        "translations": [
+            {
+                "meaning": "dấu chân carbon"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The carbon footprint of the fashion industry is enormous, accounting for a significant portion of global greenhouse gas emissions."
+            },
+            {
+                "sentence": "By choosing to produce locally, fashion brands can significantly reduce their carbon footprint and support local communities."
+            },
+            {
+                "sentence": "Fashion brands can calculate their carbon footprint to measure the environmental impact of their operations and take steps to reduce it."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "microplastic",
+        "phonetic": "/ˈmaɪkrəʊplæstɪk/",
+        "translations": [
+            {
+                "meaning": "hạt vi nhựa"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Choosing clothing made from natural fibers instead of synthetic fabrics can help reduce the amount of microplastics released into the environment."
+            },
+            {
+                "sentence": "Microplastics can be harmful to both wildlife and human life."
+            },
+            {
+                "sentence": "Washing clothing in a special bag designed to capture microplastics can also help reduce the microplastics pollution."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "synthetic",
+        "phonetic": "/sɪnˈθetɪk/",
+        "translations": [
+            {
+                "meaning": "tổng hợp"
+            },
+            {
+                "meaning": "nhân tạo"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Synthetic fibers are often made from non-renewable resources and have a significant environmental impact."
+            },
+            {
+                "sentence": "Synthetic materials can take hundreds of years to break down in landfills, contributing to environmental problems."
+            },
+            {
+                "sentence": "The use of synthetic materials in clothing can also have negative effects on our health, as they may contain harmful chemicals and microplastics."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "linen",
+        "phonetic": "/ˈlɪnɪn/",
+        "translations": [
+            {
+                "meaning": "vải lanh"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "This dress is made from linen, a natural and eco-friendly material that is perfect for summer."
+            },
+            {
+                "sentence": "Many sustainable fashion brands are now using linen as a more sustainable alternative to cotton."
+            },
+            {
+                "sentence": "Linen is a durable and long-lasting material, making it a great option for sustainable fashion."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "fiber",
+        "phonetic": "/ˈfaɪbə(r)/",
+        "translations": [
+            {
+                "meaning": "sợi"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Many sustainable fashion brands are turning to innovative plant-based fibers like bamboo, hemp, and soy to reduce their environmental impact."
+            },
+            {
+                "sentence": "The choice of fiber used in clothing plays a significant role in reducing carbon emissions."
+            },
+            {
+                "sentence": "Sustainable fashion companies are prioritizing the use of organic and biodegradable fibers to minimize harm to the environment."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "silk",
+        "phonetic": "/sɪlk/",
+        "translations": [
+            {
+                "meaning": "lụa"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Silk production is a labor-intensive process, which is why it tends to be more expensive than other fabrics."
+            },
+            {
+                "sentence": "Silk is a natural and biodegradable fiber that is often favored by sustainable fashion designers for its luxurious feel and durability."
+            },
+            {
+                "sentence": "The production of conventional silk can involve harmful chemicals and water pollution."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "leather",
+        "phonetic": "/ˈleðə(r)/",
+        "translations": [
+            {
+                "meaning": "da thuộc"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "A key aspect of sustainable fashion is reducing the amount of leather used in clothing and accessories."
+            },
+            {
+                "sentence": "Some sustainable fashion companies use recycled leather to reduce waste and environmental impact."
+            },
+            {
+                "sentence": "Sustainable fashion is about more than just the materials used, but also the ethical treatment of animals and people involved in the production process of leather."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "fur",
+        "phonetic": "/fɜː(r)/",
+        "translations": [
+            {
+                "meaning": "lông thú"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The production of animal fur often involves cruel practices that are not sustainable or ethical."
+            },
+            {
+                "sentence": "Sustainable fashion is all about making conscious choices, including choosing to avoid clothing items made with real fur."
+            },
+            {
+                "sentence": "Choosing not to buy fur products is a small but impactful way to support sustainable fashion."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "polyester",
+        "phonetic": "/ˌpɒliˈestə(r)/",
+        "translations": [
+            {
+                "meaning": "vải pô-li-ét-te"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Many sustainable fashion brands are moving away from using polyester, as it is a synthetic fiber that is made from nonrenewable resources."
+            },
+            {
+                "sentence": "Polyester is often used in fast fashion because it is cheap and easy to produce, but it produces microplastics when washed, contributing to ocean pollution."
+            },
+            {
+                "sentence": "Some sustainable fashion brands are using polyester made from plant-based materials, which is biodegradable and causes no harm to the environment."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "nylon",
+        "phonetic": "/ˈnaɪlɒn/",
+        "translations": [
+            {
+                "meaning": "sợi ni-lông"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Many sustainable fashion brands avoid using nylon in their products because it is a synthetic fiber that is not biodegradable."
+            },
+            {
+                "sentence": "Some sustainable fashion brands are experimenting with upcycling nylon waste into new products, such as swimwear and activewear."
+            },
+            {
+                "sentence": "Nylon is often used in fast fashion because it is inexpensive to produce, but it has a high environmental impact."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "disposable culture",
+        "phonetic": "/dɪˈspəʊzəbl ˈkʌltʃə(r)/",
+        "translations": [
+            {
+                "meaning": "văn hóa dùng và vứt nhanh chóng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The problem with disposable culture is that it generates excessive waste and harms the environment."
+            },
+            {
+                "sentence": "The fast fashion industry has contributed to the growth of a disposable culture, where people throw the clothes away after a few wears."
+            },
+            {
+                "sentence": "Disposable culture is not only bad for the environment but also for the workers in the fast fashion industry who are often underpaid and overworked."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "versatile clothes",
+        "phonetic": "/ˈvɜːsətaɪl kləʊðz/",
+        "translations": [
+            {
+                "meaning": "đồ lẻ"
+            },
+            {
+                "meaning": "đồ dễ phối"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Versatile clothes are essential in building a sustainable wardrobe because they can be worn in various ways and for different occasions."
+            },
+            {
+                "sentence": "Investing in versatile clothes means you can create more outfits with fewer items, which is a key principle of sustainable fashion."
+            },
+            {
+                "sentence": "Sustainable fashion is all about buying clothes that are versatile, timeless, and made to last."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "fair trade",
+        "phonetic": "/ˌfeə ˈtreɪd/",
+        "translations": [
+            {
+                "meaning": "thương mại công bằng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "This T-shirt was made with fair trade cotton, ensuring that the workers who grew and harvested the cotton were paid fairly."
+            },
+            {
+                "sentence": "We only source our fabrics from fair trade suppliers who prioritize ethical and sustainable production methods."
+            },
+            {
+                "sentence": "The fair trade certification on this handbag means that the artisans who created it were paid fairly for their work and had decent working conditions."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "low-impact dyeing",
+        "phonetic": "/ˌləʊ ˈɪmpækt daɪɪŋ/",
+        "translations": [
+            {
+                "meaning": "nhuộm màu ít gây hại"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "This dress is made using low-impact dyeing methods, which use less water and energy than traditional dyeing processes."
+            },
+            {
+                "sentence": "The vibrant colors of this shirt were achieved through low-impact dyeing, which also ensures the fabric stays soft and comfortable to wear."
+            },
+            {
+                "sentence": "The skirt you're wearing was colored using low-impact dyeing, which means it's safe for the environment and your skin."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "minimalism",
+        "phonetic": "/ˈmɪnɪməlɪzəm/",
+        "translations": [
+            {
+                "meaning": "chủ nghĩa tối giản"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The minimalist approach to fashion emphasizes quality over quantity and encourages us to invest in versatile pieces that can be worn for years to come."
+            },
+            {
+                "sentence": "A minimalist approach to fashion also means being mindful of our consumption habits and only buying what we truly need or love."
+            },
+            {
+                "sentence": "The philosophy of minimalism can extend beyond our clothes and into other areas of our lives, such as reducing waste and simplifying our daily routines."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "seasonless clothing",
+        "phonetic": "/ˈsiːzənləs ˈkləʊðɪŋ/",
+        "translations": [
+            {
+                "meaning": "trang phục không theo mùa"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "I love investing in seasonless clothing that I can wear year-round, it's a more sustainable approach to fashion."
+            },
+            {
+                "sentence": "Seasonless clothing is becoming more popular as people look for options that they can wear all year round."
+            },
+            {
+                "sentence": "I always try to incorporate more seasonless clothing into my wardrobe as a way of reducing my environmental impact."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "conscious consumption",
+        "phonetic": "/ˈkɒnʃəs kənˈsʌmpʃn/",
+        "translations": [
+            {
+                "meaning": "tiêu dùng có ý thức"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Conscious consumption means being mindful of the environmental and social impacts of our purchases."
+            },
+            {
+                "sentence": "Conscious consumption involves thinking about the entire lifecycle of a product, from production to disposal."
+            },
+            {
+                "sentence": "Small changes in our daily habits, like bringing reusable bags and water bottles, can make a big difference in practicing conscious consumption."
+            }
+        ]
+    },
+    {
+        "topicId": "pMc7o8PyWz23QXyLQopm",
+        "phrase": "traceability",
+        "phonetic": "/ˌtreɪsəˈbɪləti/",
+        "translations": [
+            {
+                "meaning": "khả năng truy vết"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The fashion brand prides itself on its commitment to traceability, ensuring that every stage of production is documented and transparent."
+            },
+            {
+                "sentence": "Traceability is becoming more important than ever, as consumers demand to know the environmental and social impacts of the clothes they buy."
+            },
+            {
+                "sentence": "The fashion industry is still struggling to achieve full traceability, with many brands unable to track the source of their materials or the conditions in which they are produced."
+            },
+            {
+                "sentence": "The lack of traceability in the fashion industry has led to numerous scandals, such as the use of slave labor or the dumping of toxic waste into rivers."
+            },
+            {
+                "sentence": "Traceability is not just about knowing where your clothes come from, but also about understanding the impact they have on people and the planet."
+            }
+        ]
+    }
+]

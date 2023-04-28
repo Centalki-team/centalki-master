@@ -1,0 +1,497 @@
+[
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "social bond",
+        "phonetic": "/ˈsəʊʃl bɒnd/",
+        "translations": [
+            {
+                "meaning": "liên kết xã hội"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The shared love of music can create a strong social bond among people from different backgrounds and cultures."
+            },
+            {
+                "sentence": "Listening to music together can be a way to bond with friends and family, deepening social connections and relationships."
+            },
+            {
+                "sentence": "Music can create a sense of shared purpose, strengthening social bonds."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "sleep quality",
+        "phonetic": "/sliːp ˈkwɒləti/",
+        "translations": [
+            {
+                "meaning": "chất lượng giấc ngủ"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Listening to soothing music before bed can improve your sleep quality."
+            },
+            {
+                "sentence": "Studies have shown that classical music can positively impact sleep quality."
+            },
+            {
+                "sentence": "Singing or playing music can improve sleep quality as a form of relaxation and stress relief."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "hearing health",
+        "phonetic": "/ˈhɪərɪŋ ˈhelθ/",
+        "translations": [
+            {
+                "meaning": "sức khỏe thính giác"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Listening to music at high volumes for prolonged periods can have a negative impact on hearing health."
+            },
+            {
+                "sentence": "Incorporating music into your daily routine can have a positive impact on hearing health and overall well-being."
+            },
+            {
+                "sentence": "Noise-canceling headphones can be beneficial in protecting hearing health while still enjoying music at a comfortable volume."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "mental health",
+        "phonetic": "/mentl ˈhelθ/",
+        "translations": [
+            {
+                "meaning": "sức khỏe tinh thần"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Listening to calming music before bed can improve sleep and have a positive impact on mental health."
+            },
+            {
+                "sentence": "Music therapy has been shown to have a positive impact on mental health, particularly in the treatment of depression and anxiety."
+            },
+            {
+                "sentence": "Playing an instrument can improve overall mental health, particularly in older adults."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "physical health",
+        "phonetic": "/ˈfɪzɪkl ˈhelθ/",
+        "translations": [
+            {
+                "meaning": "sức khỏe thể chất"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Regular physical activity, such as dancing or playing an instrument, while listening to music, can improve physical health."
+            },
+            {
+                "sentence": "Exposure to loud music for extended periods can have negative effects on physical health, such as hearing loss."
+            },
+            {
+                "sentence": "Excessive use of headphones or earbuds can cause damage to the ears and impact physical health in the long run."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "trending",
+        "phonetic": "/ˈtrendɪŋ/",
+        "translations": [
+            {
+                "meaning": "xu hướng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "While some people enjoy following trending music, others feel like it's all just a popularity contest."
+            },
+            {
+                "sentence": "The trend towards streaming music online has allowed many more people to access a wide variety of music from all over the world."
+            },
+            {
+                "sentence": "Some people feel pressured to keep up with trending music and may miss out on discovering lesser-known, but equally talented, artists."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "to uplift",
+        "phonetic": "/ˌʌpˈlɪft/",
+        "translations": [
+            {
+                "meaning": "nâng cao"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Music has the power to uplift people's spirits and bring hope during difficult times."
+            },
+            {
+                "sentence": "The singer's powerful vocals and inspiring lyrics had an uplifting effect on the audience."
+            },
+            {
+                "sentence": "The lyrics of the song uplifted my spirits and reminded me to stay positive and hopeful."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "to enhance",
+        "phonetic": "/ɪnˈhɑːns/",
+        "translations": [
+            {
+                "meaning": "tăng cường"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Certain types of music can enhance brain function and improve memory retention."
+            },
+            {
+                "sentence": "Incorporating music into a child's education can enhance their learning experience and improve academic performance."
+            },
+            {
+                "sentence": "The addition of music to a movie can enhance the emotional impact of a scene."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "to inspire",
+        "phonetic": "/ɪnˈspaɪə(r)/",
+        "translations": [
+            {
+                "meaning": "truyền cảm hứng"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Listening to music that reflects your values and beliefs can inspire a sense of purpose and meaning in life."
+            },
+            {
+                "sentence": "The lyrics of the song were so inspiring that they motivated me to make positive changes in my life."
+            },
+            {
+                "sentence": "Many musicians hope that their songs will inspire their listeners to pursue their dreams and aspirations."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "to motivate",
+        "phonetic": "/ˈməʊtɪveɪt/",
+        "translations": [
+            {
+                "meaning": "truyền động lực"
+            },
+            {
+                "meaning": "thúc đẩy"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Listening to energetic music while working out helps to motivate me to push myself harder during my exercise routine."
+            },
+            {
+                "sentence": "Music can motivate people to pursue their passions and dreams, providing them with the inspiration and confidence they need to succeed."
+            },
+            {
+                "sentence": "The motivational messages in the lyrics of some songs can help people to overcome obstacles and persevere through challenging times."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "to stimulate",
+        "phonetic": "/ˈstɪmjuleɪt/",
+        "translations": [
+            {
+                "meaning": "kích thích"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Although music can stimulate the brain, excessive exposure to loud music can lead to hearing loss."
+            },
+            {
+                "sentence": "Incorporating music into educational settings can stimulate engagement and learning."
+            },
+            {
+                "sentence": "Certain types of music can stimulate nostalgia, and bring back positive memories and experiences."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "to encourage",
+        "phonetic": "/ɪnˈkʌrɪdʒ/",
+        "translations": [
+            {
+                "meaning": "khuyến khích"
+            },
+            {
+                "meaning": "động viên"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Music can encourage social interaction and community building, improving social health."
+            },
+            {
+                "sentence": "Music can encourage individuals to express themselves, which can improve self-esteem and confidence."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "to express",
+        "phonetic": "/ɪkˈspres/",
+        "translations": [
+            {
+                "meaning": "biểu cảm"
+            },
+            {
+                "meaning": "biểu đạt"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Certain musical genres can be used to express cultural identities and traditions, preserving them for future generations."
+            },
+            {
+                "sentence": "Some musicians use their platform to express controversial or offensive views, which can harm minor communities."
+            },
+            {
+                "sentence": "Music competitions and talent shows can encourage individuals to express their talents and pursue their passions."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "emotional",
+        "phonetic": "/ɪˈməʊʃənl/",
+        "translations": [
+            {
+                "meaning": "giàu cảm xúc"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The emotional impact of music can be powerful and can evoke a range of feelings from joy and happiness to sadness and grief."
+            },
+            {
+                "sentence": "Certain types of music, such as sad songs, can sometimes have a negative emotional impact and may worsen our mood."
+            },
+            {
+                "sentence": "Music can be a powerful tool for storytelling, allowing musicians to convey a range of emotions through their lyrics and melodies."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "creative",
+        "phonetic": "/kriˈeɪtɪv/",
+        "translations": [
+            {
+                "meaning": "mang tính sáng tạo"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "By exploring different genres and styles of music, individuals can expand their creative horizons."
+            },
+            {
+                "sentence": "Music can provide a creative outlet for individuals, allowing them to express themselves and their emotions in unique ways."
+            },
+            {
+                "sentence": "Listening to music can enhance creativity by stimulating the brain and promoting new ideas and perspectives."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "to distract",
+        "phonetic": "/dɪˈstrækt/",
+        "translations": [
+            {
+                "meaning": "làm phân tâm"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Listening to music can sometimes distract you from your tasks and decrease productivity."
+            },
+            {
+                "sentence": "Music can be a great way to distract yourself from negative thoughts and feelings, but don’t use it as a way to avoid dealing with those emotions."
+            },
+            {
+                "sentence": "While music can be a helpful distraction during exercise, it's important to make sure it's not too distracting and causes you to lose focus on your form or technique."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "to disturb",
+        "phonetic": "/dɪˈstɜːb/",
+        "translations": [
+            {
+                "meaning": "quấy rầy"
+            },
+            {
+                "meaning": "làm xáo trộn"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The disturbing lyrics of some rap songs can have a negative impact on listeners."
+            },
+            {
+                "sentence": "The loud music at the concert was so disturbing that it caused some people to leave early."
+            },
+            {
+                "sentence": "Some people use music to distract themselves from disturbing thoughts or emotions."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "to addict",
+        "phonetic": "/ˈædɪkt/",
+        "translations": [
+            {
+                "meaning": "nghiện"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Some people become addicted to music and can't go a day without listening to it."
+            },
+            {
+                "sentence": "Music can be so addictive that it can distract people from their responsibilities."
+            },
+            {
+                "sentence": "Listening to music excessively can lead to addiction, which can interfere with one's daily life."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "offensive",
+        "phonetic": "/əˈfensɪv/",
+        "translations": [
+            {
+                "meaning": "xúc phạm"
+            },
+            {
+                "meaning": "công kích"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Some people find certain types of music lyrics offensive and prefer not to listen to them."
+            },
+            {
+                "sentence": "Parents may be concerned about their children listening to music with offensive lyrics and may limit their access to such content."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "vulgar",
+        "phonetic": "/ˈvʌlɡə(r)/",
+        "translations": [
+            {
+                "meaning": "thô tục"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Some argue that vulgar music can serve as a form of self-expression and provide a platform for artists to address important social issues."
+            },
+            {
+                "sentence": "The use of vulgar lyrics in music has sparked debates on censorship and free speech."
+            },
+            {
+                "sentence": "Critics argue that the rise of vulgar music has a negative impact on society, particularly on younger audiences."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "to promote violence",
+        "phonetic": "/prəˈməʊt ˈvaɪələns/",
+        "translations": [
+            {
+                "meaning": "khuyến khích bạo lực"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The lyrics of some songs can be seen as promoting violence against women, which is concerning."
+            },
+            {
+                "sentence": "It's important for parents to monitor the music their children listen to and make sure it doesn't promote violence."
+            },
+            {
+                "sentence": "Many music artists have been criticized for promoting violence in their lyrics and music videos."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "to obsess",
+        "phonetic": "/əbˈses/",
+        "translations": [
+            {
+                "meaning": "gây ám ảnh"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "He became obsessed with music and spent every waking moment listening to it."
+            },
+            {
+                "sentence": "She found herself obsessing over the lyrics of the song and what they might mean."
+            },
+            {
+                "sentence": "The pressure to always be listening to new music was starting to obsess her and interfere with her daily life."
+            }
+        ]
+    },
+    {
+        "topicId": "pfdXG8IKTrsV1ImLdN1T",
+        "phrase": "depression",
+        "phonetic": "/dɪˈpreʃn/",
+        "translations": [
+            {
+                "meaning": "sự căng thẳng, lo âu"
+            },
+            {
+                "meaning": "chứng trầm cảm"
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Studies have shown that music therapy can improve mood and reduce symptoms of depression."
+            },
+            {
+                "sentence": "Listening to uplifting and positive music can be a helpful tool in managing symptoms of depression."
+            },
+            {
+                "sentence": "Excessive listening to music, particularly music that evokes negative emotions, can sometimes increase feelings of depression."
+            }
+        ]
+    }
+]

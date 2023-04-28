@@ -43,14 +43,13 @@ export class QuestionService {
   // }
 
   // async updateQuestionFromJson() {
-  //   const readContent: Question1[] = require('../../B2_Questions/B2 - Urban Life.json');
+  //   const readContent: Question1[] = require('../../B2/Questions/B2 - Sustainable Fashion.json');
   //   console.log({ readContent });
   //   const resp = await Promise.all(
   //     readContent.map(
   //       async (item) => await this.questionRepository.create(item),
   //     ),
   //   );
-  //   console.log({ resp });
   // }
 
   async create(dto: CreateQuestionDto) {
