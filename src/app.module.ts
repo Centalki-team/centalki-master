@@ -28,6 +28,7 @@ import { BlockingModule } from './blocking/blocking.module';
 import { ReportingModule } from 'src/reporting/reporting.module';
 import { AlgoliaModule } from './algolia/algolia.module';
 import { BookmarkModule } from './bookmark/bookmark.module';
+import { TopicAdviseModule } from './topic-advise/topic-advise.module';
 
 @Module({
   imports: [
@@ -58,6 +59,7 @@ import { BookmarkModule } from './bookmark/bookmark.module';
     ReportingModule,
     AlgoliaModule,
     BookmarkModule,
+    TopicAdviseModule,
   ],
   controllers: [AppController],
   providers: [AppService, FirebaseService],
