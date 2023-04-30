@@ -80,6 +80,14 @@ export class SessionScheduleController {
     return this.sessionScheduleService.getEventTrackings(sessionId);
   }
 
+  @Get(':sessionId')
+  @ApiOperation({
+    summary: 'Lấy thông tin một session ',
+  })
+  getById(@Param('sessionId') sessionId: string) {
+    return this.sessionScheduleService.getById(sessionId);
+  }
+
   @Post(':sessionId/cancel')
   @ApiOperation({
     summary: 'Hủy session schedule',

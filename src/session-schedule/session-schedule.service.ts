@@ -1,4 +1,5 @@
 import {
+  BadRequestException,
   ConflictException,
   forwardRef,
   HttpException,
@@ -452,6 +453,20 @@ export class SessionScheduleService {
         completedSession: data.length,
       },
       data,
+    };
+  }
+
+  async getById(id: string) {
+    const session = await this.sessionScheduleRepository.findById(id);
+    if (!session) {
+      throw new BadRequestException('Session not found!');
+    }
+    const feedback = await this.feedbackService.getFeedbackBySessionId(
+      session.id,
+    );
+    return {
+      ...session,
+      feedback,
     };
   }
 
