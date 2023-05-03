@@ -1,5 +1,5 @@
-import { ApiProperty } from '@nestjs/swagger';
-import { IsEnum, IsNotEmpty } from 'class-validator';
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
+import { IsEnum, IsNotEmpty, IsOptional } from 'class-validator';
 import { EDifficulty } from 'src/topic-advise/enum/difficulty.enum';
 
 export class CreateTopicAdviseDto {
@@ -7,16 +7,15 @@ export class CreateTopicAdviseDto {
   @IsNotEmpty()
   subject: string;
 
-  @ApiProperty({ required: true, description: 'Miêu tả chi tiết' })
-  @IsNotEmpty()
+  @ApiPropertyOptional({ description: 'Miêu tả chi tiết' })
+  @IsOptional()
   description: string;
 
-  @ApiProperty({
-    required: true,
+  @ApiPropertyOptional({
     description: 'Độ khó của topic',
     enum: EDifficulty,
   })
+  @IsOptional()
   @IsEnum(EDifficulty)
-  @IsNotEmpty()
   difficulty: EDifficulty;
 }
