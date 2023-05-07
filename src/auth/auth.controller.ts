@@ -21,6 +21,7 @@ import { SetDeviceTokenDto } from './dto/set-device-token.dto';
 import { SetRoleDto } from './dto/set-role.dto';
 import { UpdateProfileDto } from './dto/update-profile.dto';
 import { PutInitialLevelDto } from 'src/auth/dto/put-initial-level.dto';
+import { SendVerifyEmailDto } from 'src/auth/dto/send-verify-email.dto';
 
 @Controller('auth')
 @ApiTags('Auth')
@@ -184,4 +185,14 @@ export class AuthController {
   // remove(@Param('id') id: string) {
   //   return this.authService.remove(+id);
   // }
+
+  @Post('send-verify-email')
+  @ApiOperation({
+    summary: 'Gửi email verification cho người dùng',
+  })
+  @ApiBearerAuth()
+  @UseGuards(FirebaseAuthGuard)
+  sendVerifyEmail(@Body() dto: SendVerifyEmailDto) {
+    return this.authService.sendVerifyEmail(dto);
+  }
 }
