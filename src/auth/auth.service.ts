@@ -602,7 +602,7 @@ export class AuthService {
               
         <!--[if mso]><style>.v-button {background: transparent !important;}</style><![endif]-->
       <div align="center">
-        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://unlayer.com" style="height:57px; v-text-anchor:middle; width:269px;" arcsize="77%"  stroke="f" fillcolor="#33428d"><w:anchorlock/><center style="color:#FFFFFF;font-family:arial,helvetica,sans-serif;"><![endif]-->  
+        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://firebasestorage.googleapis.com/v0/b/centalki-staging.appspot.com/o/meta%2Fcentalki.png?alt=media&token=c3151460-97ea-440d-ad26-b250ca60f191" style="height:57px; v-text-anchor:middle; width:269px;" arcsize="77%"  stroke="f" fillcolor="#33428d"><w:anchorlock/><center style="color:#FFFFFF;font-family:arial,helvetica,sans-serif;"><![endif]-->  
           <a href="${verifyLink}" target="_blank" class="v-button" style="box-sizing: border-box;display: inline-block;font-family:arial,helvetica,sans-serif;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #FFFFFF; background-color: #33428d; border-radius: 44px;-webkit-border-radius: 44px; -moz-border-radius: 44px; width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;font-size: 14px;">
             <span style="display:block;padding:20px 70px;line-height:120%;"><strong><span style="line-height: 16.8px;">V E R I F Y   N O W</span></strong></span>
           </a>
@@ -666,7 +666,7 @@ export class AuthService {
           <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 13px">
             <tbody><tr style="vertical-align: top"><td align="left" valign="middle" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
               <a href="https://linkedin.com/" title="LinkedIn" target="_blank">
-                <img src="images/image-2.png" alt="LinkedIn" title="LinkedIn" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                <img src="https://firebasestorage.googleapis.com/v0/b/centalki-staging.appspot.com/o/meta%2Fimage-2.png?alt=media&token=4eaac58d-4139-4855-bd73-19ff001326bd" alt="LinkedIn" title="LinkedIn" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
               </a>
             </td></tr>
           </tbody></table>
@@ -675,7 +675,7 @@ export class AuthService {
           <!--[if (mso)|(IE)]><td width="32" style="width:32px; padding-right: 13px;" valign="top"><![endif]-->
           <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 13px">
             <tbody><tr style="vertical-align: top"><td align="left" valign="middle" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
-              <a href="https://instagram.com/" title="Instagram" target="_blank">
+              <a href="https://firebasestorage.googleapis.com/v0/b/centalki-staging.appspot.com/o/meta%2Fimage-1.png?alt=media&token=d69c75fd-4609-4e4d-9b5b-2dcf357b4832" title="Instagram" target="_blank">
                 <img src="images/image-1.png" alt="Instagram" title="Instagram" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
               </a>
             </td></tr>
@@ -686,7 +686,7 @@ export class AuthService {
           <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 13px">
             <tbody><tr style="vertical-align: top"><td align="left" valign="middle" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
               <a href="https://twitter.com/" title="Twitter" target="_blank">
-                <img src="images/image-3.png" alt="Twitter" title="Twitter" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                <img src="https://firebasestorage.googleapis.com/v0/b/centalki-staging.appspot.com/o/meta%2Fimage-3.png?alt=media&token=303c47a2-f8b3-4129-808d-e02c485817e6" alt="Twitter" title="Twitter" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
               </a>
             </td></tr>
           </tbody></table>
@@ -696,7 +696,7 @@ export class AuthService {
           <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 0px">
             <tbody><tr style="vertical-align: top"><td align="left" valign="middle" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
               <a href="https://pinterest.com/" title="Pinterest" target="_blank">
-                <img src="images/image-4.png" alt="Pinterest" title="Pinterest" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                <img src="https://firebasestorage.googleapis.com/v0/b/centalki-staging.appspot.com/o/meta%2Fimage-4.png?alt=media&token=e6cf5489-11f4-4415-b7ae-1c7bb9ccfac6" alt="Pinterest" title="Pinterest" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
               </a>
             </td></tr>
           </tbody></table>
