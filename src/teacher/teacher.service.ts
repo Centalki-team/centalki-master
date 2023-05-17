@@ -21,9 +21,22 @@ export class TeacherService {
     if (!sessionIds.length) {
       return { ratingCount: 0, average: 0 };
     }
-    const studentFeedbacks = await this.sessionStudentFeedbackRepository
-      .whereIn('sessionId', sessionIds)
-      .find();
+    const batches = [];
+
+    while (sessionIds.length) {
+      // firestore limits batches to 10
+      const batch = sessionIds.splice(0, 10);
+
+      // add the batch request to to a queue
+      batches.push(
+        this.sessionStudentFeedbackRepository
+          .whereIn('sessionId', batch)
+          .find(),
+      );
+    }
+
+    const resp = await Promise.all(batches);
+    const studentFeedbacks = resp.flat();
     const ratingCount = studentFeedbacks.length;
     const sumOfRating = studentFeedbacks.reduce(
       (acc, cur) => acc + cur.rating,
