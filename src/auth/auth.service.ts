@@ -547,7 +547,7 @@ export class AuthService {
         <tr>
           <td style="padding-right: 0px;padding-left: 0px;" align="center">
             
-            <img align="center" border="0" src="images/image-5.png" alt="Logo" title="Logo" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 30%;max-width: 174px;" width="174" class="v-src-width v-src-max-width"/>
+            <img align="center" border="0" src="https://firebasestorage.googleapis.com/v0/b/centalki-staging.appspot.com/o/meta%2Fcentalki.png?alt=media&token=c3151460-97ea-440d-ad26-b250ca60f191" alt="Logo" title="Logo" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 30%;max-width: 174px;" width="174" class="v-src-width v-src-max-width"/>
             
           </td>
         </tr>
@@ -651,66 +651,6 @@ export class AuthService {
       <div class="u-col u-col-100" style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
         <div style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
         <!--[if (!mso)&(!IE)]><!--><div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]-->
-        
-      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
-        <tbody>
-          <tr>
-            <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:42px 10px 15px;font-family:arial,helvetica,sans-serif;" align="left">
-              
-      <div align="center">
-        <div style="display: table; max-width:179px;">
-        <!--[if (mso)|(IE)]><table width="179" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-collapse:collapse;" align="center"><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace: 0pt;mso-table-rspace: 0pt; width:179px;"><tr><![endif]-->
-        
-          
-          <!--[if (mso)|(IE)]><td width="32" style="width:32px; padding-right: 13px;" valign="top"><![endif]-->
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 13px">
-            <tbody><tr style="vertical-align: top"><td align="left" valign="middle" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
-              <a href="https://linkedin.com/" title="LinkedIn" target="_blank">
-                <img src="https://firebasestorage.googleapis.com/v0/b/centalki-staging.appspot.com/o/meta%2Fimage-2.png?alt=media&token=4eaac58d-4139-4855-bd73-19ff001326bd" alt="LinkedIn" title="LinkedIn" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
-              </a>
-            </td></tr>
-          </tbody></table>
-          <!--[if (mso)|(IE)]></td><![endif]-->
-          
-          <!--[if (mso)|(IE)]><td width="32" style="width:32px; padding-right: 13px;" valign="top"><![endif]-->
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 13px">
-            <tbody><tr style="vertical-align: top"><td align="left" valign="middle" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
-              <a href="https://firebasestorage.googleapis.com/v0/b/centalki-staging.appspot.com/o/meta%2Fimage-1.png?alt=media&token=d69c75fd-4609-4e4d-9b5b-2dcf357b4832" title="Instagram" target="_blank">
-                <img src="images/image-1.png" alt="Instagram" title="Instagram" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
-              </a>
-            </td></tr>
-          </tbody></table>
-          <!--[if (mso)|(IE)]></td><![endif]-->
-          
-          <!--[if (mso)|(IE)]><td width="32" style="width:32px; padding-right: 13px;" valign="top"><![endif]-->
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 13px">
-            <tbody><tr style="vertical-align: top"><td align="left" valign="middle" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
-              <a href="https://twitter.com/" title="Twitter" target="_blank">
-                <img src="https://firebasestorage.googleapis.com/v0/b/centalki-staging.appspot.com/o/meta%2Fimage-3.png?alt=media&token=303c47a2-f8b3-4129-808d-e02c485817e6" alt="Twitter" title="Twitter" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
-              </a>
-            </td></tr>
-          </tbody></table>
-          <!--[if (mso)|(IE)]></td><![endif]-->
-          
-          <!--[if (mso)|(IE)]><td width="32" style="width:32px; padding-right: 0px;" valign="top"><![endif]-->
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 0px">
-            <tbody><tr style="vertical-align: top"><td align="left" valign="middle" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
-              <a href="https://pinterest.com/" title="Pinterest" target="_blank">
-                <img src="https://firebasestorage.googleapis.com/v0/b/centalki-staging.appspot.com/o/meta%2Fimage-4.png?alt=media&token=e6cf5489-11f4-4415-b7ae-1c7bb9ccfac6" alt="Pinterest" title="Pinterest" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
-              </a>
-            </td></tr>
-          </tbody></table>
-          <!--[if (mso)|(IE)]></td><![endif]-->
-          
-          
-          <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
-        </div>
-      </div>
-      
-            </td>
-          </tr>
-        </tbody>
-      </table>
       
       <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
         <tbody>
