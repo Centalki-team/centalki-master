@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { UserRecord } from 'firebase-admin/auth';
-import { BaseFirestoreRepository } from 'fireorm';
+import { BaseFirestoreRepository, IWherePropParam } from 'fireorm';
 import { InjectRepository } from 'nestjs-fireorm';
 import { SessionStudentFeedback } from 'src/feedback/entities/session-student-feedback.entity';
 import { _APP_FEE_ } from 'src/global/constant';
 import { SessionSchedule } from 'src/session-schedule/entities/session-schedule.entity';
 import { ESessionScheduleStatus } from 'src/session-schedule/enum/session-schedule-status.enum';
-import { GetDashboardDto } from 'src/teacher/dto/get-dashboard';
+import { GetHistoryDto } from 'src/teacher/dto/get-history';
 
 @Injectable()
 export class TeacherService {
@@ -45,12 +45,30 @@ export class TeacherService {
     return { ratingCount, average: sumOfRating / ratingCount };
   }
 
-  async getDashboard(user: UserRecord, query: GetDashboardDto) {
+  async getHistory(user: UserRecord, query: GetHistoryDto) {
     const teacherId = user.uid;
-    const taughtSessions = await this.sessionRepository
+    let qb = this.sessionRepository
       .whereEqualTo('teacherId', teacherId)
-      .whereEqualTo('status', ESessionScheduleStatus.COMPLETED)
-      .find();
+      .whereEqualTo('status', ESessionScheduleStatus.COMPLETED);
+    if (query.from) {
+      qb = qb.whereGreaterOrEqualThan('pickedUpAt', query.from);
+    }
+    if (query.to) {
+      qb = qb.whereLessOrEqualThan('pickedUpAt', query.to);
+    }
+
+    if (query.sort) {
+      const [fieldPath, directionStr] = query.sort.split(':');
+      if (directionStr == 'asc') {
+        qb = qb.orderByAscending(fieldPath as IWherePropParam<SessionSchedule>);
+      } else {
+        qb = qb.orderByDescending(
+          fieldPath as IWherePropParam<SessionSchedule>,
+        );
+      }
+    }
+
+    const taughtSessions = await qb.find();
     const sessionIds = taughtSessions.map((item) => item.id);
     const totalCompletedSession = taughtSessions.length;
     const currentEarnings = taughtSessions.reduce(
@@ -67,6 +85,7 @@ export class TeacherService {
       currentEarnings,
       numUniqueStudents,
       rating,
+      data: taughtSessions,
     };
   }
 }

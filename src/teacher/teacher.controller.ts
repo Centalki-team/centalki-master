@@ -4,20 +4,20 @@ import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { FirebaseAuthGuard } from 'src/global/guard';
 import { User } from 'src/global/decorator';
 import { UserRecord } from 'firebase-admin/auth';
-import { GetDashboardDto } from 'src/teacher/dto/get-dashboard';
+import { GetHistoryDto } from 'src/teacher/dto/get-history';
 
 @Controller('teacher')
 @ApiTags('Teacher')
 export class TeacherController {
   constructor(private readonly teacherService: TeacherService) {}
 
-  @Get('dashboard')
+  @Get('history')
   @ApiOperation({
     summary: 'Lấy thông tin tổng quan của giáo viên',
   })
   @UseGuards(FirebaseAuthGuard)
   @ApiBearerAuth()
-  getDashboard(@User() user: UserRecord, @Query() query: GetDashboardDto) {
-    return this.teacherService.getDashboard(user, query);
+  getHistory(@User() user: UserRecord, @Query() query: GetHistoryDto) {
+    return this.teacherService.getHistory(user, query);
   }
 }
