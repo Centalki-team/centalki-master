@@ -1,4 +1,5 @@
 import {
+  BadRequestException,
   forwardRef,
   Inject,
   Injectable,
@@ -6,6 +7,7 @@ import {
 } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { UserRecord } from 'firebase-admin/auth';
+import * as iap from 'in-app-purchase';
 import {
   BaseFirestoreRepository,
   FirestoreOperators,
@@ -25,6 +27,7 @@ import { PaymentReceipt } from 'src/transaction/entities/payment-receipt.entity'
 import { genId } from 'src/utils/helper';
 import { PaginateTransactionDto } from './dto/get-transaction';
 import { Transaction } from './entities/transaction.entity';
+import { AppleVerifyPurchaseDto } from 'src/transaction/dto/apple-verify-purchase.dto';
 
 @Injectable()
 @ApiTags('Giao dịch')
@@ -41,7 +44,41 @@ export class TransactionService {
     private commonService: CommonService,
     private fcmService: FcmService,
     private notificationService: NotificationService,
-  ) {}
+  ) {
+    iap.config({
+      /* Configurations for HTTP request */
+      // requestDefaults: {
+      //   /* Please refer to the request module documentation here: https://www.npmjs.com/package/request#requestoptions-callback */
+      // },
+
+      /* Configurations for Amazon Store */
+      // amazonAPIVersion: 2, // tells the module to use API version 2
+      // secret: 'abcdefghijklmnoporstuvwxyz', // this comes from Amazon
+      // amazonValidationHost: http://localhost:8080/RVSSandbox, // Local sandbox URL for testing amazon sandbox receipts.
+
+      /* Configurations for Apple */
+      appleExcludeOldTransactions: true, // if you want to exclude old transaction, set this to true. Default is false
+      applePassword: process.env.APPLE_STORE_SHARE_SECRET, // this comes from iTunes Connect (You need this to valiate subscriptions)
+
+      /* Configurations for Google Service Account validation: You can validate with just packageName, productId, and purchaseToken */
+      // googleServiceAccount: {
+      //   clientEmail:
+      //     '<client email from Google API service account JSON key file>',
+      //   privateKey:
+      //     '<private key string from Google API service account JSON key file>',
+      // },
+
+      /* Configurations for Google Play */
+      // googlePublicKeyPath: 'path/to/public/key/directory/', // this is the path to the directory containing iap-sanbox/iap-live files
+      // googlePublicKeyStrSandBox: 'publicKeySandboxString', // this is the google iap-sandbox public key string
+      // googlePublicKeyStrLive: 'publicKeyLiveString', // this is the google iap-live public key string
+      // googleAccToken: 'abcdef...', // optional, for Google Play subscriptions
+      // googleRefToken: 'dddd...', // optional, for Google Play subscritions
+      // googleClientID: 'aaaa', // optional, for Google Play subscriptions
+      // googleClientSecret: 'bbbb', // optional, for Google Play subscriptions
+    });
+  }
+
   private genTransactionId(userId: string) {
     return `TRANSACTION_${userId}_${genId()}`.toUpperCase();
   }
@@ -169,5 +206,22 @@ export class TransactionService {
       bank: 'MB Bank',
     };
     return { momo, banking };
+  }
+
+  async appleVerifyPurchase(data: AppleVerifyPurchaseDto, user: UserRecord) {
+    try {
+      await iap.setup();
+      const validatedData = await iap.validate(data.verificationData);
+      console.log({ validatedData });
+
+      const AMOUNT_MAP = {
+        'com.centalki.app.one_session': 100_000,
+        'com.centalki.app.six_session': 600_000,
+      };
+      await this.createTransaction(user.uid, AMOUNT_MAP[data.productId]);
+    } catch (err) {
+      console.log({ err });
+      throw new BadRequestException('Verify fails');
+    }
   }
 }

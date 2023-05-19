@@ -22,6 +22,7 @@ import { MarkPaymentAsDoneDto } from 'src/transaction/dto/mark-payment-as-done.d
 import { DepositDto } from './dto/deposit.dto';
 import { PaginateTransactionDto } from './dto/get-transaction';
 import { TransactionService } from './transaction.service';
+import { AppleVerifyPurchaseDto } from 'src/transaction/dto/apple-verify-purchase.dto';
 
 @Controller('transaction')
 @ApiTags('Giao dịch')
@@ -105,5 +106,18 @@ export class TransactionController {
   })
   getPaymentInfo() {
     return this.transactionService.getPaymentInfo();
+  }
+
+  @Post('apple/verify-purchase')
+  @ApiOperation({
+    summary: 'Call lên App Store để verify và update user balance',
+  })
+  @UseGuards(FirebaseAuthGuard)
+  @ApiBearerAuth()
+  appleVerifyPurchase(
+    @User() user: UserRecord,
+    @Body() data: AppleVerifyPurchaseDto,
+  ) {
+    return this.transactionService.appleVerifyPurchase(data, user);
   }
 }
