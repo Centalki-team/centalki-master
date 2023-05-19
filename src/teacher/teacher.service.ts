@@ -3,6 +3,7 @@ import { UserRecord } from 'firebase-admin/auth';
 import { BaseFirestoreRepository, IWherePropParam } from 'fireorm';
 import { InjectRepository } from 'nestjs-fireorm';
 import { SessionStudentFeedback } from 'src/feedback/entities/session-student-feedback.entity';
+import { FeedbackService } from 'src/feedback/feedback.service';
 import { _APP_FEE_ } from 'src/global/constant';
 import { SessionSchedule } from 'src/session-schedule/entities/session-schedule.entity';
 import { ESessionScheduleStatus } from 'src/session-schedule/enum/session-schedule-status.enum';
@@ -15,6 +16,7 @@ export class TeacherService {
     private sessionRepository: BaseFirestoreRepository<SessionSchedule>,
     @InjectRepository(SessionStudentFeedback)
     private sessionStudentFeedbackRepository: BaseFirestoreRepository<SessionStudentFeedback>,
+    private readonly feedbackService: FeedbackService,
   ) {}
 
   async countBySessionIds(sessionIds: string[]) {
@@ -80,12 +82,23 @@ export class TeacherService {
     ];
     const numUniqueStudents = studentIds.length;
     const rating = await this.countBySessionIds(sessionIds);
+
+    const promises = taughtSessions.map(async (session) => {
+      const feedback = await this.feedbackService.getFeedbackBySessionId(
+        session.id,
+      );
+      return {
+        ...session,
+        feedback,
+      };
+    });
+    const data = await Promise.all(promises);
     return {
       totalCompletedSession,
       currentEarnings,
       numUniqueStudents,
       rating,
-      data: taughtSessions,
+      data,
     };
   }
 }
