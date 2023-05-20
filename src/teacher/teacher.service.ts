@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { UserRecord } from 'firebase-admin/auth';
-import { BaseFirestoreRepository, IWherePropParam } from 'fireorm';
+import { BaseFirestoreRepository } from 'fireorm';
 import { InjectRepository } from 'nestjs-fireorm';
 import { SessionStudentFeedback } from 'src/feedback/entities/session-student-feedback.entity';
 import { FeedbackService } from 'src/feedback/feedback.service';
@@ -8,6 +8,7 @@ import { _APP_FEE_ } from 'src/global/constant';
 import { SessionSchedule } from 'src/session-schedule/entities/session-schedule.entity';
 import { ESessionScheduleStatus } from 'src/session-schedule/enum/session-schedule-status.enum';
 import { GetHistoryDto } from 'src/teacher/dto/get-history';
+import { compare, countUnique } from 'src/utils/helper';
 
 @Injectable()
 export class TeacherService {
@@ -61,12 +62,12 @@ export class TeacherService {
 
     if (query.sort) {
       const [fieldPath, directionStr] = query.sort.split(':');
-      if (directionStr == 'asc') {
-        qb = qb.orderByAscending(fieldPath as IWherePropParam<SessionSchedule>);
-      } else {
-        qb = qb.orderByDescending(
-          fieldPath as IWherePropParam<SessionSchedule>,
-        );
+      if (fieldPath === 'pickedUpAt') {
+        if (directionStr == 'asc') {
+          qb = qb.orderByAscending('pickedUpAt');
+        } else {
+          qb = qb.orderByDescending('pickedUpAt');
+        }
       }
     }
 
@@ -77,10 +78,8 @@ export class TeacherService {
       (earning, session) => earning + (session.cost - _APP_FEE_),
       0,
     );
-    const studentIds = [
-      ...new Set(...taughtSessions.map((item) => item.studentId)),
-    ];
-    const numUniqueStudents = studentIds.length;
+    const studentIds = taughtSessions.map((item) => item.studentId);
+    const numUniqueStudents = countUnique(studentIds);
     const rating = await this.countBySessionIds(sessionIds);
 
     const promises = taughtSessions.map(async (session) => {
@@ -93,6 +92,21 @@ export class TeacherService {
       };
     });
     const data = await Promise.all(promises);
+    if (query.sort) {
+      const [fieldPath, directionStr] = query.sort.split(':');
+      if (fieldPath === 'rating') {
+        if (directionStr === 'asc') {
+          data.sort((a, b) =>
+            compare(a.feedback.teacher?.rating, b.feedback.teacher?.rating),
+          );
+        } else {
+          data.sort((a, b) =>
+            compare(b.feedback.teacher?.rating, a.feedback.teacher?.rating),
+          );
+        }
+      }
+    }
+
     return {
       totalCompletedSession,
       currentEarnings,
