@@ -1,10 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { UserRecord } from 'firebase-admin/auth';
-import {
-  BaseFirestoreRepository,
-  FirestoreOperators,
-  IFireOrmQueryLine,
-} from 'fireorm';
+import { BaseFirestoreRepository } from 'fireorm';
 import { InjectRepository } from 'nestjs-fireorm';
 import { CommonService } from 'src/common/common.service';
 import { PaginationResult } from 'src/global/types';
@@ -33,26 +29,23 @@ export class NotificationService {
   ): Promise<PaginationResult<Notification>> {
     const { page, size, sort } = query;
 
-    const queries: IFireOrmQueryLine[] = [
-      {
-        prop: 'uid',
-        val: user.uid,
-        operator: FirestoreOperators.equal,
-      },
-    ];
-
-    const { data, hasNextPage, hasPrevPage } = await this.commonService.find(
-      this.notificationRepository,
-      queries,
-      page,
-      size,
-      sort,
-    );
+    let qb = this.notificationRepository.whereEqualTo('uid', user.uid);
+    if (sort) {
+      const [fieldPath, directionStr] = query.sort.split(':');
+      if (fieldPath === 'pickedUpAt') {
+        if (directionStr == 'asc') {
+          qb = qb.orderByAscending('createdAt');
+        } else {
+          qb = qb.orderByDescending('createdAt');
+        }
+      }
+    }
+    const data = await qb.find();
 
     return {
       meta: {
-        hasNextPage,
-        hasPrevPage,
+        hasNextPage: false,
+        hasPrevPage: false,
         page,
         size,
       },
