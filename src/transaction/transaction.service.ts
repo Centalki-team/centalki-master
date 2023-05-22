@@ -61,12 +61,13 @@ export class TransactionService {
       applePassword: process.env.APPLE_STORE_SHARE_SECRET, // this comes from iTunes Connect (You need this to valiate subscriptions)
 
       /* Configurations for Google Service Account validation: You can validate with just packageName, productId, and purchaseToken */
-      // googleServiceAccount: {
-      //   clientEmail:
-      //     '<client email from Google API service account JSON key file>',
-      //   privateKey:
-      //     '<private key string from Google API service account JSON key file>',
-      // },
+      googleServiceAccount: {
+        clientEmail: process.env.GG_PURCHASE_VERIFIER_EMAIL,
+        privateKey: process.env.GG_PURCHASE_VERIFIER_PRIVATE_KEY.replace(
+          /\\n/g,
+          '\n',
+        ),
+      },
 
       /* Configurations for Google Play */
       // googlePublicKeyPath: 'path/to/public/key/directory/', // this is the path to the directory containing iap-sanbox/iap-live files
@@ -77,6 +78,9 @@ export class TransactionService {
       // googleClientID: 'aaaa', // optional, for Google Play subscriptions
       // googleClientSecret: 'bbbb', // optional, for Google Play subscriptions
     });
+    setTimeout(() => {
+      this.test();
+    }, 1000);
   }
 
   private genTransactionId(userId: string) {
@@ -213,6 +217,39 @@ export class TransactionService {
       await iap.setup();
       const validatedData = await iap.validate(data.verificationData);
       console.log({ validatedData });
+
+      const AMOUNT_MAP = {
+        'com.centalki.app.one_session': 100_000,
+        'com.centalki.app.six_session': 600_000,
+      };
+      await this.createTransaction(user.uid, AMOUNT_MAP[data.productId]);
+    } catch (err) {
+      console.log({ err });
+      throw new BadRequestException('Verify fails');
+    }
+  }
+
+  async test() {
+    await iap.setup();
+    const validatedData = await iap.validate({
+      packageName: 'com.centalki.student',
+      productId: 'data.productId',
+      purchaseToken: 'data.verificationData',
+      subscription: false, // if the receipt is a subscription, then true
+    });
+    console.log({ googleVerifyPurchase: validatedData });
+  }
+
+  async googleVerifyPurchase(data: AppleVerifyPurchaseDto, user: UserRecord) {
+    try {
+      await iap.setup();
+      const validatedData = await iap.validate({
+        packageName: 'com.centalki.student',
+        productId: data.productId,
+        purchaseToken: data.verificationData,
+        subscription: false, // if the receipt is a subscription, then true
+      });
+      console.log({ googleVerifyPurchase: validatedData });
 
       const AMOUNT_MAP = {
         'com.centalki.app.one_session': 100_000,

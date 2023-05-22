@@ -120,4 +120,17 @@ export class TransactionController {
   ) {
     return this.transactionService.appleVerifyPurchase(data, user);
   }
+
+  @Post('google/verify-purchase')
+  @ApiOperation({
+    summary: 'Call lên Google Play để verify và update user balance',
+  })
+  @UseGuards(FirebaseAuthGuard)
+  @ApiBearerAuth()
+  googleVerifyPurchase(
+    @User() user: UserRecord,
+    @Body() data: AppleVerifyPurchaseDto,
+  ) {
+    return this.transactionService.googleVerifyPurchase(data, user);
+  }
 }
