@@ -78,9 +78,6 @@ export class TransactionService {
       // googleClientID: 'aaaa', // optional, for Google Play subscriptions
       // googleClientSecret: 'bbbb', // optional, for Google Play subscriptions
     });
-    setTimeout(() => {
-      this.test();
-    }, 1000);
   }
 
   private genTransactionId(userId: string) {
@@ -227,17 +224,6 @@ export class TransactionService {
       console.log({ err });
       throw new BadRequestException('Verify fails');
     }
-  }
-
-  async test() {
-    await iap.setup();
-    const validatedData = await iap.validate({
-      packageName: 'com.centalki.student',
-      productId: 'data.productId',
-      purchaseToken: 'data.verificationData',
-      subscription: false, // if the receipt is a subscription, then true
-    });
-    console.log({ googleVerifyPurchase: validatedData });
   }
 
   async googleVerifyPurchase(data: AppleVerifyPurchaseDto, user: UserRecord) {
