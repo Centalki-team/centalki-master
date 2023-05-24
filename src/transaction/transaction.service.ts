@@ -265,4 +265,9 @@ export class TransactionService {
       throw new BadRequestException('Verify fails');
     }
   }
+
+  getStoreReceipts() {
+    const qb = this.storeReceiptRepository;
+    return qb.find();
+  }
 }

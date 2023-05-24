@@ -133,4 +133,12 @@ export class TransactionController {
   ) {
     return this.transactionService.googleVerifyPurchase(data, user);
   }
+
+  @Get('store-receipts')
+  @ApiOperation({
+    summary: 'Danh sách các hoá đơn app store',
+  })
+  getStoreReceipts() {
+    return this.transactionService.getStoreReceipts();
+  }
 }
