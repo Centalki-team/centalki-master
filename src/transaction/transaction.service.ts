@@ -28,6 +28,7 @@ import { genId } from 'src/utils/helper';
 import { PaginateTransactionDto } from './dto/get-transaction';
 import { Transaction } from './entities/transaction.entity';
 import { AppleVerifyPurchaseDto } from 'src/transaction/dto/apple-verify-purchase.dto';
+import { StoreReceipt } from 'src/transaction/entities/store-receipt.entity';
 
 @Injectable()
 @ApiTags('Giao dịch')
@@ -38,6 +39,9 @@ export class TransactionService {
 
     @InjectRepository(PaymentReceipt)
     private paymentReceiptRepository: BaseFirestoreRepository<PaymentReceipt>,
+
+    @InjectRepository(StoreReceipt)
+    private storeReceiptRepository: BaseFirestoreRepository<StoreReceipt>,
 
     @Inject(forwardRef(() => AuthService))
     private authService: AuthService,
@@ -220,6 +224,13 @@ export class TransactionService {
         'com.centalki.app.six_session': 600_000,
       };
       await this.createTransaction(user.uid, AMOUNT_MAP[data.productId]);
+      await this.storeReceiptRepository.create({
+        createdAt: new Date().getTime(),
+        productId: data.productId,
+        userId: user.uid,
+        verificationData: data.verificationData,
+        service: iap.APPLE,
+      });
     } catch (err) {
       console.log({ err });
       throw new BadRequestException('Verify fails');
@@ -242,6 +253,13 @@ export class TransactionService {
         'com.centalki.app.six_session': 600_000,
       };
       await this.createTransaction(user.uid, AMOUNT_MAP[data.productId]);
+      await this.storeReceiptRepository.create({
+        createdAt: new Date().getTime(),
+        productId: data.productId,
+        userId: user.uid,
+        verificationData: data.verificationData,
+        service: iap.GOOGLE,
+      });
     } catch (err) {
       console.log({ err });
       throw new BadRequestException('Verify fails');
