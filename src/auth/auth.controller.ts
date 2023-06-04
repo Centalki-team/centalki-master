@@ -124,6 +124,16 @@ export class AuthController {
     return this.authService.addDeviceToken(user, dto);
   }
 
+  @Post('log-out')
+  @UseGuards(FirebaseAuthGuard)
+  @ApiOperation({
+    summary: 'Gọi khi user đăng xuất',
+  })
+  @ApiBearerAuth()
+  logOut(@Body() dto: SetDeviceTokenDto, @User() user: UserRecord) {
+    return this.authService.logOut(user, dto);
+  }
+
   @Post('validate-role')
   @ApiBearerAuth()
   @ApiOperation({

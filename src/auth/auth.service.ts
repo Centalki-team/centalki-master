@@ -359,6 +359,15 @@ export class AuthService {
     return await this.authCollection.update(exist);
   }
 
+  async logOut(user: UserRecord, dto: SetDeviceTokenDto) {
+    const uid = user.uid;
+    const exist = await this.authCollection.whereEqualTo('uid', uid).findOne();
+    exist.deviceTokens = exist.deviceTokens
+      ? exist.deviceTokens.filter((item) => item !== dto.token)
+      : [];
+    return await this.authCollection.update(exist);
+  }
+
   async updateBalance(uid: string, amount: number) {
     if (!uid && !amount) {
       return false;
