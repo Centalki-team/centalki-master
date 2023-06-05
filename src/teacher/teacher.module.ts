@@ -13,5 +13,6 @@ import { FeedbackModule } from 'src/feedback/feedback.module';
   ],
   controllers: [TeacherController],
   providers: [TeacherService],
+  exports: [TeacherService],
 })
 export class TeacherModule {}

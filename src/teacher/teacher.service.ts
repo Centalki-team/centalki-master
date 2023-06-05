@@ -115,4 +115,28 @@ export class TeacherService {
       data,
     };
   }
+
+  async getTeacherDetail(teacherId: string) {
+    const qb = this.sessionRepository
+      .whereEqualTo('teacherId', teacherId)
+      .whereEqualTo('status', ESessionScheduleStatus.COMPLETED);
+
+    const taughtSessions = await qb.find();
+    const sessionIds = taughtSessions.map((item) => item.id);
+    const totalCompletedSession = taughtSessions.length;
+    const currentEarnings = taughtSessions.reduce(
+      (earning, session) => earning + (session.cost - _APP_FEE_),
+      0,
+    );
+    const studentIds = taughtSessions.map((item) => item.studentId);
+    const numUniqueStudents = countUnique(studentIds);
+    const rating = await this.countBySessionIds(sessionIds);
+
+    return {
+      totalCompletedSession,
+      currentEarnings,
+      numUniqueStudents,
+      rating,
+    };
+  }
 }

@@ -11,6 +11,19 @@ import { AuthCollection } from 'src/auth/collection/auth.collection';
 import { ERole } from 'src/auth/enum/role.enum';
 import { FirebaseService } from 'src/firebase/firebase.service';
 
+const ROLE_SCORE = {
+  [ERole.ADMIN]: 3,
+  [ERole.TEACHER]: 2,
+  [ERole.STUDENT]: 1,
+};
+
+const roleAllowed = (userRole: ERole, allowRole: ERole) => {
+  if (ROLE_SCORE[userRole] >= ROLE_SCORE[allowRole]) {
+    return true;
+  }
+  return false;
+};
+
 @Injectable()
 export class FirebaseAuthGuard implements CanActivate {
   constructor(
@@ -18,13 +31,12 @@ export class FirebaseAuthGuard implements CanActivate {
     private reflector: Reflector,
   ) {}
   canActivate(context: ExecutionContext): boolean | Promise<boolean> {
-    const roles =
-      this.reflector.get<ERole[]>('roles', context.getHandler()) || [];
+    const role = this.reflector.get<ERole>('role', context.getHandler());
     const request = context.switchToHttp().getRequest() as Request;
-    return this.validateRequest(request, roles);
+    return this.validateRequest(request, role);
   }
 
-  async validateRequest(req: Request, roles: ERole[]): Promise<boolean> {
+  async validateRequest(req: Request, role: ERole): Promise<boolean> {
     const token = req.headers.authorization;
 
     if (token != null && token != '') {
@@ -43,7 +55,7 @@ export class FirebaseAuthGuard implements CanActivate {
           .where('uid', '==', user.uid)
           .get();
         const profile = profileQuery.docs.pop().data() as AuthCollection;
-        if (roles.length && !roles.includes(profile.role)) {
+        if (!!role && !roleAllowed(profile.role, role)) {
           return false;
         }
         req['user'] = user;

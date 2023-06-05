@@ -191,8 +191,6 @@ export class TransactionService {
   }
 
   getPaymentReceipt(query: GetPaymentReceiptDto) {
-    console.log({ query });
-
     const qb = query.isDone
       ? this.paymentReceiptRepository.whereNotEqualTo('doneAt', null)
       : this.paymentReceiptRepository.whereEqualTo('doneAt', null);
@@ -217,7 +215,6 @@ export class TransactionService {
     try {
       await iap.setup();
       const validatedData = await iap.validate(data.verificationData);
-      console.log({ validatedData });
 
       const AMOUNT_MAP = {
         'com.centalki.app.one_session': 100_000,
@@ -246,7 +243,6 @@ export class TransactionService {
         purchaseToken: data.verificationData,
         subscription: false, // if the receipt is a subscription, then true
       });
-      console.log({ googleVerifyPurchase: validatedData });
 
       const AMOUNT_MAP = {
         'com.centalki.app.one_session': 100_000,

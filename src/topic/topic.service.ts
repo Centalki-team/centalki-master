@@ -61,8 +61,6 @@ export class TopicService {
   }
 
   async getListTopic(query: GetTopicsDto, user: UserRecord) {
-    console.log({ user });
-
     const { data: rawTopics = [] } = await (query.keyword
       ? this.searchTopic(query)
       : this.findAll(query));

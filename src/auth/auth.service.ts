@@ -153,7 +153,6 @@ export class AuthService {
     }
     const uid = claims.uid;
     const exist = await this.authCollection.whereEqualTo('uid', uid).findOne();
-    console.log({ exist, uid, claims, dto });
     if (!exist) {
       throw new NotFoundException('User not exist');
     }

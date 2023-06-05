@@ -19,9 +19,9 @@ export const User = createParamDecorator((_: string, ctx: ExecutionContext) => {
   return user;
 });
 
-export function Auth(...roles: ERole[]) {
+export function Auth(role: ERole) {
   return applyDecorators(
-    SetMetadata('roles', roles),
+    SetMetadata('role', role),
     ApiBearerAuth(),
     UseGuards(FirebaseAuthGuard),
     ApiUnauthorizedResponse({ description: 'Unauthorized' }),
