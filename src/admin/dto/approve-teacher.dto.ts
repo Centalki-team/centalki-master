@@ -6,9 +6,4 @@ export class ApproveTeacherDto {
   @IsNotEmpty()
   @IsEmail()
   email: string;
-
-  @ApiProperty({})
-  @IsNotEmpty()
-  @IsString()
-  apiKey: string;
 }

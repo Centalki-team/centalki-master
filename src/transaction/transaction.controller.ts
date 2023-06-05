@@ -14,7 +14,7 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 import { UserRecord } from 'firebase-admin/auth';
-import { User } from 'src/global/decorator';
+import { Auth, User } from 'src/global/decorator';
 import { FirebaseAuthGuard } from 'src/global/guard';
 import { CreatePaymentReceiptDto } from 'src/transaction/dto/create-payment-receipt.dto';
 import { GetPaymentReceiptDto } from 'src/transaction/dto/get-payment-receipt';
@@ -23,6 +23,7 @@ import { DepositDto } from './dto/deposit.dto';
 import { PaginateTransactionDto } from './dto/get-transaction';
 import { TransactionService } from './transaction.service';
 import { AppleVerifyPurchaseDto } from 'src/transaction/dto/apple-verify-purchase.dto';
+import { ERole } from 'src/auth/enum/role.enum';
 
 @Controller('transaction')
 @ApiTags('Giao dịch')
@@ -34,10 +35,8 @@ export class TransactionController {
     summary: 'Nạp tiền',
     description: 'API dùng để nạp tiền cho user',
   })
+  @Auth(ERole.ADMIN)
   deposit(@Body() dto: DepositDto) {
-    if (process.env.API_KEY !== dto.apiKey) {
-      throw new ForbiddenException();
-    }
     return this.transactionService.createTransaction(dto.userId, dto.amount);
   }
 
@@ -45,10 +44,8 @@ export class TransactionController {
   @ApiOperation({
     summary: 'Đánh dấu tiền đã được chuyển vào tài khoản user thành công',
   })
+  @Auth(ERole.ADMIN)
   markPaymentAsDone(@Body() dto: MarkPaymentAsDoneDto) {
-    if (process.env.API_KEY !== dto.apiKey) {
-      throw new ForbiddenException();
-    }
     return this.transactionService.markPaymentAsDone(dto);
   }
 
@@ -82,10 +79,8 @@ export class TransactionController {
   @ApiOperation({
     summary: 'Danh sách các manual payment cần xử lý',
   })
+  @Auth(ERole.ADMIN)
   getPaymentReceipt(@Query() query: GetPaymentReceiptDto) {
-    if (process.env.API_KEY !== query.apiKey) {
-      throw new ForbiddenException();
-    }
     return this.transactionService.getPaymentReceipt(query);
   }
 

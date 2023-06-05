@@ -18,9 +18,4 @@ export class DepositDto {
   @IsNotEmpty()
   @IsString()
   userId: string;
-
-  @ApiProperty({})
-  @IsNotEmpty()
-  @IsString()
-  apiKey: string;
 }

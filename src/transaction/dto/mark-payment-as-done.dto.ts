@@ -8,9 +8,4 @@ export class MarkPaymentAsDoneDto {
   @IsNotEmpty()
   @IsString()
   paymentReceiptId: string;
-
-  @ApiProperty({})
-  @IsNotEmpty()
-  @IsString()
-  apiKey: string;
 }

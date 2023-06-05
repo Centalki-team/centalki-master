@@ -8,9 +8,4 @@ export class ForceEndDto {
   @IsNotEmpty()
   @IsString()
   sessionId: string;
-
-  @ApiProperty({})
-  @IsNotEmpty()
-  @IsString()
-  apiKey: string;
 }
