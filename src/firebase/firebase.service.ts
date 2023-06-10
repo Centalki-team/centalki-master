@@ -27,7 +27,7 @@ export class FirebaseService {
   }
   async getUsers(ids: UserIdentifier[]) {
     if (!ids.length) {
-      return { ratingCount: 0, average: 0 };
+      return [];
     }
     const batches = [];
 
@@ -36,7 +36,11 @@ export class FirebaseService {
       const batch = ids.splice(0, 99);
 
       // add the batch request to to a queue
-      batches.push(this.auth().getUsers(batch));
+      batches.push(
+        this.auth()
+          .getUsers(batch)
+          .then((resp) => resp.users || []),
+      );
     }
 
     const resp = await Promise.all(batches);
