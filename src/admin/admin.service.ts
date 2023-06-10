@@ -29,8 +29,7 @@ export class AdminService {
     const uidIdentifiers = teacherIds.map((uid) => ({
       uid,
     }));
-    const users = await this.firebaseService.auth().getUsers(uidIdentifiers);
-    const teachers = users.users || [];
+    const users = await this.firebaseService.getUsers(uidIdentifiers);
     // const promises = teachers.map(async (item) => {
     //   const detail = await this.teacherService.getTeacherDetail(item.uid);
     //   return {
@@ -39,7 +38,7 @@ export class AdminService {
     //   };
     // });
     return {
-      data: teachers,
+      data: users,
     };
   }
 }
