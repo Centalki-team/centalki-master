@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { UidIdentifier } from 'firebase-admin/auth';
+// import { UidIdentifier } from 'firebase-admin/auth';
 import { ApproveTeacherDto } from 'src/admin/dto/approve-teacher.dto';
 import { ForceEndDto } from 'src/admin/dto/force-end-session';
 import { GetTeacherDto } from 'src/admin/dto/get-users.dto';
@@ -31,16 +31,15 @@ export class AdminService {
     }));
     const users = await this.firebaseService.auth().getUsers(uidIdentifiers);
     const teachers = users.users || [];
-    const promises = teachers.map(async (item) => {
-      const detail = await this.teacherService.getTeacherDetail(item.uid);
-      return {
-        ...item,
-        detail,
-      };
-    });
-    const data = await Promise.all(promises);
+    // const promises = teachers.map(async (item) => {
+    //   const detail = await this.teacherService.getTeacherDetail(item.uid);
+    //   return {
+    //     ...item,
+    //     detail,
+    //   };
+    // });
     return {
-      data,
+      data: teachers,
     };
   }
 }
