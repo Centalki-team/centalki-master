@@ -11,6 +11,8 @@ export class Reporting {
   reportedId: string;
   reported?: UserRecord;
 
+  sessionId: string;
+
   summary: string[];
   detail?: string;
 

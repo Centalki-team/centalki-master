@@ -15,7 +15,7 @@ export class ReportingService {
     private firebaseService: FirebaseService,
   ) {}
   async create(dto: CreateReportingDto, user: UserRecord) {
-    const { reportedId, summary, detail } = dto;
+    const { reportedId, summary, detail, sessionId } = dto;
     const reported = await this.firebaseService.auth().getUser(reportedId);
     if (!reported) {
       throw new NotFoundException('Reported user not found!');
@@ -25,6 +25,7 @@ export class ReportingService {
       reportedId,
       summary,
       detail,
+      sessionId,
       createdAt: new Date().toISOString(),
     });
   }

@@ -10,6 +10,13 @@ export class CreateReportingDto {
   reportedId: string;
 
   @ApiProperty({
+    description: 'ID của buổi học',
+  })
+  @IsNotEmpty()
+  @IsString()
+  sessionId: string;
+
+  @ApiProperty({
     description: 'Tóm tắt vấn đề',
     isArray: true,
   })
