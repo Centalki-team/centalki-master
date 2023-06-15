@@ -31,6 +31,7 @@ import { PutInitialLevelDto } from 'src/auth/dto/put-initial-level.dto';
 import { EInitialLevelType } from 'src/auth/enum/initial-level.enum';
 import { TopicService } from 'src/topic/topic.service';
 import { SendVerifyEmailDto } from 'src/auth/dto/send-verify-email.dto';
+import { ROLE_SCORE } from 'src/global/guard';
 
 @Injectable()
 export class AuthService {
@@ -157,7 +158,7 @@ export class AuthService {
       throw new NotFoundException('User not exist');
     }
 
-    if (exist.role !== dto.role) {
+    if (ROLE_SCORE[exist.role] < ROLE_SCORE[dto.role]) {
       throw new ForbiddenException();
     } else {
       return exist;

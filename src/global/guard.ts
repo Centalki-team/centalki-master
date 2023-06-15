@@ -11,7 +11,7 @@ import { AuthCollection } from 'src/auth/collection/auth.collection';
 import { ERole } from 'src/auth/enum/role.enum';
 import { FirebaseService } from 'src/firebase/firebase.service';
 
-const ROLE_SCORE = {
+export const ROLE_SCORE = {
   [ERole.ADMIN]: 3,
   [ERole.TEACHER]: 2,
   [ERole.STUDENT]: 1,
