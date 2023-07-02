@@ -10,7 +10,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { TopicService } from './topic.service';
-import { CreateTopicDto } from './dto/create-topic.dto';
+import { CreateTopicDto, ImportJSONDto } from './dto/create-topic.dto';
 import { UpdateTopicDto } from './dto/update-topic.dto';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { GetTopicsDto } from './dto/get-topics.dto';
@@ -27,6 +27,12 @@ export class TopicController {
   @ApiOperation({ summary: 'Tạo 1 chủ đề' })
   create(@Body() dto: CreateTopicDto) {
     return this.topicService.create(dto);
+  }
+
+  @Post('import-json')
+  @ApiOperation({ summary: 'Tạo 1 chủ đề' })
+  importJSON(@Body() dto: ImportJSONDto) {
+    return this.topicService.importJSON(dto);
   }
 
   @Get()

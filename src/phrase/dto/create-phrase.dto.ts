@@ -11,6 +11,8 @@ export class CreatePhraseDto {
   @IsNotEmpty()
   topicId: string;
 
+  phonetic?: string;
+
   @ApiProperty({ required: true })
   @IsNotEmpty()
   translations: ITranslation[];

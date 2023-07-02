@@ -53,6 +53,11 @@ export class QuestionService {
   //   console.log({ resp });
   // }
 
+  async createBulk(dto: CreateQuestionDto[]) {
+    const promises = dto.map((item) => this.questionRepository.create(item));
+    return await Promise.all(promises);
+  }
+
   async create(dto: CreateQuestionDto) {
     return await this.questionRepository.create(dto);
   }

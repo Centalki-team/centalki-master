@@ -1,4 +1,5 @@
 import { Collection } from 'fireorm';
+import { Answer } from 'src/topic/dto/create-topic.dto';
 
 @Collection()
 export class Question {
@@ -7,4 +8,6 @@ export class Question {
   topicId: string;
 
   question: string;
+
+  answers: Answer[];
 }

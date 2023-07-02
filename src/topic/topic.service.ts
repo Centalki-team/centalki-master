@@ -10,7 +10,7 @@ import { PhraseService } from '../phrase/phrase.service';
 import { CategoryService } from '../category/category.service';
 import { LevelService } from '../level/level.service';
 import { QuestionService } from '../question/question.service';
-import { CreateTopicDto } from './dto/create-topic.dto';
+import { CreateTopicDto, ImportJSONDto } from './dto/create-topic.dto';
 import { UpdateTopicDto } from './dto/update-topic.dto';
 import { Topic } from './entities/topic.entity';
 import { GetTopicsDto } from './dto/get-topics.dto';
@@ -52,6 +52,40 @@ export class TopicService {
   //   const readContent = require('../../topics.json');
   //   console.log({ readContent });
   // }
+  async importJSON(dto: ImportJSONDto) {
+    const {
+      levelId,
+      name,
+      categoryId,
+      description,
+      imageURL,
+      questions,
+      phrases,
+    } = dto.data;
+    const topic = await this.create({
+      levelId,
+      name,
+      categoryId,
+      description,
+      imageURL,
+    });
+    const topicId = topic.id;
+
+    const createdQuestions = await this.questionService.createBulk(
+      questions.map((question) => ({
+        ...question,
+        topicId,
+      })),
+    );
+
+    const createdPhrases = await this.phraseService.createBulk(
+      phrases.map((phrases) => ({
+        ...phrases,
+        topicId,
+      })),
+    );
+    return true;
+  }
   async create(dto: CreateTopicDto) {
     return await this.topicRepository.create(dto);
   }

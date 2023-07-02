@@ -82,6 +82,22 @@ export class PhraseService {
       updatedAt: new Date().toISOString(),
     });
   }
+  async createBulk(dto: CreatePhraseDto[]) {
+    const promises = dto.map((item) => {
+      const { phrase, topicId, phonetic, translations, examples } = item;
+
+      return this.phraseRepository.create({
+        phrase,
+        translations,
+        topicId,
+        phonetic,
+        examples,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+      });
+    });
+    return await Promise.all(promises);
+  }
 
   async findAll(query: GetPhrasesDto): Promise<PaginationResult<Phrase>> {
     const { page, size } = query;
